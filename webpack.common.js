@@ -6,8 +6,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   entry: {
-    index: './src/index.js',
-    page: './src/page.js'
+  index: './src/index.js',
+  sphere: './src/sphere.js'
   },
   output: {
     path: path.resolve(__dirname, 'docs'),
@@ -52,16 +52,18 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
-      filename: './index.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/pages/page.html',
-      filename: './pages/page.html',
-      chunks: ['page']
-    }),
-    new MiniCssExtractPlugin()
+  new HtmlWebpackPlugin({
+    template: './src/index.html',
+    filename: 'index.html',
+    chunks: ['index'],
+    inject: 'body',
+  }),
+  new HtmlWebpackPlugin({
+    template: './src/pages/sphere.html',
+    filename: 'pages/sphere.html',
+    chunks: ['sphere'],
+    inject: 'body',
+  }),
+  new MiniCssExtractPlugin()
   ]
 }

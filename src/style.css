@@ -1,3 +1,4 @@
-body {
-  background-color: cornflowerblue;
-}
+html, body { height: 100%; margin: 0; background: #111; }
+canvas { display: block; }
+nav { position: fixed; left: 12px; top: 12px; z-index: 10; }
+nav a { color: #fff; text-decoration: none; font-family: system-ui, sans-serif; }
