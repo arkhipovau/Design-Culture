@@ -1,1 +1,2 @@
-document.getElementById('app').textContent='Hello, Webpack!';
+console.log('hey')
+import './style.css'
