@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Статья — deFindings</title>
+    <link rel="stylesheet" href="../stylesheets/index.css" />
+    <link rel="stylesheet" href="../udf/tokens/colors.css" />
+    <link rel="stylesheet" href="../udf/tokens/typography.css" />
+    <link rel="stylesheet" href="../udf/atoms/sticky-scroll/a-sticky-scroll.css" />
+    <link rel="stylesheet" href="../udf/atoms/arrow-buttons/a-arrow-buttons.css" />
+    <link rel="stylesheet" href="../udf/atoms/mail-input/a-mail-input.css" />
+    <link rel="stylesheet" href="../udf/molecules/mail-form/m-mail-form.css" />
+    <link rel="stylesheet" href="./article.css" />
+    <link rel="stylesheet" href="../udf/atoms/arrow-button-xl/a-arrow-button-xl.css" />
+    <link rel="stylesheet" href="../stylesheets/micro-animations.css" />
+    <link rel="stylesheet" href="../udf/superorganisms/menu/s-menu.css" />
+    <link rel="stylesheet" href="../udf/superorganisms/footer/s-footer.css" />
+  </head>
+  <body data-reading-page="Статья deFindings">
+    <header class="topbar s-menu article-topbar">
+      <div class="pill nav-left">
+        <a href="./journal.html">Журнал</a>
+        <a href="./gallery.html">Галерея</a>
+      </div>
+      <a class="logo" href="../index.html" aria-label="deFindings">
+        <img class="logo-mark" src="../udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
+        <span class="visually-hidden">deFindings</span>
+      </a>
+      <div class="pill nav-right">
+        <a href="./newsletter.html">Подписаться</a>
+        <a href="../index.html#issue">Печатный выпуск</a>
+        <a href="./sphere.html">Фото-шар</a>
+      </div>
+    </header>
+
+    <main class="article-page">
+      <section class="article-hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content section">
+          <p class="article-author" id="articleAuthor"></p>
+          <h1 id="articleTitle"></h1>
+          <h2 id="articleSubtitle"></h2>
+          <p class="article-meta" id="articleMeta"></p>
+        </div>
+
+      </section>
+
+      <section class="article-body section">
+        <div class="lede" id="lede"></div>
+        <div class="qa-list" id="qaList"></div>
+
+        <div class="media-row" id="mediaRowA"></div>
+        <div class="media-wide" id="mediaWideA"></div>
+
+        <blockquote class="quote-block">
+          <p id="quoteText"></p>
+          <cite id="quoteAuthor"></cite>
+        </blockquote>
+
+        <div class="qa-list" id="qaListB"></div>
+        <div class="media-row" id="mediaRowB"></div>
+        <div class="media-wide" id="mediaWideB"></div>
+      </section>
+
+      <section class="article-info section">
+        <div>
+          <h3>Дополнительно</h3>
+          <ul id="infoLinks"></ul>
+        </div>
+        <div>
+          <h3>О практике</h3>
+          <p id="aboutText"></p>
+        </div>
+      </section>
+
+      <section class="next-article section">
+        <a id="nextLink" class="next-circle a-arrow-button-xl" href="#" aria-label="Следующая статья"></a>
+        <p>Читать дальше</p>
+        <h3 id="nextTitle"></h3>
+      </section>
+
+    </main>
+
+    <div class="read-indicator a-sticky-scroll-wrap">
+      <div class="read-pill a-sticky-scroll">
+        <span class="read-rec a-sticky-scroll__rec" aria-hidden="true"></span>
+        <span class="read-content a-sticky-scroll__content">
+          <span class="read-dot a-sticky-scroll__dot" aria-hidden="true"></span>
+          <span class="read-text a-sticky-scroll__text">
+            <span class="read-prefix a-sticky-scroll__prefix">Вы читаете</span>
+            <span class="read-current a-sticky-scroll__current">«Статья deFindings»</span>
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <footer class="footer s-footer">
+      <div class="footer-grid">
+        <div>
+          <h4>Смотрите</h4>
+          <a href="./journal.html">Журнал</a>
+          <a href="./gallery.html">Галерея</a>
+        </div>
+        <div>
+          <h4>Узнайте больше</h4>
+          <a href="../index.html">О проекте</a>
+        </div>
+        <div>
+          <h4>Подписывайтесь</h4>
+          <a href="./newsletter.html">Рассылка</a>
+        </div>
+        <div>
+          <h4>Другие медиумы</h4>
+          <a class="footer-link-icon" href="https://t.me/defindings">
+            <img src="../udf/quarks/icons/q-icon-telegram-24-black.svg" alt="" aria-hidden="true" />
+            <span>Telegram</span>
+          </a>
+          <a href="https://www.linkedin.com/in/arkhipovau/">LinkedIn</a>
+        </div>
+        <div>
+          <h4>Реализация проекта</h4>
+          <a href="https://arkhipovau.xyz/">Юлия Архипова</a>
+          <a href="https://t.me/dayglobal">Куратор — Захар День</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 — 2026 deFindings</span>
+        <span>HSE Art&Design School</span>
+      </div>
+    </footer>
+
+    <script src="./article.js"></script>
+    <script defer src="../udf/molecules/mail-form/m-mail-form.js"></script>
+    <script defer src="../udf/superorganisms/menu/menu-overlay.js"></script>
+    <script defer src="../udf/superorganisms/menu/s-menu.js"></script>
+    <script defer src="../udf/superorganisms/footer/s-footer.js"></script>
+    <script defer src="../javascripts/sticky-scroll.js"></script>
+    <script defer src="../javascripts/micro-animations.js"></script>
+  </body>
+</html>

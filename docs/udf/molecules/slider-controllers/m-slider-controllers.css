@@ -1,0 +1,18 @@
+.m-slider-controllers {
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  width: 288px;
+  height: 40px;
+}
+
+.m-slider-controllers .a-slider {
+  width: 200px;
+}
+
+.m-slider-controllers .a-slider__dot:nth-of-type(-n+3),
+.m-slider-controllers .a-slider__dot:nth-last-of-type(-n+3) {
+  display: none;
+}

@@ -1,0 +1,172 @@
+.gallery-page {
+  padding-top: 40px;
+}
+
+.gallery-hero {
+  min-height: 452px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 56px;
+}
+
+.gallery-hero h1 {
+  margin: 0;
+  text-align: center;
+  font-size: clamp(36px, 7.8vw, 80px);
+  line-height: 1;
+  font-weight: 400;
+}
+
+.view-switch {
+  display: flex;
+  gap: 4px;
+}
+
+.switch-btn {
+  flex: 1;
+  height: 40px;
+  border: 0;
+  border-radius: 100px;
+  background: var(--color-outside-elements);
+  color: var(--color-dark-grey);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.switch-btn.is-active {
+  background: var(--color-coloring-light-blue);
+  color: var(--color-black);
+}
+
+.switch-icon {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: var(--grid-gutter);
+  padding-bottom: 120px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-neutral-surface);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.24);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.gallery-item .go {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  pointer-events: none;
+}
+
+.gallery-item .go.a-arrow-button {
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+}
+
+.gallery-item.tall {
+  aspect-ratio: 218 / 272;
+}
+
+.gallery-item.wide {
+  aspect-ratio: 218 / 145;
+}
+
+.gallery-slider {
+  padding-bottom: 120px;
+  display: flex;
+  gap: var(--grid-gutter);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.gallery-slide {
+  min-width: min(860px, var(--grid-content-width));
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.gallery-slide img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-links {
+  padding-bottom: 120px;
+}
+
+.issue-card {
+  background: var(--color-coloring-dark-grey);
+  color: var(--color-white);
+  min-height: 683px;
+}
+
+.issue-card .btn {
+  background: var(--color-light-grey);
+  color: var(--color-black);
+}
+
+@media (max-width: 1200px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery-page {
+    padding-top: 16px;
+  }
+
+  .gallery-hero {
+    min-height: 320px;
+    gap: 24px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gallery-slide {
+    min-width: var(--grid-content-width);
+  }
+
+  .gallery-links {
+    grid-template-columns: 1fr;
+  }
+
+  .issue-card {
+    min-height: 420px;
+  }
+}

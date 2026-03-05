@@ -1,0 +1,42 @@
+/* A_ImageJournalLink — clickable image card with arrow overlay
+ *
+ * Container: fixed aspect-ratio 440/458 (~0.96).
+ * Image is bottom-aligned; its height varies by type:
+ *   --l  100%    (fills container)
+ *   --m  80.79%  (370 / 458)
+ *   --s  70.31%  (322 / 458)
+ *
+ * Ratios are identical at every breakpoint (1440/1024/768/375),
+ * so no media queries needed.
+ */
+
+.a-image-journal-link {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  aspect-ratio: 440 / 458;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+/* Type variants — image height as percentage of container */
+.a-image-journal-link--l .q-image-journal {
+  height: 100%;
+}
+
+.a-image-journal-link--m .q-image-journal {
+  height: 80.79%;
+}
+
+.a-image-journal-link--s .q-image-journal {
+  height: 70.31%;
+}
+
+/* Arrow button positioning (reuses existing a-arrow-button--corner atom) */
+.a-image-journal-link .a-arrow-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  pointer-events: none;
+}

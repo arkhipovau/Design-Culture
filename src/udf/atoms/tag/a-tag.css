@@ -1,0 +1,55 @@
+.a-tag {
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 40px;
+  padding: 9px 28px;
+  border: 0;
+  border-radius: 100px;
+  background: var(--color-outside-elements);
+  color: var(--color-dark-grey);
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 120%;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 160ms ease, color 160ms ease, opacity 160ms ease, transform 100ms ease;
+}
+
+.a-tag:hover:not(:disabled):not(.is-disabled):not(.is-active):not(.is-enabled),
+.a-tag.is-hover:not(.is-active):not(.is-enabled) {
+  background: var(--color-medium-grey);
+  color: var(--color-black);
+}
+
+.a-tag:active:not(:disabled):not(.is-disabled):not(.is-enabled),
+.a-tag.is-pressed:not(.is-enabled) {
+  transform: translateY(0.5px);
+}
+
+.a-tag.is-active,
+.a-tag[aria-pressed='true'] {
+  background: var(--color-coloring-light-green);
+  color: var(--color-black);
+}
+
+.a-tag:disabled,
+.a-tag[aria-disabled='true'],
+.a-tag.is-disabled,
+.a-tag.is-unable {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: default;
+}
+
+.a-tag.is-enabled,
+.a-tag[aria-enabled='true'] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: default;
+}

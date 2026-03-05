@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Рассылка — deFindings</title>
+    <link rel="stylesheet" href="../stylesheets/index.css" />
+    <link rel="stylesheet" href="../udf/tokens/colors.css" />
+    <link rel="stylesheet" href="../udf/tokens/typography.css" />
+    <link rel="stylesheet" href="./newsletter.css" />
+    <link rel="stylesheet" href="../stylesheets/micro-animations.css" />
+    <link rel="stylesheet" href="../udf/atoms/arrow-buttons/a-arrow-buttons.css" />
+    <link rel="stylesheet" href="../udf/atoms/sticky-scroll/a-sticky-scroll.css" />
+    <link rel="stylesheet" href="../udf/atoms/mail-input/a-mail-input.css" />
+    <link rel="stylesheet" href="../udf/molecules/mail-form/m-mail-form.css" />
+    <link rel="stylesheet" href="../udf/superorganisms/menu/s-menu.css" />
+    <link rel="stylesheet" href="../udf/superorganisms/footer/s-footer.css" />
+  </head>
+  <body data-reading-page="Рассылка deFindings">
+    <header class="topbar s-menu newsletter-topbar">
+      <div class="pill nav-left">
+        <a href="./journal.html">Журнал</a>
+        <a href="./gallery.html">Галерея</a>
+      </div>
+      <a class="logo" href="../index.html" aria-label="deFindings">
+        <img class="logo-mark" src="../udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
+        <span class="visually-hidden">deFindings</span>
+      </a>
+      <div class="pill nav-right">
+        <a href="./newsletter.html">Подписаться</a>
+        <a href="../index.html#issue">Печатный выпуск — Предзаказ</a>
+        <a href="./sphere.html">Фото-шар</a>
+      </div>
+    </header>
+
+    <main class="newsletter-page">
+      <section class="newsletter-spacer section"></section>
+
+      <section class="newsletter-block section">
+        <div class="newsletter-inner">
+          <h1>Ежемесячная рассылка deFindings о людях, процессах и вещах, которые делают дизайн осмысленным.</h1>
+          <div class="newsletter-subscribe">
+            <p>Подписаться на рассылку</p>
+            <form class="newsletter-form m-mail-form" data-state="default" action="#" method="post" novalidate>
+              <div class="m-mail-form__lead">
+                <span class="m-mail-form__dot" aria-hidden="true"></span>
+                <label for="newsletter-email-page" class="visually-hidden">Ваш email</label>
+                <input
+                  class="a-mail-input"
+                  data-state="default"
+                  id="newsletter-email-page"
+                  type="email"
+                  name="email"
+                  placeholder="Ваш email"
+                  required
+                />
+              </div>
+              <button class="m-mail-form__submit a-arrow-button a-arrow-button--right" type="submit" aria-label="Отправить"></button>
+              <p class="m-mail-form__hint" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer s-footer">
+      <div class="footer-grid">
+        <div>
+          <h4>Смотрите</h4>
+          <a href="./journal.html">Журнал</a>
+          <a href="./gallery.html">Галерея</a>
+        </div>
+        <div>
+          <h4>Узнайте больше</h4>
+          <a href="../index.html">О проекте</a>
+        </div>
+        <div>
+          <h4>Подписывайтесь</h4>
+          <a href="./newsletter.html">Рассылка</a>
+        </div>
+        <div>
+          <h4>Другие медиумы</h4>
+          <a href="https://t.me/defindings">Telegram</a>
+          <a href="https://www.linkedin.com/in/arkhipovau/">LinkedIn</a>
+        </div>
+        <div>
+          <h4>Реализация проекта</h4>
+          <a href="https://arkhipovau.xyz/">Юлия Архипова</a>
+          <a href="https://t.me/dayglobal">Куратор — Захар День</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 — 2026 deFindings</span>
+        <span>HSE Art&Design School</span>
+      </div>
+    </footer>
+
+    <div class="read-indicator a-sticky-scroll-wrap">
+      <div class="read-pill a-sticky-scroll">
+        <span class="read-rec a-sticky-scroll__rec" aria-hidden="true"></span>
+        <span class="read-content a-sticky-scroll__content">
+          <span class="read-dot a-sticky-scroll__dot" aria-hidden="true"></span>
+          <span class="read-text a-sticky-scroll__text">
+            <span class="read-prefix a-sticky-scroll__prefix">Вы читаете</span>
+            <span class="read-current a-sticky-scroll__current">«Рассылка deFindings»</span>
+          </span>
+        </span>
+      </div>
+    </div>
+    <script defer src="../udf/molecules/mail-form/m-mail-form.js"></script>
+    <script defer src="../udf/superorganisms/menu/menu-overlay.js"></script>
+    <script defer src="../udf/superorganisms/menu/s-menu.js"></script>
+    <script defer src="../udf/superorganisms/footer/s-footer.js"></script>
+    <script defer src="../javascripts/sticky-scroll.js"></script>
+    <script defer src="../javascripts/micro-animations.js"></script>
+  </body>
+</html>

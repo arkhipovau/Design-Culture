@@ -1,0 +1,45 @@
+:root {
+  /* Base */
+  --color-black: #212121;
+  --color-light-grey: #fafafa;
+  --color-coloring-grey: #e9e8e9;
+
+  /* Accent */
+  --color-coloring-green: #008012;
+  --color-coloring-violet: #6956fd;
+  --color-coloring-red: #714043;
+  --color-coloring-light-green: #bfec02;
+  --color-coloring-orange: #fa481e;
+  --color-coloring-dark-grey: #2b2b2b;
+  --color-coloring-light-blue: #cbe2f3;
+
+  /* UI */
+  --color-elements: #f4f4f4;
+  --color-elements-rgb: 244 244 244;
+  --opacity-elements: 0.64;
+  --color-elements-64: rgba(244, 244, 244, 0.64);
+  --color-elements-72: rgba(244, 244, 244, 0.72);
+
+  --color-animated-text: #e7e7e7;
+  --color-outside-elements: #eeeeee;
+  --color-dark-grey: #818181;
+  --color-secondary-white: #ffffff;
+  --opacity-secondary-white: 0.5;
+  --color-white: #ffffff;
+  --color-medium-grey: #C8C8C8;
+
+  /* Utility neutrals used by current layouts */
+  --color-neutral-caption: #565656;
+  --color-neutral-scroll-track: #d9d9d9;
+  --color-neutral-surface: #efefef;
+  --color-neutral-gradient-a: #ecebec;
+  --color-neutral-gradient-b: #d8d8d8;
+
+  /* Legacy aliases used in project CSS */
+  --bg: var(--color-light-grey);
+  --paper: var(--color-coloring-grey);
+  --ink: var(--color-black);
+  --muted: var(--color-dark-grey);
+  --line: var(--color-animated-text);
+  --pill: var(--color-elements-72);
+}

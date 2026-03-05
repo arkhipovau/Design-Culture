@@ -1,0 +1,9 @@
+/* Q_ImageJournal — image quark for journal/interview cards */
+
+.q-image-journal {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0;
+}

@@ -1,0 +1,62 @@
+.q-findings-overlay {
+  position: fixed;
+  top: 39px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: var(--grid-content-width);
+  height: 677px;
+  z-index: 2;
+  pointer-events: none;
+  mix-blend-mode: exclusion;
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    var(--color-coloring-grey) 1px,
+    transparent 1.1px
+  );
+  background-repeat: repeat;
+  background-size: calc((100% - 2px) / 6) 225px;
+  opacity: 1;
+}
+
+.q-findings-dot {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.q-findings-dot--10-white {
+  width: 10px;
+  height: 10px;
+  background-image: url("./q-findings-dot-10-white.svg");
+}
+
+.q-findings-dot--10-light-green {
+  width: 10px;
+  height: 10px;
+  background-image: url("./q-findings-dot-10-light-green.svg");
+}
+
+.q-findings-dot--10-violet {
+  width: 10px;
+  height: 10px;
+  background-image: url("./q-findings-dot-10-violet.svg");
+}
+
+.q-findings-dot--2-dark-grey {
+  width: 2px;
+  height: 2px;
+  background-image: url("./q-findings-dot-2-dark-grey.svg");
+}
+
+.q-findings-dot--2-coloring-grey {
+  width: 2px;
+  height: 2px;
+  background-image: url("./q-findings-dot-2-coloring-grey.svg");
+}
+
+@media (max-width: 1439px) {
+  .q-findings-overlay {
+    display: none;
+  }
+}

@@ -1,0 +1,82 @@
+.a-arrow-button {
+  --a-arrow-bg: var(--color-outside-elements);
+  --a-arrow-icon-default: none;
+  --a-arrow-icon-active: none;
+  --a-arrow-icon-current: var(--a-arrow-icon-default);
+
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--a-arrow-bg);
+  mix-blend-mode: normal;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  line-height: 0;
+  transition: background-color 160ms ease, transform 100ms ease, opacity 160ms ease;
+}
+
+.a-arrow-button::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: var(--a-arrow-icon-current) no-repeat center / 16px 16px;
+}
+
+.a-arrow-button:hover:not(:disabled) {
+  --a-arrow-bg: var(--color-medium-grey);
+}
+
+.a-arrow-button:active:not(:disabled),
+.a-arrow-button.is-pressed {
+  --a-arrow-bg: var(--color-black);
+  --a-arrow-icon-current: var(--a-arrow-icon-active);
+  transform: translateY(0.5px);
+}
+
+.a-arrow-button:disabled,
+.a-arrow-button[aria-disabled="true"],
+.a-arrow-button.is-disabled {
+  opacity: 0.4;
+  cursor: default;
+  pointer-events: none;
+}
+
+.a-arrow-button--corner {
+  --a-arrow-icon-default: url("../../quarks/icons/q-icon-arrow-corner-16-black.svg");
+  --a-arrow-icon-active: url("../../quarks/icons/q-icon-arrow-corner-16-white.svg");
+}
+
+.a-arrow-button--left {
+  --a-arrow-icon-default: url("../../quarks/icons/q-icon-arrow-left-16-black.svg");
+  --a-arrow-icon-active: url("../../quarks/icons/q-icon-arrow-left-16-white.svg");
+}
+
+.a-arrow-button--right {
+  --a-arrow-icon-default: url("../../quarks/icons/q-icon-arrow-right-16-black.svg");
+  --a-arrow-icon-active: url("../../quarks/icons/q-icon-arrow-right-16-white.svg");
+}
+
+/* Arrow up has inverted state logic from Figma spec */
+.a-arrow-button--up {
+  --a-arrow-bg: var(--color-black);
+  --a-arrow-icon-default: url("../../quarks/icons/q-icon-arrow-up-16-white.svg");
+  --a-arrow-icon-active: url("../../quarks/icons/q-icon-arrow-up-16-black.svg");
+  --a-arrow-icon-current: var(--a-arrow-icon-default);
+}
+
+.a-arrow-button--up:hover:not(:disabled) {
+  --a-arrow-bg: var(--color-dark-grey);
+}
+
+.a-arrow-button--up:active:not(:disabled),
+.a-arrow-button--up.is-pressed {
+  --a-arrow-bg: var(--color-outside-elements);
+  --a-arrow-icon-current: var(--a-arrow-icon-active);
+}

@@ -1,0 +1,41 @@
+.a-arrow-button-xl {
+  box-sizing: border-box;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--color-coloring-orange);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 160ms ease, opacity 160ms ease, transform 120ms ease;
+}
+
+.a-arrow-button-xl::before {
+  content: '';
+  width: 100px;
+  height: 100px;
+  background: url('../../quarks/icons/q-icon-arrow-right-100-white.svg') center / contain no-repeat;
+}
+
+.a-arrow-button-xl:hover:not(:disabled):not(.is-disabled),
+.a-arrow-button-xl.is-hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+    var(--color-coloring-orange);
+}
+
+.a-arrow-button-xl:active:not(:disabled):not(.is-disabled),
+.a-arrow-button-xl.is-pressed {
+  background: var(--color-black);
+  transform: translateY(1px);
+}
+
+.a-arrow-button-xl:disabled,
+.a-arrow-button-xl[aria-disabled='true'],
+.a-arrow-button-xl.is-disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}

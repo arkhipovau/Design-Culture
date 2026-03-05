@@ -1,0 +1,103 @@
+.a-sticky-scroll-wrap,
+.read-indicator {
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  bottom: calc(12px + constant(safe-area-inset-bottom));
+  bottom: calc(12px + env(safe-area-inset-bottom));
+  display: flex;
+  justify-content: center;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.a-sticky-scroll,
+.read-pill {
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 56px;
+  gap: 12px;
+  isolation: isolate;
+  width: min(439px, 100%);
+  height: 40px;
+  background: var(--color-elements-64);
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.04), 0 12px 38px rgba(0, 0, 0, 0.04),
+    0 5px 46px rgba(0, 0, 0, 0.04), 0 5px 15px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 75px;
+  overflow: hidden;
+}
+
+.a-sticky-scroll__rec,
+.read-rec {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 40px;
+  background: var(--color-outside-elements);
+  border-radius: 0;
+  z-index: 0;
+}
+
+.a-sticky-scroll__content,
+.read-content {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-width: 0;
+  width: 100%;
+}
+
+.a-sticky-scroll__dot,
+.read-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-coloring-violet);
+  flex: none;
+}
+
+.a-sticky-scroll__text,
+.read-text {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 8px;
+  min-width: 0;
+  white-space: nowrap;
+  font-family: Arial, sans-serif;
+  font-size: var(--type-button-s);
+  line-height: var(--type-button-s-lh);
+}
+
+.a-sticky-scroll__prefix,
+.read-prefix {
+  color: var(--color-dark-grey);
+  font-weight: 400;
+  white-space: nowrap;
+  flex: none;
+}
+
+.a-sticky-scroll__current,
+.read-current {
+  color: var(--color-black);
+  display: inline-block;
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: min(62vw, 286px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom;
+}

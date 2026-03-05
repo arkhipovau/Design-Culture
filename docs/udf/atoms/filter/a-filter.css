@@ -1,0 +1,60 @@
+.a-filter {
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 0 0 40px;
+  width: 40px;
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  min-height: 40px;
+  max-height: 40px;
+  padding: 0;
+  border: 0;
+  border-radius: 100px;
+  background: var(--color-outside-elements);
+  cursor: pointer;
+  transition: background-color 160ms ease, opacity 160ms ease, transform 100ms ease, filter 160ms ease;
+}
+
+.a-filter:hover:not(:disabled):not(.is-disabled):not(.is-unable):not(.is-enabled),
+.a-filter.is-hover:not(.is-enabled) {
+  background: var(--color-medium-grey);
+}
+
+.a-filter:active:not(:disabled):not(.is-disabled):not(.is-unable):not(.is-enabled),
+.a-filter.is-pressed:not(.is-enabled) {
+  background: var(--color-black);
+  transform: translateY(0.5px);
+}
+
+.a-filter:disabled,
+.a-filter[aria-disabled='true'],
+.a-filter.is-disabled,
+.a-filter.is-unable {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: default;
+}
+
+.a-filter.is-enabled,
+.a-filter[aria-enabled='true'] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: default;
+}
+
+.a-filter__icon {
+  width: 16px;
+  height: 16px;
+  display: block;
+  flex: none;
+}
+
+.a-filter:active:not(:disabled):not(.is-disabled):not(.is-unable):not(.is-enabled) .a-filter__icon,
+.a-filter.is-pressed:not(.is-enabled) .a-filter__icon {
+  filter: brightness(0) invert(1);
+}

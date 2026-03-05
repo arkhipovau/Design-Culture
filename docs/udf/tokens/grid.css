@@ -1,0 +1,40 @@
+:root {
+  /* Breakpoint policy:
+     - 1440..1919: desktop base rail (locked)
+     - 1920+: wide rail (stretch)
+  */
+  --grid-columns: 12;
+  --grid-gutter: 4px;
+  --grid-margin: 56px;
+  --grid-content-width-fluid: calc(100% - (var(--grid-margin) * 2));
+  --grid-content-width-locked: min(1330px, var(--grid-content-width-fluid));
+  --grid-content-width-wide: var(--grid-content-width-fluid);
+  --grid-content-width: var(--grid-content-width-locked);
+
+  /* Backward-compatible alias for existing layout rules. */
+  --maxw: var(--grid-content-width);
+}
+
+@media (min-width: 1920px) {
+  :root {
+    --grid-content-width: var(--grid-content-width-wide);
+  }
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --grid-columns: 12;
+    --grid-gutter: 4px;
+    --grid-margin: 28px;
+    --grid-content-width: var(--grid-content-width-fluid);
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --grid-columns: 4;
+    --grid-gutter: 4px;
+    --grid-margin: 10px;
+    --grid-content-width: var(--grid-content-width-fluid);
+  }
+}
