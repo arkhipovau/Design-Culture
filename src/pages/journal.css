@@ -52,8 +52,7 @@
   background: var(--color-coloring-dark-grey);
   color: var(--color-white);
   min-height: 683px;
-  justify-content: flex-end;
-  padding-bottom: 60px;
+  justify-content: center;
 }
 
 .issue-card .btn {
