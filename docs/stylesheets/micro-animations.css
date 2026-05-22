@@ -42,14 +42,12 @@ html {
   }
 }
 
-.a-button,
 .pill,
 .chip,
 .switch-btn {
   transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 280ms ease;
 }
 
-.a-button:hover,
 .pill:hover,
 .chip:hover,
 .switch-btn:hover {
@@ -117,7 +115,6 @@ html {
   }
 
   .topbar,
-  .a-button,
   .pill,
   .chip,
   .switch-btn,
