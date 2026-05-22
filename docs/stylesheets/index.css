@@ -44,6 +44,14 @@ img[src^="../udf/quarks/icons/"] {
   max-width: none;
 }
 
+.interview-portrait img {
+  width: 200px !important;
+  max-width: 200px !important;
+  height: 267px !important;
+  max-height: 267px !important;
+  object-fit: cover;
+}
+
 .section {
   width: var(--grid-content-width);
   margin: 0 auto;
