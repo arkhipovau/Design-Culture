@@ -53,7 +53,6 @@
   const revealSelectors = [
     'main section:not(.interviews-journal):not(.journal-hero):not(.gallery-hero):not(.interview-hero):not(:has(.gallery-grid))',
     '.card',
-    '.m-split-card',
     '.highlight',
 
     '.gallery-slide',
