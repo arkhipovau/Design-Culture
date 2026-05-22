@@ -18,33 +18,30 @@
     <link rel="stylesheet" href="./udf/atoms/mail-input/a-mail-input.css" />
     <link rel="stylesheet" href="./udf/molecules/journal-card/m-journal-card.css" />
     <link rel="stylesheet" href="./udf/molecules/mail-form/m-mail-form.css" />
+    <link rel="stylesheet" href="./udf/molecules/split-links/m-split-links.css" />
     <link rel="stylesheet" href="./udf/molecules/slider-controllers/m-slider-controllers.css" />
     <link rel="stylesheet" href="./udf/superorganisms/menu/s-menu.css" />
     <link rel="stylesheet" href="./udf/superorganisms/footer/s-footer.css" />
+    <!-- MailerLite Universal tracking — pairs with the m-mail-form POST in m-mail-form.js -->
+    <script>
+      (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[]).push(arguments);},l=d.createElement(e),l.async=1,l.src=u,n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})(window,document,"script","https://assets.mailerlite.com/js/universal.js","ml");
+      ml("account", "2370552");
+    </script>
   </head>
   <body data-reading-page="Медиа о дизайн-культуре deFindings">
     <div class="q-findings-overlay" aria-hidden="true"></div>
-    <header class="topbar s-menu">
-      <div class="pill nav-left">
-        <a href="./pages/journal.html">Журнал</a>
-        <a href="./pages/gallery.html">Галерея</a>
-      </div>
+    <header class="topbar topbar--menu s-menu">
       <a class="logo" href="#top" aria-label="deFindings">
         <img class="logo-mark" src="./udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
         <span class="visually-hidden">deFindings</span>
       </a>
-      <div class="pill nav-right">
-        <a href="./pages/newsletter.html">Подписаться</a>
-        <a href="#issue">Печатный выпуск</a>
-        <a href="./pages/sphere.html">Фото-шар</a>
-      </div>
     </header>
 
     <main id="top">
       <section class="hero-sphere" data-reading="Медиа о дизайн-культуре deFindings">
         <iframe
           class="sphere-frame"
-          src="./pages/sphere.html?embed=1&v=20260305-1&sphereScale=0.8"
+          src="./pages/sphere-embed.html?v=20260521-5&sphereScale=0.8"
           title="Интерактивная сфера deFindings"
           loading="eager"
         ></iframe>
@@ -52,28 +49,24 @@
 
       <section class="hero-intro section" data-reading="Медиа о дизайн-культуре deFindings">
         <div class="hero-copy">
-          <h1>deFindings — медиа о дизайн-культуре.</h1>
-          <p>
-            Мы разговариваем с дизайнерами из студий, продуктовых команд и фриланса и показываем,
-            как ценности трансформируются в решения.
-          </p>
-        </div>
-        <div class="hero-float hero-float-a">
-          <img src="./images/1.png" alt="" />
-        </div>
-        <div class="hero-float hero-float-b">
-          <img src="./images/2.png" alt="" />
-        </div>
-        <div class="hero-float hero-float-c">
-          <img src="./images/3.png" alt="" />
+          <div class="hero-layout">
+            <div class="hero-under" aria-hidden="true">
+              <h1><span>deFindings&nbsp;—</span> <span>медиа</span> <span>о</span><span class="hero-pill-slot"></span><span>дизайн-культуре.</span></h1>
+              <p><span>Мы</span> <span>разговариваем</span> <span>с</span> <span>дизайнерами</span><span class="hero-pill-slot"></span><span>из</span> <span>студий,</span><br class="hero-break" /><span>продуктовых</span> <span>команд</span> <span>и</span> <span>фриланса</span> <span>и</span> <span>показываем,</span><br class="hero-break" /><span>как</span> <span>ценности</span><span class="hero-pill-slot"></span><span>трансформируются</span> <span>в</span> <span>решения.</span></p>
+            </div>
+            <div class="hero-over">
+              <h1><span class="hero-word">deFindings&nbsp;—</span> <span class="hero-word">медиа</span> <span class="hero-word">о</span><span class="hero-pill hero-pill-a"><span class="hero-pill-inner"><img src="./images/3.png" alt="" /></span></span><span class="hero-word">дизайн-культуре.</span></h1>
+              <p><span class="hero-word">Мы</span> <span class="hero-word">разговариваем</span> <span class="hero-word">с</span> <span class="hero-word">дизайнерами</span><span class="hero-pill hero-pill-b"><span class="hero-pill-inner"><img src="./images/1.png" alt="" /></span></span><span class="hero-word">из</span> <span class="hero-word">студий,</span><br class="hero-break" /><span class="hero-word">продуктовых</span> <span class="hero-word">команд</span> <span class="hero-word">и</span> <span class="hero-word">фриланса</span> <span class="hero-word">и</span> <span class="hero-word">показываем,</span><br class="hero-break" /><span class="hero-word">как</span> <span class="hero-word">ценности</span><span class="hero-pill hero-pill-c"><span class="hero-pill-inner"><img src="./images/2.png" alt="" /></span></span><span class="hero-word">трансформируются</span> <span class="hero-word">в</span> <span class="hero-word">решения.</span></p>
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="journal" class="section interviews" data-reading="Журнал deFindings">
         <div class="cards-grid">
-          <article class="m-journal-card" data-href="./pages/article.html?slug=aleksey-pyankov">
-            <a class="a-image-journal-link a-image-journal-link--l" href="./pages/article.html?slug=aleksey-pyankov">
-              <img class="q-image-journal" src="./images/Алексей Пьянков.jpg" alt="Алексей Пьянков" />
+          <article class="m-journal-card" data-href="./pages/interviews/aleksey-pyankov.html">
+            <a class="a-image-journal-link a-image-journal-link--m" href="./pages/interviews/aleksey-pyankov.html">
+              <img class="q-image-journal" src="./images/Алексей Пьянков.jpg" alt="Алексей Пьянков" loading="eager" fetchpriority="high" decoding="async" />
               <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
             </a>
             <div class="m-journal-card__content">
@@ -86,9 +79,9 @@
             </div>
           </article>
 
-          <article class="m-journal-card" data-href="./pages/article.html?slug=anastasia-sycheva">
-            <a class="a-image-journal-link a-image-journal-link--m" href="./pages/article.html?slug=anastasia-sycheva">
-              <img class="q-image-journal" src="./images/Анастасия Сычева.jpg" alt="Анастасия Сычева" />
+          <article class="m-journal-card" data-href="./pages/interviews/anastasia-sycheva.html">
+            <a class="a-image-journal-link a-image-journal-link--l" href="./pages/interviews/anastasia-sycheva.html">
+              <img class="q-image-journal" src="./images/Анастасия Сычева.jpg" alt="Анастасия Сычева" loading="eager" fetchpriority="high" decoding="async" />
               <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
             </a>
             <div class="m-journal-card__content">
@@ -101,9 +94,9 @@
             </div>
           </article>
 
-          <article class="m-journal-card" data-href="./pages/article.html?slug=anya-golub">
-            <a class="a-image-journal-link a-image-journal-link--s" href="./pages/article.html?slug=anya-golub">
-              <img class="q-image-journal" src="./images/Аня Голубь.jpg" alt="Аня Голубь" />
+          <article class="m-journal-card" data-href="./pages/interviews/anya-golub.html">
+            <a class="a-image-journal-link a-image-journal-link--s" href="./pages/interviews/anya-golub.html">
+              <img class="q-image-journal" src="./images/Аня Голубь.jpg" alt="Аня Голубь" loading="eager" fetchpriority="high" decoding="async" />
               <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
             </a>
             <div class="m-journal-card__content">
@@ -116,24 +109,9 @@
             </div>
           </article>
 
-          <article class="m-journal-card" data-href="./pages/article.html?slug=artem-gerts">
-            <a class="a-image-journal-link a-image-journal-link--l" href="./pages/article.html?slug=artem-gerts">
-              <img class="q-image-journal" src="./images/Артём Герц.jpg" alt="Артём Герц" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Артём Герц</h3>
-                <h4 class="m-journal-card__subtitle">Личный манифест и авторский стиль в айдентике</h4>
-              </div>
-              <p class="m-journal-card__description">Артём рассказывает, как формулирует собственный манифест в брендинге, зачем дизайнеру выстраивать авторский стиль и как не потеряться между запросами студии и личным видением.</p>
-              <div class="m-journal-card__meta">Россия • Москва • Студия</div>
-            </div>
-          </article>
-
-          <article class="m-journal-card" data-href="./pages/article.html?slug=artem-tarasov-taradash">
-            <a class="a-image-journal-link a-image-journal-link--m" href="./pages/article.html?slug=artem-tarasov-taradash">
-              <img class="q-image-journal" src="./images/Артём Тарасов и Артём Тарадаш.jpg" alt="Артём Тарасов и Артём Тарадаш" />
+          <article class="m-journal-card" data-href="./pages/interviews/togetherwithyou.html">
+            <a class="a-image-journal-link a-image-journal-link--m" href="./pages/interviews/togetherwithyou.html">
+              <img class="q-image-journal" src="./images/Артём Тарасов и Артём Тарадаш.jpg" alt="Артём Тарасов и Артём Тарадаш" loading="eager" fetchpriority="high" decoding="async" />
               <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
             </a>
             <div class="m-journal-card__content">
@@ -146,18 +124,33 @@
             </div>
           </article>
 
-          <article class="m-journal-card" data-href="./pages/article.html?slug=gavril-perov">
-            <a class="a-image-journal-link a-image-journal-link--s" href="./pages/article.html?slug=gavril-perov">
-              <img class="q-image-journal" src="./images/Гаврил Перов.jpg" alt="Гаврил Перов" />
+          <article class="m-journal-card" data-href="./pages/interviews/masha-chern.html">
+            <a class="a-image-journal-link a-image-journal-link--m" href="./pages/interviews/masha-chern.html">
+              <img class="q-image-journal" src="./images/Маша Черн.jpg" alt="Маша Черн" loading="eager" fetchpriority="high" decoding="async" />
               <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
             </a>
             <div class="m-journal-card__content">
               <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Гаврил Перов</h3>
-                <h4 class="m-journal-card__subtitle">Архитектура, город и графический язык</h4>
+                <h3 class="m-journal-card__author">Маша Черн</h3>
+                <h4 class="m-journal-card__subtitle">Коллаборации как новая норма профессии</h4>
               </div>
-              <p class="m-journal-card__description">Разговор о влиянии городской среды и архитектуры на графический дизайн: как Париж, его ритмы и визуальный шум отражаются в интерфейсах и продуктовых решениях.</p>
-              <div class="m-journal-card__meta">Франция • Париж • Продукт</div>
+              <p class="m-journal-card__description">Маша говорит о переходе от одиночной «контролирующей» позиции к совместной работе, где главное — эффект коллабораций, а дизайн‑культура понимается как сеть отношений и общих усилий.</p>
+              <div class="m-journal-card__meta">Германия • Берлин • Продукт</div>
+            </div>
+          </article>
+
+          <article class="m-journal-card" data-href="./pages/interviews/polina-zagumenova.html">
+            <a class="a-image-journal-link a-image-journal-link--l" href="./pages/interviews/polina-zagumenova.html">
+              <img class="q-image-journal" src="./images/Полина Загуменова.jpg" alt="Полина Загуменова" loading="eager" fetchpriority="high" decoding="async" />
+              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
+            </a>
+            <div class="m-journal-card__content">
+              <div class="m-journal-card__header">
+                <h3 class="m-journal-card__author">Полина Загуменова</h3>
+                <h4 class="m-journal-card__subtitle">Как среда меняет дизайн‑взгляд</h4>
+              </div>
+              <p class="m-journal-card__description">Полина описывает путь от московских студий и агентств до берлинского фриланса, показывая, как смена города, языка и визуальной среды радикально меняет оптику дизайнера и запрос к собственным проектам.</p>
+              <div class="m-journal-card__meta">Германия • Берлин • Фриланс</div>
             </div>
           </article>
         </div>
@@ -177,7 +170,7 @@
             работ респондентов. Мы фиксируем как сделано — процессы, решения и роли — и
             показываем это на&nbsp;разворотах, удобных для чтения и изучения.
           </p>
-          <a class="btn" href="https://www.calameo.com/read/008119339762d3db33f24?authid=pJV9q2gR5n3i" target="_blank" rel="noopener noreferrer">Полистать</a>
+          <a class="a-button a-button--m a-button--white" href="https://www.calameo.com/read/008119339762d3db33f24?authid=pJV9q2gR5n3i" target="_blank" rel="noopener noreferrer">Полистать</a>
         </div>
       </section>
 
@@ -219,16 +212,16 @@
         </div>
       </section>
 
-      <section class="section split-links" data-reading="Журнал и Галерея">
-        <a class="split-card journal" href="./pages/journal.html">
+      <section class="section m-split-links m-split-links--after-issue" data-reading="Журнал и Галерея">
+        <a class="m-split-card m-split-card--journal" href="./pages/journal.html">
           <h3>Журнал</h3>
           <p>В Журнале вы можете читать диалоги с дизайнерами.</p>
-          <span class="btn">Читать</span>
+          <span class="a-button a-button--m a-button--white" aria-hidden="true">Читать</span>
         </a>
-        <a class="split-card gallery-link" href="./pages/gallery.html">
+        <a class="m-split-card m-split-card--gallery" href="./pages/gallery.html">
           <h3>Галерея</h3>
           <p>В Галерее вы можете найти избранные работы.</p>
-          <span class="btn">Смотреть</span>
+          <span class="a-button a-button--m a-button--white" aria-hidden="true">Смотреть</span>
         </a>
       </section>
 
@@ -257,14 +250,14 @@
       </section>
     </main>
 
-    <div class="read-indicator a-sticky-scroll-wrap">
-      <div class="read-pill a-sticky-scroll">
-        <span class="read-rec a-sticky-scroll__rec" aria-hidden="true"></span>
-        <span class="read-content a-sticky-scroll__content">
-          <span class="read-dot a-sticky-scroll__dot" aria-hidden="true"></span>
-          <span class="read-text a-sticky-scroll__text">
-            <span class="read-prefix a-sticky-scroll__prefix">Вы читаете</span>
-            <span class="read-current a-sticky-scroll__current">«Медиа о дизайн-культуре deFindings»</span>
+    <div class="a-sticky-scroll-wrap">
+      <div class="a-sticky-scroll">
+        <span class="a-sticky-scroll__rec" aria-hidden="true"></span>
+        <span class="a-sticky-scroll__content">
+          <span class="a-sticky-scroll__dot" aria-hidden="true"></span>
+          <span class="a-sticky-scroll__text">
+            <span class="a-sticky-scroll__prefix">Вы читаете</span>
+            <span class="a-sticky-scroll__current">«Медиа о дизайн-культуре deFindings»</span>
           </span>
         </span>
       </div>
@@ -304,18 +297,7 @@
         <span>HSE Art&Design School</span>
       </div>
     </footer>
-    <script>
-      (function () {
-        document.querySelectorAll('.m-journal-card[data-href]').forEach(function (card) {
-          card.style.cursor = 'pointer';
-          card.addEventListener('click', function (e) {
-            if (e.target.closest('a')) return;
-            window.location.href = card.getAttribute('data-href');
-          });
-        });
-      })();
-
-    </script>
+    <script defer src="./udf/molecules/journal-card/m-journal-card.js"></script>
     <script defer src="./udf/atoms/slider/a-slider.js"></script>
     <script defer src="./udf/molecules/mail-form/m-mail-form.js"></script>
     <script defer src="./udf/superorganisms/menu/menu-overlay.js"></script>
@@ -323,5 +305,6 @@
     <script defer src="./udf/superorganisms/footer/s-footer.js"></script>
     <script defer src="./javascripts/sticky-scroll.js"></script>
     <script defer src="./javascripts/micro-animations.js"></script>
+    <script defer src="./javascripts/card-reveal.js"></script>
   </body>
 </html>

@@ -30,19 +30,19 @@
   }
 
   function ensureIndicator() {
-    var indicator = document.querySelector('.read-indicator');
+    var indicator = document.querySelector('.a-sticky-scroll-wrap');
     if (indicator) return indicator;
 
     indicator = document.createElement('div');
-    indicator.className = 'read-indicator a-sticky-scroll-wrap';
+    indicator.className = 'a-sticky-scroll-wrap';
     indicator.innerHTML =
-      '<div class="read-pill a-sticky-scroll">' +
-      '<span class="read-rec a-sticky-scroll__rec" aria-hidden="true"></span>' +
-      '<span class="read-content a-sticky-scroll__content">' +
-      '<span class="read-dot a-sticky-scroll__dot" aria-hidden="true"></span>' +
-      '<span class="read-text a-sticky-scroll__text">' +
-      '<span class="read-prefix a-sticky-scroll__prefix">Вы читаете</span>' +
-      '<span class="read-current a-sticky-scroll__current"></span>' +
+      '<div class="a-sticky-scroll">' +
+      '<span class="a-sticky-scroll__rec" aria-hidden="true"></span>' +
+      '<span class="a-sticky-scroll__content">' +
+      '<span class="a-sticky-scroll__dot" aria-hidden="true"></span>' +
+      '<span class="a-sticky-scroll__text">' +
+      '<span class="a-sticky-scroll__prefix">Вы читаете</span>' +
+      '<span class="a-sticky-scroll__current"></span>' +
       '</span>' +
       '</span>' +
       '</div>';
@@ -52,8 +52,8 @@
 
   function setupStickyReading() {
     var indicator = ensureIndicator();
-    var current = indicator.querySelector('.read-current');
-    var rec = indicator.querySelector('.read-rec');
+    var current = indicator.querySelector('.a-sticky-scroll__current');
+    var rec = indicator.querySelector('.a-sticky-scroll__rec');
     if (!current || !rec) return;
 
     current.classList.add('sticky-current');

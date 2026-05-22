@@ -12,8 +12,9 @@
 
 .newsletter-block {
   background: var(--color-coloring-grey);
-  padding: clamp(100px, 13vw, 120px) 0;
+  padding: clamp(100px, 13vw, 120px) 24px;
   margin-bottom: 32px;
+  box-sizing: border-box;
 }
 
 .newsletter-inner {
@@ -97,7 +98,7 @@
 
 @media (max-width: 420px) {
   .newsletter-block {
-    width: 100%;
+    padding-inline: 16px;
   }
 
   .newsletter-inner {

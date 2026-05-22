@@ -1,10 +1,7 @@
-import { cp, mkdir, rm, writeFile } from 'node:fs/promises';
-import { watch } from 'node:fs';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+const fs = require('node:fs');
+const fsp = require('node:fs/promises');
+const path = require('node:path');
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 const ROOT = path.resolve(__dirname, '..');
 const SRC = path.join(ROOT, 'src');
 const DOCS = path.join(ROOT, 'docs');
@@ -20,16 +17,18 @@ async function syncDocs() {
 
   syncing = true;
   try {
-    await rm(DOCS, { recursive: true, force: true });
-    await mkdir(DOCS, { recursive: true });
-    await cp(SRC, DOCS, {
+    await fsp.rm(DOCS, { recursive: true, force: true });
+    await fsp.mkdir(DOCS, { recursive: true });
+    await fsp.cp(SRC, DOCS, {
       recursive: true,
       force: true,
       dereference: false,
-      filter: (srcPath) => !srcPath.endsWith('.DS_Store')
+      filter: function (srcPath) {
+        return !srcPath.endsWith('.DS_Store');
+      }
     });
-    await writeFile(path.join(DOCS, '.nojekyll'), '');
-    console.log(`[sync-docs] Synced ${SRC} -> ${DOCS}`);
+    await fsp.writeFile(path.join(DOCS, '.nojekyll'), '');
+    console.log('[sync-docs] Synced ' + SRC + ' -> ' + DOCS);
   } catch (error) {
     console.error('[sync-docs] Sync failed:', error);
     process.exitCode = 1;
@@ -51,9 +50,9 @@ async function main() {
   console.log('[sync-docs] Watching src/ for changes...');
   const debounce = { timer: null };
 
-  watch(SRC, { recursive: true }, () => {
+  fs.watch(SRC, { recursive: true }, function () {
     clearTimeout(debounce.timer);
-    debounce.timer = setTimeout(() => {
+    debounce.timer = setTimeout(function () {
       syncDocs();
     }, 120);
   });

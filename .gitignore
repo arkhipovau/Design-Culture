@@ -2,6 +2,8 @@
 .thumbs
 yarn-error.log
 /node_modules
+/mcp/node_modules
+/mcp/
 /dev_build/*.html
 /dev_build/*.css
 /dev_build/*.js

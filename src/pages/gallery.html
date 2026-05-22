@@ -8,29 +8,26 @@
     <link rel="stylesheet" href="../udf/tokens/colors.css" />
     <link rel="stylesheet" href="../udf/tokens/typography.css" />
     <link rel="stylesheet" href="../udf/atoms/arrow-buttons/a-arrow-buttons.css" />
+    <link rel="stylesheet" href="../udf/atoms/button/a-button.css" />
     <link rel="stylesheet" href="../udf/atoms/sticky-scroll/a-sticky-scroll.css" />
-    <link rel="stylesheet" href="../udf/atoms/mail-input/a-mail-input.css" />
-    <link rel="stylesheet" href="../udf/molecules/mail-form/m-mail-form.css" />
+    <link rel="stylesheet" href="../udf/atoms/slider/a-slider.css" />
+    <link rel="stylesheet" href="../udf/molecules/page-hero/m-page-hero.css" />
+    <link rel="stylesheet" href="../udf/molecules/gallery-card/m-gallery-card.css" />
+    <link rel="stylesheet" href="../udf/molecules/split-links/m-split-links.css" />
     <link rel="stylesheet" href="./gallery.css" />
+    <link rel="stylesheet" href="../udf/superorganisms/gallery-lightbox/s-gallery-lightbox.css" />
     <link rel="stylesheet" href="../stylesheets/micro-animations.css" />
     <link rel="stylesheet" href="../udf/superorganisms/menu/s-menu.css" />
     <link rel="stylesheet" href="../udf/superorganisms/footer/s-footer.css" />
+    <link rel="stylesheet" href="../udf/quarks/findings/q-findings.css" />
   </head>
   <body data-reading-page="Галерея deFindings">
-    <header class="topbar s-menu gallery-topbar">
-      <div class="pill nav-left">
-        <a href="./journal.html">Журнал</a>
-        <a href="./gallery.html">Галерея</a>
-      </div>
+    <div class="q-findings-overlay" aria-hidden="true"></div>
+    <header class="topbar topbar--menu s-menu gallery-topbar">
       <a class="logo" href="../index.html" aria-label="deFindings">
         <img class="logo-mark" src="../udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
         <span class="visually-hidden">deFindings</span>
       </a>
-      <div class="pill nav-right">
-        <a href="./newsletter.html">Подписаться</a>
-        <a href="../index.html#issue">Печатный выпуск — Предзаказ</a>
-        <a href="./sphere.html">Фото-шар</a>
-      </div>
     </header>
 
     <main class="gallery-page">
@@ -53,29 +50,51 @@
         <div id="sliderView" class="gallery-slider" hidden></div>
       </section>
 
-      <section class="section split-links gallery-links">
-        <a class="split-card journal" href="./journal.html">
+      <section class="section m-split-links">
+        <a class="m-split-card m-split-card--journal" href="./journal.html">
           <h3>Журнал</h3>
           <p>В Журнале вы можете читать диалоги с дизайнерами.</p>
-          <span class="btn">Читать</span>
+          <span class="a-button a-button--m a-button--white" aria-hidden="true">Читать</span>
         </a>
-        <a class="split-card issue-card" href="https://www.calameo.com/read/008119339762d3db33f24?authid=pJV9q2gR5n3i">
-          <img class="issue-card__image" src="../images/A_ImagesBook 1.png" alt="Выпуск deFindings №1" />
+        <a class="m-split-card m-split-card--issue" href="https://www.calameo.com/read/008119339762d3db33f24?authid=pJV9q2gR5n3i">
+          <img class="m-split-card__image" src="../images/A_ImagesBook 1.png" alt="Выпуск deFindings №1" />
           <h3>Выпуск deFindings Nº1.</h3>
-          <span class="btn">Предзаказ</span>
+          <span class="a-button a-button--m a-button--white" aria-hidden="true">Пролистать</span>
         </a>
       </section>
 
     </main>
 
-    <div class="read-indicator a-sticky-scroll-wrap">
-      <div class="read-pill a-sticky-scroll">
-        <span class="read-rec a-sticky-scroll__rec" aria-hidden="true"></span>
-        <span class="read-content a-sticky-scroll__content">
-          <span class="read-dot a-sticky-scroll__dot" aria-hidden="true"></span>
-          <span class="read-text a-sticky-scroll__text">
-            <span class="read-prefix a-sticky-scroll__prefix">Вы читаете</span>
-            <span class="read-current a-sticky-scroll__current">«Галерея deFindings»</span>
+    <div class="s-gallery-lightbox" id="galleryLightbox" role="dialog" aria-modal="true" aria-label="Просмотр изображения">
+      <div class="s-gallery-lightbox__backdrop"></div>
+      <button class="s-gallery-lightbox__close" type="button" aria-label="Закрыть">
+        <img src="../udf/quarks/icons/q-icon-close-16-black.svg" alt="" aria-hidden="true" />
+      </button>
+      <div class="s-gallery-lightbox__thumbs" aria-label="Миниатюры изображений"></div>
+      <div class="s-gallery-lightbox__viewport">
+        <figure class="s-gallery-lightbox__figure">
+          <a class="s-gallery-lightbox__image-link" href="#" aria-label="Открыть в статье">
+            <img class="s-gallery-lightbox__image" src="" alt="" />
+          </a>
+          <figcaption class="s-gallery-lightbox__meta">
+            <a class="s-gallery-lightbox__author-link" href="#">
+              <span class="s-gallery-lightbox__caption"></span>
+              <span class="s-gallery-lightbox__author"></span>
+              <span class="s-gallery-lightbox__subtitle"></span>
+            </a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="a-sticky-scroll-wrap">
+      <div class="a-sticky-scroll">
+        <span class="a-sticky-scroll__rec" aria-hidden="true"></span>
+        <span class="a-sticky-scroll__content">
+          <span class="a-sticky-scroll__dot" aria-hidden="true"></span>
+          <span class="a-sticky-scroll__text">
+            <span class="a-sticky-scroll__prefix">Вы читаете</span>
+            <span class="a-sticky-scroll__current">«Галерея deFindings»</span>
           </span>
         </span>
       </div>
@@ -90,7 +109,7 @@
         </div>
         <div>
           <h4>Узнайте больше</h4>
-          <a href="../index.html">О проекте</a>
+          <a href="./about.html">О проекте</a>
         </div>
         <div>
           <h4>Подписывайтесь</h4>
@@ -116,12 +135,13 @@
       </div>
     </footer>
 
+    <script src="./gallery-data.js"></script>
     <script src="./gallery.js"></script>
-    <script defer src="../udf/molecules/mail-form/m-mail-form.js"></script>
     <script defer src="../udf/superorganisms/menu/menu-overlay.js"></script>
     <script defer src="../udf/superorganisms/menu/s-menu.js"></script>
     <script defer src="../udf/superorganisms/footer/s-footer.js"></script>
     <script defer src="../javascripts/sticky-scroll.js"></script>
     <script defer src="../javascripts/micro-animations.js"></script>
+    <script defer src="../javascripts/card-reveal.js"></script>
   </body>
 </html>

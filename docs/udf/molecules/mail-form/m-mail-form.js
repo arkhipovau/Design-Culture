@@ -1,6 +1,39 @@
 (function () {
+  /* MailerLite integration. We POST the email to MailerLite's hosted form
+     endpoint instead of relying on their JS form injection — that lets us
+     keep our own visual form (m-mail-form) while still using their service.
+     Account + form IDs come from the MailerLite dashboard:
+       Account: 2370552
+       Form (data-form code): KHRkLc
+       Form (numeric ID):     188152873386772291 */
+  var MAILERLITE_ACCOUNT = '2370552';
+  var MAILERLITE_FORM = '188152873386772291';
+  var MAILERLITE_ENDPOINT =
+    'https://assets.mailerlite.com/jsonp/' +
+    MAILERLITE_ACCOUNT +
+    '/forms/' +
+    MAILERLITE_FORM +
+    '/subscribe';
+
   function isValidEmail(value) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(value || '').trim());
+  }
+
+  function subscribeToMailerLite(email) {
+    // POST as multipart/form-data so the request is a simple cross-origin
+    // POST that doesn't require a CORS preflight. We use mode: 'no-cors'
+    // because MailerLite's JSONP endpoint doesn't return CORS headers;
+    // we can't read the response body, but the subscription still goes
+    // through (MailerLite handles the confirmation email separately).
+    var body = new FormData();
+    body.append('fields[email]', email);
+    body.append('ml-submit', '1');
+    body.append('anticsrf', 'true');
+    return fetch(MAILERLITE_ENDPOINT, {
+      method: 'POST',
+      mode: 'no-cors',
+      body: body
+    });
   }
 
   function setupMailForm(form) {
@@ -86,7 +119,15 @@
         return;
       }
 
-      setState('success');
+      // Disable button while the request is in flight.
+      setSubmitEnabled(false);
+      subscribeToMailerLite(value)
+        .then(function () {
+          setState('success');
+        })
+        .catch(function () {
+          setState('error');
+        });
     });
   }
 

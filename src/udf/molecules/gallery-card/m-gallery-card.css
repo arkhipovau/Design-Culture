@@ -1,0 +1,74 @@
+.m-gallery-card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 0;
+  contain: layout style paint;
+  text-decoration: none;
+  color: inherit;
+}
+
+.m-gallery-card.reveal-ready {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+.m-gallery-card__media {
+  position: absolute;
+  inset: 0;
+  display: block;
+  overflow: hidden;
+}
+
+.m-gallery-card__media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.m-gallery-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.24);
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+
+.m-gallery-card:hover .m-gallery-card__overlay {
+  opacity: 1;
+}
+
+.m-gallery-card__go {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  pointer-events: none;
+}
+
+.m-gallery-card__go.a-arrow-button {
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+}
+
+.m-gallery-card:hover .m-gallery-card__go.a-arrow-button {
+  --a-arrow-bg: var(--color-medium-grey);
+}
+
+.m-gallery-card:active .m-gallery-card__go.a-arrow-button {
+  --a-arrow-bg: var(--color-black);
+  --a-arrow-icon-current: var(--a-arrow-icon-active);
+}
+
+.m-gallery-card--tall {
+  aspect-ratio: 218 / 272;
+}
+
+.m-gallery-card--wide {
+  aspect-ratio: 218 / 145;
+}

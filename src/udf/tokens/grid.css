@@ -1,8 +1,5 @@
 :root {
-  /* Breakpoint policy:
-     - 1440..1919: desktop base rail (locked)
-     - 1920+: wide rail (stretch)
-  */
+
   --grid-columns: 12;
   --grid-gutter: 4px;
   --grid-margin: 56px;
@@ -11,7 +8,6 @@
   --grid-content-width-wide: var(--grid-content-width-fluid);
   --grid-content-width: var(--grid-content-width-locked);
 
-  /* Backward-compatible alias for existing layout rules. */
   --maxw: var(--grid-content-width);
 }
 

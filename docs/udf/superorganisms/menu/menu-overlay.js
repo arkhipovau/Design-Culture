@@ -1,6 +1,10 @@
 (function () {
   function getPrefix() {
-    return /\/pages\//.test(window.location.pathname) ? '../' : './';
+    var path = window.location.pathname;
+
+    if (/\/pages\/interviews\//.test(path)) return '../../';
+    if (/\/pages\//.test(path)) return '../';
+    return './';
   }
 
   function normalizeText(value) {
@@ -18,9 +22,13 @@
       journal: prefix + 'pages/journal.html',
       gallery: prefix + 'pages/gallery.html',
       newsletter: prefix + 'pages/newsletter.html',
-      sphere: prefix + 'pages/sphere.html',
+      about: prefix + 'pages/about.html',
       issue: prefix + 'index.html#issue'
     };
+
+    function interview(pageName) {
+      return prefix + 'pages/interviews/' + pageName + '.html';
+    }
 
     var items = [
       {
@@ -56,75 +64,164 @@
         priority: 90
       },
       {
-        title: 'Фото-шар',
-        subtitle: 'Интерактивная сфера с изображениями',
+        title: 'О проекте',
+        subtitle: 'О проекте deFindings и редакции',
         kind: 'Страница',
-        href: links.sphere,
-        keywords: 'sphere шар threejs',
-        priority: 85
+        href: links.about,
+        keywords: 'about о нас о проекте автор редакция диплом',
+        priority: 88
       },
       {
         title: 'Печатный выпуск',
-        subtitle: 'Предзаказ выпуска deFindings №1',
+        subtitle: 'Выпуск deFindings №1',
         kind: 'Раздел',
         href: links.issue,
-        keywords: 'issue предзаказ выпуск печатный',
+        keywords: 'issue выпуск печатный calameo',
         priority: 85
       },
-      {
-        title: 'Марина Кондратенко',
-        subtitle: 'Лондон, Берлин и Москва: три подхода к работе',
-        kind: 'Статья',
-        href: prefix + 'pages/article.html?slug=marina-kondratenko',
-        keywords: 'берлин продукт студия',
-        priority: 70
-      },
-      {
-        title: 'Сергей Мерюков',
-        subtitle: 'Дизайн как операционная система продукта',
-        kind: 'Статья',
-        href: prefix + 'pages/article.html?slug=sergey-meryukov',
-        keywords: 'москва продукт система',
-        priority: 70
-      },
+
       {
         title: 'Артём Тарасов и Артём Тарадаш',
-        subtitle: 'Анти-дисциплина: на стыке стратегии, бренда и кода',
+        subtitle: 'Together with you — анти-дисциплина',
         kind: 'Статья',
-        href: prefix + 'pages/article.html?slug=artem-tarasov-taradash',
-        keywords: 'студия стратегия код тбилиси',
+        href: interview('togetherwithyou'),
+        keywords: 'студия тбилиси анти дисциплина брендинг крафт ai',
         priority: 70
       },
       {
-        title: 'Филипп Третьяков',
-        subtitle: 'Брендинг от сути продукта',
+        title: 'Алексей Пьянков',
+        subtitle: 'Дизайн-ДНК, белый лист, треугольник',
         kind: 'Статья',
-        href: prefix + 'pages/article.html?slug=filipp-tretyakov',
-        keywords: 'брендинг студия москва',
+        href: interview('aleksey-pyankov'),
+        keywords: 'екатеринбург pragmatica прагматика студия',
         priority: 70
       },
       {
         title: 'Полина Загуменова',
-        subtitle: 'Одиночная практика: как держать качество и свободу',
+        subtitle: 'Берлин, флексибельные рамки',
         kind: 'Статья',
-        href: prefix + 'pages/article.html?slug=polina-zagumenova',
-        keywords: 'фриланс берлин',
+        href: interview('polina-zagumenova'),
+        keywords: 'берлин фриланс щука ai',
         priority: 70
       },
       {
-        title: 'Александр и Иван Васины',
-        subtitle: 'Как сообщества формируют практику',
+        title: 'Маша Черн',
+        subtitle: 'Коллаборации и неприязнь к AI-картинкам',
         kind: 'Статья',
-        href: prefix + 'pages/article.html?slug=alexander-ivan-vasiny',
-        keywords: 'сообщество школа студия москва',
+        href: interview('masha-chern'),
+        keywords: 'берлин ton tone verle продукт',
         priority: 70
       },
       {
-        title: 'Ира Кошелева',
-        subtitle: 'Нью-Йорк: работа в процессе',
+        title: 'Юля Кондратьева',
+        subtitle: 'Уместный дизайн, «Типомания», Полиграф',
         kind: 'Статья',
-        href: prefix + 'pages/article.html?slug=ira-kosheleva',
-        keywords: 'нью йорк студия',
+        href: interview('yulya-kondratyeva'),
+        keywords: 'тбилиси werkstatt гроза holystick школа',
+        priority: 70
+      },
+      {
+        title: 'Ян Зарецкий',
+        subtitle: 'Цельность, генотип бренда, Мастерская',
+        kind: 'Статья',
+        href: interview('yan-zaretsky'),
+        keywords: 'санкт-петербург питер munk мастерская продукт студия',
+        priority: 70
+      },
+      {
+        title: 'Сергей Бреус',
+        subtitle: 'F61, Эмиль Рудер, ученичество',
+        kind: 'Статья',
+        href: interview('sergey-breus'),
+        keywords: 'москва ony oni f61 студия',
+        priority: 70
+      },
+      {
+        title: 'Сергей Кудинов',
+        subtitle: 'Здоровый скептицизм, бюрократия, ручной труд',
+        kind: 'Статья',
+        href: interview('sergey-kudinov'),
+        keywords: 'москва яндекс 360 продукт',
+        priority: 70
+      },
+      {
+        title: 'Аня Голубь',
+        subtitle: 'White Secret, выгорание и зона комфорта',
+        kind: 'Статья',
+        href: interview('anya-golub'),
+        keywords: 'бали призма prizma студия',
+        priority: 70
+      },
+      {
+        title: 'Даша Макурина',
+        subtitle: 'Учиться видеть заново: насмотренность как навык',
+        kind: 'Статья',
+        href: interview('dasha-makurina'),
+        keywords: 'москва rarible pont design фриланс 3d cgi',
+        priority: 70
+      },
+      {
+        title: 'Саша Барабонова',
+        subtitle: 'Эмпатия как фундамент, дружба с AI',
+        kind: 'Статья',
+        href: interview('sasha-barabonova'),
+        keywords: 'ереван phygital t-банк vk yandex pragmatica lalalai продукт',
+        priority: 70
+      },
+      {
+        title: 'Стефан Лашко',
+        subtitle: 'Метафора в логотипе, ценность и порядок',
+        kind: 'Статья',
+        href: interview('stefan-lashko'),
+        keywords: 'москва esh студия преподаватель',
+        priority: 70
+      },
+      {
+        title: 'Оля Бажанова',
+        subtitle: 'Хвостики, этика и душа в сувенирке',
+        kind: 'Статья',
+        href: interview('olya-bazanova'),
+        keywords: 'калининград подписные додо издательство',
+        priority: 70
+      },
+      {
+        title: 'Анастасия Сычева',
+        subtitle: 'Бизнес-контекст, кор-идея и AI как краска',
+        kind: 'Статья',
+        href: interview('anastasia-sycheva'),
+        keywords: 'белград студия y combinator спрошу кота брендинг',
+        priority: 70
+      },
+      {
+        title: 'Артём Герц',
+        subtitle: 'Личный манифест и авторский стиль в айдентике',
+        kind: 'Статья',
+        href: interview('artem-gerts'),
+        keywords: 'москва redis студия айдентика',
+        priority: 70
+      },
+      {
+        title: 'Гаврил Перов',
+        subtitle: 'Архитектура, город и графический язык',
+        kind: 'Статья',
+        href: interview('gavril-perov'),
+        keywords: 'париж франция drinkit продукт',
+        priority: 70
+      },
+      {
+        title: 'Елена Чинакова',
+        subtitle: 'Образовательные траектории и взросление дизайнера',
+        kind: 'Статья',
+        href: interview('elena-chinakova'),
+        keywords: 'лондон великобритания сообщество zorky avito',
+        priority: 70
+      },
+      {
+        title: 'Сергей Мекрюков',
+        subtitle: 'UX, сервисы и невидимая часть дизайн-культуры',
+        kind: 'Статья',
+        href: interview('sergey-mekryukov'),
+        keywords: 'москва dodo brands додо продукт ux сервисы',
         priority: 70
       }
     ];
@@ -189,6 +286,7 @@
       journal: prefix + 'pages/journal.html',
       gallery: prefix + 'pages/gallery.html',
       newsletter: prefix + 'pages/newsletter.html',
+      about: prefix + 'pages/about.html',
       issue: prefix + 'index.html#issue'
     };
 
@@ -217,7 +315,7 @@
       '        <span class="site-menu__card-title">Галерея</span>' +
       '      </a>' +
       '      <a class="site-menu__card site-menu__card--about" href="' +
-      links.home +
+      links.about +
       '">' +
       '        <span class="site-menu__card-thumb">' +
       '          <img src="' +

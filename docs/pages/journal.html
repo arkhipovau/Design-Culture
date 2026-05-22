@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="../udf/quarks/image-journal/q-image-journal.css" />
     <link rel="stylesheet" href="../udf/atoms/sticky-scroll/a-sticky-scroll.css" />
     <link rel="stylesheet" href="../udf/atoms/image-journal-link/a-image-journal-link.css" />
-    <link rel="stylesheet" href="../udf/atoms/mail-input/a-mail-input.css" />
+    <link rel="stylesheet" href="../udf/atoms/button/a-button.css" />
+    <link rel="stylesheet" href="../udf/molecules/page-hero/m-page-hero.css" />
     <link rel="stylesheet" href="../udf/molecules/journal-card/m-journal-card.css" />
-    <link rel="stylesheet" href="../udf/molecules/mail-form/m-mail-form.css" />
+    <link rel="stylesheet" href="../udf/molecules/split-links/m-split-links.css" />
     <link rel="stylesheet" href="../udf/atoms/filter/a-filter.css" />
     <link rel="stylesheet" href="../udf/atoms/tag/a-tag.css" />
     <link rel="stylesheet" href="./journal.css" />
@@ -20,22 +21,15 @@
     <link rel="stylesheet" href="../stylesheets/micro-animations.css" />
     <link rel="stylesheet" href="../udf/superorganisms/menu/s-menu.css" />
     <link rel="stylesheet" href="../udf/superorganisms/footer/s-footer.css" />
+    <link rel="stylesheet" href="../udf/quarks/findings/q-findings.css" />
   </head>
   <body data-reading-page="Журнал deFindings">
-    <header class="topbar s-menu journal-topbar">
-      <div class="pill nav-left">
-        <a href="./journal.html">Журнал</a>
-        <a href="./gallery.html">Галерея</a>
-      </div>
+    <div class="q-findings-overlay" aria-hidden="true"></div>
+    <header class="topbar topbar--menu s-menu journal-topbar">
       <a class="logo" href="../index.html" aria-label="deFindings">
         <img class="logo-mark" src="../udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
         <span class="visually-hidden">deFindings</span>
       </a>
-      <div class="pill nav-right">
-        <a href="./newsletter.html">Подписаться</a>
-        <a href="../index.html#issue">Печатный выпуск — Предзаказ</a>
-        <a href="./sphere.html">Фото-шар</a>
-      </div>
     </header>
 
     <main class="journal-page" id="top">
@@ -70,9 +64,9 @@
 
       <section class="section interviews interviews-journal" id="journal-list">
         <div class="cards-grid journal-grid">
-          <article class="m-journal-card journal-card" data-tags="2025 студия екатеринбург" data-href="./article.html?slug=aleksey-pyankov">
-            <a class="a-image-journal-link a-image-journal-link--l" href="./article.html?slug=aleksey-pyankov">
-              <img class="q-image-journal" src="../images/Алексей Пьянков.jpg" alt="Алексей Пьянков" />
+          <article class="m-journal-card" data-tags="2025 студия екатеринбург" data-href="./interviews/aleksey-pyankov.html">
+            <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/aleksey-pyankov.html">
+              <img class="q-image-journal" width="440" height="458" src="../images/Алексей Пьянков.jpg" alt="Алексей Пьянков" loading="eager" fetchpriority="high" decoding="async" />
               <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
             </a>
             <div class="m-journal-card__content">
@@ -85,9 +79,9 @@
             </div>
           </article>
 
-          <article class="m-journal-card journal-card" data-tags="2025 студия белград" data-href="./article.html?slug=anastasia-sycheva">
-            <a class="a-image-journal-link a-image-journal-link--m" href="./article.html?slug=anastasia-sycheva">
-              <img class="q-image-journal" src="../images/Анастасия Сычева.jpg" alt="Анастасия Сычева" />
+          <article class="m-journal-card" data-tags="2025 студия белград" data-href="./interviews/anastasia-sycheva.html">
+            <a class="a-image-journal-link a-image-journal-link--l" href="./interviews/anastasia-sycheva.html">
+              <img class="q-image-journal" width="440" height="458" src="../images/Анастасия Сычева.jpg" alt="Анастасия Сычева" loading="eager" fetchpriority="high" decoding="async" />
               <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
             </a>
             <div class="m-journal-card__content">
@@ -100,9 +94,9 @@
             </div>
           </article>
 
-          <article class="m-journal-card journal-card" data-tags="2025 студия бали" data-href="./article.html?slug=anya-golub">
-            <a class="a-image-journal-link a-image-journal-link--s" href="./article.html?slug=anya-golub">
-              <img class="q-image-journal" src="../images/Аня Голубь.jpg" alt="Аня Голубь" />
+          <article class="m-journal-card" data-tags="2025 студия бали" data-href="./interviews/anya-golub.html">
+            <a class="a-image-journal-link a-image-journal-link--s" href="./interviews/anya-golub.html">
+              <img class="q-image-journal" width="440" height="458" src="../images/Аня Голубь.jpg" alt="Аня Голубь" loading="eager" fetchpriority="high" decoding="async" />
               <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
             </a>
             <div class="m-journal-card__content">
@@ -115,24 +109,9 @@
             </div>
           </article>
 
-          <article class="m-journal-card journal-card" data-tags="2025 студия москва" data-href="./article.html?slug=artem-gerts">
-            <a class="a-image-journal-link a-image-journal-link--l" href="./article.html?slug=artem-gerts">
-              <img class="q-image-journal" src="../images/Артём Герц.jpg" alt="Артём Герц" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Артём Герц</h3>
-                <h4 class="m-journal-card__subtitle">Личный манифест и авторский стиль в айдентике</h4>
-              </div>
-              <p class="m-journal-card__description">Артём рассказывает, как формулирует собственный манифест в брендинге, зачем дизайнеру выстраивать авторский стиль и как не потеряться между запросами студии и личным видением.</p>
-              <div class="m-journal-card__meta">Россия • Москва • Студия</div>
-            </div>
-          </article>
-
-          <article class="m-journal-card journal-card" data-tags="2025 студия тбилиси" data-href="./article.html?slug=artem-tarasov-taradash">
-            <a class="a-image-journal-link a-image-journal-link--m" href="./article.html?slug=artem-tarasov-taradash">
-              <img class="q-image-journal" src="../images/Артём Тарасов и Артём Тарадаш.jpg" alt="Артём Тарасов и Артём Тарадаш" />
+          <article class="m-journal-card" data-tags="2025 студия тбилиси" data-href="./interviews/togetherwithyou.html">
+            <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/togetherwithyou.html">
+              <img class="q-image-journal" width="440" height="458" src="../images/Артём Тарасов и Артём Тарадаш.jpg" alt="Артём Тарасов и Артём Тарадаш" loading="eager" fetchpriority="high" decoding="async" />
               <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
             </a>
             <div class="m-journal-card__content">
@@ -145,54 +124,9 @@
             </div>
           </article>
 
-          <article class="m-journal-card journal-card" data-tags="2025 продукт париж" data-href="./article.html?slug=gavril-perov">
-            <a class="a-image-journal-link a-image-journal-link--s" href="./article.html?slug=gavril-perov">
-              <img class="q-image-journal" src="../images/Гаврил Перов.jpg" alt="Гаврил Перов" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Гаврил Перов</h3>
-                <h4 class="m-journal-card__subtitle">Архитектура, город и графический язык</h4>
-              </div>
-              <p class="m-journal-card__description">Разговор о влиянии городской среды и архитектуры на графический дизайн: как Париж, его ритмы и визуальный шум отражаются в интерфейсах и продуктовых решениях.</p>
-              <div class="m-journal-card__meta">Франция • Париж • Продукт</div>
-            </div>
-          </article>
-
-          <article class="m-journal-card journal-card" data-tags="2025 фриланс москва" data-href="./article.html?slug=dasha-makurina">
-            <a class="a-image-journal-link a-image-journal-link--l" href="./article.html?slug=dasha-makurina">
-              <img class="q-image-journal" src="../images/Даша Макурина.jpg" alt="Даша Макурина" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Даша Макурина</h3>
-                <h4 class="m-journal-card__subtitle">Учиться видеть заново: насмотренность как навык</h4>
-              </div>
-              <p class="m-journal-card__description">Даша описывает фриланс как способ постоянно перенастраивать зрение: от работы с референсами и городом до выстраивания своей визуальной библиотеки и способов пополнять её осознанно.</p>
-              <div class="m-journal-card__meta">Россия • Москва • Фриланс</div>
-            </div>
-          </article>
-
-          <article class="m-journal-card journal-card" data-tags="2025 сообщество лондон" data-href="./article.html?slug=elena-chinakova">
-            <a class="a-image-journal-link a-image-journal-link--m" href="./article.html?slug=elena-chinakova">
-              <img class="q-image-journal" src="../images/Елена Чинакова.jpg" alt="Елена Чинакова" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Елена Чинакова</h3>
-                <h4 class="m-journal-card__subtitle">Образовательные траектории и взросление дизайнера</h4>
-              </div>
-              <p class="m-journal-card__description">Лена создает в Лондоне сообщество, которое помогает дизайнерам взрослеть, переосмыслять навыки и менять траектории внутри профессии.</p>
-              <div class="m-journal-card__meta">Великобритания • Лондон • Сообщество</div>
-            </div>
-          </article>
-
-          <article class="m-journal-card journal-card" data-tags="2025 продукт берлин" data-href="./article.html?slug=masha-chern">
-            <a class="a-image-journal-link a-image-journal-link--s" href="./article.html?slug=masha-chern">
-              <img class="q-image-journal" src="../images/Маша Черн.jpg" alt="Маша Черн" />
+          <article class="m-journal-card" data-tags="2025 продукт берлин" data-href="./interviews/masha-chern.html">
+            <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/masha-chern.html">
+              <img class="q-image-journal" width="440" height="458" src="../images/Маша Черн.jpg" alt="Маша Черн" loading="eager" fetchpriority="high" decoding="async" />
               <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
             </a>
             <div class="m-journal-card__content">
@@ -205,9 +139,9 @@
             </div>
           </article>
 
-          <article class="m-journal-card journal-card" data-tags="2025 издательство калининград" data-href="./article.html?slug=olya-bazanova">
-            <a class="a-image-journal-link a-image-journal-link--l" href="./article.html?slug=olya-bazanova">
-              <img class="q-image-journal" src="../images/Оля Базанова.jpg" alt="Оля Базанова" />
+          <article class="m-journal-card" data-tags="2025 издательство калининград" data-href="./interviews/olya-bazanova.html">
+            <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/olya-bazanova.html">
+              <img class="q-image-journal" width="440" height="458" src="../images/Оля Базанова.jpg" alt="Оля Базанова" loading="eager" fetchpriority="high" decoding="async" />
               <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
             </a>
             <div class="m-journal-card__content">
@@ -220,9 +154,9 @@
             </div>
           </article>
 
-          <article class="m-journal-card journal-card" data-tags="2025 фриланс берлин" data-href="./article.html?slug=polina-zagumenova">
-            <a class="a-image-journal-link a-image-journal-link--m" href="./article.html?slug=polina-zagumenova">
-              <img class="q-image-journal" src="../images/Полина Загуменова.jpg" alt="Полина Загуменова" />
+          <article class="m-journal-card" data-tags="2025 фриланс берлин" data-href="./interviews/polina-zagumenova.html">
+            <a class="a-image-journal-link a-image-journal-link--l" href="./interviews/polina-zagumenova.html">
+              <img class="q-image-journal" width="440" height="458" src="../images/Полина Загуменова.jpg" alt="Полина Загуменова" loading="lazy" decoding="async" />
               <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
             </a>
             <div class="m-journal-card__content">
@@ -235,9 +169,9 @@
             </div>
           </article>
 
-          <article class="m-journal-card journal-card" data-tags="2025 продукт фриланс ереван" data-href="./article.html?slug=sasha-barabonova">
-            <a class="a-image-journal-link a-image-journal-link--s" href="./article.html?slug=sasha-barabonova">
-              <img class="q-image-journal" src="../images/Саша Барабонова.jpg" alt="Саша Барабонова" />
+          <article class="m-journal-card" data-tags="2025 продукт фриланс ереван" data-href="./interviews/sasha-barabonova.html">
+            <a class="a-image-journal-link a-image-journal-link--s" href="./interviews/sasha-barabonova.html">
+              <img class="q-image-journal" width="440" height="458" src="../images/Саша Барабонова.jpg" alt="Саша Барабонова" loading="lazy" decoding="async" />
               <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
             </a>
             <div class="m-journal-card__content">
@@ -250,9 +184,9 @@
             </div>
           </article>
 
-          <article class="m-journal-card journal-card" data-tags="2025 студия москва" data-href="./article.html?slug=sergey-breus">
-            <a class="a-image-journal-link a-image-journal-link--l" href="./article.html?slug=sergey-breus">
-              <img class="q-image-journal" src="../images/Сергей Бреус.jpg" alt="Сергей Бреус" />
+          <article class="m-journal-card" data-tags="2025 студия москва" data-href="./interviews/sergey-breus.html">
+            <a class="a-image-journal-link a-image-journal-link--s" href="./interviews/sergey-breus.html">
+              <img class="q-image-journal" width="440" height="458" src="../images/Сергей Бреус.jpg" alt="Сергей Бреус" loading="lazy" decoding="async" />
               <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
             </a>
             <div class="m-journal-card__content">
@@ -265,9 +199,9 @@
             </div>
           </article>
 
-          <article class="m-journal-card journal-card" data-tags="2025 продукт москва" data-href="./article.html?slug=sergey-kudinov">
-            <a class="a-image-journal-link a-image-journal-link--m" href="./article.html?slug=sergey-kudinov">
-              <img class="q-image-journal" src="../images/Сергей Кудинов.jpg" alt="Сергей Кудинов" />
+          <article class="m-journal-card" data-tags="2025 продукт москва" data-href="./interviews/sergey-kudinov.html">
+            <a class="a-image-journal-link a-image-journal-link--l" href="./interviews/sergey-kudinov.html">
+              <img class="q-image-journal" width="440" height="458" src="../images/Сергей Кудинов.jpg" alt="Сергей Кудинов" loading="lazy" decoding="async" />
               <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
             </a>
             <div class="m-journal-card__content">
@@ -280,24 +214,9 @@
             </div>
           </article>
 
-          <article class="m-journal-card journal-card" data-tags="2025 продукт москва" data-href="./article.html?slug=sergey-meryukov">
-            <a class="a-image-journal-link a-image-journal-link--s" href="./article.html?slug=sergey-meryukov">
-              <img class="q-image-journal" src="../images/Сергей Мекрюков.jpg" alt="Сергей Мекрюков" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Сергей Мекрюков</h3>
-                <h4 class="m-journal-card__subtitle">UX, сервисы и невидимая часть дизайн‑культуры</h4>
-              </div>
-              <p class="m-journal-card__description">Интервью о сервис‑дизайне и UX как о «фоновой» части дизайн‑культуры, которая редко попадает в кейсы, но определяет качество повседневного опыта пользователей.</p>
-              <div class="m-journal-card__meta">Россия • Москва • Продукт</div>
-            </div>
-          </article>
-
-          <article class="m-journal-card journal-card" data-tags="2025 студия москва" data-href="./article.html?slug=stefan-lashko">
-            <a class="a-image-journal-link a-image-journal-link--l" href="./article.html?slug=stefan-lashko">
-              <img class="q-image-journal" src="../images/Стефан Лашко.jpg" alt="Стефан Лашко" />
+          <article class="m-journal-card" data-tags="2025 студия москва" data-href="./interviews/stefan-lashko.html">
+            <a class="a-image-journal-link a-image-journal-link--l" href="./interviews/stefan-lashko.html">
+              <img class="q-image-journal" width="440" height="458" src="../images/Стефан Лашко.jpg" alt="Стефан Лашко" loading="lazy" decoding="async" />
               <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
             </a>
             <div class="m-journal-card__content">
@@ -310,9 +229,9 @@
             </div>
           </article>
 
-          <article class="m-journal-card journal-card" data-tags="2025 школа тбилиси" data-href="./article.html?slug=yulya-kondratyeva">
-            <a class="a-image-journal-link a-image-journal-link--m" href="./article.html?slug=yulya-kondratyeva">
-              <img class="q-image-journal" src="../images/Юля Кондратьева.jpg" alt="Юля Кондратьева" />
+          <article class="m-journal-card" data-tags="2025 школа тбилиси" data-href="./interviews/yulya-kondratyeva.html">
+            <a class="a-image-journal-link a-image-journal-link--s" href="./interviews/yulya-kondratyeva.html">
+              <img class="q-image-journal" width="440" height="458" src="../images/Юля Кондратьева.jpg" alt="Юля Кондратьева" loading="lazy" decoding="async" />
               <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
             </a>
             <div class="m-journal-card__content">
@@ -325,9 +244,9 @@
             </div>
           </article>
 
-          <article class="m-journal-card journal-card" data-tags="2025 студия продукт санкт-петербург" data-href="./article.html?slug=yan-zaretsky">
-            <a class="a-image-journal-link a-image-journal-link--s" href="./article.html?slug=yan-zaretsky">
-              <img class="q-image-journal" src="../images/Ян Зарецкий.jpg" alt="Ян Зарецкий" />
+          <article class="m-journal-card" data-tags="2025 студия продукт санкт-петербург" data-href="./interviews/yan-zaretsky.html">
+            <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/yan-zaretsky.html">
+              <img class="q-image-journal" width="440" height="458" src="../images/Ян Зарецкий.jpg" alt="Ян Зарецкий" loading="lazy" decoding="async" />
               <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
             </a>
             <div class="m-journal-card__content">
@@ -342,29 +261,29 @@
         </div>
       </section>
 
-      <section class="section split-links journal-split">
-        <a class="split-card issue-card" href="https://www.calameo.com/read/008119339762d3db33f24?authid=pJV9q2gR5n3i">
-          <img class="issue-card__image" src="../images/A_ImagesBook 1.png" alt="Выпуск deFindings №1" />
+      <section class="section m-split-links m-split-links--flush-top">
+        <a class="m-split-card m-split-card--issue" href="https://www.calameo.com/read/008119339762d3db33f24?authid=pJV9q2gR5n3i">
+          <img class="m-split-card__image" src="../images/A_ImagesBook 1.png" alt="Выпуск deFindings №1" />
           <h3>Выпуск deFindings Nº1.</h3>
-          <span class="btn">Предзаказ</span>
+          <span class="a-button a-button--m a-button--white" aria-hidden="true">Пролистать</span>
         </a>
-        <a class="split-card gallery-link" href="./gallery.html">
+        <a class="m-split-card m-split-card--gallery" href="./gallery.html">
           <h3>Галерея</h3>
           <p>В Галерее вы можете найти избранные работы.</p>
-          <span class="btn">Смотреть</span>
+          <span class="a-button a-button--m a-button--white" aria-hidden="true">Смотреть</span>
         </a>
       </section>
 
     </main>
 
-    <div class="read-indicator a-sticky-scroll-wrap">
-      <div class="read-pill a-sticky-scroll">
-        <span class="read-rec a-sticky-scroll__rec" aria-hidden="true"></span>
-        <span class="read-content a-sticky-scroll__content">
-          <span class="read-dot a-sticky-scroll__dot" aria-hidden="true"></span>
-          <span class="read-text a-sticky-scroll__text">
-            <span class="read-prefix a-sticky-scroll__prefix">Вы читаете</span>
-            <span class="read-current a-sticky-scroll__current">«Журнал deFindings»</span>
+    <div class="a-sticky-scroll-wrap">
+      <div class="a-sticky-scroll">
+        <span class="a-sticky-scroll__rec" aria-hidden="true"></span>
+        <span class="a-sticky-scroll__content">
+          <span class="a-sticky-scroll__dot" aria-hidden="true"></span>
+          <span class="a-sticky-scroll__text">
+            <span class="a-sticky-scroll__prefix">Вы читаете</span>
+            <span class="a-sticky-scroll__current">«Журнал deFindings»</span>
           </span>
         </span>
       </div>
@@ -379,7 +298,7 @@
         </div>
         <div>
           <h4>Узнайте больше</h4>
-          <a href="../index.html">О проекте</a>
+          <a href="./about.html">О проекте</a>
         </div>
         <div>
           <h4>Подписывайтесь</h4>
@@ -405,96 +324,13 @@
       </div>
     </footer>
 
-    <script>
-      (function () {
-        var chips = Array.from(document.querySelectorAll('.a-tag[data-filter]'));
-        var cards = Array.from(document.querySelectorAll('.journal-card'));
-        var activeFilters = new Set();
-
-        function getChipFilter(chip) {
-          return (chip.getAttribute('data-filter') || 'all').toLowerCase();
-        }
-
-        function collectExistingTags() {
-          var existing = new Set();
-          cards.forEach(function (card) {
-            var tagText = (card.getAttribute('data-tags') || '').toLowerCase().trim();
-            if (!tagText) return;
-            tagText.split(/\s+/).forEach(function (tag) {
-              if (tag) existing.add(tag);
-            });
-          });
-          return existing;
-        }
-
-        function syncChipAvailability() {
-          var existingTags = collectExistingTags();
-          chips.forEach(function (chip) {
-            var value = getChipFilter(chip);
-            if (value === 'all') return;
-            var isAvailable = existingTags.has(value);
-            chip.classList.toggle('is-enabled', !isAvailable);
-            chip.setAttribute('aria-enabled', isAvailable ? 'false' : 'true');
-            if (!isAvailable) activeFilters.delete(value);
-          });
-        }
-
-        function syncChipStates() {
-          chips.forEach(function (chip) {
-            var value = getChipFilter(chip);
-            var isEnabled = chip.classList.contains('is-enabled');
-            var isActive = !isEnabled && (value === 'all' ? activeFilters.size === 0 : activeFilters.has(value));
-            chip.classList.toggle('is-active', isActive);
-            chip.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-          });
-        }
-
-        function applyFilters() {
-          cards.forEach(function (card) {
-            var tags = (card.getAttribute('data-tags') || '').toLowerCase();
-            if (activeFilters.size === 0) {
-              card.style.display = '';
-              return;
-            }
-            var isVisible = Array.from(activeFilters).some(function (value) {
-              return tags.indexOf(value) !== -1;
-            });
-            card.style.display = isVisible ? '' : 'none';
-          });
-        }
-
-        chips.forEach(function (chip) {
-          chip.addEventListener('click', function () {
-            if (chip.classList.contains('is-enabled')) return;
-            var value = getChipFilter(chip);
-            if (value === 'all') {
-              activeFilters.clear();
-            } else if (activeFilters.has(value)) {
-              activeFilters.delete(value);
-            } else {
-              activeFilters.add(value);
-            }
-            syncChipStates();
-            applyFilters();
-          });
-        });
-        syncChipAvailability();
-        syncChipStates();
-        applyFilters();
-        cards.forEach(function (card) {
-          card.style.cursor = 'pointer';
-          card.addEventListener('click', function (e) {
-            if (e.target.closest('a')) return;
-            window.location.href = card.getAttribute('data-href');
-          });
-        });
-      })();
-    </script>
-    <script defer src="../udf/molecules/mail-form/m-mail-form.js"></script>
+    <script defer src="./journal-filters.js"></script>
+    <script defer src="../udf/molecules/journal-card/m-journal-card.js"></script>
     <script defer src="../udf/superorganisms/menu/menu-overlay.js"></script>
     <script defer src="../udf/superorganisms/menu/s-menu.js"></script>
     <script defer src="../udf/superorganisms/footer/s-footer.js"></script>
     <script defer src="../javascripts/sticky-scroll.js"></script>
     <script defer src="../javascripts/micro-animations.js"></script>
+    <script defer src="../javascripts/card-reveal.js"></script>
   </body>
 </html>

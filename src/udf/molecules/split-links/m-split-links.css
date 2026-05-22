@@ -1,0 +1,86 @@
+.m-split-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--grid-gutter);
+  padding-bottom: 120px;
+}
+
+.m-split-links--flush-top {
+  padding-top: 0;
+}
+
+.m-split-links--after-issue {
+  margin-top: 80px;
+}
+
+.m-split-card {
+  min-height: 680px;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 32px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.m-split-card h3 {
+  font-size: var(--type-h3);
+  line-height: var(--type-h3-lh);
+  font-weight: 400;
+  margin: 0;
+}
+
+.m-split-card p {
+  width: min(240px, 90%);
+  margin: 0;
+  font-size: var(--type-body-s);
+  line-height: var(--type-body-s-lh);
+}
+
+.m-split-card .a-button {
+  pointer-events: none;
+}
+
+.m-split-card--journal {
+  background: url("../../../images/Rectangle 4726.png") center / cover no-repeat;
+  color: var(--color-white);
+}
+
+.m-split-card--gallery {
+  background: url("../../../images/Group 2131329985.jpg") center / cover no-repeat;
+  color: var(--color-black);
+  min-height: 683px;
+}
+
+.m-split-card--issue {
+  background: var(--color-coloring-dark-grey);
+  color: var(--color-white);
+  min-height: 683px;
+  justify-content: center;
+}
+
+.m-split-card__image {
+  width: 480px;
+  max-width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 767px) {
+  .m-split-links {
+    grid-template-columns: 1fr;
+  }
+
+  .m-split-card {
+    min-height: 420px;
+  }
+
+  .m-split-card--issue,
+  .m-split-card--gallery {
+    min-height: 420px;
+  }
+}

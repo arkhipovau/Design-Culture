@@ -51,23 +51,20 @@
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   const revealSelectors = [
-    'main section',
+    'main section:not(.interviews-journal):not(.journal-hero):not(.gallery-hero):not(:has(.gallery-grid))',
     '.card',
-    '.split-card',
+    '.m-split-card',
     '.highlight',
-    '.gallery-item',
+
     '.gallery-slide',
-    '.qa-row',
-    '.media-item',
-    '.media-wide-item',
-    '.quote-block',
-    '.article-info > div',
+    '.m-qa-row',
+    '.m-quote-block',
+    '.m-article-info > div',
     '.footer-grid > div',
     '.footer-bottom',
     '.newsletter-inner',
-    '.view-switch',
-    '.filters',
-    '.share-pill'
+    '.journal-page .m-journal-card',
+    '.gallery-page .m-gallery-card'
   ];
 
   const revealNodes = Array.from(document.querySelectorAll(revealSelectors.join(',')));
@@ -81,9 +78,9 @@
   };
 
   revealNodes.forEach((el) => {
-    if (el.matches('.footer-grid > div, .footer-bottom, .meta, .filters, .view-switch')) {
+    if (el.matches('.footer-grid > div, .footer-bottom, .meta')) {
       markReveal(el, 'soft');
-    } else if (el.matches('.gallery-item, .gallery-slide')) {
+    } else if (el.matches('.gallery-slide')) {
       markReveal(el, 'scale');
     } else {
       markReveal(el);
@@ -101,39 +98,83 @@
   };
 
   applyStagger('.cards-grid', '.card', 70, 420);
+  applyStagger('.journal-grid', '.m-journal-card', 70, 420);
+  applyStagger('.gallery-grid', '.m-gallery-card', 45, 340);
   applyStagger('.highlight-row', '.highlight', 100, 280);
   applyStagger('.gallery-strip', 'img', 45, 260);
-  applyStagger('.gallery-grid', '.gallery-item', 45, 340);
   applyStagger('.footer-grid', 'div', 70, 300);
-  applyStagger('.qa-list', '.qa-row', 60, 280);
+  applyStagger('.m-interview-section__body', '.m-qa-row', 60, 280);
+
+  document.querySelectorAll('.sphere-frame').forEach((iframe) => {
+    let revealed = false;
+    const reveal = () => {
+      if (revealed) return;
+      revealed = true;
+      iframe.classList.add('is-loaded');
+    };
+
+    window.addEventListener('message', (event) => {
+      if (event.source !== iframe.contentWindow) return;
+      if (event.data && event.data.type === 'sphere-ready') reveal();
+    });
+
+    iframe.addEventListener('load', () => {
+      setTimeout(reveal, 4500);
+    }, { once: true });
+
+    if (iframe.contentDocument && iframe.contentDocument.readyState === 'complete') {
+      setTimeout(reveal, 4500);
+    }
+  });
 
   const heroIntro = document.querySelector('.hero-intro');
   if (heroIntro) {
-    const updateHeroTextProgress = () => {
+
+    const overLayer = heroIntro.querySelector('.hero-over');
+
+    const tokens = overLayer
+      ? Array.from(overLayer.querySelectorAll('.hero-word, .hero-pill'))
+      : [];
+
+    const N = Math.max(tokens.length, 1);
+
+    const WAVE_FRACTION = 0.8;
+    const waveWidth = WAVE_FRACTION / N + 0.04;
+
+    const updateHeroReveal = () => {
       const rect = heroIntro.getBoundingClientRect();
-      const viewportHeight = window.innerHeight || document.documentElement.clientHeight || 1;
-      const start = viewportHeight * 0.92;
-      const end = viewportHeight * 0.28;
-      const raw = (start - rect.top) / (start - end);
-      const clamped = Math.max(0, Math.min(1, raw));
-      const eased = clamped * clamped * (3 - 2 * clamped);
-      heroIntro.style.setProperty('--hero-text-progress', eased.toFixed(4));
+      const vh = window.innerHeight || document.documentElement.clientHeight || 1;
+
+      const start = vh * 0.7;
+      const end = vh * 0.15;
+      const span = start - end;
+      const rawG = (start - rect.top) / span;
+      const globalP = rawG < 0 ? 0 : rawG > 1 ? 1 : rawG;
+
+      for (let i = 0; i < N; i += 1) {
+
+        const itemStart = (i / N) * WAVE_FRACTION;
+        const local = (globalP - itemStart) / waveWidth;
+        const p = local < 0 ? 0 : local > 1 ? 1 : local;
+        const eased = p * p * (3 - 2 * p);
+        tokens[i].style.setProperty('--p', eased.toFixed(3));
+      }
     };
 
     if (reduced) {
-      heroIntro.style.setProperty('--hero-text-progress', '1');
+      tokens.forEach((el) => el.style.setProperty('--p', '1'));
     } else {
       let heroTicking = false;
       const onHeroScroll = () => {
         if (heroTicking) return;
         heroTicking = true;
         requestAnimationFrame(() => {
-          updateHeroTextProgress();
+          updateHeroReveal();
           heroTicking = false;
         });
       };
 
-      updateHeroTextProgress();
+      updateHeroReveal();
       window.addEventListener('scroll', onHeroScroll, { passive: true });
       window.addEventListener('resize', onHeroScroll);
       window.addEventListener('orientationchange', onHeroScroll);
@@ -161,26 +202,4 @@
 
   document.querySelectorAll('.reveal-ready').forEach((el) => observer.observe(el));
 
-  const floats = Array.from(document.querySelectorAll('.hero-float'));
-  if (floats.length) {
-    const speeds = [0.035, -0.02, 0.028];
-    let ticking = false;
-    const updateParallax = () => {
-      const y = window.scrollY || window.pageYOffset || 0;
-      floats.forEach((el, idx) => {
-        const dy = y * (speeds[idx % speeds.length]);
-        el.style.transform = `translate3d(0, ${dy.toFixed(2)}px, 0)`;
-      });
-      ticking = false;
-    };
-
-    const onScroll = () => {
-      if (ticking) return;
-      ticking = true;
-      requestAnimationFrame(updateParallax);
-    };
-
-    updateParallax();
-    window.addEventListener('scroll', onScroll, { passive: true });
-  }
 })();

@@ -1,103 +1,14 @@
 (function () {
-  var articles = {
-    'marina-kondratenko': {
-      author: 'Марина Кондратенко',
-      subtitle: 'Лондон, Берлин и Москва: три подхода к работе',
-      images: [
-        '../images/8a6ae07d69c4e874b52c.jpg',
-        '../images/324b9db98c5f779e2f2c.jpg',
-        '../images/5797605502626eb5eaa3.jpg',
-        '../images/45603f1b4adcc73ea37b.jpg',
-        '../images/8c30a668aa8d06217ed6.webp',
-        '../images/513f0a449c59e7eb2dcb.webp'
-      ]
-    },
-    'sergey-meryukov': {
-      author: 'Сергей Мерюков',
-      subtitle: 'Дизайн как операционная система продукта',
-      images: [
-        '../images/d801538041a9350ba5d2.webp',
-        '../images/8c30a668aa8d06217ed6.webp',
-        '../images/96f7d4116789d1f7784d.webp',
-        '../images/c5deba37a7ba17c25518.webp',
-        '../images/dcb01eec06cf1e00cbed.webp',
-        '../images/324b9db98c5f779e2f2c.jpg'
-      ]
-    },
-    'artem-tarasov-taradash': {
-      author: 'Артём Тарасов и Артём Тарадаш',
-      subtitle: 'Анти-дисциплина: на стыке стратегии, бренда и кода',
-      images: [
-        '../images/8a6ae07d69c4e874b52c.jpg',
-        '../images/513f0a449c59e7eb2dcb.webp',
-        '../images/324b9db98c5f779e2f2c.jpg',
-        '../images/8c30a668aa8d06217ed6.webp',
-        '../images/86c2cda628bf2b209a91.webp',
-        '../images/45603f1b4adcc73ea37b.jpg'
-      ]
-    },
-    'filipp-tretyakov': {
-      author: 'Филипп Третьяков',
-      subtitle: 'Брендинг от сути продукта',
-      images: [
-        '../images/8c30a668aa8d06217ed6.webp',
-        '../images/86c2cda628bf2b209a91.webp',
-        '../images/513f0a449c59e7eb2dcb.webp',
-        '../images/d801538041a9350ba5d2.webp',
-        '../images/324b9db98c5f779e2f2c.jpg',
-        '../images/5797605502626eb5eaa3.jpg'
-      ]
-    },
-    'polina-zagumenova': {
-      author: 'Полина Загуменова',
-      subtitle: 'Одиночная практика: как держать качество и свободу',
-      images: [
-        '../images/45603f1b4adcc73ea37b.jpg',
-        '../images/8a6ae07d69c4e874b52c.jpg',
-        '../images/1d0536b32e76aa8ad169.webp',
-        '../images/324b9db98c5f779e2f2c.jpg',
-        '../images/5797605502626eb5eaa3.jpg',
-        '../images/513f0a449c59e7eb2dcb.webp'
-      ]
-    },
-    'alexander-ivan-vasiny': {
-      author: 'Александр и Иван Васины',
-      subtitle: 'Как сообщества формируют практику',
-      images: [
-        '../images/86c2cda628bf2b209a91.webp',
-        '../images/8a6ae07d69c4e874b52c.jpg',
-        '../images/d801538041a9350ba5d2.webp',
-        '../images/8c30a668aa8d06217ed6.webp',
-        '../images/45603f1b4adcc73ea37b.jpg',
-        '../images/513f0a449c59e7eb2dcb.webp'
-      ]
-    },
-    'ira-kosheleva': {
-      author: 'Ира Кошелева',
-      subtitle: 'Нью-Йорк: работа в процессе',
-      images: [
-        '../images/3f7901bcc62741e03722.jpg',
-        '../images/45603f1b4adcc73ea37b.jpg',
-        '../images/8a6ae07d69c4e874b52c.jpg',
-        '../images/8c30a668aa8d06217ed6.webp',
-        '../images/d801538041a9350ba5d2.webp',
-        '../images/324b9db98c5f779e2f2c.jpg'
-      ]
-    }
-  };
 
-  var entries = [];
-  Object.keys(articles).forEach(function (slug) {
-    var article = articles[slug];
-    article.images.forEach(function (src, idx) {
-      entries.push({
-        src: src,
-        slug: slug,
-        author: article.author,
-        subtitle: article.subtitle,
-        kind: idx % 3 === 0 ? 'tall' : 'wide'
-      });
-    });
+  var data = window.deFindingsGalleryData || { entries: [] };
+  var entries = (data.entries || []).map(function (e, idx) {
+    return {
+      src: e.src,
+      author: e.author || '',
+      subtitle: e.subtitle || '',
+      href: e.href || '#',
+      kind: idx % 3 === 0 ? 'tall' : 'wide'
+    };
   });
 
   var tableView = document.getElementById('tableView');
@@ -105,24 +16,56 @@
   var tableBtn = document.getElementById('tableBtn');
   var sliderBtn = document.getElementById('sliderBtn');
 
-  entries.forEach(function (item) {
-    var card = document.createElement('a');
-    card.className = 'gallery-item ' + item.kind;
-    card.href = './article.html?slug=' + item.slug;
-    card.innerHTML =
-      '<img src="' +
-      item.src +
-      '" alt="' +
-      item.author +
-      '"><span class="overlay"></span><span class="go a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>';
-    tableView.appendChild(card);
+  var EAGER_CARDS = 6;
+  var fragment = document.createDocumentFragment();
 
-    var slide = document.createElement('a');
-    slide.className = 'gallery-slide';
-    slide.href = './article.html?slug=' + item.slug;
-    slide.innerHTML = '<img src="' + item.src + '" alt="' + item.author + '">';
-    sliderView.appendChild(slide);
+  entries.forEach(function (item, idx) {
+    var card = document.createElement('a');
+    card.className =
+      'm-gallery-card m-gallery-card--' + (item.kind === 'tall' ? 'tall' : 'wide');
+    card.href = item.href;
+    card.setAttribute('data-gallery-index', idx);
+
+    var img = document.createElement('img');
+    img.decoding = 'async';
+    img.alt = item.author || '';
+    img.loading = idx < EAGER_CARDS ? 'eager' : 'lazy';
+    if (item.kind === 'tall') {
+      img.width = 218;
+      img.height = 272;
+    } else {
+      img.width = 218;
+      img.height = 145;
+    }
+    if (idx < EAGER_CARDS) {
+      try { img.fetchPriority = 'high'; } catch (_) {  }
+    }
+
+    img.src = item.src;
+
+    var media = document.createElement('span');
+    media.className = 'm-gallery-card__media';
+    media.appendChild(img);
+
+    var go = document.createElement('span');
+    go.className = 'm-gallery-card__go a-arrow-button a-arrow-button--corner';
+    go.setAttribute('aria-hidden', 'true');
+    media.appendChild(go);
+
+    card.appendChild(media);
+
+    if (img.complete && img.naturalWidth > 0) {
+      card.classList.add('is-loaded');
+    }
+
+    var overlay = document.createElement('span');
+    overlay.className = 'm-gallery-card__overlay';
+    card.appendChild(overlay);
+
+    fragment.appendChild(card);
   });
+
+  tableView.appendChild(fragment);
 
   function activate(mode) {
     var isTable = mode === 'table';
@@ -130,8 +73,6 @@
     sliderBtn.classList.toggle('is-active', !isTable);
     tableBtn.setAttribute('aria-selected', isTable ? 'true' : 'false');
     sliderBtn.setAttribute('aria-selected', isTable ? 'false' : 'true');
-    tableView.hidden = !isTable;
-    sliderView.hidden = isTable;
   }
 
   tableBtn.addEventListener('click', function () {
@@ -140,5 +81,123 @@
 
   sliderBtn.addEventListener('click', function () {
     activate('slider');
+    openLightbox(0);
   });
+
+  var lightbox = document.getElementById('galleryLightbox');
+  var lbImage = lightbox.querySelector('.s-gallery-lightbox__image');
+  var lbImageLink = lightbox.querySelector('.s-gallery-lightbox__image-link');
+  var lbCaption = lightbox.querySelector('.s-gallery-lightbox__caption');
+  var lbAuthor = lightbox.querySelector('.s-gallery-lightbox__author');
+  var lbSubtitle = lightbox.querySelector('.s-gallery-lightbox__subtitle');
+  var lbAuthorLink = lightbox.querySelector('.s-gallery-lightbox__author-link');
+  var lbClose = lightbox.querySelector('.s-gallery-lightbox__close');
+  var lbBackdrop = lightbox.querySelector('.s-gallery-lightbox__backdrop');
+  var lbThumbs = lightbox.querySelector('.s-gallery-lightbox__thumbs');
+
+  var currentIndex = 0;
+  var thumbButtons = [];
+
+  function buildThumbs() {
+    if (!lbThumbs) return;
+    lbThumbs.innerHTML = '';
+    thumbButtons = entries.map(function (item, idx) {
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 's-gallery-lightbox__thumb';
+      btn.setAttribute('data-thumb-index', idx);
+      btn.setAttribute('aria-label', item.author || ('Изображение ' + (idx + 1)));
+      var img = document.createElement('img');
+      img.alt = '';
+
+      img.loading = 'eager';
+      img.decoding = 'async';
+      img.src = item.src;
+      btn.appendChild(img);
+      btn.addEventListener('click', function () {
+        goTo(idx);
+      });
+      lbThumbs.appendChild(btn);
+      return btn;
+    });
+  }
+
+  function syncThumbState() {
+    thumbButtons.forEach(function (btn, idx) {
+      btn.classList.toggle('is-current', idx === currentIndex);
+    });
+    var current = thumbButtons[currentIndex];
+    if (current && typeof current.scrollIntoView === 'function') {
+      current.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+    }
+  }
+
+  function updateSlide() {
+    var item = entries[currentIndex];
+    if (!item) return;
+    lbImage.src = item.src;
+    lbImage.alt = item.author || '';
+
+    if (lbCaption) lbCaption.textContent = 'Название проекта';
+    if (lbAuthor) lbAuthor.textContent = 'Copyright © ' + (item.author || '');
+    if (lbSubtitle) lbSubtitle.textContent = '';
+    var href = item.href || '#';
+    if (lbAuthorLink) lbAuthorLink.setAttribute('href', href);
+
+    if (lbImageLink) lbImageLink.setAttribute('href', href);
+    syncThumbState();
+  }
+
+  function openLightbox(index) {
+    if (!entries.length) return;
+    currentIndex = Math.max(0, Math.min(entries.length - 1, index));
+    updateSlide();
+    lightbox.classList.add('is-open');
+    document.body.classList.add('lightbox-open');
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('is-open');
+    document.body.classList.remove('lightbox-open');
+    activate('table');
+  }
+
+  function nextSlide() {
+    if (!entries.length) return;
+    currentIndex = (currentIndex + 1) % entries.length;
+    updateSlide();
+  }
+
+  function prevSlide() {
+    if (!entries.length) return;
+    currentIndex = (currentIndex - 1 + entries.length) % entries.length;
+    updateSlide();
+  }
+
+  function goTo(idx) {
+    if (idx < 0 || idx >= entries.length) return;
+    currentIndex = idx;
+    updateSlide();
+  }
+
+  buildThumbs();
+
+  if (lbClose) lbClose.addEventListener('click', closeLightbox);
+  if (lbBackdrop) lbBackdrop.addEventListener('click', closeLightbox);
+
+  document.addEventListener('keydown', function (e) {
+    if (!lightbox.classList.contains('is-open')) return;
+    if (e.key === 'Escape') {
+      closeLightbox();
+      return;
+    }
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+      e.preventDefault();
+      nextSlide();
+    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      prevSlide();
+    }
+  });
+
 })();

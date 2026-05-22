@@ -1,4 +1,4 @@
-/* S_Footer superorganism */
+
 .footer.s-footer {
   --s-footer-pad-x: var(--grid-margin);
   --s-footer-pad-y: 32px;
@@ -27,8 +27,9 @@
   left: var(--s-footer-pad-x);
   right: var(--s-footer-pad-x);
   top: var(--s-footer-logo-top);
-  height: var(--s-footer-logo-h);
-  background: url("../../quarks/branding/deFindings.svg") center / contain no-repeat;
+  height: auto;
+  aspect-ratio: 97 / 20;
+  background: url("../../quarks/branding/deFindings.svg") no-repeat left top / 100% 100%;
   filter: brightness(0) saturate(100%);
   pointer-events: none;
   z-index: 1;
@@ -89,6 +90,11 @@
   line-height: 130%;
   font-weight: 400;
   text-decoration: none;
+  transition: color 200ms ease;
+}
+
+.footer.s-footer a:hover {
+  color: var(--color-dark-grey);
 }
 
 .footer.s-footer .footer-up {
@@ -125,50 +131,46 @@
 
 @media (max-width: 1599px) {
   .footer.s-footer {
-    --s-footer-logo-block-h: 447.57px;
+    --s-footer-logo-block-h: 492px;
     --s-footer-logo-top: 204.04px;
-    --s-footer-logo-h: 275.53px;
     --s-footer-gradient-h: 418.3px;
     --s-footer-grid-h: 86px;
 
-    min-height: 673.57px;
+    min-height: 718px;
   }
 }
 
 @media (max-width: 1200px) {
   .footer.s-footer {
-    --s-footer-logo-block-h: 327.66px;
+    --s-footer-logo-block-h: 400px;
     --s-footer-logo-top: 157.95px;
-    --s-footer-logo-h: 201.71px;
     --s-footer-gradient-h: 307.8px;
     --s-footer-grid-h: 107px;
 
-    min-height: 574.66px;
+    min-height: 620px;
   }
 }
 
 @media (max-width: 900px) {
   .footer.s-footer {
-    --s-footer-logo-block-h: 241.54px;
+    --s-footer-logo-block-h: 300px;
     --s-footer-logo-top: 124.85px;
-    --s-footer-logo-h: 148.7px;
     --s-footer-gradient-h: 226px;
     --s-footer-grid-h: 123px;
 
-    min-height: 504.54px;
+    min-height: 548px;
   }
 }
 
 @media (max-width: 767px) {
   .footer.s-footer {
     --s-footer-pad-x: var(--grid-margin);
-    --s-footer-logo-block-h: 119.43px;
+    --s-footer-logo-block-h: 152px;
     --s-footer-logo-top: 77.91px;
-    --s-footer-logo-h: 73.52px;
     --s-footer-gradient-h: 112.9px;
     --s-footer-grid-h: 298px;
 
-    min-height: 557.43px;
+    min-height: 590px;
   }
 
   .footer.s-footer .footer-grid {

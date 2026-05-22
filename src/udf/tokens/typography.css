@@ -1,5 +1,5 @@
 :root {
-  /* Scale per breakpoint (from Figma type system) */
+
   --type-h1-desktop: 80px;
   --type-h1-desktop-tablet: 80px;
   --type-h1-mobile: 36px;
@@ -32,7 +32,6 @@
   --type-body-xs-tablet: 12px;
   --type-body-xs-mobile: 12px;
 
-  /* Line heights */
   --type-h1-lh: 1;
   --type-h2-lh: 1;
   --type-h3-lh: 1.2;
@@ -42,7 +41,6 @@
   --type-button-s-lh: 1.2;
   --type-body-xs-lh: 1.2;
 
-  /* Active semantic tokens (Desktop default) */
   --type-h1: var(--type-h1-desktop);
   --type-h2: var(--type-h2-desktop);
   --type-h3: var(--type-h3-desktop);

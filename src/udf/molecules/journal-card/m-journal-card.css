@@ -1,33 +1,28 @@
-/* M_JournalCard — molecule combining A_ImageJournalLink + text content
- *
- * Structure:
- *   .m-journal-card
- *     a.a-image-journal-link        (atom)
- *     .m-journal-card__content
- *       .m-journal-card__header
- *         h3.m-journal-card__author
- *         h4.m-journal-card__subtitle
- *       p.m-journal-card__description
- *       .m-journal-card__meta
- */
-
 .m-journal-card {
   display: flex;
   flex-direction: column;
   gap: 20px;
   cursor: pointer;
+  contain: layout style;
+}
+
+.m-journal-card.reveal-ready {
+  opacity: 1;
+  transform: none;
+  transition: none;
 }
 
 .m-journal-card__content {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0;
 }
 
 .m-journal-card__header {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+
+  gap: 0;
 }
 
 .m-journal-card__author,
@@ -41,6 +36,7 @@
 
 .m-journal-card__description {
   margin: 0;
+  margin-top: 12px;
   font-weight: 400;
   font-size: var(--type-body-s);
   line-height: var(--type-body-s-lh);
@@ -48,11 +44,10 @@
 }
 
 .m-journal-card__meta {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
+  display: block;
+  margin-top: 12px;
   font-size: var(--type-body-s);
   line-height: var(--type-body-s-lh);
+  word-spacing: 6px;
   color: var(--color-dark-grey);
 }

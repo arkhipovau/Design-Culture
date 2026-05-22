@@ -1,5 +1,3 @@
-// Sphere page runtime (classic script)
-// Works both via http(s) and direct file:// opening
 
 (function () {
   const box = document.createElement('pre');
@@ -38,8 +36,23 @@ const FALLBACK_IMAGE_FILES = [
   '96f7d4116789d1f7784d.webp',
 ];
 
+const IMAGES_BASE = new URL('../images/', window.location.href);
+
+function resolveImageUrl(file) {
+  return new URL(String(file).replace(/^\//, ''), IMAGES_BASE).href;
+}
+
 function fallbackImageUrls() {
-  return FALLBACK_IMAGE_FILES.map((f) => `../images/${f}`);
+  return FALLBACK_IMAGE_FILES.map(resolveImageUrl);
+}
+
+function notifyParentReady() {
+  if (!isEmbedded || window.parent === window) return;
+  try {
+    window.parent.postMessage({ type: 'sphere-ready' }, '*');
+  } catch (_) {
+    /* ignore */
+  }
 }
 
 const searchParams = new URLSearchParams(window.location.search);
@@ -48,6 +61,13 @@ const requestedSphereScale = Number(searchParams.get('sphereScale') || '1');
 const sphereScale = Number.isFinite(requestedSphereScale)
   ? Math.min(1.5, Math.max(0.4, requestedSphereScale))
   : 1;
+
+function getLayoutSphereMultiplier() {
+  const w = window.innerWidth;
+  if (w <= 420) return 0.68;
+  if (w <= 1200) return 0.82;
+  return 1;
+}
 
 if (isEmbedded) {
   const nav = document.querySelector('nav');
@@ -66,7 +86,7 @@ async function loadImageUrls() {
     if (!Array.isArray(files)) throw new Error('manifest is not an array');
     const urls = files
       .filter((f) => /\.(png|jpe?g|webp)$/i.test(f))
-      .map((f) => `../images/${f}`);
+      .map(resolveImageUrl);
     return urls.length ? urls : fallbackImageUrls();
   } catch (err) {
     if (window.__sphereShowError) {
@@ -130,6 +150,26 @@ function fibonacciSphere(THREE, count, radius) {
   return points;
 }
 
+function showFileProtocolFallback() {
+
+  document.body.style.background = '#FAFAFA';
+  const wrap = document.createElement('div');
+  wrap.style.cssText =
+    'position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:24px;font:14px/1.5 -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;color:#666;background:#FAFAFA;text-align:center;';
+  const img = document.createElement('img');
+  img.src = resolveImageUrl(FALLBACK_IMAGE_FILES[0]);
+  img.alt = '';
+  img.style.cssText = 'max-width:80%;max-height:70vh;opacity:0.35;filter:grayscale(0.4);';
+  img.onerror = function () { img.style.display = 'none'; };
+  const note = document.createElement('div');
+  note.style.cssText = 'max-width:380px;color:#999;font-size:13px;';
+  note.textContent =
+    'Интерактивная сфера показывается только при запуске через локальный сервер: npm run dev:webpack — или открыть страницу на GitHub Pages.';
+  wrap.appendChild(img);
+  wrap.appendChild(note);
+  document.body.appendChild(wrap);
+}
+
 async function init() {
   const THREE = window.THREE;
   if (!THREE) {
@@ -139,17 +179,43 @@ async function init() {
     return;
   }
 
+  if (window.location.protocol === 'file:') {
+    showFileProtocolFallback();
+    return;
+  }
+
   const imageUrlsRaw = await loadImageUrls();
-  const imageUrls = shuffle(imageUrlsRaw).slice(0, Math.max(24, Math.min(imageUrlsRaw.length, 180)));
+
+  let layoutMult = getLayoutSphereMultiplier();
+  const visualScale = sphereScale * layoutMult;
+
+  const targetTileCount = isEmbedded
+    ? window.innerWidth <= 767
+      ? 48
+      : 64
+    : 112;
+  const imageUrls = shuffle(imageUrlsRaw).slice(0, Math.max(24, Math.min(imageUrlsRaw.length, targetTileCount)));
 
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 100);
-  camera.position.set(0, 0, 8);
+  const baseCameraZ = layoutMult < 0.75 ? 9.2 : 8;
+  camera.position.set(0, 0, baseCameraZ);
 
-  const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  const renderer = new THREE.WebGLRenderer({
+    antialias: true,
+    alpha: !isEmbedded,
+    powerPreference: 'high-performance'
+  });
+
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, isEmbedded ? 2 : 2));
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.setClearColor(0xFAFAFA, 1);
+
+  if ('outputColorSpace' in renderer) {
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
+  } else if ('outputEncoding' in renderer && THREE.sRGBEncoding) {
+    renderer.outputEncoding = THREE.sRGBEncoding;
+  }
 
   document.body.style.background = '#FAFAFA';
   document.body.appendChild(renderer.domElement);
@@ -157,17 +223,20 @@ async function init() {
   const group = new THREE.Group();
   scene.add(group);
 
-  const RADIUS = 3.6 * sphereScale;
-  const TILE = 0.72 * sphereScale;
+  const RADIUS = 3.6 * visualScale;
+  const TILE = 0.82 * visualScale; 
 
-  const alphaMask = makeRoundedRectAlpha(THREE, 512, 22);
+  const alphaMask = makeRoundedRectAlpha(THREE, 1024, 38);
   const geometry = new THREE.PlaneGeometry(TILE, TILE);
   const points = fibonacciSphere(THREE, Math.max(imageUrls.length, 24), RADIUS);
 
   const loader = new THREE.TextureLoader();
+  const maxAniso = renderer.capabilities.getMaxAnisotropy();
   let loadedTextures = 0;
   let failedTextures = 0;
+  let parentNotified = false;
   const expectedTextures = points.length;
+  const notifyThreshold = Math.min(12, Math.max(4, Math.floor(expectedTextures * 0.15)));
 
   points.forEach((point, i) => {
     const mat = new THREE.MeshBasicMaterial({
@@ -175,12 +244,16 @@ async function init() {
       alphaMap: alphaMask,
       transparent: true,
       side: THREE.DoubleSide,
-      alphaTest: 0.15,
+      alphaTest: 0,
+      depthWrite: false,
+      opacity: 0.82
     });
 
     const mesh = new THREE.Mesh(geometry, mat);
     mesh.position.copy(point);
     mesh.lookAt(point.clone().multiplyScalar(2));
+
+    mesh.renderOrder = -point.z;
     group.add(mesh);
 
     const url = imageUrls[i % Math.max(imageUrls.length, 1)];
@@ -193,20 +266,29 @@ async function init() {
         tex.colorSpace = THREE.SRGBColorSpace;
         tex.minFilter = THREE.LinearMipmapLinearFilter;
         tex.magFilter = THREE.LinearFilter;
+        tex.anisotropy = maxAniso;
+        tex.generateMipmaps = true;
         mat.map = tex;
         mat.color.set(0xffffff);
         mat.needsUpdate = true;
+        if (!parentNotified && loadedTextures >= notifyThreshold) {
+          parentNotified = true;
+          notifyParentReady();
+        }
       },
       undefined,
       () => {
         failedTextures += 1;
-        // keep neutral fallback tile
+
       }
     );
   });
 
-  // Helpful diagnostics when browser blocks local file textures or stale asset paths are cached.
   window.setTimeout(() => {
+    if (loadedTextures > 0 && !parentNotified) {
+      parentNotified = true;
+      notifyParentReady();
+    }
     if (loadedTextures === 0 && failedTextures > 0 && window.__sphereShowError) {
       window.__sphereShowError(
         `Textures did not load (${failedTextures}/${expectedTextures}). ` +
@@ -264,6 +346,13 @@ async function init() {
   }
 
   window.addEventListener('resize', () => {
+    const nextMult = getLayoutSphereMultiplier();
+    if (nextMult !== layoutMult) {
+      const ratio = nextMult / layoutMult;
+      group.scale.multiplyScalar(ratio);
+      layoutMult = nextMult;
+    }
+
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);

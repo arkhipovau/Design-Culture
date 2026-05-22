@@ -14,23 +14,20 @@
     <link rel="stylesheet" href="../udf/atoms/mail-input/a-mail-input.css" />
     <link rel="stylesheet" href="../udf/molecules/mail-form/m-mail-form.css" />
     <link rel="stylesheet" href="../udf/superorganisms/menu/s-menu.css" />
-    <link rel="stylesheet" href="../udf/superorganisms/footer/s-footer.css" />
+    <link rel="stylesheet" href="../udf/superorganisms/footer/s-footer.css" />    <link rel="stylesheet" href="../udf/quarks/findings/q-findings.css" />
+    <!-- MailerLite Universal tracking — pairs with the m-mail-form POST in m-mail-form.js -->
+    <script>
+      (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[]).push(arguments);},l=d.createElement(e),l.async=1,l.src=u,n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})(window,document,"script","https://assets.mailerlite.com/js/universal.js","ml");
+      ml("account", "2370552");
+    </script>
   </head>
   <body data-reading-page="Рассылка deFindings">
-    <header class="topbar s-menu newsletter-topbar">
-      <div class="pill nav-left">
-        <a href="./journal.html">Журнал</a>
-        <a href="./gallery.html">Галерея</a>
-      </div>
+    <div class="q-findings-overlay" aria-hidden="true"></div>
+    <header class="topbar topbar--menu s-menu newsletter-topbar">
       <a class="logo" href="../index.html" aria-label="deFindings">
         <img class="logo-mark" src="../udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
         <span class="visually-hidden">deFindings</span>
       </a>
-      <div class="pill nav-right">
-        <a href="./newsletter.html">Подписаться</a>
-        <a href="../index.html#issue">Печатный выпуск — Предзаказ</a>
-        <a href="./sphere.html">Фото-шар</a>
-      </div>
     </header>
 
     <main class="newsletter-page">
@@ -72,7 +69,7 @@
         </div>
         <div>
           <h4>Узнайте больше</h4>
-          <a href="../index.html">О проекте</a>
+          <a href="./about.html">О проекте</a>
         </div>
         <div>
           <h4>Подписывайтесь</h4>
@@ -95,14 +92,14 @@
       </div>
     </footer>
 
-    <div class="read-indicator a-sticky-scroll-wrap">
-      <div class="read-pill a-sticky-scroll">
-        <span class="read-rec a-sticky-scroll__rec" aria-hidden="true"></span>
-        <span class="read-content a-sticky-scroll__content">
-          <span class="read-dot a-sticky-scroll__dot" aria-hidden="true"></span>
-          <span class="read-text a-sticky-scroll__text">
-            <span class="read-prefix a-sticky-scroll__prefix">Вы читаете</span>
-            <span class="read-current a-sticky-scroll__current">«Рассылка deFindings»</span>
+    <div class="a-sticky-scroll-wrap">
+      <div class="a-sticky-scroll">
+        <span class="a-sticky-scroll__rec" aria-hidden="true"></span>
+        <span class="a-sticky-scroll__content">
+          <span class="a-sticky-scroll__dot" aria-hidden="true"></span>
+          <span class="a-sticky-scroll__text">
+            <span class="a-sticky-scroll__prefix">Вы читаете</span>
+            <span class="a-sticky-scroll__current">«Рассылка deFindings»</span>
           </span>
         </span>
       </div>

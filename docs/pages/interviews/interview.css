@@ -1,0 +1,136 @@
+.interview-body {
+  padding: 160px 0 120px;
+  gap: 120px;
+}
+
+.interview-page .m-article-info {
+  margin-top: 40px;
+}
+
+.interview-page .m-next-article {
+  margin-top: 80px;
+}
+
+.interview-page strong,
+.interview-page b,
+.article-page strong,
+.article-page b {
+  font-weight: 400;
+}
+
+.interview-body .lede {
+  width: min(886px, 100%);
+  font-size: var(--type-h3);
+  line-height: var(--type-h3-lh);
+  margin: 0;
+  font-weight: 400;
+}
+
+.interview-hero {
+  background-color: #2b2b2b;
+  position: relative;
+  isolation: isolate;
+}
+
+.interview-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: interview-hero-bg-in 640ms cubic-bezier(0.22, 1, 0.36, 1) 80ms forwards;
+  z-index: -1;
+}
+
+@keyframes interview-hero-bg-in {
+  to {
+    opacity: 1;
+  }
+}
+
+.interview-hero__title,
+.interview-hero__subtitle {
+  margin: 0;
+  width: min(1108px, 100%);
+  font-weight: 400;
+  text-align: center;
+  font-size: clamp(36px, 6.2vw, 80px);
+  line-height: 1;
+}
+
+.interview-hero__title {
+  font-size: clamp(32px, 4.6vw, 60px);
+  line-height: 1.05;
+}
+
+.interview-hero__subtitle {
+  font-size: clamp(20px, 2.4vw, 30px);
+  line-height: 1.2;
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.article-prose {
+  margin: 0;
+  font-size: var(--type-body-xl);
+  line-height: var(--type-body-xl-lh);
+  color: var(--color-black);
+}
+
+.interview-page .m-article-info {
+  width: min(1108px, 100%);
+  margin: 0 auto;
+  padding: 56px;
+  grid-template-columns: 386px 1fr;
+  gap: 32px;
+}
+
+@media (max-width: 1200px) {
+  .interview-body {
+    gap: 88px;
+    padding-top: 96px;
+  }
+
+  .interview-hero__title {
+    font-size: clamp(28px, 6vw, 48px);
+  }
+  .interview-hero__subtitle {
+    font-size: clamp(18px, 3vw, 24px);
+  }
+
+  .interview-body .lede {
+    font-size: var(--type-h3);
+  }
+
+  .interview-page .m-article-info {
+    grid-template-columns: 1fr;
+    padding: 32px;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .interview-body {
+    gap: 56px;
+    padding-top: 56px;
+  }
+
+  .interview-hero__title {
+    font-size: clamp(24px, 8vw, 36px);
+  }
+
+  .interview-hero__subtitle {
+    font-size: clamp(16px, 4.6vw, 20px);
+  }
+
+  .interview-body .lede {
+    font-size: 22px;
+    line-height: 1.25;
+  }
+
+  .interview-page .m-article-info {
+    padding: 24px;
+  }
+}

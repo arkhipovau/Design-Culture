@@ -1,5 +1,4 @@
-.a-sticky-scroll-wrap,
-.read-indicator {
+.a-sticky-scroll-wrap {
   position: fixed;
   left: 12px;
   right: 12px;
@@ -12,8 +11,7 @@
   pointer-events: none;
 }
 
-.a-sticky-scroll,
-.read-pill {
+.a-sticky-scroll {
   position: relative;
   display: inline-flex;
   flex-direction: row;
@@ -29,12 +27,15 @@
     0 5px 46px rgba(0, 0, 0, 0.04), 0 5px 15px rgba(0, 0, 0, 0.04);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
+  transform: translateZ(0);
+  will-change: backdrop-filter, transform;
   border-radius: 75px;
   overflow: hidden;
+  font-size: var(--type-button-s);
+  line-height: var(--type-button-s-lh);
 }
 
-.a-sticky-scroll__rec,
-.read-rec {
+.a-sticky-scroll__rec {
   position: absolute;
   left: 0;
   top: 0;
@@ -45,8 +46,7 @@
   z-index: 0;
 }
 
-.a-sticky-scroll__content,
-.read-content {
+.a-sticky-scroll__content {
   position: relative;
   z-index: 1;
   display: inline-flex;
@@ -58,8 +58,7 @@
   width: 100%;
 }
 
-.a-sticky-scroll__dot,
-.read-dot {
+.a-sticky-scroll__dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -67,8 +66,7 @@
   flex: none;
 }
 
-.a-sticky-scroll__text,
-.read-text {
+.a-sticky-scroll__text {
   display: inline-flex;
   flex-direction: row;
   align-items: center;
@@ -81,16 +79,14 @@
   line-height: var(--type-button-s-lh);
 }
 
-.a-sticky-scroll__prefix,
-.read-prefix {
+.a-sticky-scroll__prefix {
   color: var(--color-dark-grey);
   font-weight: 400;
   white-space: nowrap;
   flex: none;
 }
 
-.a-sticky-scroll__current,
-.read-current {
+.a-sticky-scroll__current {
   color: var(--color-black);
   display: inline-block;
   flex: 1 1 auto;
@@ -100,4 +96,40 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   vertical-align: bottom;
+}
+
+.a-sticky-scroll__current.sticky-current {
+  max-width: min(62vw, 360px);
+}
+
+@media (max-width: 767px) {
+  .a-sticky-scroll-wrap {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    bottom: calc(10px + constant(safe-area-inset-bottom));
+    bottom: calc(10px + env(safe-area-inset-bottom));
+  }
+
+  .a-sticky-scroll {
+    padding: 0 22px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .a-sticky-scroll__current,
+  .a-sticky-scroll__current.sticky-current {
+    max-width: min(58vw, 205px);
+  }
+}
+
+@media (max-width: 420px) {
+  .a-sticky-scroll {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .a-sticky-scroll__content {
+    gap: 10px;
+  }
 }

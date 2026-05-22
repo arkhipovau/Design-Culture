@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "node ./scripts/sync-docs.mjs",
-    "watch": "node ./scripts/sync-docs.mjs --watch",
+    "build": "node ./scripts/sync-docs.js",
+    "watch": "node ./scripts/sync-docs.js --watch",
     "build:webpack": "webpack --config ./config/webpack.prod.js",
     "dev:webpack": "webpack serve --config ./config/webpack.dev.js"
   },

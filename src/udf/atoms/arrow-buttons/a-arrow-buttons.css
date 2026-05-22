@@ -63,7 +63,6 @@
   --a-arrow-icon-active: url("../../quarks/icons/q-icon-arrow-right-16-white.svg");
 }
 
-/* Arrow up has inverted state logic from Figma spec */
 .a-arrow-button--up {
   --a-arrow-bg: var(--color-black);
   --a-arrow-icon-default: url("../../quarks/icons/q-icon-arrow-up-16-white.svg");

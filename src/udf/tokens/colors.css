@@ -1,10 +1,9 @@
 :root {
-  /* Base */
+
   --color-black: #212121;
   --color-light-grey: #fafafa;
   --color-coloring-grey: #e9e8e9;
 
-  /* Accent */
   --color-coloring-green: #008012;
   --color-coloring-violet: #6956fd;
   --color-coloring-red: #714043;
@@ -13,7 +12,6 @@
   --color-coloring-dark-grey: #2b2b2b;
   --color-coloring-light-blue: #cbe2f3;
 
-  /* UI */
   --color-elements: #f4f4f4;
   --color-elements-rgb: 244 244 244;
   --opacity-elements: 0.64;
@@ -28,14 +26,12 @@
   --color-white: #ffffff;
   --color-medium-grey: #C8C8C8;
 
-  /* Utility neutrals used by current layouts */
   --color-neutral-caption: #565656;
   --color-neutral-scroll-track: #d9d9d9;
   --color-neutral-surface: #efefef;
   --color-neutral-gradient-a: #ecebec;
   --color-neutral-gradient-b: #d8d8d8;
 
-  /* Legacy aliases used in project CSS */
   --bg: var(--color-light-grey);
   --paper: var(--color-coloring-grey);
   --ink: var(--color-black);

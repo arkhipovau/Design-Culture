@@ -36,7 +36,6 @@ img {
   height: auto;
 }
 
-/* Quark SVG icons must keep native file dimensions unless explicitly overridden. */
 img[src*="/udf/quarks/icons/"],
 img[src^="./udf/quarks/icons/"],
 img[src^="../udf/quarks/icons/"] {
@@ -62,6 +61,7 @@ img[src^="../udf/quarks/icons/"] {
   width: 100%;
   height: 100vh;
   min-height: 760px;
+  background: var(--bg);
 }
 
 .sphere-frame {
@@ -71,13 +71,20 @@ img[src^="../udf/quarks/icons/"] {
   display: block;
   background: var(--bg);
   pointer-events: none;
+
+  opacity: 0;
+  transition: opacity 520ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.sphere-frame.is-loaded {
+  opacity: 1;
 }
 
 .hero-intro {
   position: relative;
   width: 100%;
-  min-height: 672px;
-  padding: 250px 0;
+
+  padding: 110px 0 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,12 +102,43 @@ img[src^="../udf/quarks/icons/"] {
 .hero-intro h1,
 .hero-intro p {
   font-weight: 400;
-  line-height: 1;
+
+  line-height: 1.2;
+  margin: 0;
+}
+
+.hero-layout {
+  position: relative;
+}
+
+.hero-under {
+  color: #e7e7e7;
+}
+
+.hero-over {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  color: transparent;
+}
+
+.hero-over .hero-word {
   color: rgb(
-    calc(231 - (198 * var(--hero-text-progress))),
-    calc(231 - (198 * var(--hero-text-progress))),
-    calc(231 - (198 * var(--hero-text-progress)))
+    calc(231 - 198 * var(--p, 0)),
+    calc(231 - 198 * var(--p, 0)),
+    calc(231 - 198 * var(--p, 0))
   );
+}
+
+.hero-intro .hero-break {
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  .hero-intro .hero-break {
+    display: none;
+  }
 }
 
 .section h2 {
@@ -110,7 +148,8 @@ img[src^="../udf/quarks/icons/"] {
 
 .hero-intro h1,
 .hero-intro p {
-  font-size: 38px;
+
+  font-size: 28px;
 }
 
 .hero-intro h1,
@@ -126,8 +165,21 @@ img[src^="../udf/quarks/icons/"] {
   font-size: var(--type-h2);
 }
 
-.hero-float {
+.hero-pill-slot,
+.hero-pill {
+  display: inline-block;
+  width: 80px;
+  height: 1px;
+  margin: 0 12px;
+  vertical-align: middle;
+  position: relative;
+  pointer-events: none;
+}
+
+.hero-pill-inner {
   position: absolute;
+  left: 0;
+  top: 50%;
   width: 80px;
   height: 80px;
   display: flex;
@@ -137,43 +189,23 @@ img[src^="../udf/quarks/icons/"] {
   backdrop-filter: blur(32px);
   -webkit-backdrop-filter: blur(32px);
   box-shadow: var(--pill-shadow);
-  z-index: 3;
   overflow: hidden;
   isolation: isolate;
-  pointer-events: none;
+
+  transform: translate3d(var(--pill-x, 0px), -50%, 0)
+    scale(calc(1 + 0.15 * var(--p, 0)));
+  transform-origin: center center;
+  will-change: transform, backdrop-filter;
 }
 
-.hero-float::before {
-  content: none;
-}
-
-.hero-float::after {
-  content: none;
-}
-
-.hero-float img {
-  position: relative;
-  z-index: 2;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
+.hero-pill-inner img {
+  max-width: 96%;
+  max-height: 96%;
   object-fit: contain;
 }
 
-.hero-float-a {
-  left: 518px;
-  top: 366px;
-}
-
-.hero-float-b {
-  left: 723px;
-  top: 229px;
-}
-
-.hero-float-c {
-  left: 896px;
-  top: 288px;
+.hero-pill-b .hero-pill-inner {
+  --pill-x: 0px;
 }
 
 .section-head {
@@ -181,57 +213,6 @@ img[src^="../udf/quarks/icons/"] {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 0;
-  border-radius: 999px;
-  background: var(--color-light-grey);
-  color: var(--ink);
-  height: 40px;
-  padding: 0 80px;
-  font-size: var(--type-button-xl);
-  line-height: var(--type-button-xl-lh);
-  cursor: pointer;
-  transition: background-color 160ms ease, color 160ms ease, opacity 160ms ease, transform 90ms ease;
-}
-
-.btn-dark {
-  background: var(--ink);
-  color: var(--color-white);
-}
-
-.btn:hover:not(:disabled):not([aria-disabled="true"]) {
-  background: var(--color-medium-grey);
-}
-
-.btn:active:not(:disabled):not([aria-disabled="true"]) {
-  background: var(--color-black);
-  color: var(--color-white);
-  transform: translateY(0.5px);
-}
-
-.btn-dark:hover:not(:disabled):not([aria-disabled="true"]) {
-  background: var(--color-dark-grey);
-  color: var(--color-white);
-}
-
-.btn-dark:active:not(:disabled):not([aria-disabled="true"]) {
-  background: var(--color-outside-elements);
-  color: var(--color-black);
-  transform: translateY(0.5px);
-}
-
-.btn:disabled,
-.btn[aria-disabled="true"],
-.btn.is-disabled,
-.btn.is-unable {
-  opacity: 0.4;
-  cursor: default;
-  pointer-events: none;
 }
 
 .interviews {
@@ -303,12 +284,8 @@ img[src^="../udf/quarks/icons/"] {
   margin: 0;
 }
 
-.issue-copy .btn {
+.issue-copy .a-button {
   margin-top: 40px;
-}
-
-body[data-reading-page="Медиа о дизайн-культуре deFindings"] .issue ~ .split-links {
-  margin-top: 80px;
 }
 
 .highlights {
@@ -362,7 +339,6 @@ body[data-reading-page="Медиа о дизайн-культуре deFindings"]
   font-size: 16px;
   margin: 0 auto;
 }
-
 
 .slider-indicator {
   display: inline-flex;
@@ -473,66 +449,22 @@ body[data-reading-page="Медиа о дизайн-культуре deFindings"]
   border-radius: 0;
 }
 
-.split-links {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--grid-gutter);
-  padding-bottom: 120px;
-}
-
-.split-card {
-  min-height: 680px;
-  border-radius: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
-  padding: 32px;
-}
-
-.split-card h3 {
-  font-size: var(--type-h3);
-  line-height: var(--type-h3-lh);
-  font-weight: 400;
-  margin: 0;
-}
-
-.split-card p {
-  width: min(240px, 90%);
-  margin: 0;
-  font-size: var(--type-body-s);
-  line-height: var(--type-body-s-lh);
-}
-
-.split-card.journal {
-  background: url("../images/Rectangle 4726.png") center / cover no-repeat;
-  color: var(--color-white);
-}
-
-.split-card.gallery-link {
-  background: url("../images/Group 2131329985.jpg") center / cover no-repeat;
-  color: var(--color-white);
-}
-
-.issue-card__image {
-  width: 480px;
-  max-width: 80%;
-  height: auto;
-  object-fit: contain;
-}
-
 .newsletter {
   background: var(--paper);
   border-radius: 0;
   margin-bottom: 32px;
   padding: 90px 24px;
+  box-sizing: border-box;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
+}
+
+.newsletter .m-mail-form {
+  width: min(664px, 100%);
+  max-width: 100%;
 }
 
 .newsletter h2 {
@@ -562,215 +494,6 @@ body[data-reading-page="Медиа о дизайн-культуре deFindings"]
   line-height: var(--type-body-s-lh);
 }
 
-.newsletter-form:not(.m-mail-form) {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  width: min(664px, 100%);
-  margin: 0 auto;
-  background: var(--color-white);
-  border-radius: 999px;
-  padding: 10px;
-}
-
-.newsletter-form:not(.m-mail-form) input {
-  border: 0;
-  flex: 1;
-  min-width: 0;
-  font-size: var(--type-button-xl);
-  line-height: var(--type-button-xl-lh);
-  border-radius: 999px;
-  padding: 14px 22px;
-  outline: none;
-}
-
-.newsletter-form:not(.m-mail-form) button {
-  border: 0;
-  border-radius: 999px;
-  padding: 0 20px;
-  background: var(--ink);
-  color: var(--color-white);
-  font-size: var(--type-button-xl);
-  line-height: var(--type-button-xl-lh);
-  cursor: pointer;
-}
-
-.newsletter-form:not(.m-mail-form) button::before {
-  content: none;
-}
-
-.footer:not(.s-footer) {
-  width: var(--grid-content-width);
-  margin: 0 auto 32px;
-  padding: 40px 0 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.footer:not(.s-footer)::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 22px;
-  height: 670px;
-  pointer-events: none;
-  background-image: radial-gradient(circle, var(--color-coloring-grey) 1px, transparent 1.1px);
-  background-size: calc((100% - 6px) / 7) 223px;
-  opacity: 0.55;
-  mix-blend-mode: exclusion;
-}
-
-.footer:not(.s-footer) .footer-grid,
-.footer:not(.s-footer) .footer-bottom {
-  position: relative;
-  z-index: 1;
-}
-
-.footer:not(.s-footer) .footer-grid {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 12px var(--grid-gutter);
-  padding-bottom: 40px;
-  border-bottom: 1px solid var(--line);
-}
-
-.footer:not(.s-footer) h4 {
-  color: var(--muted);
-  font-weight: 400;
-  margin: 0 0 20px;
-}
-
-.footer:not(.s-footer) a,
-.footer:not(.s-footer) span {
-  display: block;
-  margin-bottom: 8px;
-}
-
-.footer:not(.s-footer) .footer-link-icon {
-  display: inline-flex !important;
-  align-items: center;
-  gap: 8px;
-}
-
-.footer:not(.s-footer) .footer-link-icon img {
-  width: 24px;
-  height: 24px;
-  display: block;
-}
-
-.footer:not(.s-footer) .footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 20px 0;
-  font-size: var(--type-button-s);
-  line-height: var(--type-button-s-lh);
-}
-
-.read-indicator {
-  position: fixed;
-  left: 12px;
-  right: 12px;
-  bottom: 12px;
-  bottom: calc(12px + constant(safe-area-inset-bottom));
-  bottom: calc(12px + env(safe-area-inset-bottom));
-  display: flex;
-  justify-content: center;
-  z-index: 20;
-  pointer-events: none;
-}
-
-.read-pill {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  width: min(439px, 100%);
-  min-width: 0;
-  padding: 0 56px;
-  border-radius: 999px;
-  background: var(--color-elements-64);
-  box-shadow: var(--pill-shadow);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  font-size: var(--type-button-s);
-  line-height: var(--type-button-s-lh);
-  overflow: hidden;
-}
-
-.read-rec {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 0;
-  height: 40px;
-  background: #eeeeee;
-  border-radius: 0;
-  z-index: 0;
-}
-
-.read-content {
-  position: relative;
-  z-index: 1;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  min-width: 0;
-  width: 100%;
-}
-
-.read-text {
-  display: inline-flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 8px;
-  min-width: 0;
-  white-space: nowrap;
-}
-
-.read-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  background: var(--color-coloring-violet);
-}
-
-.read-prefix {
-  color: var(--muted);
-  white-space: nowrap;
-  flex: none;
-}
-
-.read-current {
-  color: var(--ink);
-  display: inline-block;
-  flex: 1 1 auto;
-  min-width: 0;
-  max-width: min(62vw, 286px);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  vertical-align: bottom;
-}
-
-.stickyTitle,
-.sticky-current {
-  display: inline-block;
-  min-width: 0;
-  max-width: min(62vw, 360px);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  vertical-align: bottom;
-}
-
-.read-indicator .read-pill {
-  max-width: min(439px, 100%);
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -791,8 +514,7 @@ body[data-reading-page="Медиа о дизайн-культуре deFindings"]
 
 @media (max-width: 1200px) {
   .hero-intro {
-    min-height: 572px;
-    padding: 200px 0;
+    padding: 100px 0 210px;
   }
 
   .hero-copy {
@@ -801,23 +523,8 @@ body[data-reading-page="Медиа о дизайн-культуре deFindings"]
 
   .hero-intro h1,
   .hero-intro p {
-    font-size: 38px;
-    line-height: 1;
-  }
-
-  .hero-float-a {
-    left: 310px;
-    top: 315px;
-  }
-
-  .hero-float-b {
-    left: 514px;
-    top: 178px;
-  }
-
-  .hero-float-c {
-    left: 688px;
-    top: 238px;
+    font-size: 28px;
+    line-height: 1.2;
   }
 
   .issue-copy {
@@ -826,8 +533,7 @@ body[data-reading-page="Медиа о дизайн-культуре deFindings"]
 
   .cards-grid,
   .highlight-row,
-  .gallery-strip,
-  .footer:not(.s-footer) .footer-grid {
+  .gallery-strip {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -851,9 +557,13 @@ body[data-reading-page="Медиа о дизайн-культуре deFindings"]
 }
 
 @media (max-width: 768px) {
+  .hero-sphere {
+    height: 88vh;
+    min-height: 600px;
+  }
+
   .hero-intro {
-    min-height: 580px;
-    padding: 200px 25px;
+    padding: 100px 25px 190px;
   }
 
   .hero-copy {
@@ -862,28 +572,19 @@ body[data-reading-page="Медиа о дизайн-культуре deFindings"]
 
   .hero-intro h1,
   .hero-intro p {
-    font-size: 32px;
-    line-height: 1;
+    font-size: 28px;
+    line-height: 1.2;
   }
 
-  .hero-float {
+  .hero-pill-slot,
+  .hero-pill {
+    width: 56px;
+    margin: 0 8px;
+  }
+
+  .hero-pill-inner {
     width: 56px;
     height: 56px;
-  }
-
-  .hero-float-a {
-    left: 91px;
-    top: 337px;
-  }
-
-  .hero-float-b {
-    left: 393px;
-    top: 188px;
-  }
-
-  .hero-float-c {
-    left: 645px;
-    top: 243px;
   }
 
   .issue-copy {
@@ -899,9 +600,7 @@ body[data-reading-page="Медиа о дизайн-культуре deFindings"]
   .cards-grid,
   .highlight-row,
   .gallery-strip,
-  .split-links,
-  .issue-gallery,
-  .footer:not(.s-footer) .footer-grid {
+  .issue-gallery {
     grid-template-columns: 1fr;
   }
 
@@ -909,12 +608,12 @@ body[data-reading-page="Медиа о дизайн-культуре deFindings"]
     row-gap: 32px;
   }
 
-  .split-card {
-    min-height: 420px;
-  }
-
-  .issue {
-    padding: 120px 10px;
+  .section.issue {
+    width: 100%;
+    max-width: none;
+    margin-inline: 0;
+    padding: 120px 0;
+    box-sizing: border-box;
   }
 
   .issue-gallery img:nth-child(n + 2) {
@@ -922,14 +621,17 @@ body[data-reading-page="Медиа о дизайн-культуре deFindings"]
   }
 
   .issue-copy {
-    width: min(355px, 100%);
+    width: min(474px, calc(100% - 48px));
+    margin-inline: auto;
+    padding-inline: 0;
+    box-sizing: border-box;
   }
 
   .newsletter {
-    width: 100%;
+    width: var(--grid-content-width);
     min-height: 544px;
     margin: 0 auto 32px;
-    padding: 100px 10px;
+    padding: 100px 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -954,54 +656,16 @@ body[data-reading-page="Медиа о дизайн-культуре deFindings"]
     line-height: 1.3;
   }
 
-  .newsletter-form:not(.m-mail-form) {
-    flex-direction: column;
-    border-radius: 999px;
-  }
-
-  .newsletter-form:not(.m-mail-form) button {
-    height: 52px;
-  }
-
-  .footer:not(.s-footer) .footer-bottom {
-    flex-direction: column;
-    gap: 6px;
-  }
-
-  .read-indicator {
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    bottom: calc(10px + constant(safe-area-inset-bottom));
-    bottom: calc(10px + env(safe-area-inset-bottom));
-  }
-
-  .read-pill {
-    padding: 0 22px;
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .read-current {
-    max-width: min(58vw, 205px);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  .stickyTitle,
-  .sticky-current {
-    max-width: min(55vw, 210px);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
 }
 
 @media (max-width: 420px) {
+  .hero-sphere {
+    height: 84vh;
+    min-height: 560px;
+  }
+
   .hero-intro {
-    min-height: 540px;
-    padding: 100px 0;
+    padding: 90px 0 170px;
   }
 
   .hero-copy {
@@ -1010,32 +674,23 @@ body[data-reading-page="Медиа о дизайн-культуре deFindings"]
 
   .hero-intro h1,
   .hero-intro p {
-    font-size: 32px;
-    line-height: 1;
+    font-size: 28px;
+    line-height: 1.2;
   }
 
-  .hero-float {
-    width: 56px;
-    height: 56px;
+  .hero-pill-slot,
+  .hero-pill {
+    width: 48px;
+    margin: 0 6px;
   }
 
-  .hero-float-a {
-    left: 34px;
-    top: 333px;
-  }
-
-  .hero-float-b {
-    left: 40px;
-    top: 123px;
-  }
-
-  .hero-float-c {
-    left: 303px;
-    top: 205px;
+  .hero-pill-inner {
+    width: 48px;
+    height: 48px;
   }
 
   .newsletter {
-    width: 100%;
+    padding-inline: 16px;
   }
 
   .newsletter h2 {
@@ -1047,12 +702,4 @@ body[data-reading-page="Медиа о дизайн-культуре deFindings"]
     width: 100%;
   }
 
-  .read-pill {
-    padding-left: 14px;
-    padding-right: 14px;
-  }
-
-  .read-content {
-    gap: 10px;
-  }
 }
