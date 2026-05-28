@@ -415,7 +415,8 @@
   margin: 0;
   background: transparent;
   color: var(--color-black);
-  font-size: var(--type-body-s);
+  /* Prevent iOS focus-zoom on search input */
+  font-size: 16px;
   line-height: var(--type-body-s-lh);
   outline: none;
 }

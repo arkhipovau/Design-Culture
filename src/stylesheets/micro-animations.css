@@ -78,6 +78,13 @@ html {
   transition: transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+@media (max-width: 767px) {
+  .reveal-ready {
+    --reveal-y: 12px;
+    --reveal-duration: 460ms;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .journal-page .m-journal-card.in-view:not(.is-loaded) .a-image-journal-link {
     opacity: 0;

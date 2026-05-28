@@ -49,6 +49,7 @@
   setupWidowControl();
 
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const isMobile = window.matchMedia('(max-width: 767px)').matches;
 
   const revealSelectors = [
     'main section:not(.interviews-journal):not(.journal-hero):not(.gallery-hero):not(.interview-hero):not(:has(.gallery-grid))',
@@ -90,7 +91,9 @@
     document.querySelectorAll(containerSelector).forEach((container) => {
       const items = container.querySelectorAll(childSelector);
       items.forEach((item, idx) => {
-        const delay = Math.min(idx * step, max);
+        const scaledStep = isMobile ? Math.max(20, Math.round(step * 0.45)) : step;
+        const scaledMax = isMobile ? Math.max(80, Math.round(max * 0.4)) : max;
+        const delay = Math.min(idx * scaledStep, scaledMax);
         item.style.setProperty('--reveal-delay', `${delay}ms`);
       });
     });
@@ -194,8 +197,8 @@
       });
     },
     {
-      threshold: 0.14,
-      rootMargin: '0px 0px -8% 0px'
+      threshold: isMobile ? 0.01 : 0.14,
+      rootMargin: isMobile ? '0px 0px 18% 0px' : '0px 0px -8% 0px'
     }
   );
 

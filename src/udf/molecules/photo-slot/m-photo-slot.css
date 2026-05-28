@@ -78,6 +78,7 @@
   .m-photo-row,
   .m-photo-row--three {
     grid-template-columns: 1fr;
-    gap: 16px;
+    /* Keep clearer separation between caption and next image in stacked layout */
+    gap: 28px;
   }
 }
