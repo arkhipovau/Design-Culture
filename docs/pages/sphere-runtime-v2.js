@@ -72,8 +72,8 @@ function getLayoutSphereMultiplier() {
 function getEmbeddedGroupYOffset() {
   if (!isEmbedded) return 0;
   const w = window.innerWidth;
-  if (w <= 420) return -0.52;
-  if (w <= 768) return -0.4;
+  if (w <= 420) return 0.08;
+  if (w <= 768) return 0.12;
   return 0;
 }
 
