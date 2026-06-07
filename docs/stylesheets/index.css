@@ -139,12 +139,18 @@ img[src^="../udf/quarks/icons/"] {
   );
 }
 
-.hero-intro .hero-break {
-  display: inline;
-}
-
 .hero-break-mobile {
   display: none;
+}
+
+.hero-studios-mobile {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .hero-tie {
+    white-space: normal;
+  }
 }
 
 @media (max-width: 768px) {
@@ -154,6 +160,14 @@ img[src^="../udf/quarks/icons/"] {
 
   .hero-intro .hero-break-mobile {
     display: block;
+  }
+
+  .hero-studios-desktop {
+    display: none;
+  }
+
+  .hero-studios-mobile {
+    display: inline;
   }
 
   .hero-intro h1,
@@ -583,20 +597,20 @@ img[src^="../udf/quarks/icons/"] {
 
 @media (max-width: 768px) {
   .hero-sphere {
-    height: 82svh;
+    height: 52svh;
     min-height: 0;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding-top: 7svh;
+    padding-top: 8svh;
     overflow: hidden;
   }
 
   .sphere-frame {
-    width: 92%;
-    height: 72svh;
-    max-width: 460px;
-    transform: translateY(-1vh);
+    width: 50%;
+    height: 38svh;
+    max-width: 280px;
+    transform: translateY(20px);
   }
 
   .hero-intro {
@@ -697,14 +711,14 @@ img[src^="../udf/quarks/icons/"] {
 
 @media (max-width: 420px) {
   .hero-sphere {
-    height: 80svh;
-    padding-top: 6svh;
+    height: 50svh;
+    padding-top: 7svh;
   }
 
   .sphere-frame {
-    width: 90%;
-    height: 68svh;
-    transform: translateY(0);
+    width: 48%;
+    height: 36svh;
+    transform: translateY(20px);
   }
 
   .hero-intro {

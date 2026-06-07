@@ -134,14 +134,24 @@
 
     const overLayer = heroIntro.querySelector('.hero-over');
 
-    const tokens = overLayer
-      ? Array.from(overLayer.querySelectorAll('.hero-word, .hero-pill'))
-      : [];
+    const isHeroTokenVisible = (el) => {
+      let node = el;
+      while (node && node !== overLayer) {
+        if (window.getComputedStyle(node).display === 'none') return false;
+        node = node.parentElement;
+      }
+      return true;
+    };
 
-    const N = Math.max(tokens.length, 1);
+    const getHeroTokens = () => (
+      overLayer
+        ? Array.from(overLayer.querySelectorAll('.hero-word, .hero-pill')).filter(isHeroTokenVisible)
+        : []
+    );
 
-    const WAVE_FRACTION = 0.8;
-    const waveWidth = WAVE_FRACTION / N + 0.04;
+    let tokens = getHeroTokens();
+    let N = Math.max(tokens.length, 1);
+    let waveWidth = 0.8 / N + 0.04;
 
     const updateHeroReveal = () => {
       const rect = heroIntro.getBoundingClientRect();
@@ -155,12 +165,19 @@
 
       for (let i = 0; i < N; i += 1) {
 
-        const itemStart = (i / N) * WAVE_FRACTION;
+        const itemStart = (i / N) * 0.8;
         const local = (globalP - itemStart) / waveWidth;
         const p = local < 0 ? 0 : local > 1 ? 1 : local;
         const eased = p * p * (3 - 2 * p);
         tokens[i].style.setProperty('--p', eased.toFixed(3));
       }
+    };
+
+    const refreshHeroTokens = () => {
+      tokens = getHeroTokens();
+      N = Math.max(tokens.length, 1);
+      waveWidth = 0.8 / N + 0.04;
+      updateHeroReveal();
     };
 
     if (reduced) {
@@ -176,10 +193,16 @@
         });
       };
 
-      updateHeroReveal();
+      refreshHeroTokens();
       window.addEventListener('scroll', onHeroScroll, { passive: true });
-      window.addEventListener('resize', onHeroScroll);
-      window.addEventListener('orientationchange', onHeroScroll);
+      window.addEventListener('resize', () => {
+        refreshHeroTokens();
+        onHeroScroll();
+      });
+      window.addEventListener('orientationchange', () => {
+        refreshHeroTokens();
+        onHeroScroll();
+      });
     }
   }
 

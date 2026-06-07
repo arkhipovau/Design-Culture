@@ -65,8 +65,8 @@ const sphereScale = Number.isFinite(requestedSphereScale)
 function getLayoutSphereMultiplier() {
   const w = window.innerWidth;
   if (isEmbedded) {
-    if (w <= 420) return 0.88;
-    if (w <= 768) return 0.94;
+    if (w <= 420) return 0.44;
+    if (w <= 768) return 0.47;
     if (w <= 1200) return 0.82;
     return 1;
   }
@@ -78,8 +78,8 @@ function getLayoutSphereMultiplier() {
 function getEmbeddedGroupYOffset() {
   if (!isEmbedded) return 0;
   const w = window.innerWidth;
-  if (w <= 420) return 0.22;
-  if (w <= 768) return 0.26;
+  if (w <= 420) return 0.14;
+  if (w <= 768) return 0.16;
   return 0;
 }
 
