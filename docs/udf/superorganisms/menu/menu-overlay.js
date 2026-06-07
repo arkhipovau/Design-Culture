@@ -82,7 +82,7 @@
 
       {
         title: 'Артём Тарасов и Артём Тарадаш',
-        subtitle: 'Together with you — анти-дисциплина',
+        subtitle: 'Мир постдизайна',
         kind: 'Статья',
         href: interview('togetherwithyou'),
         keywords: 'студия тбилиси анти дисциплина брендинг крафт ai',
@@ -90,7 +90,7 @@
       },
       {
         title: 'Алексей Пьянков',
-        subtitle: 'Дизайн-ДНК, белый лист, треугольник',
+        subtitle: 'Белый лист',
         kind: 'Статья',
         href: interview('aleksey-pyankov'),
         keywords: 'екатеринбург pragmatica прагматика студия',
@@ -98,7 +98,7 @@
       },
       {
         title: 'Полина Загуменова',
-        subtitle: 'Берлин, флексибельные рамки',
+        subtitle: 'Флексибельные рамки',
         kind: 'Статья',
         href: interview('polina-zagumenova'),
         keywords: 'берлин фриланс щука ai',
@@ -106,7 +106,7 @@
       },
       {
         title: 'Маша Черн',
-        subtitle: 'Коллаборации и неприязнь к AI-картинкам',
+        subtitle: 'Дизайн про коллаборации',
         kind: 'Статья',
         href: interview('masha-chern'),
         keywords: 'берлин ton tone verle продукт',
@@ -114,7 +114,7 @@
       },
       {
         title: 'Юля Кондратьева',
-        subtitle: 'Уместный дизайн, «Типомания», Полиграф',
+        subtitle: 'Уместный дизайн',
         kind: 'Статья',
         href: interview('yulya-kondratyeva'),
         keywords: 'тбилиси werkstatt гроза holystick школа',
@@ -122,7 +122,7 @@
       },
       {
         title: 'Ян Зарецкий',
-        subtitle: 'Цельность, генотип бренда, Мастерская',
+        subtitle: 'Генотип бренда',
         kind: 'Статья',
         href: interview('yan-zaretsky'),
         keywords: 'санкт-петербург питер munk мастерская продукт студия',
@@ -130,7 +130,7 @@
       },
       {
         title: 'Сергей Бреус',
-        subtitle: 'F61, Эмиль Рудер, ученичество',
+        subtitle: 'Недели на мудборде',
         kind: 'Статья',
         href: interview('sergey-breus'),
         keywords: 'москва ony oni f61 студия',
@@ -138,7 +138,7 @@
       },
       {
         title: 'Сергей Кудинов',
-        subtitle: 'Здоровый скептицизм, бюрократия, ручной труд',
+        subtitle: 'Симулятор культуры',
         kind: 'Статья',
         href: interview('sergey-kudinov'),
         keywords: 'москва яндекс 360 продукт',
@@ -146,7 +146,7 @@
       },
       {
         title: 'Аня Голубь',
-        subtitle: 'White Secret, выгорание и зона комфорта',
+        subtitle: 'Санитар леса',
         kind: 'Статья',
         href: interview('anya-golub'),
         keywords: 'бали призма prizma студия',
@@ -154,7 +154,7 @@
       },
       {
         title: 'Даша Макурина',
-        subtitle: 'Учиться видеть заново: насмотренность как навык',
+        subtitle: 'Метафора продукта',
         kind: 'Статья',
         href: interview('dasha-makurina'),
         keywords: 'москва rarible pont design фриланс 3d cgi',
@@ -162,7 +162,7 @@
       },
       {
         title: 'Саша Барабонова',
-        subtitle: 'Эмпатия как фундамент, дружба с AI',
+        subtitle: 'Эмпатичный дизайн',
         kind: 'Статья',
         href: interview('sasha-barabonova'),
         keywords: 'ереван phygital t-банк vk yandex pragmatica lalalai продукт',
@@ -170,7 +170,7 @@
       },
       {
         title: 'Стефан Лашко',
-        subtitle: 'Метафора в логотипе, ценность и порядок',
+        subtitle: 'Порядок из хаоса',
         kind: 'Статья',
         href: interview('stefan-lashko'),
         keywords: 'москва esh студия преподаватель',
@@ -178,7 +178,7 @@
       },
       {
         title: 'Оля Бажанова',
-        subtitle: 'Хвостики, этика и душа в сувенирке',
+        subtitle: 'Душа в сувенирке',
         kind: 'Статья',
         href: interview('olya-bazanova'),
         keywords: 'калининград подписные додо издательство',
@@ -186,7 +186,7 @@
       },
       {
         title: 'Анастасия Сычева',
-        subtitle: 'Бизнес-контекст, кор-идея и AI как краска',
+        subtitle: 'AI как краска',
         kind: 'Статья',
         href: interview('anastasia-sycheva'),
         keywords: 'белград студия y combinator спрошу кота брендинг',
@@ -194,7 +194,7 @@
       },
       {
         title: 'Артём Герц',
-        subtitle: 'Личный манифест и авторский стиль в айдентике',
+        subtitle: 'Язык с нуля',
         kind: 'Статья',
         href: interview('artem-gerts'),
         keywords: 'москва redis студия айдентика',
@@ -202,7 +202,7 @@
       },
       {
         title: 'Гаврил Перов',
-        subtitle: 'Архитектура, город и графический язык',
+        subtitle: 'Good enough',
         kind: 'Статья',
         href: interview('gavril-perov'),
         keywords: 'париж франция drinkit продукт',
@@ -210,15 +210,23 @@
       },
       {
         title: 'Елена Чинакова',
-        subtitle: 'Образовательные траектории и взросление дизайнера',
+        subtitle: 'Зоркий взгляд',
         kind: 'Статья',
         href: interview('elena-chinakova'),
         keywords: 'лондон великобритания сообщество zorky avito',
         priority: 70
       },
       {
+        title: 'Андрей Максименков',
+        subtitle: 'Ночные идеи',
+        kind: 'Статья',
+        href: interview('andrey-maksimenkov'),
+        keywords: 'ростов spros диджитал интервью проект',
+        priority: 70
+      },
+      {
         title: 'Сергей Мекрюков',
-        subtitle: 'UX, сервисы и невидимая часть дизайн-культуры',
+        subtitle: 'Гемба в ресторанах',
         kind: 'Статья',
         href: interview('sergey-mekryukov'),
         keywords: 'москва dodo brands додо продукт ux сервисы',

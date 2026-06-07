@@ -1,0 +1,132 @@
+.m-article-cover {
+  padding: 140px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  background: var(--color-light-grey);
+  color: var(--color-black);
+}
+
+.m-article-cover__inner {
+  width: min(75%, 996px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 28px;
+}
+
+.m-article-cover__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: clamp(32px, 5.4vw, 72px);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.m-article-cover__deck {
+  margin: 0;
+  max-width: 52ch;
+  font-weight: 400;
+  font-size: clamp(14px, 1.6vw, 18px);
+  line-height: 1.35;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-dark-grey);
+}
+
+.m-article-cover__credits {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 20px;
+  font-size: var(--type-body-s);
+  line-height: var(--type-body-s-lh);
+}
+
+.m-article-cover__credits li {
+  margin: 0;
+}
+
+.m-article-cover__role {
+  color: var(--color-dark-grey);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: var(--type-button-s);
+  line-height: var(--type-button-s-lh);
+}
+
+.m-article-cover__hero {
+  width: 100%;
+  margin: 56px 0 0;
+  padding: 0;
+}
+
+.m-article-cover__hero-frame {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1108 / 792;
+  background: var(--color-coloring-grey);
+}
+
+.m-article-cover__hero-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .m-article-cover {
+    padding-top: 120px;
+  }
+
+  .m-article-cover__inner {
+    width: min(88%, 720px);
+    gap: 20px;
+  }
+
+  .m-article-cover__hero {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .m-article-cover {
+    padding-top: 100px;
+  }
+
+  .m-article-cover__inner {
+    width: 100%;
+    padding-inline: var(--grid-margin);
+    box-sizing: border-box;
+  }
+
+  .m-article-cover__title {
+    font-size: clamp(26px, 8vw, 36px);
+  }
+
+  .m-article-cover__deck {
+    font-size: 13px;
+  }
+
+  .m-article-cover__credits {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .m-article-cover__hero {
+    margin-top: 32px;
+  }
+
+  .m-article-cover__hero-frame {
+    aspect-ratio: 4 / 3;
+  }
+}

@@ -9,10 +9,16 @@
     "sergey-breus",
     "sergey-kudinov",
     "anya-golub",
+    "dasha-makurina",
     "sasha-barabonova",
     "stefan-lashko",
     "olya-bazanova",
-    "anastasia-sycheva"
+    "anastasia-sycheva",
+    "artem-gerts",
+    "sergey-mekryukov",
+    "gavril-perov",
+    "elena-chinakova",
+    "andrey-maksimenkov"
   ],
   "interviews": {
     "togetherwithyou": {
@@ -23,7 +29,7 @@
       "links": [
         "togetherwithyou.co"
       ],
-      "subtitle": "Together with you — анти-дисциплина",
+      "subtitle": "Мир постдизайна",
       "images": [
         {
           "src": "../images/003ae98843e7d2f3fbc0.webp",
@@ -56,8 +62,11 @@
       "meta": "Россия • Екатеринбург • Студия",
       "hero": "../../images/Алексей Пьянков.jpg",
       "about": "Дизайн-директор студии Pragmatica (Екатеринбург), куда пришёл в 2020 году и где сегодня ведёт команду продуктовых, графических и интерфейсных дизайнеров. Pragmatica работает с большими российскими экосистемами — от Яндекса (анимированные заставки Станции Дуо Макс, проекты Маркета и Авто) до корпоративных продуктов и сервисов. В своих лекциях и интервью формулирует подход скорее этический, чем стилистический: дизайн как забота о пользователе и поиск баланса между скоростью, вкусом и вниманием к деталям. Ведёт телеграм-канал «Senior Designer Pragmatica», где разбирает рабочие задачи команды.",
-      "links": ["pragmatica.design", "t.me/senior_designer_pragmatica"],
-      "subtitle": "Дизайн-ДНК, белый лист, треугольник",
+      "links": [
+        "pragmatica.design",
+        "t.me/senior_designer_pragmatica"
+      ],
+      "subtitle": "Белый лист",
       "images": [
         {
           "src": "../images/07fe256693582605e691.webp",
@@ -90,8 +99,12 @@
       "meta": "Германия • Берлин • Фриланс",
       "hero": "../../images/Полина Загуменова.jpg",
       "about": "Графический дизайнер и арт-директор, базируется в Берлине. Выпускница Британской высшей школы дизайна; в 2010-х работала арт-директором в бренд-бюро «Щука», где вела айдентику Flowwow, Zerion, Purpur, Amama, Natura Siberica и парка Горького. Сегодня ведёт собственную практику Polina Zagumenova Designs — фокус на айдентике для технологических и культурных проектов, среди клиентов криптовалютные и образовательные платформы. В 2021 году получила звание «Дизайнер года» по версии фестиваля «Среда», лауреат ADCR Awards и ADC Europe.",
-      "links": ["polinazagumenova.com", "behance.net/Zagumenova", "linkedin.com/in/polina-zagumenova"],
-      "subtitle": "Берлин, флексибельные рамки",
+      "links": [
+        "polinazagumenova.com",
+        "behance.net/Zagumenova",
+        "linkedin.com/in/polina-zagumenova"
+      ],
+      "subtitle": "Флексибельные рамки",
       "images": [
         {
           "src": "../images/11f35cdbd3621d0081ca.webp",
@@ -124,8 +137,13 @@
       "meta": "Германия • Берлин • Продукт",
       "hero": "../../images/Маша Черн.jpg",
       "about": "Кросс-дисциплинарный дизайнер, работает между Лейпцигом и Берлином, ныне Senior Designer в TON Foundation, где отвечает за коммуникационный дизайн криптоэкосистемы. До этого вела независимую практику в области визуальной идентичности, типографики и редакционного дизайна, работая с культурными институциями и независимыми издательствами. В её работах сочетаются строгая модернистская типографика и эксперименты с материалом — от ризо-печати до веб-интерфейсов. Активно ведёт публичный архив исследований в are.na.",
-      "links": ["mashachern.com", "behance.net/mashachern", "are.na/masha-chern", "instagram.com/maschatschern"],
-      "subtitle": "Коллаборации и неприязнь к AI-картинкам",
+      "links": [
+        "mashachern.com",
+        "behance.net/mashachern",
+        "are.na/masha-chern",
+        "instagram.com/maschatschern"
+      ],
+      "subtitle": "Дизайн про коллаборации",
       "images": [
         {
           "src": "../images/23847e1b7eebea4ba968.jpg",
@@ -158,8 +176,12 @@
       "meta": "Грузия • Тбилиси • Школа",
       "hero": "../../images/Юля Кондратьева.jpg",
       "about": "Сооснователь и партнёр школы Werkstatt, где отвечает за методологию курсов и работу с преподавателями. Ранее была сооснователем графической студии Holystick (вместе с Милой Силениной и Яной Эткиной) и библиотеки шрифтов и материалов Placeholder; до этого работала в студии «Гроза», КБ «Стрелка», Zoloto Group и стажировалась в нидерландской Studio Joost Grootens. Выпускница Полиграфа (мастерская Александра Васина), преподавала в Школе Родченко, БВШД, «Среде обучения» и Bang Bang Education. Специализируется на книжном дизайне, постерах и редакционной графике; ведёт интенсив PostPoster Lab.",
-      "links": ["werkstatt.school", "behance.net/yulia_kondrateva", "bangbangeducation.ru/tutors/holystick"],
-      "subtitle": "Уместный дизайн, «Типомания», Полиграф",
+      "links": [
+        "werkstatt.school",
+        "behance.net/yulia_kondrateva",
+        "bangbangeducation.ru/tutors/holystick"
+      ],
+      "subtitle": "Уместный дизайн",
       "images": [
         {
           "src": "../images/35fb03629903e0900af9.jpg",
@@ -192,8 +214,13 @@
       "meta": "Россия • Санкт-Петербург • Студия • Продукт",
       "hero": "../../images/Ян Зарецкий.jpg",
       "about": "Арт-директор и дизайнер из Санкт-Петербурга, основатель практики Munk — занимается айдентикой, интерфейсами и системным дизайном для бизнеса. В 2020 году вместе с Сергеем Гуровым и Димой Бертолуччи запустил «Мастерскую» — петербургский коворкинг и сообщество дизайнеров с собственным журналом и публичной программой; пространство несколько раз меняло адреса на Садовой и Невском. Описывает свой метод как «дизайн как метод решения бизнес-задач», много пишет о метриках, эффективности и процессах в студийном журнале.",
-      "links": ["munk.design", "masterskaya.design", "behance.net/yanserkin", "instagram.com/yan.zaretsky"],
-      "subtitle": "Цельность, генотип бренда, Мастерская",
+      "links": [
+        "munk.design",
+        "masterskaya.design",
+        "behance.net/yanserkin",
+        "instagram.com/yan.zaretsky"
+      ],
+      "subtitle": "Генотип бренда",
       "images": [
         {
           "src": "../images/43c43b136d43ecace532.webp",
@@ -226,8 +253,11 @@
       "meta": "Россия • Москва • Студия",
       "hero": "../../images/Сергей Бреус.jpg",
       "about": "Мультидисциплинарный дизайнер с фокусом на веб-дизайне и айдентике; за плечами — работа в студии ONY (диджитал-проекты для брендов и культурных институций) и в команде «Золотого Яблока», где отвечал за дизайн интерфейсов и коммуникаций ритейл-бренда. Сегодня работает в формате независимой практики: ведёт проекты на стыке вёрстки, типографики и фронтенда. В своей работе опирается на школу швейцарской типографики и постоянно собирает референсные коллекции — за что сам себя в шутку называет «рефа-дрочером». Постоянно цитирует Эмиля Рудера и шрифт F61 как поворотные точки собственного дизайн-языка.",
-      "links": ["ony.ru", "behance.net/sergeybreus"],
-      "subtitle": "Рефа-дрочер, F61, Эмиль Рудер",
+      "links": [
+        "ony.ru",
+        "behance.net/sergeybreus"
+      ],
+      "subtitle": "Недели на мудборде",
       "images": [
         {
           "src": "../images/48850af996dc5cd2949d.webp",
@@ -260,8 +290,12 @@
       "meta": "Россия • Москва • Продукт",
       "hero": "../../images/Сергей Кудинов.jpg",
       "about": "Креативный директор Яндекс 360, отвечает за веб-направление и спецпроекты сервиса. В дизайне 14 лет, последние 7 — в продуктовом; работал в команде Яндекс Браузера, участвовал в редизайне Яндекс Музыки, в 2019 году запускал Яндекс Практикум, а с 2021-го руководил Мастерской Практикума, где провёл больше 56 проектов для Яндекс Авто, Маркета, Облака и «Сколково». Курирует карьерные программы на платформе h.careers, консультирует арт-директоров и руководителей дизайн-команд.",
-      "links": ["sergeikudinov.com", "linkedin.com/in/sergey-kudinov-83468658", "h.careers/curators/sergey-kudinov"],
-      "subtitle": "Симулятор, бюрократия, ручной труд",
+      "links": [
+        "sergeikudinov.com",
+        "linkedin.com/in/sergey-kudinov-83468658",
+        "h.careers/curators/sergey-kudinov"
+      ],
+      "subtitle": "Симулятор культуры",
       "images": [
         {
           "src": "../images/52b87704e3aca4457af7.webp",
@@ -294,8 +328,13 @@
       "meta": "Индонезия • Бали • Студия",
       "hero": "../../images/Аня Голубь.jpg",
       "about": "Бренд-дизайнер и арт-директор с десятилетним стажем, сооснователь студии Prizma, базируется на Бали. Prizma делает айдентику и брендинг для международных клиентов — фаундеров, технологических стартапов и проектов с этической повесткой; работы студии отмечены Behance, Awwwards Honorable Mentions, шорт-листом G8 Creative Industry Awards и Dprofile. Аня ведёт менторскую практику на MentorCruise и кураторскую программу в h.careers, перевела и адаптировала для русскоязычной аудитории отчёт WGSN Consumer Profiles 2025. В работе ставит во главу угла «скрытые смыслы бренда» — переводит их в визуальный язык, а не наоборот.",
-      "links": ["prizma.studio", "behance.net/prizmadesign", "behance.net/anyagolub", "linkedin.com/in/anyagolub"],
-      "subtitle": "Уважение, White Secret, санитары леса",
+      "links": [
+        "prizma.studio",
+        "behance.net/prizmadesign",
+        "behance.net/anyagolub",
+        "linkedin.com/in/anyagolub"
+      ],
+      "subtitle": "Санитар леса",
       "images": [
         {
           "src": "../images/770dbd58aff7b3c49d2d.jpg",
@@ -328,8 +367,12 @@
       "meta": "Армения • Ереван • Продукт • Фриланс",
       "hero": "../../images/Саша Барабонова.jpg",
       "about": "Senior product designer и product lead в Phygital+ — node-based платформе для генеративного AI-дизайна. До переезда в Ереван прошла продуктовые команды Т-Банка (Тинькофф), VK, Яндекса, Pragmatica и LALAL.AI; занималась интерфейсами для финтеха, аудио- и медиа-сервисов. Сейчас фокусируется на пересечении продуктового дизайна и AI-инструментов для креативных команд. Ведёт публичный исследовательский архив в are.na.",
-      "links": ["phygital.plus", "are.na/sasha-barabonova", "linkedin.com/in/sashabarabonova"],
-      "subtitle": "Эмпатия, табличка из табличек",
+      "links": [
+        "phygital.plus",
+        "are.na/sasha-barabonova",
+        "linkedin.com/in/sashabarabonova"
+      ],
+      "subtitle": "Эмпатичный дизайн",
       "images": [
         {
           "src": "../images/867d102c07ba48557b86.webp",
@@ -362,8 +405,13 @@
       "meta": "Россия • Москва • Студия",
       "hero": "../../images/Стефан Лашко.jpg",
       "about": "Графический дизайнер и арт-директор, сооснователь московской ESH gruppa — студии и ризо-типографии ESH PRINT, печатающей зины, постеры и открытки. Вместе с партнёрами Валерой Кожановым, Виолеттой Постновой и Филиппом Третьяковым студия специализируется на коммуникационном дизайне, культурных и музыкальных проектах. Старший преподаватель Школы дизайна ВШЭ на программе «Коммуникационный дизайн и брендинг»; в 2025 году вошёл в жюри 21-го сезона ADCR Awards. Сегодня работает между Москвой и Тбилиси.",
-      "links": ["eshgruppa.com", "design.hse.ru/team/8664", "behance.net/stefanlashko", "instagram.com/stefanlashko"],
-      "subtitle": "Метафора, дизайнеры-джедаи",
+      "links": [
+        "eshgruppa.com",
+        "design.hse.ru/team/8664",
+        "behance.net/stefanlashko",
+        "instagram.com/stefanlashko"
+      ],
+      "subtitle": "Порядок из хаоса",
       "images": [
         {
           "src": "../images/8c30a668aa8d06217ed6.webp",
@@ -396,8 +444,12 @@
       "meta": "Россия • Калининград • Издательство",
       "hero": "../../images/Оля Базанова.jpg",
       "about": "Арт-директор сувенирного и канцелярского производства «Подписных изданий» — петербургского книжного магазина с собственной маркой «Подписные изделия». Отвечает за визуальное сопровождение всей линейки — блокнотов, открыток, закладок, упаковки — и работу с приглашёнными иллюстраторами. Производство «Подписных» запустилось в 2014 году и стало одним из самых заметных российских кейсов утилитарного дизайна, в котором соединились книжная культура и современная графика. Живёт и работает в Калининграде.",
-      "links": ["podpisnie.ru", "t.me/izdaniya", "instagram.com/podpisnie"],
-      "subtitle": "Хвостики, этика, душа в сувенирке",
+      "links": [
+        "podpisnie.ru",
+        "t.me/izdaniya",
+        "instagram.com/podpisnie"
+      ],
+      "subtitle": "Душа в сувенирке",
       "images": [
         {
           "src": "../images/96f7d4116789d1f7784d.webp",
@@ -425,13 +477,70 @@
         }
       ]
     },
+    "dasha-makurina": {
+      "author": "Даша Макурина",
+      "meta": "Россия • Москва • Фриланс",
+      "hero": "../../images/Даша Макурина.jpg",
+      "about": "3D-дизайнер Rarible, CGI-дизайнер студии pont.design.",
+      "links": [],
+      "subtitle": "Метафора продукта",
+      "images": [
+        {
+          "src": "../images/dasha-smeccea-1.png",
+          "title": "Smeccea"
+        },
+        {
+          "src": "../images/dasha-smeccea-2.png",
+          "title": "Smeccea"
+        },
+        {
+          "src": "../images/dasha-smeccea-3.png",
+          "title": "Smeccea"
+        },
+        {
+          "src": "../images/dasha-microsoft-1.png",
+          "title": "Microsoft 365"
+        },
+        {
+          "src": "../images/dasha-microsoft-2.png",
+          "title": "Microsoft Excel"
+        },
+        {
+          "src": "../images/dasha-microsoft-3.png",
+          "title": "Microsoft PowerPoint"
+        },
+        {
+          "src": "../images/dasha-microsoft-4.png",
+          "title": "Microsoft Editor"
+        },
+        {
+          "src": "../images/dasha-thx-desktop.png",
+          "title": "THX"
+        },
+        {
+          "src": "../images/dasha-thx-app-screens.png",
+          "title": "THX"
+        },
+        {
+          "src": "../images/dasha-pont-1.png",
+          "title": "pont."
+        },
+        {
+          "src": "../images/dasha-pont-2.png",
+          "title": "pont."
+        }
+      ]
+    },
     "anastasia-sycheva": {
       "author": "Анастасия Сычева",
       "meta": "Сербия • Белград • Студия",
       "hero": "../../images/Анастасия Сычева.jpg",
       "about": "Дизайнер и арт-директор, основательница двух дизайн-студий, работающих с американскими и британскими стартапами — преимущественно над брендингом и продуктовой визуальной идентичностью ранних SaaS-команд. Параллельно ведёт ютуб-канал «Спрошу кота» о ремесле дизайнера, кейсах и работе с международными клиентами. Живёт в Белграде, куда перебралась в волне дизайнерской эмиграции 2022 года.",
-      "links": ["youtube.com/@nastyasycheva", "linkedin.com/in/anastasia-sycheva"],
-      "subtitle": "Бизнес-контекст, кор-идея, AI как краска",
+      "links": [
+        "youtube.com/@nastyasycheva",
+        "linkedin.com/in/anastasia-sycheva"
+      ],
+      "subtitle": "AI как краска",
       "images": [
         {
           "src": "../images/a3f21ab1c40d8f47440b.jpg",
@@ -456,6 +565,73 @@
         {
           "src": "../images/b72c7173448f602c303b.webp",
           "title": "Проект 6"
+        }
+      ]
+    },
+    "artem-gerts": {
+      "author": "Артём Герц",
+      "meta": "Россия • Москва • Студия",
+      "hero": "../../images/Артём Герц.jpg",
+      "about": "Артём Герц — арт-директор, ex студия Redis.",
+      "links": [
+        "behance.net/gallery/187441731/Nil-Foundation-Identity-Web-Design",
+        "rsquad.io",
+        "ori.redis.tv"
+      ],
+      "subtitle": "Язык с нуля",
+      "images": []
+    },
+    "sergey-mekryukov": {
+      "author": "Сергей Мекрюков",
+      "meta": "Россия • Москва • Продукт",
+      "hero": "../../images/Сергей Мекрюков.jpg",
+      "about": "Сергей Мекрюков — дизайн-директор продукта Dodo Brands, ex Яндекс, Okko.",
+      "links": [],
+      "subtitle": "Гемба в ресторанах",
+      "images": []
+    },
+    "gavril-perov": {
+      "author": "Гаврил Перов",
+      "meta": "Франция • Париж • Продукт",
+      "hero": "../../images/Гаврил Перов.jpg",
+      "about": "Гаврил Перов — дизайнер и арт-директор Drinkit.",
+      "links": [],
+      "subtitle": "Good enough",
+      "images": []
+    },
+    "elena-chinakova": {
+      "author": "Елена Чинакова",
+      "meta": "Великобритания • Лондон • Сообщество",
+      "hero": "../../images/Елена Чинакова.jpg",
+      "about": "Елена Чинакова — основатель дизайн-митапов в Лондоне Zorky, ex дизайн-лид Avito.",
+      "links": [],
+      "subtitle": "Зоркий взгляд",
+      "images": []
+    },
+    "andrey-maksimenkov": {
+      "author": "Андрей Максименков",
+      "meta": "Россия • Ростов-на-Дону • Проект",
+      "hero": "../../images/Андрей Максименков.jpg",
+      "about": "Андрей Максименков — свободный диджитал-дизайнер, создатель проекта spros.",
+      "links": [
+        "dprofile.ru/andrewmaximenkov",
+        "dsgners.ru/am.d",
+        "t.me/sprosspros",
+        "t.me/normal_mode"
+      ],
+      "subtitle": "Ночные идеи",
+      "images": [
+        {
+          "src": "../images/maksimenkov-principles.png",
+          "title": "spros"
+        },
+        {
+          "src": "../images/maksimenkov-spros-covers.png",
+          "title": "spros"
+        },
+        {
+          "src": "../images/maksimenkov-spros-app.png",
+          "title": "spros app"
         }
       ]
     }
