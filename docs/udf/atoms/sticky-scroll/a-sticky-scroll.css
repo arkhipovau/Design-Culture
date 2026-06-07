@@ -109,13 +109,16 @@
     bottom: 10px;
     bottom: calc(10px + constant(safe-area-inset-bottom));
     bottom: calc(10px + env(safe-area-inset-bottom));
+    filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.06));
   }
 
   .a-sticky-scroll {
     padding: 0 22px;
     width: 100%;
     max-width: 100%;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: none;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
   }
 
   .a-sticky-scroll__current,
