@@ -18,6 +18,7 @@
     "sergey-mekryukov",
     "gavril-perov",
     "elena-chinakova",
+    "dariia-chertanova",
     "andrey-maksimenkov"
   ],
   "interviews": {
@@ -606,6 +607,19 @@
       "about": "Елена Чинакова — основатель дизайн-митапов в Лондоне Zorky, ex дизайн-лид Avito.",
       "links": [],
       "subtitle": "Zorky в Лондоне, роль дизайнера в Avito и взросление в профессии",
+      "images": []
+    },
+    "dariia-chertanova": {
+      "author": "Даша Чертанова",
+      "meta": "Россия • Москва • Продукт",
+      "hero": "../../images/Дария Чертанова.jpg",
+      "about": "Даша Чертанова — дизайнер The Blueprint, работает на стыке графики, креативного кодинга и редакционной визуальности. Преподавала в Bang Bang Education и в Вышке, менторит молодых дизайнеров. К дизайну пришла после года в социологии и года за барной стойкой.",
+      "links": [
+        "theblueprint.ru",
+        "bangbangeducation.ru",
+        "werkstatt.school"
+      ],
+      "subtitle": "Смыслы, контекст и люди, меняющие профессию",
       "images": []
     },
     "andrey-maksimenkov": {

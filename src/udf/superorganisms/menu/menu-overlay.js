@@ -231,6 +231,14 @@
         href: interview('sergey-mekryukov'),
         keywords: 'москва dodo brands додо продукт ux сервисы',
         priority: 70
+      },
+      {
+        title: 'Даша Чертанова',
+        subtitle: 'Смыслы, контекст и люди, меняющие профессию',
+        kind: 'Статья',
+        href: interview('dariia-chertanova'),
+        keywords: 'москва the blueprint blueprint bang bang education werkstatt продукт смыслы контекст кодинг',
+        priority: 70
       }
     ];
 

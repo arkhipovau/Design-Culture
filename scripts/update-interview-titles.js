@@ -119,6 +119,11 @@ const TITLES = {
     description:
       'Даша делает CGI для pont.design и 3D для Rarible. В работе ищет метафору продукта и говорит про инклюзивный визуал на примере THX.',
   },
+  'dariia-chertanova': {
+    title: 'Смыслы, контекст и люди, меняющие профессию',
+    description:
+      'Даша работает в The Blueprint, кодит интерактивные визуалы, преподавала в Bang Bang Education и менторит. К дизайну пришла после социологии и барной стойки, оба разворота оказались про идею и контекст.',
+  },
 };
 
 function updateInterviewHtml(filePath, slug, nextSlug) {
