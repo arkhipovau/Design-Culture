@@ -69,6 +69,14 @@ function getLayoutSphereMultiplier() {
   return 1;
 }
 
+function getEmbeddedGroupYOffset() {
+  if (!isEmbedded) return 0;
+  const w = window.innerWidth;
+  if (w <= 420) return -0.52;
+  if (w <= 768) return -0.4;
+  return 0;
+}
+
 if (isEmbedded) {
   const nav = document.querySelector('nav');
   if (nav) nav.style.display = 'none';
@@ -221,6 +229,7 @@ async function init() {
   document.body.appendChild(renderer.domElement);
 
   const group = new THREE.Group();
+  group.position.y = getEmbeddedGroupYOffset();
   scene.add(group);
 
   const RADIUS = 3.6 * visualScale;
@@ -352,6 +361,8 @@ async function init() {
       group.scale.multiplyScalar(ratio);
       layoutMult = nextMult;
     }
+
+    group.position.y = getEmbeddedGroupYOffset();
 
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();

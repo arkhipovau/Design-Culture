@@ -147,6 +147,15 @@ img[src^="../udf/quarks/icons/"] {
   .hero-intro .hero-break {
     display: none;
   }
+
+  .hero-intro h1,
+  .hero-intro p {
+    text-wrap: pretty;
+  }
+
+  .hero-tie {
+    white-space: nowrap;
+  }
 }
 
 .section h2 {
@@ -566,8 +575,13 @@ img[src^="../udf/quarks/icons/"] {
 
 @media (max-width: 768px) {
   .hero-sphere {
-    height: 88vh;
-    min-height: 600px;
+    height: 100svh;
+    min-height: 100svh;
+    overflow: hidden;
+  }
+
+  .sphere-frame {
+    transform: translateY(calc(28px + 5vh));
   }
 
   .hero-intro {
@@ -668,8 +682,12 @@ img[src^="../udf/quarks/icons/"] {
 
 @media (max-width: 420px) {
   .hero-sphere {
-    height: 84vh;
-    min-height: 560px;
+    height: 100svh;
+    min-height: 100svh;
+  }
+
+  .sphere-frame {
+    transform: translateY(calc(32px + 6vh));
   }
 
   .hero-intro {
