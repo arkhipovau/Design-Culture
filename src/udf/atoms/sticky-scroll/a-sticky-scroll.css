@@ -115,14 +115,9 @@
     padding: 0 22px;
     width: 100%;
     max-width: 100%;
-    overflow: visible;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-  }
-
-  .a-sticky-scroll__rec {
-    border-radius: 75px;
   }
 
   .a-sticky-scroll__current,
