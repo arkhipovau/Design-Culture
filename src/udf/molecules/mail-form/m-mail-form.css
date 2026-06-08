@@ -79,6 +79,12 @@
   display: block;
 }
 
+.m-mail-form__hint a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .m-mail-form[data-state='error'] .m-mail-form__dot {
   background: var(--color-coloring-orange);
 }

@@ -1,6 +1,6 @@
 (function () {
   /* MailerLite integration. We POST the email to MailerLite's hosted form
-     endpoint instead of relying on their JS form injection – that lets us
+     endpoint instead of relying on their JS form injection — that lets us
      keep our own visual form (m-mail-form) while still using their service.
      Account + form IDs come from the MailerLite dashboard:
        Account: 2370552
@@ -43,10 +43,7 @@
     const input = form.querySelector('.a-mail-input');
     const hint = form.querySelector('.m-mail-form__hint');
     const submit = form.querySelector('.m-mail-form__submit');
-    const privacyUrl = form.dataset.privacyUrl || '';
-    const consentText = privacyUrl
-      ? 'Продолжая, вы соглашаетесь с <a href="' + privacyUrl + '">политикой конфиденциальности</a>'
-      : 'Продолжая, вы даёте согласие на обработку персональных данных';
+    const consentText = 'Продолжая вы даете согласие на обработку персональных данных';
     const errorText = 'Ошибка! Пожалуйста, попробуйте снова';
     const initialValue = (input && input.value ? input.value : '').trim();
 
@@ -80,7 +77,7 @@
       if (state === 'input') {
         input.readOnly = false;
         input.removeAttribute('aria-invalid');
-        if (hint) hint.innerHTML = consentText;
+        if (hint) hint.textContent = consentText;
         setSubmitEnabled(isValidEmail(input.value.trim()));
       }
 

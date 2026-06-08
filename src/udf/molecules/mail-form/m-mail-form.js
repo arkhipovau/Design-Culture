@@ -43,7 +43,10 @@
     const input = form.querySelector('.a-mail-input');
     const hint = form.querySelector('.m-mail-form__hint');
     const submit = form.querySelector('.m-mail-form__submit');
-    const consentText = 'Продолжая вы даете согласие на обработку персональных данных';
+    const privacyUrl = form.dataset.privacyUrl || '';
+    const consentText = privacyUrl
+      ? 'Продолжая, вы соглашаетесь с <a href="' + privacyUrl + '">политикой конфиденциальности</a>'
+      : 'Продолжая, вы даёте согласие на обработку персональных данных';
     const errorText = 'Ошибка! Пожалуйста, попробуйте снова';
     const initialValue = (input && input.value ? input.value : '').trim();
 
@@ -77,7 +80,7 @@
       if (state === 'input') {
         input.readOnly = false;
         input.removeAttribute('aria-invalid');
-        if (hint) hint.textContent = consentText;
+        if (hint) hint.innerHTML = consentText;
         setSubmitEnabled(isValidEmail(input.value.trim()));
       }
 
