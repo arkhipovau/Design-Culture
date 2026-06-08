@@ -126,7 +126,7 @@ const TITLES = {
   },
 };
 
-function updateInterviewHtml(filePath, slug, nextSlug) {
+function updateInterviewHtml(filePath, slug) {
   let html = fs.readFileSync(filePath, 'utf8');
   const data = TITLES[slug];
   if (!data) return false;
@@ -144,11 +144,15 @@ function updateInterviewHtml(filePath, slug, nextSlug) {
 
   html = html.replace(/\s*<p class="interview-hero__subtitle">[^<]*<\/p>\s*/g, '\n          ');
 
-  if (nextSlug && TITLES[nextSlug]) {
-    html = html.replace(
-      /(<span class="m-next-article__title">)[^<]*(<\/span>)/,
-      `$1${TITLES[nextSlug].title}$2`
-    );
+  const hrefMatch = html.match(/m-next-article__circle[^"]*" href="\.\/([^"]+)"/);
+  if (hrefMatch) {
+    const linkedSlug = hrefMatch[1].replace(/\.html$/, '');
+    if (TITLES[linkedSlug]) {
+      html = html.replace(
+        /(<span class="m-next-article__title">)[^<]*(<\/span>)/,
+        `$1${TITLES[linkedSlug].title}$2`
+      );
+    }
   }
 
   if (html !== before) {
@@ -217,9 +221,7 @@ function main() {
   for (const file of files) {
     const slug = file.replace(/\.html$/, '');
     if (!TITLES[slug]) continue;
-    const idx = order.indexOf(slug);
-    const nextSlug = idx >= 0 ? order[(idx + 1) % order.length] : null;
-    const changed = updateInterviewHtml(path.join(HTML_DIR, file), slug, nextSlug);
+    const changed = updateInterviewHtml(path.join(HTML_DIR, file), slug);
     const mdChanged = updateMdLede(slug, TITLES[slug].description);
     console.log(`${slug}: html ${changed ? 'updated' : 'unchanged'}, md ${mdChanged ? 'updated' : 'unchanged'}`);
   }
