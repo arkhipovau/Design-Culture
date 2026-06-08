@@ -52,6 +52,7 @@
   font-size: var(--type-body-xs, 12px);
   line-height: var(--type-body-xs-lh, 1.2);
   font-weight: 400;
+  text-wrap: pretty;
 }
 
 .m-cookie-consent__text a {

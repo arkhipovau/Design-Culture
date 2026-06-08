@@ -8,6 +8,11 @@ const SRC = path.join(ROOT, 'src');
 const ANALYTICS_BLOCK =
   /[ \t]*<!-- Yandex\.Metrika counter -->[\s\S]*?<!-- \/Google tag \(gtag\.js\) -->\n?/;
 
+const COOKIE_BLOCK =
+  /[ \t]*<link rel="stylesheet" href="[^"]*cookie-consent\.css" \/>\n?[ \t]*<script defer src="[^"]*cookie-consent\.js"><\/script>\n?/;
+
+const SKIP_FILES = new Set(['sphere-embed.html']);
+
 function relPath(fromDir, toPath) {
   return path.relative(fromDir, toPath).split(path.sep).join('/');
 }
@@ -42,10 +47,15 @@ function update(fp) {
   let html = fs.readFileSync(fp, 'utf8');
   const original = html;
   const dir = path.dirname(fp);
+  const skipCookie = SKIP_FILES.has(path.basename(fp));
 
   html = html.replace(ANALYTICS_BLOCK, '');
 
-  if (!html.includes('cookie-consent.js')) {
+  if (skipCookie) {
+    html = html.replace(COOKIE_BLOCK, '');
+  }
+
+  if (!skipCookie && !html.includes('cookie-consent.js')) {
     html = html.replace(/\n  <\/head>/, '\n' + cookieBlock(dir, html) + '\n  </head>');
   }
 
