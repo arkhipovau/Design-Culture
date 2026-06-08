@@ -38,24 +38,9 @@
   margin-top: 1.4em;
 }
 
-.m-qa-row__answer p + .m-qa-row__sublist {
-  margin-top: 1.4em;
-}
-
-.m-qa-row__sublist {
-  padding-left: 0;
-}
-
-.m-qa-row__sublist p {
-  margin: 0;
-}
-
-.m-qa-row__sublist p + p {
-  margin-top: 0.5em;
-}
-
-.m-qa-row__answer .m-qa-row__sublist + p {
-  margin-top: 1.4em;
+.m-qa-row__answer p + p.m-qa-row__after-colon,
+.m-qa-row__answer p.m-qa-row__after-colon + p.m-qa-row__after-colon {
+  margin-top: 0.35em;
 }
 
 .m-qa-row__olist {

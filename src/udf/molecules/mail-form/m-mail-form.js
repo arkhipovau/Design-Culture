@@ -1,6 +1,6 @@
 (function () {
   /* MailerLite integration. We POST the email to MailerLite's hosted form
-     endpoint instead of relying on their JS form injection — that lets us
+     endpoint instead of relying on their JS form injection – that lets us
      keep our own visual form (m-mail-form) while still using their service.
      Account + form IDs come from the MailerLite dashboard:
        Account: 2370552

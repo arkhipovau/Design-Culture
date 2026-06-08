@@ -23,7 +23,7 @@
     var h1 = document.querySelector('main h1, h1');
     var title = normalize(h1 ? h1.textContent : '');
     if (!title) {
-      title = normalize(document.title.replace(/\s*[—-]\s*deFindings.*$/i, ''));
+      title = normalize(document.title.replace(/\s*[–-]\s*deFindings.*$/i, ''));
     }
     if (title && !/deFindings/i.test(title)) title += ' deFindings';
     return title || 'deFindings';

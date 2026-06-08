@@ -178,7 +178,7 @@ function showFileProtocolFallback() {
   const note = document.createElement('div');
   note.style.cssText = 'max-width:380px;color:#999;font-size:13px;';
   note.textContent =
-    'Интерактивная сфера показывается только при запуске через локальный сервер: npm run dev:webpack — или открыть страницу на GitHub Pages.';
+    'Интерактивная сфера показывается только при запуске через локальный сервер: npm run dev:webpack – или открыть страницу на GitHub Pages.';
   wrap.appendChild(img);
   wrap.appendChild(note);
   document.body.appendChild(wrap);

@@ -1,7 +1,7 @@
 # M_ArticleInfo
 
 The grey meta panel that sits at the end of every interview, just before the
-"Читать дальше" block. Two-column layout — supplementary links on the left,
+"Читать дальше" block. Two-column layout – supplementary links on the left,
 a short bio of the hero on the right.
 
 ## Markup

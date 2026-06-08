@@ -26,7 +26,7 @@ The "Читать дальше" block at the end of every article/interview. Com
 ## Notes
 
 - Author and title are forced onto separate lines via `display: block`
-  on the spans. The CSS does not add a separator — visual rhythm comes
+  on the spans. The CSS does not add a separator – visual rhythm comes
   from `margin-bottom: 4px` on the author span.
 - Width of the text column caps at 664 px so long titles wrap nicely
   instead of spanning the full body rail.
