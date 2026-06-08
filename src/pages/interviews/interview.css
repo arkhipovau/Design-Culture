@@ -221,3 +221,20 @@ main.article-page.interview-page {
     padding: 24px;
   }
 }
+
+.interview-page .m-article-info a,
+.interview-page .m-qa-row__answer a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 240ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.interview-page .m-article-info a:hover,
+.interview-page .m-qa-row__answer a:hover {
+  color: var(--color-coloring-orange);
+}
+
+.interview-page .m-article-info p + ul {
+  margin-top: 20px;
+}

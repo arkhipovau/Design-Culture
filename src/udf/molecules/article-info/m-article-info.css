@@ -24,7 +24,7 @@
 }
 
 .m-article-info p + ul {
-  margin-top: 8px;
+  margin-top: 20px;
 }
 
 .m-article-info p {
@@ -39,17 +39,13 @@
   font-size: 16px;
   line-height: 1.2;
   color: var(--color-black);
-}
-
-.m-article-info p a {
-  color: inherit;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
   transition: color 240ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.m-article-info p a:hover {
+.m-article-info a:hover {
   color: var(--color-coloring-orange);
 }
 
