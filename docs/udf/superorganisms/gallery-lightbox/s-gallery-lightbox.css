@@ -126,26 +126,23 @@ body.lightbox-open {
   display: block;
 }
 
-.s-gallery-lightbox__author-link {
-  display: inline-flex;
-  flex-direction: column;
-  gap: 4px;
-  align-items: center;
-  text-decoration: none;
-  color: var(--color-white);
-  transition: opacity 180ms ease;
-}
-
-.s-gallery-lightbox__author-link:hover {
-  opacity: 0.85;
-}
-
 .s-gallery-lightbox__caption {
   color: var(--color-white);
 }
 
 .s-gallery-lightbox__author {
   color: rgba(255, 255, 255, 0.78);
+}
+
+.s-gallery-lightbox__author-link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: opacity 180ms ease;
+}
+
+.s-gallery-lightbox__author-link:hover {
+  opacity: 0.85;
 }
 
 .s-gallery-lightbox__subtitle {

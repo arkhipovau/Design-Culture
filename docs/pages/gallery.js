@@ -5,6 +5,7 @@
     return {
       src: e.src,
       author: e.author || '',
+      project: e.project || e.subtitle || '',
       subtitle: e.subtitle || '',
       href: e.href || '#',
       kind: idx % 3 === 0 ? 'tall' : 'wide'
@@ -88,9 +89,8 @@
   var lbImage = lightbox.querySelector('.s-gallery-lightbox__image');
   var lbImageLink = lightbox.querySelector('.s-gallery-lightbox__image-link');
   var lbCaption = lightbox.querySelector('.s-gallery-lightbox__caption');
-  var lbAuthor = lightbox.querySelector('.s-gallery-lightbox__author');
-  var lbSubtitle = lightbox.querySelector('.s-gallery-lightbox__subtitle');
   var lbAuthorLink = lightbox.querySelector('.s-gallery-lightbox__author-link');
+  var lbSubtitle = lightbox.querySelector('.s-gallery-lightbox__subtitle');
   var lbClose = lightbox.querySelector('.s-gallery-lightbox__close');
   var lbBackdrop = lightbox.querySelector('.s-gallery-lightbox__backdrop');
   var lbThumbs = lightbox.querySelector('.s-gallery-lightbox__thumbs');
@@ -138,11 +138,13 @@
     lbImage.src = item.src;
     lbImage.alt = item.author || '';
 
-    if (lbCaption) lbCaption.textContent = 'Название проекта';
-    if (lbAuthor) lbAuthor.textContent = 'Copyright © ' + (item.author || '');
-    if (lbSubtitle) lbSubtitle.textContent = '';
     var href = item.href || '#';
-    if (lbAuthorLink) lbAuthorLink.setAttribute('href', href);
+    if (lbCaption) lbCaption.textContent = item.project || 'Название проекта';
+    if (lbAuthorLink) {
+      lbAuthorLink.textContent = item.author || '';
+      lbAuthorLink.setAttribute('href', href);
+    }
+    if (lbSubtitle) lbSubtitle.textContent = '';
 
     if (lbImageLink) lbImageLink.setAttribute('href', href);
     syncThumbState();

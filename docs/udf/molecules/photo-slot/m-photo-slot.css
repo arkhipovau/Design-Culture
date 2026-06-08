@@ -57,6 +57,12 @@
   line-height: var(--type-button-s-lh);
 }
 
+.m-photo-slot__copyright a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .m-photo-row {
   width: min(1108px, 100%);
   display: grid;

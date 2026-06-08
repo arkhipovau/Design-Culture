@@ -109,7 +109,7 @@
         subtitle: 'Дизайн про коллаборации',
         kind: 'Статья',
         href: interview('masha-chern'),
-        keywords: 'берлин ton tone verle продукт',
+        keywords: 'копенгаген дания ton tone verle продукт',
         priority: 70
       },
       {
@@ -189,7 +189,7 @@
         subtitle: 'AI как краска',
         kind: 'Статья',
         href: interview('anastasia-sycheva'),
-        keywords: 'белград студия y combinator спрошу кота брендинг',
+        keywords: 'белград студия y combinator брендинг',
         priority: 70
       },
       {
