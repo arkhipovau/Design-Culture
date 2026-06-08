@@ -1,4 +1,26 @@
 (() => {
+  function enhanceExternalLinks() {
+    document.querySelectorAll('a[href]').forEach((anchor) => {
+      const href = anchor.getAttribute('href');
+      if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) {
+        return;
+      }
+      if (anchor.target === '_blank') return;
+
+      let url;
+      try {
+        url = new URL(href, window.location.href);
+      } catch {
+        return;
+      }
+
+      if (url.origin !== window.location.origin) {
+        anchor.target = '_blank';
+        anchor.rel = 'noopener noreferrer';
+      }
+    });
+  }
+
   function enhanceFooter() {
     document.querySelectorAll('.footer').forEach((footer) => {
       footer.classList.add('s-footer');
@@ -30,8 +52,12 @@
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', enhanceFooter);
+    document.addEventListener('DOMContentLoaded', () => {
+      enhanceExternalLinks();
+      enhanceFooter();
+    });
   } else {
+    enhanceExternalLinks();
     enhanceFooter();
   }
 })();

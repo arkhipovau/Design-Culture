@@ -33,7 +33,10 @@ const INTERVIEW_LINKS = {
     { label: 'Instagram', href: 'https://www.instagram.com/yan.zaretsky' },
   ],
   'sergey-breus': [
-    { label: 'Behance', href: 'https://www.behance.net/sergeybreus' },
+    { label: 'OFMD', href: 'https://t.me/OFMDESIGN' },
+    { label: 'Instagram', href: 'https://www.instagram.com/breus_' },
+    { label: 'Behance', href: 'https://www.behance.net/super_sayaf755' },
+    { label: 'Dprofile', href: 'https://dprofile.ru/sergeybreus' },
   ],
   'sergey-kudinov': [
     { label: 'sergeikudinov.com', href: 'https://sergeikudinov.com' },

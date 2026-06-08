@@ -14,6 +14,8 @@ Use the resource name as the link text:
 
 Do not add email or personal Telegram accounts.
 
+External links open in a new tab: add `target="_blank" rel="noopener noreferrer"` to every `http(s)` link in Линки and О практике. The render script does this automatically for Линки; bio links must be set by hand. Site-wide, `s-footer.js` also assigns these attributes to any remaining external links at runtime.
+
 Run `node scripts/render-article-info-links.js` after editing `scripts/interview-links-data.js`.
 
 ## Markup
@@ -24,7 +26,7 @@ Run `node scripts/render-article-info-links.js` after editing `scripts/interview
     <h3 class="m-article-info__heading">Линки</h3>
     <ul class="m-article-info__list">
       <li class="m-article-info__item">
-        <a href="https://example.com">example.com</a>
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer">example.com</a>
       </li>
     </ul>
   </div>
