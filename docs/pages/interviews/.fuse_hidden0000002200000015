@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сергей Бреус — deFindings</title>
+    <link rel="stylesheet" href="../../stylesheets/index.css?v=20260522" />
+    <link rel="stylesheet" href="../../udf/tokens/colors.css" />
+    <link rel="stylesheet" href="../../udf/tokens/typography.css" />
+    <link rel="stylesheet" href="../../udf/tokens/grid.css" />
+    <link rel="stylesheet" href="../../udf/atoms/sticky-scroll/a-sticky-scroll.css" />
+    <link rel="stylesheet" href="../../udf/atoms/arrow-buttons/a-arrow-buttons.css" />
+    <link rel="stylesheet" href="../../udf/atoms/arrow-button-xl/a-arrow-button-xl.css" />
+    <link rel="stylesheet" href="../article.css?v=20260522" />
+    <link rel="stylesheet" href="../../udf/molecules/qa-row/m-qa-row.css" />
+    <link rel="stylesheet" href="../../udf/molecules/quote-block/m-quote-block.css" />
+    <link rel="stylesheet" href="../../udf/molecules/next-article/m-next-article.css" />
+    <link rel="stylesheet" href="../../udf/molecules/article-info/m-article-info.css" />
+    <link rel="stylesheet" href="./interview.css?v=20260522" />
+    <link rel="stylesheet" href="../../udf/molecules/interview-section/m-interview-section.css" />
+    <link rel="stylesheet" href="../../udf/molecules/photo-slot/m-photo-slot.css" />
+    <link rel="stylesheet" href="../../stylesheets/micro-animations.css" />
+    <link rel="stylesheet" href="../../udf/superorganisms/menu/s-menu.css" />
+    <link rel="stylesheet" href="../../udf/superorganisms/footer/s-footer.css" />
+    <link rel="stylesheet" href="../../udf/quarks/findings/q-findings.css" />
+  </head>
+  <body data-reading-page="Сергей Бреус">
+    <header class="topbar topbar--menu s-menu article-topbar">
+      <a class="logo" href="../../index.html" aria-label="deFindings">
+        <img class="logo-mark" src="../../udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
+        <span class="visually-hidden">deFindings</span>
+      </a>
+    </header>
+
+    <main class="article-page interview-page">
+      <section class="article-hero interview-hero" id="hero">
+        <div class="hero-content section">
+          <p class="article-author">Сергей Бреус</p>
+          <h1 class="interview-hero__title">Рефа-дрочер, F61, Эмиль Рудер</h1>
+          <p class="article-meta">Россия • Москва • Студия</p>
+        </div>
+        <figure class="interview-portrait">
+          <img src="../../images/%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9%20%D0%91%D1%80%D0%B5%D1%83%D1%81.jpg" alt="Сергей Бреус" width="200" height="267" loading="lazy" decoding="async" />
+        </figure>
+      </section>
+
+      <div class="article-body interview-body section">
+        
+        <p class="lede">Сергей десять лет занимался танцами, и пришёл в дизайн в депрессивной фазе на третьем курсе университета, в начале пандемии. Подсел: «неделю из Figma не вылезал». Прошёл «Прагматику» → F61 (fashion-бутиковое агентство, делавшее Anaïs, Terzof и проекты с Morrodin) → IMEQ Club (Саша Лагута, Сергей Гуров) → ONI. Главный учитель — Сергей Полухин («началось с лёгкого абьюза, сейчас безумно благодарен»). Поговорили про дизайн как ремесло с пользой, про мудборды по неделям, про подъёмы в шесть утра и про то, почему майонезный AI-контент в интернете — это страшно.</p>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Какое определение ты бы дал культуре дизайна? Принципы, ценности, ритуалы, без которых хороший проект не получается?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Бреус">Бр</span></div>
+            <div class="m-qa-row__answer"><p>Начну чуть-чуть издалека, потом перейду к проектной деятельности.</p><p>Для меня дизайн и вся эта культура не носят ремесленный характер в смысле «дизайн ради дизайна». Есть ребята — художники и творцы, которые рисуют, потому что не могут без этого жить. Они созидают, практикуют. Я тоже был в таком потоке во время обучения, мы просто рисовали, коллаборировали. Но у меня произошла деформация: я начал говорить себе, что мне очень важно, чтобы это что-то кому-то нужно было.</p><p>Мой последний концепт без коммерции был года три назад. Я скучаю, но всегда задаю себе вопрос: а будет ли у меня дизайн, если он не будет кому-то нужен? Это кризисный момент. Но то, что я нахожу в ремесленности, очень важно — мне нравится, что это может кому-то помочь.</p><p>Мне нравится трактовка из книги «Design Code» (автор — профессор филологических наук, по-моему, фамилия Лола, точно не помню): дизайн, это просто жидкость, которую можно адаптировать под абсолютно любой запрос. Это универсальнее, чем загонять в рамки. Вообще неважно, в каком месте ты этим занимаешься — как ты хочешь определять функцию, так она и должна определяться.</p><p>Для меня важно не окутывать ремесленность только коммерцией. Скорее это ритуал, что ты созидаешь. Я говорю про конечную, завершённую пользу, которую могу кому-то подарить своей работой. В плане шотов и просто кайфа это переросло в R&amp;D-процесс: можешь выложить шот в канал, но нет кропотливого процесса в шесть месяцев концепции на один кейс. Это смена фокуса.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Как ты в дизайн пришёл? Какие точки повлияли на восприятие сферы?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Бреус">Бр</span></div>
+            <div class="m-qa-row__answer"><p>Всё началось с депрессивной фазы. Я начал заниматься дизайном только на третьем курсе, в начале пандемии. До этого я очень долго занимался танцами — лет десять. Они дали мне фундамент: понимание музыки, культуры, моды, fashion. Но была сильная стагнация: долго занимался, а роста не было.</p><p>В университете я не знал, чем хочу заниматься. Потом пришёл на офлайновый бесплатный интенсив по дизайну. Нам рассказывали, что такое UX Design. На то время это было максимально адекватно. Потом началась пандемия, студия выкатила трёхдневный интенсив, я жёстко подсел. Помню, неделю из Figma не вылезал, потому что было так интересно. Я накидывал скетчи, экраны. Было очень модно накинуть первый экранчик сайта.</p><p>Помню эйфорические воспоминания: я столько времени этому уделял, что не знал, какой день недели. У меня были каникулы, пандемия, никуда не нужно идти, нам всё заочно проставили. Я очень вдохновляюще прошёл обучение.</p><p>Когда заканчивал курс, уже были вайбы по работе. Я как-то сразу был настроен на вайб поработать в офисе. Моя первая работа — офис, я ходил девять месяцев каждый день к десяти утра. Даже приходил к семи-восьми, чтобы пару часов перед офисом что-то поработать, посмотреть лекции.</p><p>Потом пошли серьёзные проекты: «Прагматика» → F61 → параллельно IMEQ Club (Саша Лагута, Сергей Гуров) → ONI.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+    <div class="m-photo-row">
+        <figure class="m-photo-slot" id="photo-sergey-breus-0">
+          <div class="m-photo-slot__image">
+            <img src="../../images/48850af996dc5cd2949d.webp" alt="" loading="lazy" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">Название проекта</span>
+            <span class="m-photo-slot__copyright">Copyright © Сергей Бреус</span>
+          </figcaption>
+        </figure>
+        <figure class="m-photo-slot" id="photo-sergey-breus-1">
+          <div class="m-photo-slot__image">
+            <img src="../../images/495dedfd00682f76c71b.jpg" alt="" loading="lazy" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">Название проекта</span>
+            <span class="m-photo-slot__copyright">Copyright © Сергей Бреус</span>
+          </figcaption>
+        </figure>
+    </div>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Бреус">Бр</span></div>
+            <div class="m-qa-row__answer"><p>Ключевая точка — переход в F61. Маленькое четырёхчеловеческое агентство: два арт-директора и одна дизайнерка — Мамарик Терилова, Света Ломакина, Сергей Полухин. Потом пришёл менеджер — стало пятеро.</p><p>Агентство брало исключительно fashion-бутиковые проекты. Самые яркие проекты делала студия Tattoo Mood — Monochrome, их я не застал. Я пришёл, когда они делали Anaïs, участвовал в Terzof, делали вместе с Morrodin.</p><p>Эти проекты на меня повлияли, потому что они делали пиздатую коммерцию, которая доходила до продакшена. Все бренды, которые я озвучил, сейчас существуют. Нужно было перехватывать это ощущение. Арт-директора безумно самобытные, не кайфуют от того, от чего кайфуют остальные.</p><p>Какое-то время мне было очень сложно работать, потому что мы не могли найти точки соприкосновения. Потом нашли, и работа пошла вверх. Я погрузился в больший процесс дизайна. Раньше жил в закутке веб-дизайна, а тогда познакомился с идентикой, с креативной составляющей, метафорой, процессом поиска. Участвовал в съёмках, кампейнах, и понял, насколько все эти элементы формируют видение бренда.</p><p>Главное влияние — Сергей Полухин, мой первый арт-директор. Он причастен к тому, как выглядит Monochrome, Terzof, Tumut. Безумно талантливый. Наши отношения начались с лёгкого абьюза, я говорю в шутку. Нужно было объяснить парню, который пришёл и считает, что он всё знает, почему он рисует хуйню. Тогда я его не понимал и считал, что он меня абьюзит. Сейчас я ему безумно благодарен за все знания, которые он мне вложил.</p><p>Большую часть времени мы работали — 80%. У меня был дизайн до него и дизайн сейчас. Это как два конца медали. С одной стороны, это сильно повлияло на мой рост — это супер. Но с другой, я всё равно отнял частичку его в себя. Стараюсь никого не абьюзить — это шутка.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+    <figure class="m-photo-slot m-photo-slot--wide" id="photo-sergey-breus-2">
+      <div class="m-photo-slot__image">
+        <img src="../../images/49af5d80da2a140a52d8.webp" alt="" loading="lazy" />
+      </div>
+      <figcaption class="m-photo-slot__caption">
+        <span class="m-photo-slot__title">Название проекта</span>
+        <span class="m-photo-slot__copyright">Copyright © Сергей Бреус</span>
+      </figcaption>
+    </figure>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Какая литература и публичные выступления повлияли?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Бреус">Бр</span></div>
+            <div class="m-qa-row__answer"><p>Первое — фильм «Helvetica». Когда я его посмотрел в 360p на VK, это произвело тотальное впечатление. Смотрел, когда был тревожен и не знал, куда расти. Помню, смотрел три раза. Потом ходил в Петербурге в кафе «Люди Кофе» — там решили показать «Helvetica» и накормить всех швейцарским блюдом, круассаном с сыром и джемом. Я сидел, ел и смотрел «Helvetica» на проекторе. Это было прикольно.</p><p>Помню, думал: теперь буду всё рисовать Helvetica. Открыл — кириллица. Это жестоко по отношению к нам, но кириллица — это действительно свой мир.</p><p>Потом я взял интенсив «Композиция и проектирование» Сергея Гурова на Bang-Bang Education. Меня впечатлило не столько общение с Сергеем, сколько пропедевтический курс. Перед началом он выслал лекции для изучения. Они были написаны на основе книги Эмиля Рудера «Типографика». Сергей рассказал основные принципы через свой опыт.</p><p>Меня тогда сильно перевернуло: открытая и закрытая композиция, динамичное равновесие, понятие массового дизайна. Какие-то физические, кинетические свойства — как элементы притягиваются друг к другу или, наоборот, висят крепко.</p><p>После курса я пошёл и купил Эмиля Рудера «Типографика» в оригинале. Полностью прочитал, осознал. Когда ты сам это читаешь после курса — это мощно.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Какие рабочие практики и ритуалы тебя поддерживают и заряжают?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Бреус">Бр</span></div>
+            <div class="m-qa-row__answer"><p>Во-первых, я рефа-дрочер. Я признался на проекте, что я рефа-дрочер. Я могу собирать неделями мудборды. Картинки для меня очень много значат. У меня есть страх неопределённостью — очень сильный. Когда я не понимаю, как рисовать проект, я его не начну, пока хотя бы для себя на картинках его не сложу.</p><p>Это очень важная практика. Даже если работаю один, я работаю с командой; а с командой тем более. Как я должен объяснить дизайнеру, что мы будем рисовать, если наши сознания не синхронизированы?</p><p>Умение находить решения — это не прямой референс, а подход из стратегии, из семиотики. Мы формируем пространство, должны в него погрузиться, научиться в нём жить, понимать, что мы собираем, как работаем с типографикой. Это очень помогает в работе с бренд-дизайнерами: они сделали идентику, а я рисую веб. Я должен декодировать их идентику: правильно ли я её понимаю и как её преломить? Идентика — это не завершённая история, это что-то продолжающееся, она должна жить на других носителях. Рефа — номер один, чем мне надо.</p><p>Второе, я зацикленный на ответах. Я спросил у ChatGPT, в чём мои проблемы, и он сказал: тебе нужно вайбить, расслабиться, порисовать. Но мне очень важно находить постоянные ответы, почему мы это делаем. Это функция? Бизнес-решение? Метафора?</p><p>Все свои концепции я стараюсь соединить какой-то нитью. Даже если кажется незначительным — мне нужно найти объяснение. Не могу показать дизайн и сказать «это прикольно», разве что когда показываю R&amp;D-процесс. Но если говорю про вдохновение и ритуал — должен уметь объяснить хотя бы на пальцах.</p><p>Я люблю простоту. У меня есть бзик на сложные решения: смотришь и думаешь, сколько часов он выдрачивал, многоходовочка. Но прикольное — это когда находишь решение, когда листок пустой и всё чисто. Внутри чувствуешь, что эта простота настолько сложная, что к ней надо было прийти через тысячи итераций. К такой простоте хочется приходить всегда.</p><p>Личные ритуалы: я ненавижу вставать поздно. Последние полтора-два года я встаю в шесть-семь утра ежедневно. Кроме выходных, я не люблю вставать поздно. Мой пик активности до обеда, до трёх-четырёх часов. После этого начинается рутина. Все концептуальные, сильные вещи я делаю рано утром. Особенно если это фрилансовое — концепции делаю перед работой. Что-то накидаю, посижу, подумаю, потом начну основную работу.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+    <div class="m-photo-row m-photo-row--three">
+        <figure class="m-photo-slot" id="photo-sergey-breus-3">
+          <div class="m-photo-slot__image">
+            <img src="../../images/4b7784e88e6b7035c962.webp" alt="" loading="lazy" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">Название проекта</span>
+            <span class="m-photo-slot__copyright">Copyright © Сергей Бреус</span>
+          </figcaption>
+        </figure>
+        <figure class="m-photo-slot" id="photo-sergey-breus-4">
+          <div class="m-photo-slot__image">
+            <img src="../../images/4c250660004e186b56f2.webp" alt="" loading="lazy" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">Название проекта</span>
+            <span class="m-photo-slot__copyright">Copyright © Сергей Бреус</span>
+          </figcaption>
+        </figure>
+        <figure class="m-photo-slot" id="photo-sergey-breus-5">
+          <div class="m-photo-slot__image">
+            <img src="../../images/513f0a449c59e7eb2dcb.webp" alt="" loading="lazy" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">Название проекта</span>
+            <span class="m-photo-slot__copyright">Copyright © Сергей Бреус</span>
+          </figcaption>
+        </figure>
+    </div>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Есть ли у тебя универсальный рецепт проекта? Vision, польза, метрики, бизнес-задача?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Бреус">Бр</span></div>
+            <div class="m-qa-row__answer"><p>Мой главный приоритет, чтобы было пиздато. Чтобы ты смотрел и думал: да, а эта сука. Это не работает, потому что я примерно понимаю, как построить идентику на чистейших моментах, чтобы было модненько, красивенько. Это можно сделать. Но сделать что-то по-настоящему крепко — это сложно.</p><p>Есть внутренний критик, который всегда лезет: это не то, это не то. Проблема в том, что ты что-то не знаешь, и пока это не почувствуешь, сложно объяснить.</p><p>Всему должен быть ответ. Когда я говорю «всему должен быть ответ» — это очень ёмкое объяснение. Есть концепция. Концепция должна отвечать на вопросы: зачем мы это делаем? Для чего? Для кого? Куда это должно развиваться? Нет правильного ответа — есть адекватное прочтение и понимание с точки зрения копания по смыслу.</p><p>В последних проектах я начинаю со стратегии из брендинга. Нужно понять, куда вообще бренд растёт. Если можем ответить, в чём наша концепция и зачем — очень легко строится визуал.</p><p>Это не то, что нам нужно дизайном выразить концепцию. Мы просто должны её усилить. Как в вебе: есть бизнес-задача. Странно делать что-то, что должно генерировать прибыль, и говорить, что это заточено под метрики. Пока не попробуем, не узнаем. Если работаем на бизнес — стараемся, чтобы всё работало.</p><p>В макете очень сложно не найти решение, которое решает задачу. Но найти решение, которое отражает стратегию и смыслы, которые формирует бренд конкретно той задачей, это самое сложное. Найти именно то решение, которое складывается в твою концепцию, в твоё направление. Самое важное, чтобы это не просто решало задачу, а усиливало, подчёркивало эмоциональные составляющие. Чтобы пользователь, клиент, потребитель чувствовал какой-то набор эмоций от этого решения.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Что такое хороший дизайн? Можно ли его определить?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Бреус">Бр</span></div>
+            <div class="m-qa-row__answer"><p>Максимально честно: это дизайн, к которому задали функцию и оболочку, он её проходит и выполняет. Когда дизайн вызывает эмоцию <strong>и</strong> выполняет то, ради чего создан, это хороший дизайн.</p><p>Что можно назвать хорошим или плохим в концепции — это сложно, потому что дизайн ощущается. Недавно я видел работу знакомой дизайнерки, которая занимается дизайном за шоу. Это очень видно. От этого немного страшно, потому что мы живём в мире искусственного контента.</p><p>Мы живём в искусственно порождённом контенте. Даже если посмотреть на блогеров и соцсети, мы живём в контенте, к которому мы не относимся. Потому что он стоит очень много времени: morning routine, прогулки, которые все заготовлены. Нет спонтанного контента.</p><p>А потом ещё подключается AI-контент. Это страшно жёстко. Самое страшное, когда люди, которые давно в профессии, этому обучают и считают нормальным. Они сами пользуются штуками, которые выглядят майонезно, нереалистично, и создают пласт контента, который отвратителен.</p><p>Контент в дизайне — самое сложное. Поэтому есть съёмки, 3D-артисты, CGI-артисты. Это всё нужно ценить. История с AI может сильно ускорить процесс, дать быстрый результат. Но даже с ней нужно сидеть и копаться до последнего. Меня пугает, что AI может породить большое количество контента, который мы начинаем видеть в реальном мире. Вот это страшно.</p><p>Если же говорить об AI как об инструменте, это очень крутая вещь, которая может упрощать процесс обучения, путешествия и ресёрча.</p><p>Я признаюсь — люблю контент, когда скрещивают мультивселенные. Например, «Звёздные войны» в стиле Хаяо Миядзаки. Это попсовое, но прикольно — элемент вдохновения и кайфа. Это классный контент. Но очень тонкая грань между этим и помойкой, которая засирает интернет. Для меня это помойка. Я не хочу, чтобы это было в интернете, не хочу смотреть.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+        <blockquote class="m-quote-block">
+          <p><strong>«Будет ли у меня дизайн, если он не будет кому-то нужен? Это кризисный момент».</strong></p>
+          <cite class="m-quote-block__cite">— Сергей Бреус</cite>
+        </blockquote>
+        <blockquote class="m-quote-block">
+          <p><strong>«Я рефа-дрочер. У меня есть страх неопределённостью — очень сильный. Я не начну проект, пока хотя бы для себя на картинках его не сложу».</strong></p>
+          <cite class="m-quote-block__cite">— Сергей Бреус</cite>
+        </blockquote>
+        <blockquote class="m-quote-block">
+          <p><strong>«Простота настолько сложная, что к ней надо было прийти через тысячи итераций. К такой простоте хочется приходить всегда».</strong></p>
+          <cite class="m-quote-block__cite">— Сергей Бреус</cite>
+        </blockquote>
+        <blockquote class="m-quote-block">
+          <p><strong>«Мой главный приоритет, чтобы было пиздато. Чтобы ты смотрел и думал: да, а эта сука».</strong></p>
+          <cite class="m-quote-block__cite">— Сергей Бреус</cite>
+        </blockquote>
+        <blockquote class="m-quote-block">
+          <p><strong>«Самое страшное, когда люди, которые давно в профессии, сами пользуются штуками, которые выглядят майонезно, нереалистично, и создают пласт контента, который отвратителен».</strong></p>
+          <cite class="m-quote-block__cite">— Сергей Бреус</cite>
+        </blockquote>
+      </div>
+
+    <figure class="m-photo-slot m-photo-slot--placeholder m-photo-slot--wide" id="photo-sergey-breus-6">
+      <div class="m-photo-slot__image" data-placeholder-label="Фото будет добавлено" aria-label="Фото будет добавлено"></div>
+      <figcaption class="m-photo-slot__caption">
+        <span class="m-photo-slot__title">Название проекта</span>
+        <span class="m-photo-slot__copyright">Copyright © Сергей Бреус</span>
+      </figcaption>
+    </figure>
+
+      <section class="m-article-info section">
+        <div>
+          <h3>Дополнительно</h3>
+          <ul>
+              <li>—</li>
+          </ul>
+        </div>
+        <div>
+          <h3>О практике</h3>
+          <p>Сергей Бреус — мультидисциплинарный дизайнер с упором в веб-дизайн и айдентику, ex ONY, ex Gold Apple.</p>
+        </div>
+      </section>
+
+      <section class="m-next-article section">
+        <a class="m-next-article__circle a-arrow-button-xl" href="./sergey-kudinov.html" aria-label="Следующая статья"></a>
+        <p>Читать дальше</p>
+        <h3>
+          <span class="m-next-article__author">Сергей Кудинов</span>
+          <span class="m-next-article__title">Симулятор, бюрократия, ручной труд</span>
+        </h3>
+      </section>
+    </main>
+
+    <div class="a-sticky-scroll-wrap">
+      <div class="a-sticky-scroll">
+        <span class="a-sticky-scroll__rec" aria-hidden="true"></span>
+        <span class="a-sticky-scroll__content">
+          <span class="a-sticky-scroll__dot" aria-hidden="true"></span>
+          <span class="a-sticky-scroll__text">
+            <span class="a-sticky-scroll__prefix">Вы читаете</span>
+            <span class="a-sticky-scroll__current">«Сергей Бреус»</span>
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <footer class="footer s-footer">
+      <div class="footer-grid">
+        <div>
+          <h4>Смотрите</h4>
+          <a href="../journal.html">Журнал</a>
+          <a href="../gallery.html">Галерея</a>
+        </div>
+        <div>
+          <h4>Узнайте больше</h4>
+          <a href="../about.html">О проекте</a>
+        </div>
+        <div>
+          <h4>Подписывайтесь</h4>
+          <a href="../newsletter.html">Рассылка</a>
+        </div>
+        <div>
+          <h4>Другие медиумы</h4>
+          <a class="footer-link-icon" href="https://t.me/defindings">
+            <img src="../../udf/quarks/icons/q-icon-telegram-24-black.svg" alt="" aria-hidden="true" />
+            <span>Telegram</span>
+          </a>
+          <a href="https://www.linkedin.com/in/arkhipovau/">LinkedIn</a>
+        </div>
+        <div>
+          <h4>Реализация проекта</h4>
+          <a href="https://arkhipovau.xyz/">Юлия Архипова</a>
+          <a href="https://t.me/dayglobal">Куратор — Захар День</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 — 2026 deFindings</span>
+        <span>HSE Art&amp;Design School</span>
+      </div>
+    </footer>
+
+    <script defer src="../../udf/superorganisms/menu/menu-overlay.js"></script>
+    <script defer src="../../udf/superorganisms/menu/s-menu.js"></script>
+    <script defer src="../../udf/superorganisms/footer/s-footer.js"></script>
+    <script defer src="../../javascripts/sticky-scroll.js"></script>
+    <script defer src="../../javascripts/micro-animations.js"></script>
+  </body>
+</html>

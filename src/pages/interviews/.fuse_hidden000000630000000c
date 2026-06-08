@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Артём Герц — deFindings</title>
+    <link rel="stylesheet" href="../../stylesheets/index.css?v=20260522" />
+    <link rel="stylesheet" href="../../udf/tokens/colors.css" />
+    <link rel="stylesheet" href="../../udf/tokens/typography.css" />
+    <link rel="stylesheet" href="../../udf/tokens/grid.css" />
+    <link rel="stylesheet" href="../../udf/atoms/sticky-scroll/a-sticky-scroll.css" />
+    <link rel="stylesheet" href="../../udf/atoms/arrow-buttons/a-arrow-buttons.css" />
+    <link rel="stylesheet" href="../../udf/atoms/arrow-button-xl/a-arrow-button-xl.css" />
+    <link rel="stylesheet" href="../article.css?v=20260522" />
+    <link rel="stylesheet" href="../../udf/molecules/qa-row/m-qa-row.css?v=20260608" />
+    <link rel="stylesheet" href="../../udf/molecules/quote-block/m-quote-block.css" />
+    <link rel="stylesheet" href="../../udf/molecules/next-article/m-next-article.css" />
+    <link rel="stylesheet" href="../../udf/molecules/article-info/m-article-info.css?v=20260608" />
+    <link rel="stylesheet" href="./interview.css?v=20260608" />
+    <link rel="stylesheet" href="../../udf/molecules/interview-section/m-interview-section.css" />
+    <link rel="stylesheet" href="../../udf/molecules/photo-slot/m-photo-slot.css" />
+    <link rel="stylesheet" href="../../stylesheets/micro-animations.css" />
+    <link rel="stylesheet" href="../../udf/superorganisms/menu/s-menu.css" />
+    <link rel="stylesheet" href="../../udf/superorganisms/footer/s-footer.css" />
+    <link rel="stylesheet" href="../../udf/quarks/findings/q-findings.css" />
+  </head>
+  <body data-reading-page="Артём Герц">
+    <header class="topbar topbar--menu s-menu article-topbar">
+      <a class="logo" href="../../index.html" aria-label="deFindings">
+        <img class="logo-mark" src="../../udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
+        <span class="visually-hidden">deFindings</span>
+      </a>
+    </header>
+
+    <main class="article-page interview-page">
+      <section class="article-hero interview-hero" id="hero">
+        <div class="hero-content section">
+          <p class="article-author">Артём Герц</p>
+          <h1 class="interview-hero__title">Язык с нуля в айдентике: Redis, Nil Foundation и честность в решениях</h1>
+          <p class="article-meta">Россия • Москва • Студия</p>
+        </div>
+        <figure class="interview-portrait">
+          <img src="../../images/%D0%90%D1%80%D1%82%D1%91%D0%BC%20%D0%93%D0%B5%D1%80%D1%86.jpg" alt="Артём Герц" width="200" height="267" loading="lazy" decoding="async" />
+        </figure>
+      </section>
+
+      <div class="article-body interview-body section">
+        
+        <p class="lede">Артём берётся за айдентику, где язык нужно создать с нуля. В Nil Foundation и RSquad искал честный визуальный код для технологии.</p>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Как ты для себя определяешь культуру дизайна? Что в это понятие входит — принципы, ценности, ритуалы внутри команды, подход к принятию решений, ответственность — или что-то иное?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Артём Герц">АГ</span></div>
+            <div class="m-qa-row__answer"><p>Для меня культура дизайна — это то, как команда думает, принимает решения и несёт ответственность. Это принципы, дисциплина, уважение к задаче и умение докопаться до сути.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+    <figure class="m-photo-slot m-photo-slot--wide" id="photo-artem-gerts-aya-0">
+      <div class="m-photo-slot__image">
+        <img src="../../images/artem-aya.png" alt="AYA" loading="lazy" decoding="async" />
+      </div>
+      <figcaption class="m-photo-slot__caption">
+        <span class="m-photo-slot__title">AYA</span>
+        <span class="m-photo-slot__copyright">Copyright © Artem Hertz, Yana Karpenko</span>
+      </figcaption>
+    </figure>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Немного о твоём пути: почему дизайн и что в нём тебя больше всего драйвит сейчас? Интересно на примере 1–2 кейсов, которые особенно повлияли на твоё восприятие дизайна или подход.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Артём Герц">АГ</span></div>
+            <div class="m-qa-row__answer"><p>В дизайн я пришёл естественно: мне всегда было важно понимать, как работает вещь и почему. Сейчас меня драйвит работа там, где нужно создать язык с нуля, а не следовать шаблону.</p><p><a href="https://www.behance.net/gallery/187441731/Nil-Foundation-Identity-Web-Design" target="_blank" rel="noreferrer">Nil Foundation</a> — Nil стал точкой входа в блокчейн. Основой визуальной системы стала метафора ключ-формулы и знак равенства (=) как символ решения и эквивалентности. Важно было создать честный язык, который делает технологию понятнее и структурнее.</p><p><a href="https://rsquad.io" target="_blank" rel="noreferrer">RSquad</a> — проект, который стал точкой роста: про поиск выразительности в технологичной среде, где много одинаковых решений и мало подлинного характера. Пока не раскрываем детали, но он точно повлиял на мой подход.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+    <div class="m-photo-row">
+        <figure class="m-photo-slot" id="photo-artem-gerts-nil-0">
+          <div class="m-photo-slot__image">
+            <img src="../../images/artem-nil-welcome-pack.png" alt="Nil Foundation" loading="lazy" decoding="async" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">Nil Foundation</span>
+            <span class="m-photo-slot__copyright">Copyright © KOJI</span>
+          </figcaption>
+        </figure>
+        <figure class="m-photo-slot" id="photo-artem-gerts-nil-1">
+          <div class="m-photo-slot__image">
+            <img src="../../images/artem-nil-proof-market.png" alt="Nil Foundation" loading="lazy" decoding="async" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">Nil Foundation</span>
+            <span class="m-photo-slot__copyright">Copyright © KOJI</span>
+          </figcaption>
+        </figure>
+    </div>
+
+    <div class="m-photo-row">
+        <figure class="m-photo-slot" id="photo-artem-gerts-nil-2">
+          <div class="m-photo-slot__image">
+            <img src="../../images/artem-nil-website-hero.png" alt="Nil Foundation" loading="lazy" decoding="async" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">Nil Foundation</span>
+            <span class="m-photo-slot__copyright">Copyright © KOJI</span>
+          </figcaption>
+        </figure>
+        <figure class="m-photo-slot" id="photo-artem-gerts-nil-3">
+          <div class="m-photo-slot__image">
+            <img src="../../images/artem-nil-website-sections.png" alt="Nil Foundation" loading="lazy" decoding="async" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">Nil Foundation</span>
+            <span class="m-photo-slot__copyright">Copyright © KOJI</span>
+          </figcaption>
+        </figure>
+    </div>
+
+    <figure class="m-photo-slot m-photo-slot--wide" id="photo-artem-gerts-rsquad-0">
+      <div class="m-photo-slot__image">
+        <img src="../../images/artem-rsquad.png" alt="RSQUAD" loading="lazy" decoding="async" />
+      </div>
+      <figcaption class="m-photo-slot__caption">
+        <span class="m-photo-slot__title">RSQUAD</span>
+        <span class="m-photo-slot__copyright">Copyright © KOJI</span>
+      </figcaption>
+    </figure>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Про персональный рост: какие внешние влияния (команды, сообщество, менторы, книги) были для тебя самыми значимыми? Как менялись источники вдохновения?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Артём Герц">АГ</span></div>
+            <div class="m-qa-row__answer"><p>На меня сильнее всего влияли:</p><p>— Команды, с которыми я работал. Ты постоянно учишься у людей рядом, иногда даже неосознанно.</p><p>— Сообщество дизайнеров. Наблюдение за коллегами формирует насмотренность лучше любых книг.</p><p>— Менторы и арт-директора, с которыми у меня была возможность работать. Они помогали развивать критическое мышление, не давать слабину и видеть дальше входящих задач.</p><p>Источники вдохновения менялись. Раньше это были визуальные референсы и кейсы. Сейчас всё больше вдохновляют контексты, идеи, исследовательские подходы и чужие логики принятия решений.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Какие рабочие практики или ритуалы остаются неизменными? Что поддерживает и заряжает больше всего? Есть ли повторяющийся паттерн, который ты замечаешь?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Артём Герц">АГ</span></div>
+            <div class="m-qa-row__answer"><p>— Пауза перед стартом. Никогда не ныряю в задачу сразу. Мне нужно время, чтобы почувствовать её контекст.</p><p>— Проверка решений на честность. «Я это делаю, потому что так правильно или потому что я привык так делать?» — этот вопрос часто звучит в моей голове.</p><p>— Привычка доводить. Для меня важно, чтобы вещь была завершена с уважением к ремеслу, даже если срок минимальный.</p><p>— Повторяющийся паттерн — я всегда возвращаюсь к сути. Если теряется фокус, нужно вернуться к тому, зачем решение вообще существует.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Расскажи про опыт в студии Redis. Как ты переводил ценности в дизайн-решения? На что опирался в первую очередь, а что оставалось вторичным? В центре внимания — вижен и большая идея, польза для других, этичность, метрики или что-то ещё?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Артём Герц">АГ</span></div>
+            <div class="m-qa-row__answer"><p>В Redis мы старались держать фокус на сути: что важно клиенту и что делает продукт понятнее. От этого и отталкивались дизайн-решения.</p><p>Хороший пример — <a href="https://www.ori.redis.tv" target="_blank" rel="noreferrer">OriScan</a>. В проекте Ori стояла задача показать реалистичную 3D-модель зубов и рта, чтобы честно передать принцип работы технологии. Но буквальная анатомичность выглядела тяжело и вызывала дискомфорт.</p><p>Мы искали баланс между:</p><div class="m-qa-row__sublist"><p>— реалистичностью, которая важна клиенту,</p><p>— и визуальной выразительностью, которая делает продукт воспринимаемым.</p></div><p>Мы убрали избыточную детализацию, сохранили ключевую форму, фактуру и логику. Так появилась визуализация, которая точно отражает продукт, но при этом остаётся аккуратной, чистой и не перегружающей.</p><p>Это как раз пример того, как ценности Redis формировали результат: мы выбирали честность и пользу, а не эффект ради эффекта.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+    <div class="m-photo-row">
+        <figure class="m-photo-slot" id="photo-artem-gerts-oriscan-0">
+          <div class="m-photo-slot__image">
+            <img src="../../images/artem-oriscan-packaging.png" alt="OriScan" loading="lazy" decoding="async" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">OriScan</span>
+            <span class="m-photo-slot__copyright">Copyright © KOJI</span>
+          </figcaption>
+        </figure>
+        <figure class="m-photo-slot" id="photo-artem-gerts-oriscan-1">
+          <div class="m-photo-slot__image">
+            <img src="../../images/artem-oriscan-website.png" alt="OriScan" loading="lazy" decoding="async" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">OriScan</span>
+            <span class="m-photo-slot__copyright">Copyright © KOJI</span>
+          </figcaption>
+        </figure>
+    </div>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Что такое качество? Что такое хороший дизайн?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Артём Герц">АГ</span></div>
+            <div class="m-qa-row__answer"><p>Качество — это внимательность, уважение к ремеслу и способность объяснить своё решение. Хороший дизайн решает задачу, держит контекст и остаётся понятным без оправданий.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+    <div class="m-photo-row">
+        <figure class="m-photo-slot" id="photo-artem-gerts-mint-0">
+          <div class="m-photo-slot__image">
+            <img src="../../images/artem-mint-catalog.png" alt="Mint Running Club — каталог" loading="lazy" decoding="async" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">Mint Running Club</span>
+            <span class="m-photo-slot__copyright">Copyright © Artem Hertz, Yana Karpenko</span>
+          </figcaption>
+        </figure>
+        <figure class="m-photo-slot" id="photo-artem-gerts-mint-1">
+          <div class="m-photo-slot__image">
+            <img src="../../images/artem-mint-jacket.png" alt="Mint Running Club — куртка" loading="lazy" decoding="async" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">Mint Running Club</span>
+            <span class="m-photo-slot__copyright">Copyright © Artem Hertz, Yana Karpenko</span>
+          </figcaption>
+        </figure>
+    </div>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Крафт и технологии (AI) — видишь ли ты конфликт между этими понятиями или они усиливают друг друга?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Артём Герц">АГ</span></div>
+            <div class="m-qa-row__answer"><p>AI не конфликтует с крафтом — конфликтует лишь ленивое использование инструментов. Если дизайнер понимает, что он делает, AI усиливает поиск и освобождает время для смысла. Но вкус, ответственность и мышление он не заменит.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="m-article-info section">
+        <div>
+          <h3>Дополнительно</h3>
+          <ul>
+            <li><a href="https://www.behance.net/gallery/187441731/Nil-Foundation-Identity-Web-Design" target="_blank" rel="noreferrer">Nil Foundation</a></li>
+            <li><a href="https://rsquad.io" target="_blank" rel="noreferrer">rsquad.io</a></li>
+            <li><a href="https://www.ori.redis.tv" target="_blank" rel="noreferrer">ori.redis.tv</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>О практике</h3>
+          <p>
+            Артём Герц — арт-директор, основатель студии
+            <a href="https://a-y-a.works/" target="_blank" rel="noopener noreferrer">AYA</a>.
+            Ex арт-директор
+            <a href="https://www.redis.agency/" target="_blank" rel="noopener noreferrer">Redis Agency</a>
+            (2020–2025) и
+            <a href="https://www.koji.global/" target="_blank" rel="noopener noreferrer">KOJI</a>
+            (2022–2025).
+          </p>
+          <ul>
+            <li><a href="https://artemhertz.com/" target="_blank" rel="noopener noreferrer">Портфолио</a></li>
+            <li><a href="https://instagram.com/temahertz" target="_blank" rel="noopener noreferrer">Блог</a></li>
+            <li><a href="https://t.me/hertztema" target="_blank" rel="noopener noreferrer">Канал</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="m-next-article section">
+        <a class="m-next-article__circle a-arrow-button-xl" href="./elena-chinakova.html" aria-label="Следующая статья"></a>
+        <p>Читать дальше</p>
+        <h3>
+          <span class="m-next-article__author">Елена Чинакова</span>
+          <span class="m-next-article__title">Zorky в Лондоне, роль дизайнера в Avito и взросление в профессии</span>
+        </h3>
+      </section>
+    </main>
+
+    <div class="a-sticky-scroll-wrap">
+      <div class="a-sticky-scroll">
+        <span class="a-sticky-scroll__rec" aria-hidden="true"></span>
+        <span class="a-sticky-scroll__content">
+          <span class="a-sticky-scroll__dot" aria-hidden="true"></span>
+          <span class="a-sticky-scroll__text">
+            <span class="a-sticky-scroll__prefix">Вы читаете</span>
+            <span class="a-sticky-scroll__current">«Артём Герц»</span>
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <footer class="footer s-footer">
+      <div class="footer-grid">
+        <div>
+          <h4>Смотрите</h4>
+          <a href="../journal.html">Журнал</a>
+          <a href="../gallery.html">Галерея</a>
+        </div>
+        <div>
+          <h4>Узнайте больше</h4>
+          <a href="../about.html">О проекте</a>
+        </div>
+        <div>
+          <h4>Подписывайтесь</h4>
+          <a href="../newsletter.html">Рассылка</a>
+        </div>
+        <div>
+          <h4>Другие медиумы</h4>
+          <a class="footer-link-icon" href="https://t.me/defindings">
+            <img src="../../udf/quarks/icons/q-icon-telegram-24-black.svg" alt="" aria-hidden="true" />
+            <span>Telegram</span>
+          </a>
+          <a href="https://www.linkedin.com/in/arkhipovau/">LinkedIn</a>
+        </div>
+        <div>
+          <h4>Реализация проекта</h4>
+          <a href="https://arkhipovau.xyz/">Юлия Архипова</a>
+          <a href="https://t.me/dayglobal">Куратор — Захар День</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 — 2026 deFindings</span>
+        <span>HSE Art&amp;Design School</span>
+      </div>
+    </footer>
+
+    <script defer src="../../udf/superorganisms/menu/menu-overlay.js"></script>
+    <script defer src="../../udf/superorganisms/menu/s-menu.js"></script>
+    <script defer src="../../udf/superorganisms/footer/s-footer.js"></script>
+    <script defer src="../../javascripts/sticky-scroll.js"></script>
+    <script defer src="../../javascripts/micro-animations.js"></script>
+  </body>
+</html>

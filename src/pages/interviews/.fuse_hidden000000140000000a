@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Даша Макурина — deFindings</title>
+    <link rel="stylesheet" href="../../stylesheets/index.css?v=20260522" />
+    <link rel="stylesheet" href="../../udf/tokens/colors.css" />
+    <link rel="stylesheet" href="../../udf/tokens/typography.css" />
+    <link rel="stylesheet" href="../../udf/tokens/grid.css" />
+    <link rel="stylesheet" href="../../udf/atoms/sticky-scroll/a-sticky-scroll.css" />
+    <link rel="stylesheet" href="../../udf/atoms/arrow-buttons/a-arrow-buttons.css" />
+    <link rel="stylesheet" href="../../udf/atoms/arrow-button-xl/a-arrow-button-xl.css" />
+    <link rel="stylesheet" href="../article.css?v=20260522" />
+    <link rel="stylesheet" href="../../udf/molecules/qa-row/m-qa-row.css" />
+    <link rel="stylesheet" href="../../udf/molecules/quote-block/m-quote-block.css" />
+    <link rel="stylesheet" href="../../udf/molecules/next-article/m-next-article.css" />
+    <link rel="stylesheet" href="../../udf/molecules/article-info/m-article-info.css" />
+    <link rel="stylesheet" href="./interview.css?v=20260522" />
+    <link rel="stylesheet" href="../../udf/molecules/interview-section/m-interview-section.css" />
+    <link rel="stylesheet" href="../../udf/molecules/photo-slot/m-photo-slot.css" />
+    <link rel="stylesheet" href="../../stylesheets/micro-animations.css" />
+    <link rel="stylesheet" href="../../udf/superorganisms/menu/s-menu.css" />
+    <link rel="stylesheet" href="../../udf/superorganisms/footer/s-footer.css" />
+    <link rel="stylesheet" href="../../udf/quarks/findings/q-findings.css" />
+  </head>
+  <body data-reading-page="Даша Макурина">
+    <header class="topbar topbar--menu s-menu article-topbar">
+      <a class="logo" href="../../index.html" aria-label="deFindings">
+        <img class="logo-mark" src="../../udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
+        <span class="visually-hidden">deFindings</span>
+      </a>
+    </header>
+
+    <main class="article-page interview-page">
+      <section class="article-hero interview-hero" id="hero">
+        <div class="hero-content section">
+          <p class="article-author">Даша Макурина</p>
+          <h1 class="interview-hero__title">Учиться видеть заново: насмотренность как навык</h1>
+          <p class="article-meta">Россия • Москва • Фриланс</p>
+        </div>
+        <figure class="interview-portrait">
+          <img src="../../images/%D0%94%D0%B0%D1%88%D0%B0%20%D0%9C%D0%B0%D0%BA%D1%83%D1%80%D0%B8%D0%BD%D0%B0.jpg" alt="Даша Макурина" width="200" height="267" loading="lazy" decoding="async" />
+        </figure>
+      </section>
+
+      <div class="article-body interview-body section">
+        
+        <p class="lede">3D-дизайнер Rarible и CGI-дизайнер студии pont.design. Поговорили про культуру дизайна как ежедневные ценности, про любовь к CGI-метафорам, домашний офис с собакой, кейс финтек-приложения THX и про то, как крафт и AI усиливают друг друга.</p>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Как ты для себя определяешь культуру дизайна? Что в это понятие входит — принципы, ценности, ритуалы внутри команды, подход к принятию решений, ответственность, стремление к красоте — или что-то иное?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Даша Макурина">ДМ</span></div>
+            <div class="m-qa-row__answer"><p>Для меня культура дизайна — это ценности и практики, которыми я руководствуюсь ежедневно, создавая визуальную сторону продукта. Набор важных для меня ценностей очень прост:</p><p>В первую очередь — прозрачный и честный диалог с клиентом, из которого формируется понимание бренда и его задач.</p><p>Логика и системность. Любое решение, которое я принимаю, должно быть логически аргументировано и отвечать задаче, которую ставит перед собой продукт. Если подход бессистемен и вы не можете аргументировать свою позицию, вы просто делаете красивые картинки.</p><p>Баланс между формой и функцией — в своей работе я стараюсь выдерживать ясные визуальные решения, которые поддерживают цели клиента.</p><p>Самое главное для меня — быть открытым к новому опыту и не бояться идти на риск, но в рамках безопасного эксперимента.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Почему CGI-дизайн и что в нём тебя больше всего драйвит сейчас? Интересно на примере 1–3 кейсов, которые особенно повлияли на твоё восприятие сферы или подход.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Даша Макурина">ДМ</span></div>
+            <div class="m-qa-row__answer"><p>Мне всегда нравилось искать в тех или иных визуальных решениях ту самую «метафору», которая раскрывает суть продукта. За это я так сильно люблю сферу CGI, которая позволяет рассказать о продукте с совершенно разных креативных позиций и сократить расстояние между продуктом и потенциальным пользователем.</p><p>Если говорить о том, что сформировало моё видение и вкус, то нельзя не упомянуть 3D-художницу Smeccea, чьи яркие, полные жизни и красок образы перевернули моё представление о том, какой может быть CGI-реклама.</p><p>То, что вдохновляет меня сейчас, это работа дизайн-команды Microsoft. Обновление Office 365, стиль Copilot — за всем этим чувствуется единая работа команды и большая любовь и уважение к наследию компании.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+    <div class="m-photo-row">
+        <figure class="m-photo-slot" id="photo-dasha-makurina-0">
+          <div class="m-photo-slot__image">
+            <img src="../../images/dasha-smeccea-1.png" alt="" loading="lazy" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">Smeccea</span>
+            <span class="m-photo-slot__copyright">Copyright © Smeccea</span>
+          </figcaption>
+        </figure>
+        <figure class="m-photo-slot" id="photo-dasha-makurina-1">
+          <div class="m-photo-slot__image">
+            <img src="../../images/dasha-smeccea-2.png" alt="" loading="lazy" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">Smeccea</span>
+            <span class="m-photo-slot__copyright">Copyright © Smeccea</span>
+          </figcaption>
+        </figure>
+    </div>
+
+    <figure class="m-photo-slot m-photo-slot--wide" id="photo-dasha-makurina-2">
+      <div class="m-photo-slot__image">
+        <img src="../../images/dasha-smeccea-3.png" alt="" loading="lazy" />
+      </div>
+      <figcaption class="m-photo-slot__caption">
+        <span class="m-photo-slot__title">Smeccea</span>
+        <span class="m-photo-slot__copyright">Copyright © Smeccea</span>
+      </figcaption>
+    </figure>
+
+    <figure class="m-photo-slot m-photo-slot--wide" id="photo-dasha-makurina-3">
+      <div class="m-photo-slot__image">
+        <img src="../../images/dasha-microsoft-1.png" alt="" loading="lazy" />
+      </div>
+      <figcaption class="m-photo-slot__caption">
+        <span class="m-photo-slot__title">Microsoft 365</span>
+        <span class="m-photo-slot__copyright">Copyright © Microsoft</span>
+      </figcaption>
+    </figure>
+
+    <div class="m-photo-row">
+        <figure class="m-photo-slot" id="photo-dasha-makurina-4">
+          <div class="m-photo-slot__image">
+            <img src="../../images/dasha-microsoft-2.png" alt="" loading="lazy" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">Microsoft Excel</span>
+            <span class="m-photo-slot__copyright">Copyright © Microsoft</span>
+          </figcaption>
+        </figure>
+        <figure class="m-photo-slot" id="photo-dasha-makurina-5">
+          <div class="m-photo-slot__image">
+            <img src="../../images/dasha-microsoft-3.png" alt="" loading="lazy" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">Microsoft PowerPoint</span>
+            <span class="m-photo-slot__copyright">Copyright © Microsoft</span>
+          </figcaption>
+        </figure>
+    </div>
+
+    <figure class="m-photo-slot m-photo-slot--wide" id="photo-dasha-makurina-6">
+      <div class="m-photo-slot__image">
+        <img src="../../images/dasha-microsoft-4.png" alt="" loading="lazy" />
+      </div>
+      <figcaption class="m-photo-slot__caption">
+        <span class="m-photo-slot__title">Microsoft Editor</span>
+        <span class="m-photo-slot__copyright">Copyright © Microsoft</span>
+      </figcaption>
+    </figure>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Какие рабочие практики или ритуалы остаются неизменными? Что поддерживает и заряжает больше всего? Есть ли повторяющийся паттерн, который ты замечаешь?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Даша Макурина">ДМ</span></div>
+            <div class="m-qa-row__answer"><p>В моей работе много переменных, но некоторые вещи остаются неизменными. В первую очередь — открытость к диалогу, только так можно понять, что движет человеком по ту сторону продукта. Также неизменным остаётся системный подход к проектам в целом: весь процесс разбит на определённые шаги, которые позволяют избежать хаоса.</p><p>Всю рабочую деятельность я веду из дома, поэтому для меня неизменно наличие комфортного пространства. Удобный рабочий стол, большой экран и эргономичное кресло — неотъемлемая часть моего домашнего офиса. Из ритуалов могу выделить прогулки с моей собакой в перерывах: свежий воздух и физическая активность отлично влияют на креативный процесс.</p><p>Если говорить о том, что поддерживает и заряжает, то это, безусловно, позитивная обратная связь на проделанную работу. Самое лучшее для меня — видеть, что человек улавливает метафоры и смыслы, заложенные мной в визуал.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Расскажи про свой текущий подход к проектам. Как переводишь ценности в дизайн-решения? На что опираешься в первую очередь, а что остаётся вторичным? В центре внимания — вижен и большая идея, красота, создание чего-то нового для индустрии, виральность или что-то ещё?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Даша Макурина">ДМ</span></div>
+            <div class="m-qa-row__answer"><p>Как я упомянула ранее, любой проект, который я беру в работу, раскладывается на определённые шаги, что позволяет уделить внимание в равной степени как форме, так и функции. Сфера CGI даёт широкий простор для фантазии, но первично — баланс между креативом и бизнес-задачей.</p><p>В центре внимания визуальных решений, созданных мной, инклюзивный подход. Дизайн не должен создавать пропасть между продуктом и пользователем; инклюзивный визуал сближает стороны, вызывая позитивный эмоциональный отклик на продукт.</p><p>Последний проект, над которым я работала, как раз иллюстрирует мою идею про инклюзивность:</p><p>Клиент: финтек-приложение THX<br />Задача: создание приложения для аудитории, которая никогда не занималась трейдингом; визуальное оформление, лишённое излишней сложности, которая присуща профессиональным трейдинг-платформам.</p><p>Проведя исследование и несколько раундов итераций с командой продакт-дизайна, мы пришли к финальной концепции, которая отстраивала наш визуал от всех существующих трейдинг-продуктов и получила позитивный фидбек от потенциальных пользователей.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+    <figure class="m-photo-slot m-photo-slot--wide" id="photo-dasha-makurina-7">
+      <div class="m-photo-slot__image">
+        <img src="../../images/dasha-thx-desktop.png" alt="" loading="lazy" />
+      </div>
+      <figcaption class="m-photo-slot__caption">
+        <span class="m-photo-slot__title">THX</span>
+        <span class="m-photo-slot__copyright">Copyright © Даша Макурина</span>
+      </figcaption>
+    </figure>
+
+    <figure class="m-photo-slot m-photo-slot--wide" id="photo-dasha-makurina-8">
+      <div class="m-photo-slot__image">
+        <img src="../../images/dasha-thx-app-screens.png" alt="" loading="lazy" />
+      </div>
+      <figcaption class="m-photo-slot__caption">
+        <span class="m-photo-slot__title">THX</span>
+        <span class="m-photo-slot__copyright">Copyright © Даша Макурина</span>
+      </figcaption>
+    </figure>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Работая в команде pont., что считаешь качеством и как это артикулируешь. Что такое хороший дизайн?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Даша Макурина">ДМ</span></div>
+            <div class="m-qa-row__answer"><p>Я пришла в студию Pont в 2023 году и за эти несколько лет поучаствовала в создании 3D-контента как для российских компаний, так и для зарубежных брендов.</p><p>Студийная работа учит тебя таким важным вещам, как соблюдение дедлайнов, работа в команде, быстрый поиск смыслов и идей, которые будут отражены в работе, а также умению в сжатые сроки создавать контент, который будет отвечать запросу клиентов.</p><p>Залогом качества считаю сильный арт- и креатив-дирекшн студии Pont, который ведёт команду в сторону соблюдения баланса между искусством и бизнес-задачами, быстрой и открытой коммуникации с клиентами и поддержанию здоровой атмосферы в команде.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+    <figure class="m-photo-slot m-photo-slot--wide" id="photo-dasha-makurina-9">
+      <div class="m-photo-slot__image">
+        <img src="../../images/dasha-pont-1.png" alt="" loading="lazy" />
+      </div>
+      <figcaption class="m-photo-slot__caption">
+        <span class="m-photo-slot__title">pont.</span>
+        <span class="m-photo-slot__copyright">Copyright © pont.design</span>
+      </figcaption>
+    </figure>
+
+    <figure class="m-photo-slot m-photo-slot--wide" id="photo-dasha-makurina-10">
+      <div class="m-photo-slot__image">
+        <img src="../../images/dasha-pont-2.png" alt="" loading="lazy" />
+      </div>
+      <figcaption class="m-photo-slot__caption">
+        <span class="m-photo-slot__title">pont.</span>
+        <span class="m-photo-slot__copyright">Copyright © pont.design</span>
+      </figcaption>
+    </figure>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Крафт и технологии (AI) — видишь ли ты конфликт между этими понятиями или они усиливают друг друга?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Даша Макурина">ДМ</span></div>
+            <div class="m-qa-row__answer"><p>Для меня связь крафта и AI — это как две стороны одной медали: технологии дают скорость, масштаб, позволяют генерировать концепты и варианты их реализации, а крафт несёт в себе глубину и эмоциональную связь между творцом и его продуктом, которой не достичь, используя только лишь AI.</p><p>Думаю, что ценность человека в проектировании продукта и его визуальной стороны всё ещё высока: критическое мышление, понимание бренда и его пользователей, закладывание тех или иных эмоций в продукт — всё это не может быть сделано без человека.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="m-article-info section">
+        <div>
+          <h3>Дополнительно</h3>
+          <ul>
+            <li>—</li>
+          </ul>
+        </div>
+        <div>
+          <h3>О практике</h3>
+          <p>Даша Макурина — 3D-дизайнер Rarible, CGI-дизайнер студии pont.design.</p>
+        </div>
+      </section>
+
+      <section class="m-next-article section">
+        <a class="m-next-article__circle a-arrow-button-xl" href="./sasha-barabonova.html" aria-label="Следующая статья"></a>
+        <p>Читать дальше</p>
+        <h3>
+          <span class="m-next-article__author">Саша Барабонова</span>
+          <span class="m-next-article__title">Эмпатия, табличка из табличек</span>
+        </h3>
+      </section>
+    </main>
+
+    <div class="a-sticky-scroll-wrap">
+      <div class="a-sticky-scroll">
+        <span class="a-sticky-scroll__rec" aria-hidden="true"></span>
+        <span class="a-sticky-scroll__content">
+          <span class="a-sticky-scroll__dot" aria-hidden="true"></span>
+          <span class="a-sticky-scroll__text">
+            <span class="a-sticky-scroll__prefix">Вы читаете</span>
+            <span class="a-sticky-scroll__current">«Даша Макурина»</span>
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <footer class="footer s-footer">
+      <div class="footer-grid">
+        <div>
+          <h4>Смотрите</h4>
+          <a href="../journal.html">Журнал</a>
+          <a href="../gallery.html">Галерея</a>
+        </div>
+        <div>
+          <h4>Узнайте больше</h4>
+          <a href="../about.html">О проекте</a>
+        </div>
+        <div>
+          <h4>Подписывайтесь</h4>
+          <a href="../newsletter.html">Рассылка</a>
+        </div>
+        <div>
+          <h4>Другие медиумы</h4>
+          <a class="footer-link-icon" href="https://t.me/defindings">
+            <img src="../../udf/quarks/icons/q-icon-telegram-24-black.svg" alt="" aria-hidden="true" />
+            <span>Telegram</span>
+          </a>
+          <a href="https://www.linkedin.com/in/arkhipovau/">LinkedIn</a>
+        </div>
+        <div>
+          <h4>Реализация проекта</h4>
+          <a href="https://arkhipovau.xyz/">Юлия Архипова</a>
+          <a href="https://t.me/dayglobal">Куратор — Захар День</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 — 2026 deFindings</span>
+        <span>HSE Art&amp;Design School</span>
+      </div>
+    </footer>
+
+    <script defer src="../../udf/superorganisms/menu/menu-overlay.js"></script>
+    <script defer src="../../udf/superorganisms/menu/s-menu.js"></script>
+    <script defer src="../../udf/superorganisms/footer/s-footer.js"></script>
+    <script defer src="../../javascripts/sticky-scroll.js"></script>
+    <script defer src="../../javascripts/micro-animations.js"></script>
+  </body>
+</html>

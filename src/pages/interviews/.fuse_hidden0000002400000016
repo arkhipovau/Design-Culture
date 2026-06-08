@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сергей Кудинов — deFindings</title>
+    <link rel="stylesheet" href="../../stylesheets/index.css?v=20260522" />
+    <link rel="stylesheet" href="../../udf/tokens/colors.css" />
+    <link rel="stylesheet" href="../../udf/tokens/typography.css" />
+    <link rel="stylesheet" href="../../udf/tokens/grid.css" />
+    <link rel="stylesheet" href="../../udf/atoms/sticky-scroll/a-sticky-scroll.css" />
+    <link rel="stylesheet" href="../../udf/atoms/arrow-buttons/a-arrow-buttons.css" />
+    <link rel="stylesheet" href="../../udf/atoms/arrow-button-xl/a-arrow-button-xl.css" />
+    <link rel="stylesheet" href="../article.css?v=20260522" />
+    <link rel="stylesheet" href="../../udf/molecules/qa-row/m-qa-row.css" />
+    <link rel="stylesheet" href="../../udf/molecules/quote-block/m-quote-block.css" />
+    <link rel="stylesheet" href="../../udf/molecules/next-article/m-next-article.css" />
+    <link rel="stylesheet" href="../../udf/molecules/article-info/m-article-info.css" />
+    <link rel="stylesheet" href="./interview.css?v=20260522" />
+    <link rel="stylesheet" href="../../udf/molecules/interview-section/m-interview-section.css" />
+    <link rel="stylesheet" href="../../udf/molecules/photo-slot/m-photo-slot.css" />
+    <link rel="stylesheet" href="../../stylesheets/micro-animations.css" />
+    <link rel="stylesheet" href="../../udf/superorganisms/menu/s-menu.css" />
+    <link rel="stylesheet" href="../../udf/superorganisms/footer/s-footer.css" />
+    <link rel="stylesheet" href="../../udf/quarks/findings/q-findings.css" />
+  </head>
+  <body data-reading-page="Сергей Кудинов">
+    <header class="topbar topbar--menu s-menu article-topbar">
+      <a class="logo" href="../../index.html" aria-label="deFindings">
+        <img class="logo-mark" src="../../udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
+        <span class="visually-hidden">deFindings</span>
+      </a>
+    </header>
+
+    <main class="article-page interview-page">
+      <section class="article-hero interview-hero" id="hero">
+        <div class="hero-content section">
+          <p class="article-author">Сергей Кудинов</p>
+          <h1 class="interview-hero__title">Симулятор, бюрократия, ручной труд</h1>
+          <p class="article-meta">Россия • Москва • Продукт</p>
+        </div>
+        <figure class="interview-portrait">
+          <img src="../../images/%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9%20%D0%9A%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%B2.jpg" alt="Сергей Кудинов" width="200" height="267" loading="lazy" decoding="async" />
+        </figure>
+      </section>
+
+      <div class="article-body interview-body section">
+        
+        <p class="lede">Сергей Кудинов работает в Яндексе и разводит дизайн на две части: дизайн в жизни и дизайн на работе. На работе культура для него — это не процесс и не «дизайн-сингинг», а способность людей мыслить результатом, а не своим участком. Поговорили про то, чем культура отличается от симулятора, почему процесс без культуры — бюрократия, а культура без процесса — хаос, и почему нейросетевую генерацию он видит сразу.</p>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Как ты определяешь культуру дизайна? Это ценности, рабочие принципы, готовность к ответственности? Или больше про команду?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Сергей">Се</span></div>
+            <div class="m-qa-row__answer"><p>Тут много можно разговаривать. Я в свободном формате начну, надеюсь, какие-то мысли ты выловишь.</p><p>Я бы разделял: есть жизнь, и там дизайн в жизни, дизайн самой жизни. Это очень широко. И есть работа — дизайн-культуры на работе. Давай начнём с работы.</p><p>В зависимости от людей, размера организации и задач, которые они решают, эта культура может появиться, а может мешать. Если подразумевать под дизайн-культурой какие-то бюрократические, процессные штуки, выстроенный процесс, по которому должны все следовать — это скорее не культура. Это симулятор. Симулятор — это когда оно хочет казаться, но не является.</p><p>Многие путают дизайн-культуру или дизайн-сингинг именно с процессной штукой, по которой надо идти всей команде, чтобы получить результат. Я так не считаю. Я отношу это к процессу.</p><p>Что я считаю культурой? Культура в большой организации — это когда люди понимают важность своей роли и важность соседней роли. Есть доверие, человек доверяет экспертизе и мыслит результатом, а не своим конкретным участком работы.</p><p>Чаще всего распространённая практика: дизайнер получил задачу от маркетинга, очень конкретно. Сделал, отдал. А потом выясняется, что это намного более широкая вещь, которую нужно было не просто сделать, а нужно было подумать: зачем ты это делаешь? И выясняется, что это вообще не надо было делать. Но когда человек мыслит «мне дал маркетинг, я как заказчик выполнил задачу, отдал — с меня сквозь» — это отсутствие дизайн-культуры.</p><p>А её присутствие — это когда человек задаётся вопросами, знает общие цели и оценивает свою роль и вклад в процесс. Насколько эффективно эта роль будет отрабатывать и насколько вклад будет полезен.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Как у вас в Яндексе?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Сергей">Се</span></div>
+            <div class="m-qa-row__answer"><p>В Яндексе я вижу, что дизайн-культура очень сильно развита. И не потому, что это был приказ сверху, а потому что сложилось из людей.</p><p>Люди понимают, что они делают и зачем. Есть человек, который про «зачем» думает. Это важно. И есть понимание общих целей: что мы как компания хотим.</p><p>Когда я пришёл в Яндекс, я видел, что всем интересно — почему ты это делаешь? А не просто «сделай». Это здоровый скептицизм. Эта культура позволяет высказать своё мнение, даже если ты дизайнер и тебя спросили что-то другое.</p><p>Вот это я и считаю дизайн-культурой в организации.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+    <div class="m-photo-row">
+        <figure class="m-photo-slot" id="photo-sergey-kudinov-0">
+          <div class="m-photo-slot__image">
+            <img src="../../images/52b87704e3aca4457af7.webp" alt="" loading="lazy" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">Название проекта</span>
+            <span class="m-photo-slot__copyright">Copyright © Сергей Кудинов</span>
+          </figcaption>
+        </figure>
+        <figure class="m-photo-slot" id="photo-sergey-kudinov-1">
+          <div class="m-photo-slot__image">
+            <img src="../../images/5797605502626eb5eaa3.jpg" alt="" loading="lazy" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">Название проекта</span>
+            <span class="m-photo-slot__copyright">Copyright © Сергей Кудинов</span>
+          </figcaption>
+        </figure>
+    </div>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>А на личном уровне?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Сергей">Се</span></div>
+            <div class="m-qa-row__answer"><p>На личном уровне, я считаю, культура дизайна — это, в первую очередь, честность с самим собой. Честность в том, что ты делаешь. Зачем ты это делаешь?</p><p>Если у тебя есть задача, ты должен её переосмыслить. Не просто выполнить, а понять, правильная ли она. Это требует смелости. Потому что вполне возможно, что заказчик не захочет услышать, что задача не совсем правильная.</p><p>Также это уважение к людям, с которыми ты работаешь. Понимание, что у каждого человека есть своя экспертиза, и ты должен её слушать.</p><p>И третье — это результат. Не просто процесс, а именно результат. Культура дизайна строится вокруг того, что мы все вместе делаем что-то нужное людям.</p><p>Когда я говорю о дизайне в жизни, я имею в виду то, как ты живёшь, как принимаешь решения, как общаешься с людьми. Дизайн — это не просто красивые картинки. Дизайн — это решение проблем. Если ты приходишь с утра и подходишь к проблеме с позиции дизайнера, ты будешь думать не только о себе, но и о том, как это повлияет на команду, на компанию, на пользователя.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+    <figure class="m-photo-slot m-photo-slot--wide" id="photo-sergey-kudinov-2">
+      <div class="m-photo-slot__image">
+        <img src="../../images/5bbb57c918847647a42a.webp" alt="" loading="lazy" />
+      </div>
+      <figcaption class="m-photo-slot__caption">
+        <span class="m-photo-slot__title">Название проекта</span>
+        <span class="m-photo-slot__copyright">Copyright © Сергей Кудинов</span>
+      </figcaption>
+    </figure>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>А процессы тогда вообще не нужны?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Сергей">Се</span></div>
+            <div class="m-qa-row__answer"><p>В большой организации всегда есть системы и процессы. И они важны. Но они не должны быть выше культуры.</p><p>Я видел компании, где процессы задавили людей. Они просто идут по какому-то пути и не думают, почему они это делают.</p><p>В Яндексе процессы служат культуре, а не наоборот. Люди используют процессы, чтобы быть эффективнее, а не чтобы выполнять формальные требования.</p><p>Если у тебя есть процесс, но нет культуры — это бюрократия. Если у тебя есть культура, но нет процесса — это хаос. Нужно оба.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Как культура связана с лидерством?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Сергей">Се</span></div>
+            <div class="m-qa-row__answer"><p>Культура дизайна зависит от того, как люди ведут за собой других. Если у тебя есть лидер, который просто даёт приказы и не слушает — культуры не будет. Но если у тебя есть лидер, который слушает, объясняет, почему нужно делать именно так, и готов изменить свой взгляд, если его переубедят — вот это создаёт культуру.</p><p>Когда я пришёл в Яндекс, я увидел, что руководители не боятся высказывать противоположное мнение. И они готовы слушать. Это сильно повлияло на то, как я сам понимаю дизайн-культуру.</p><p>В хорошей дизайн-культуре ошибки — это не что-то страшное. Ошибки — часть процесса обучения. Когда я что-то делаю, я знаю, что если сделаю ошибку, мне помогут её исправить, и я узнаю что-то новое. Это очень отличается от культур, где ошибка — повод для наказания.</p><p>В Яндексе ошибки рассматриваются как возможность улучшить систему. Не отругать человека, а понять, почему это произошло и что можно изменить. Это создаёт безопасное пространство для экспериментов.</p><p>Дизайн-культура — это не что-то статичное. Это живой процесс. Компании меняются, люди меняются, задачи меняются. Культура должна адаптироваться. Но ядро остаётся: честность, доверие, результативность.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+    <div class="m-photo-row m-photo-row--three">
+        <figure class="m-photo-slot" id="photo-sergey-kudinov-3">
+          <div class="m-photo-slot__image">
+            <img src="../../images/62fdc8ec9235f6923ec7.webp" alt="" loading="lazy" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">Название проекта</span>
+            <span class="m-photo-slot__copyright">Copyright © Сергей Кудинов</span>
+          </figcaption>
+        </figure>
+        <figure class="m-photo-slot" id="photo-sergey-kudinov-4">
+          <div class="m-photo-slot__image">
+            <img src="../../images/6ff1d7c21818159ce18a.webp" alt="" loading="lazy" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">Название проекта</span>
+            <span class="m-photo-slot__copyright">Copyright © Сергей Кудинов</span>
+          </figcaption>
+        </figure>
+        <figure class="m-photo-slot" id="photo-sergey-kudinov-5">
+          <div class="m-photo-slot__image">
+            <img src="../../images/7120ddb7eaeb6c0f4be9.webp" alt="" loading="lazy" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">Название проекта</span>
+            <span class="m-photo-slot__copyright">Copyright © Сергей Кудинов</span>
+          </figcaption>
+        </figure>
+    </div>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Книги, фильмы, люди, которые повлияли?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Сергей">Се</span></div>
+            <div class="m-qa-row__answer"><p>Я много читаю, много смотрю. Но самое большое влияние оказала жизнь.</p><p>Когда я видел компании, которые построили хорошую культуру, я учился. Когда видел компании, которые этого не сделали, учился на их ошибках.</p><p>Есть классические книги по дизайну. Есть люди, которые много пишут и говорят о культуре. Но самое важное — видеть это в действии. В Яндексе я вижу это в действии: как люди ценят друг друга, как слушают, как строят что-то вместе. Это лучший учебник.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Как ты относишься к нейросетям и AI в дизайне?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Сергей">Се</span></div>
+            <div class="m-qa-row__answer"><p>Интересный вопрос. Я вижу, что нейросети появляются во всех областях, в том числе в дизайне.</p><p>На данном уровне польза от этого есть. Они сокращают время. Но я не вижу художественной ценности. Когда смотрю на результаты нейросетей — сразу вижу нейросетевую генерацию.</p><p>Мне более приятно смотреть на ручной труд. Это художник рисует. А если художник рисует как нейросеть — так бездушно — мне невероятно неприятно это смотреть.</p><p>Короче, пока искусственный интеллект, просто один из инструментов. Будут цениться люди, которые умеют этими инструментами пользоваться и смотрят широко. Они нас не заменят. Пока не появится настоящий искусственный интеллект. Когда он появится, не знаю.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+        <blockquote class="m-quote-block">
+          <p><strong>«Симулятор — это когда оно хочет казаться, но не является. Многие путают дизайн-культуру с процессной штукой. Я так не считаю».</strong></p>
+          <cite class="m-quote-block__cite">— Сергей Кудинов</cite>
+        </blockquote>
+        <blockquote class="m-quote-block">
+          <p><strong>«Культура — это когда люди понимают важность своей роли и важность соседней роли. Есть доверие, человек мыслит результатом, а не своим конкретным участком».</strong></p>
+          <cite class="m-quote-block__cite">— Сергей Кудинов</cite>
+        </blockquote>
+        <blockquote class="m-quote-block">
+          <p><strong>«Процесс без культуры — бюрократия. Культура без процесса — хаос. Нужно оба».</strong></p>
+          <cite class="m-quote-block__cite">— Сергей Кудинов</cite>
+        </blockquote>
+        <blockquote class="m-quote-block">
+          <p><strong>«Когда я пришёл в Яндекс, я увидел: всем интересно — почему ты это делаешь? А не просто „сделай&quot;».</strong></p>
+          <cite class="m-quote-block__cite">— Сергей Кудинов</cite>
+        </blockquote>
+        <blockquote class="m-quote-block">
+          <p><strong>«Если художник рисует как нейросеть — так бездушно — мне невероятно неприятно это смотреть».</strong></p>
+          <cite class="m-quote-block__cite">— Сергей Кудинов</cite>
+        </blockquote>
+      </div>
+
+    <figure class="m-photo-slot m-photo-slot--placeholder m-photo-slot--wide" id="photo-sergey-kudinov-6">
+      <div class="m-photo-slot__image" data-placeholder-label="Фото будет добавлено" aria-label="Фото будет добавлено"></div>
+      <figcaption class="m-photo-slot__caption">
+        <span class="m-photo-slot__title">Название проекта</span>
+        <span class="m-photo-slot__copyright">Copyright © Сергей Кудинов</span>
+      </figcaption>
+    </figure>
+
+      <section class="m-article-info section">
+        <div>
+          <h3>Дополнительно</h3>
+          <ul>
+              <li>—</li>
+          </ul>
+        </div>
+        <div>
+          <h3>О практике</h3>
+          <p>Сергей Кудинов — креативный директор Яндекс 360.</p>
+        </div>
+      </section>
+
+      <section class="m-next-article section">
+        <a class="m-next-article__circle a-arrow-button-xl" href="./anya-golub.html" aria-label="Следующая статья"></a>
+        <p>Читать дальше</p>
+        <h3>
+          <span class="m-next-article__author">Аня Голубь</span>
+          <span class="m-next-article__title">Уважение, White Secret, санитары леса</span>
+        </h3>
+      </section>
+    </main>
+
+    <div class="a-sticky-scroll-wrap">
+      <div class="a-sticky-scroll">
+        <span class="a-sticky-scroll__rec" aria-hidden="true"></span>
+        <span class="a-sticky-scroll__content">
+          <span class="a-sticky-scroll__dot" aria-hidden="true"></span>
+          <span class="a-sticky-scroll__text">
+            <span class="a-sticky-scroll__prefix">Вы читаете</span>
+            <span class="a-sticky-scroll__current">«Сергей Кудинов»</span>
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <footer class="footer s-footer">
+      <div class="footer-grid">
+        <div>
+          <h4>Смотрите</h4>
+          <a href="../journal.html">Журнал</a>
+          <a href="../gallery.html">Галерея</a>
+        </div>
+        <div>
+          <h4>Узнайте больше</h4>
+          <a href="../about.html">О проекте</a>
+        </div>
+        <div>
+          <h4>Подписывайтесь</h4>
+          <a href="../newsletter.html">Рассылка</a>
+        </div>
+        <div>
+          <h4>Другие медиумы</h4>
+          <a class="footer-link-icon" href="https://t.me/defindings">
+            <img src="../../udf/quarks/icons/q-icon-telegram-24-black.svg" alt="" aria-hidden="true" />
+            <span>Telegram</span>
+          </a>
+          <a href="https://www.linkedin.com/in/arkhipovau/">LinkedIn</a>
+        </div>
+        <div>
+          <h4>Реализация проекта</h4>
+          <a href="https://arkhipovau.xyz/">Юлия Архипова</a>
+          <a href="https://t.me/dayglobal">Куратор — Захар День</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 — 2026 deFindings</span>
+        <span>HSE Art&amp;Design School</span>
+      </div>
+    </footer>
+
+    <script defer src="../../udf/superorganisms/menu/menu-overlay.js"></script>
+    <script defer src="../../udf/superorganisms/menu/s-menu.js"></script>
+    <script defer src="../../udf/superorganisms/footer/s-footer.js"></script>
+    <script defer src="../../javascripts/sticky-scroll.js"></script>
+    <script defer src="../../javascripts/micro-animations.js"></script>
+  </body>
+</html>
