@@ -28,6 +28,7 @@ async function syncDocs() {
       }
     });
     await fsp.writeFile(path.join(DOCS, '.nojekyll'), '');
+    await fsp.writeFile(path.join(DOCS, 'CNAME'), 'defindings.com\n');
     console.log('[sync-docs] Synced ' + SRC + ' -> ' + DOCS);
   } catch (error) {
     console.error('[sync-docs] Sync failed:', error);
