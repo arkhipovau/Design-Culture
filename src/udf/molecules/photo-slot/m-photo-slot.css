@@ -14,7 +14,8 @@
   position: relative;
 }
 
-.m-photo-slot__image > img {
+.m-photo-slot__image > img,
+.m-photo-slot__image > video {
   width: 100%;
   height: auto;
   display: block;

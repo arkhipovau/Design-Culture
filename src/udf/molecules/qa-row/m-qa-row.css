@@ -38,6 +38,55 @@
   margin-top: 1.4em;
 }
 
+.m-qa-row__answer p + .m-qa-row__sublist {
+  margin-top: 1.4em;
+}
+
+.m-qa-row__sublist {
+  padding-left: 1.5em;
+}
+
+.m-qa-row__sublist p {
+  margin: 0;
+}
+
+.m-qa-row__sublist p + p {
+  margin-top: 0.5em;
+}
+
+.m-qa-row__answer .m-qa-row__sublist + p {
+  margin-top: 1.4em;
+}
+
+.m-qa-row__olist {
+  margin: 0;
+  padding-left: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65em;
+  list-style: decimal;
+}
+
+.m-qa-row__olist li {
+  padding-left: 0.35em;
+}
+
+.m-qa-row__olist li::marker {
+  color: var(--color-dark-grey);
+}
+
+.m-qa-row__answer a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 240ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.m-qa-row__answer a:hover {
+  color: var(--color-coloring-orange);
+}
+
 @media (max-width: 767px) {
   .m-qa-row {
     grid-template-columns: 1fr;

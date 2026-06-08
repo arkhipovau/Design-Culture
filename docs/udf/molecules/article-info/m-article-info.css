@@ -23,12 +23,34 @@
   gap: 8px;
 }
 
-.m-article-info a,
+.m-article-info p + ul {
+  margin-top: 8px;
+}
+
 .m-article-info p {
   margin: 0;
   font-size: 16px;
   line-height: 1.2;
   color: var(--color-black);
+}
+
+.m-article-info a {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--color-black);
+}
+
+.m-article-info p a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 240ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.m-article-info p a:hover {
+  color: var(--color-coloring-orange);
 }
 
 @media (max-width: 1200px) {
