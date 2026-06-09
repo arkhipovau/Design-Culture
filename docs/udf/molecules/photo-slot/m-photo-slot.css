@@ -41,6 +41,10 @@
   width: min(1108px, 100%);
 }
 
+.m-photo-slot--wide.m-photo-slot--compact {
+  width: min(calc(1108px / 2), 100%);
+}
+
 .m-photo-slot__caption {
   display: flex;
   flex-direction: column;
