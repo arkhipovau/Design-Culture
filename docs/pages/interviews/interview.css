@@ -220,6 +220,11 @@ main.article-page.interview-page {
   .interview-page .m-article-info {
     padding: 24px;
   }
+
+  .interview-page .m-next-article {
+    margin-top: 40px;
+    padding-top: 60px;
+  }
 }
 
 .interview-page .m-article-info a,
