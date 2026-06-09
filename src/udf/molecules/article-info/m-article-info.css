@@ -49,6 +49,13 @@
   color: var(--color-coloring-orange);
 }
 
+.m-article-info__disclaimer {
+  margin: 16px 0 0;
+  font-size: 11px;
+  line-height: 1.35;
+  color: var(--color-dark-grey);
+}
+
 @media (max-width: 1200px) {
   .m-article-info {
     grid-template-columns: 1fr;

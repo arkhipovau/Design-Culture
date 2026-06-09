@@ -225,28 +225,56 @@
       "subtitle": "Генотип и фенотип бренда, цельность как критерий и «Мастерская» в Петербурге",
       "images": [
         {
-          "src": "../images/43c43b136d43ecace532.webp",
-          "title": "Проект 1"
+          "src": "../images/yan-zaretsky-aspekt-pack.png",
+          "title": "Аспект"
         },
         {
-          "src": "../images/44bdc7906cc998448da4.webp",
-          "title": "Проект 2"
+          "src": "../images/yan-zaretsky-aspekt-spine.png",
+          "title": "Аспект"
         },
         {
-          "src": "../images/450c2681ea91da6067a3.webp",
-          "title": "Проект 3"
+          "src": "../images/yan-zaretsky-aspekt-spread.png",
+          "title": "Аспект"
         },
         {
-          "src": "../images/45603f1b4adcc73ea37b.jpg",
-          "title": "Проект 4"
+          "src": "../images/yan-zaretsky-grad-04.png",
+          "title": "Град"
         },
         {
-          "src": "../images/469d6cd6e917bd642129.webp",
-          "title": "Проект 5"
+          "src": "../images/yan-zaretsky-spb-digest.png",
+          "title": "St.Petersburg Digest"
         },
         {
-          "src": "../images/4849c73dae8fe62f3a06.webp",
-          "title": "Проект 6"
+          "src": "../images/yan-zaretsky-nwcc-barista-journal.png",
+          "title": "Северо-Западная Кофейная Компания"
+        },
+        {
+          "src": "../images/yan-zaretsky-spb-digest-02.png",
+          "title": "St.Petersburg Digest"
+        },
+        {
+          "src": "../images/yan-zaretsky-nwcc-brewing-guides.png",
+          "title": "Северо-Западная Кофейная Компания"
+        },
+        {
+          "src": "../images/yan-zaretsky-nwcc-website.png",
+          "title": "Северо-Западная Кофейная Компания"
+        },
+        {
+          "src": "../images/yan-zaretsky-aspekt-guide.png",
+          "title": "Аспект"
+        },
+        {
+          "src": "../images/yan-zaretsky-grad.png",
+          "title": "Град"
+        },
+        {
+          "src": "../images/yan-zaretsky-grad-02.png",
+          "title": "Град"
+        },
+        {
+          "src": "../images/yan-zaretsky-grad-03.png",
+          "title": "Град"
         }
       ]
     },
@@ -302,28 +330,32 @@
       "subtitle": "Культура против симулятора в продуктовом дизайне и ценность ручного труда",
       "images": [
         {
-          "src": "../images/52b87704e3aca4457af7.webp",
-          "title": "Проект 1"
+          "src": "../images/sergey-kudinov-simulators.jpg",
+          "title": "Яндекс Практикум"
         },
         {
-          "src": "../images/5797605502626eb5eaa3.jpg",
-          "title": "Проект 2"
+          "src": "../images/sergey-kudinov-practicum-brand.png",
+          "title": "Яндекс Практикум"
         },
         {
-          "src": "../images/5bbb57c918847647a42a.webp",
-          "title": "Проект 3"
+          "src": "../images/sergey-kudinov-practicum-wide.jpg",
+          "title": "Яндекс Практикум"
         },
         {
-          "src": "../images/62fdc8ec9235f6923ec7.webp",
-          "title": "Проект 4"
+          "src": "../images/sergey-kudinov-music.jpg",
+          "title": "Яндекс Музыка"
         },
         {
-          "src": "../images/6ff1d7c21818159ce18a.webp",
-          "title": "Проект 5"
+          "src": "../images/sergey-kudinov-music-mobile.jpg",
+          "title": "Яндекс Музыка"
         },
         {
-          "src": "../images/7120ddb7eaeb6c0f4be9.webp",
-          "title": "Проект 6"
+          "src": "../images/sergey-kudinov-browser.jpg",
+          "title": "Яндекс Браузер"
+        },
+        {
+          "src": "../images/sergey-kudinov-works.jpg",
+          "title": "Yandex Games"
         }
       ]
     },
@@ -444,7 +476,7 @@
     },
     "olya-bazanova": {
       "author": "Оля Бажанова",
-      "meta": "Россия • Калининград • Издательство",
+      "meta": "Россия • Калининград • Продукт",
       "hero": "../../images/Оля Базанова.jpg",
       "about": "Оля Бажанова — мультидисциплинарный визуальный автор, иллюстратор.",
       "links": [
@@ -549,28 +581,44 @@
       "subtitle": "Бизнес-контекст, кор-идея бренда и AI как краска в палитре, а не замена руки",
       "images": [
         {
-          "src": "../images/a3f21ab1c40d8f47440b.jpg",
-          "title": "Проект 1"
+          "src": "../images/anastasia-sycheva-lancer.png",
+          "title": "Lancer"
         },
         {
-          "src": "../images/aac5a4186c23675f822f.jpg",
-          "title": "Проект 2"
+          "src": "../images/anastasia-sycheva-lancer-02.png",
+          "title": "Lancer"
         },
         {
-          "src": "../images/ac7ad4714c0c82fbd36f.jpg",
-          "title": "Проект 3"
+          "src": "../images/anastasia-sycheva-southleap.png",
+          "title": "Southleap"
         },
         {
-          "src": "../images/af58a4795e80f6c4dc85.webp",
-          "title": "Проект 4"
+          "src": "../images/anastasia-sycheva-noxus.png",
+          "title": "Noxus"
         },
         {
-          "src": "../images/b672f0c416ebab8cca46.webp",
-          "title": "Проект 5"
+          "src": "../images/anastasia-sycheva-noxus-02.png",
+          "title": "Noxus"
         },
         {
-          "src": "../images/b72c7173448f602c303b.webp",
-          "title": "Проект 6"
+          "src": "../images/anastasia-sycheva-noxus-03.png",
+          "title": "Noxus"
+        },
+        {
+          "src": "../images/anastasia-sycheva-noxus-04.png",
+          "title": "Noxus"
+        },
+        {
+          "src": "../images/anastasia-sycheva-elementor.png",
+          "title": "Elementor"
+        },
+        {
+          "src": "../images/anastasia-sycheva-basic-capital.png",
+          "title": "Basic Capital"
+        },
+        {
+          "src": "../images/anastasia-sycheva-basic-capital-02.png",
+          "title": "Basic Capital"
         }
       ]
     },

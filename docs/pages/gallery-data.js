@@ -434,40 +434,74 @@ window.deFindingsGalleryData = {
       "href": "./interviews/olya-bazanova.html#photo-olya-bazanova-5"
     },
     {
-      "src": "../images/a3f21ab1c40d8f47440b.jpg",
+      "src": "../images/anastasia-sycheva-lancer.png",
       "author": "Анастасия Сычева",
+      "project": "Lancer",
       "subtitle": "AI как краска",
       "href": "./interviews/anastasia-sycheva.html#photo-anastasia-sycheva-0"
     },
     {
-      "src": "../images/aac5a4186c23675f822f.jpg",
+      "src": "../images/anastasia-sycheva-lancer-02.png",
       "author": "Анастасия Сычева",
+      "project": "Lancer",
       "subtitle": "AI как краска",
       "href": "./interviews/anastasia-sycheva.html#photo-anastasia-sycheva-1"
     },
     {
-      "src": "../images/ac7ad4714c0c82fbd36f.jpg",
+      "src": "../images/anastasia-sycheva-southleap.png",
       "author": "Анастасия Сычева",
+      "project": "Southleap",
       "subtitle": "AI как краска",
       "href": "./interviews/anastasia-sycheva.html#photo-anastasia-sycheva-2"
     },
     {
-      "src": "../images/af58a4795e80f6c4dc85.webp",
+      "src": "../images/anastasia-sycheva-noxus.png",
       "author": "Анастасия Сычева",
+      "project": "Noxus",
       "subtitle": "AI как краска",
       "href": "./interviews/anastasia-sycheva.html#photo-anastasia-sycheva-3"
     },
     {
-      "src": "../images/b672f0c416ebab8cca46.webp",
+      "src": "../images/anastasia-sycheva-noxus-02.png",
       "author": "Анастасия Сычева",
+      "project": "Noxus",
       "subtitle": "AI как краска",
       "href": "./interviews/anastasia-sycheva.html#photo-anastasia-sycheva-4"
     },
     {
-      "src": "../images/b72c7173448f602c303b.webp",
+      "src": "../images/anastasia-sycheva-noxus-03.png",
       "author": "Анастасия Сычева",
+      "project": "Noxus",
       "subtitle": "AI как краска",
       "href": "./interviews/anastasia-sycheva.html#photo-anastasia-sycheva-5"
+    },
+    {
+      "src": "../images/anastasia-sycheva-noxus-04.png",
+      "author": "Анастасия Сычева",
+      "project": "Noxus",
+      "subtitle": "AI как краска",
+      "href": "./interviews/anastasia-sycheva.html#photo-anastasia-sycheva-6"
+    },
+    {
+      "src": "../images/anastasia-sycheva-elementor.png",
+      "author": "Анастасия Сычева",
+      "project": "Elementor",
+      "subtitle": "AI как краска",
+      "href": "./interviews/anastasia-sycheva.html#photo-anastasia-sycheva-7"
+    },
+    {
+      "src": "../images/anastasia-sycheva-basic-capital.png",
+      "author": "Анастасия Сычева",
+      "project": "Basic Capital",
+      "subtitle": "AI как краска",
+      "href": "./interviews/anastasia-sycheva.html#photo-anastasia-sycheva-8"
+    },
+    {
+      "src": "../images/anastasia-sycheva-basic-capital-02.png",
+      "author": "Анастасия Сычева",
+      "project": "Basic Capital",
+      "subtitle": "AI как краска",
+      "href": "./interviews/anastasia-sycheva.html#photo-anastasia-sycheva-9"
     },
     {
       "src": "../images/maksimenkov-principles.png",

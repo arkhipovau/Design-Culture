@@ -238,3 +238,15 @@ main.article-page.interview-page {
 .interview-page .m-article-info p + ul {
   margin-top: 20px;
 }
+
+.interview-page .m-article-info__disclaimer,
+.interview-page .m-interview-disclaimer {
+  margin: 16px 0 0;
+  font-size: 11px;
+  line-height: 1.35;
+  color: var(--color-dark-grey);
+}
+
+.interview-page .m-interview-disclaimer {
+  margin-top: 32px;
+}
