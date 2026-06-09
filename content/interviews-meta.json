@@ -107,30 +107,24 @@
       ],
       "subtitle": "Гибкие рамки в Берлине, неожиданные заказы и скепсис к AI-картинкам",
       "images": [
-        {
-          "src": "../images/11f35cdbd3621d0081ca.webp",
-          "title": "Проект 1"
-        },
-        {
-          "src": "../images/17b66621aadb909539b7.webp",
-          "title": "Проект 2"
-        },
-        {
-          "src": "../images/19df9c59f2b926236938.jpg",
-          "title": "Проект 3"
-        },
-        {
-          "src": "../images/1cb1a016e666fbc5f56c.webp",
-          "title": "Проект 4"
-        },
-        {
-          "src": "../images/1d0536b32e76aa8ad169.webp",
-          "title": "Проект 5"
-        },
-        {
-          "src": "../images/22ede67a8607d1a0523e.jpg",
-          "title": "Проект 6"
-        }
+        { "src": "../images/interviews/polina-zagumenova/Berlin.jpg", "title": "Berlin" },
+        { "src": "../images/interviews/polina-zagumenova/Berlin2.jpg", "title": "Berlin" },
+        { "src": "../images/interviews/polina-zagumenova/Nume.png", "title": "Nume" },
+        { "src": "../images/interviews/polina-zagumenova/Zerion.jpg", "title": "Zerion" },
+        { "src": "../images/interviews/polina-zagumenova/Photozhir.gif", "title": "Photozhir" },
+        { "src": "../images/interviews/polina-zagumenova/Nume2.png", "title": "Nume" },
+        { "src": "../images/interviews/polina-zagumenova/Purpur.jpg", "title": "Purpur" },
+        { "src": "../images/interviews/polina-zagumenova/Purpur2.jpg", "title": "Purpur" },
+        { "src": "../images/interviews/polina-zagumenova/Headies.jpg", "title": "Headies" },
+        { "src": "../images/interviews/polina-zagumenova/Headies2.jpg", "title": "Headies" },
+        { "src": "../images/interviews/polina-zagumenova/Headies3.jpg", "title": "Headies" },
+        { "src": "../images/interviews/polina-zagumenova/ESSAI1.jpg", "title": "ESSAI" },
+        { "src": "../images/interviews/polina-zagumenova/ESSAI2.jpg", "title": "ESSAI" },
+        { "src": "../images/interviews/polina-zagumenova/ESSAI3.jpg", "title": "ESSAI" },
+        { "src": "../images/interviews/polina-zagumenova/Self promo poster.jpg", "title": "Self promo poster" },
+        { "src": "../images/interviews/polina-zagumenova/Recraft AI.webp", "title": "Recraft AI" },
+        { "src": "../images/interviews/polina-zagumenova/SUGARFREE EYESCREAM.jpg", "title": "SUGARFREE EYESCREAM" },
+        { "src": "../images/interviews/polina-zagumenova/SUGARFREE EYESCREAM2.jpg", "title": "SUGARFREE EYESCREAM" }
       ]
     },
     "masha-chern": {

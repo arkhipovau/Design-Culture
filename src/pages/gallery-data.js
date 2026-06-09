@@ -74,40 +74,130 @@ window.deFindingsGalleryData = {
       "href": "./interviews/aleksey-pyankov.html#photo-aleksey-pyankov-5"
     },
     {
-      "src": "../images/11f35cdbd3621d0081ca.webp",
+      "src": "../images/interviews/polina-zagumenova/Berlin.jpg",
       "author": "Полина Загуменова",
+      "project": "Berlin",
       "subtitle": "Флексибельные рамки",
       "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-0"
     },
     {
-      "src": "../images/17b66621aadb909539b7.webp",
+      "src": "../images/interviews/polina-zagumenova/Berlin2.jpg",
       "author": "Полина Загуменова",
+      "project": "Berlin",
       "subtitle": "Флексибельные рамки",
       "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-1"
     },
     {
-      "src": "../images/19df9c59f2b926236938.jpg",
+      "src": "../images/interviews/polina-zagumenova/Nume.png",
       "author": "Полина Загуменова",
+      "project": "Nume",
       "subtitle": "Флексибельные рамки",
       "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-2"
     },
     {
-      "src": "../images/1cb1a016e666fbc5f56c.webp",
+      "src": "../images/interviews/polina-zagumenova/Zerion.jpg",
       "author": "Полина Загуменова",
+      "project": "Zerion",
       "subtitle": "Флексибельные рамки",
       "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-3"
     },
     {
-      "src": "../images/1d0536b32e76aa8ad169.webp",
+      "src": "../images/interviews/polina-zagumenova/Photozhir.gif",
       "author": "Полина Загуменова",
+      "project": "Photozhir",
       "subtitle": "Флексибельные рамки",
       "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-4"
     },
     {
-      "src": "../images/22ede67a8607d1a0523e.jpg",
+      "src": "../images/interviews/polina-zagumenova/Nume2.png",
       "author": "Полина Загуменова",
+      "project": "Nume",
       "subtitle": "Флексибельные рамки",
       "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-5"
+    },
+    {
+      "src": "../images/interviews/polina-zagumenova/Purpur.jpg",
+      "author": "Полина Загуменова",
+      "project": "Purpur",
+      "subtitle": "Флексибельные рамки",
+      "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-6"
+    },
+    {
+      "src": "../images/interviews/polina-zagumenova/Purpur2.jpg",
+      "author": "Полина Загуменова",
+      "project": "Purpur",
+      "subtitle": "Флексибельные рамки",
+      "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-7"
+    },
+    {
+      "src": "../images/interviews/polina-zagumenova/Headies.jpg",
+      "author": "Полина Загуменова",
+      "project": "Headies",
+      "subtitle": "Флексибельные рамки",
+      "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-8"
+    },
+    {
+      "src": "../images/interviews/polina-zagumenova/Headies2.jpg",
+      "author": "Полина Загуменова",
+      "project": "Headies",
+      "subtitle": "Флексибельные рамки",
+      "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-9"
+    },
+    {
+      "src": "../images/interviews/polina-zagumenova/Headies3.jpg",
+      "author": "Полина Загуменова",
+      "project": "Headies",
+      "subtitle": "Флексибельные рамки",
+      "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-10"
+    },
+    {
+      "src": "../images/interviews/polina-zagumenova/ESSAI1.jpg",
+      "author": "Полина Загуменова",
+      "project": "ESSAI",
+      "subtitle": "Флексибельные рамки",
+      "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-11"
+    },
+    {
+      "src": "../images/interviews/polina-zagumenova/ESSAI2.jpg",
+      "author": "Полина Загуменова",
+      "project": "ESSAI",
+      "subtitle": "Флексибельные рамки",
+      "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-12"
+    },
+    {
+      "src": "../images/interviews/polina-zagumenova/ESSAI3.jpg",
+      "author": "Полина Загуменова",
+      "project": "ESSAI",
+      "subtitle": "Флексибельные рамки",
+      "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-13"
+    },
+    {
+      "src": "../images/interviews/polina-zagumenova/Self promo poster.jpg",
+      "author": "Полина Загуменова",
+      "project": "Self promo poster",
+      "subtitle": "Флексибельные рамки",
+      "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-14"
+    },
+    {
+      "src": "../images/interviews/polina-zagumenova/Recraft AI.webp",
+      "author": "Полина Загуменова",
+      "project": "Recraft AI",
+      "subtitle": "Флексибельные рамки",
+      "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-15"
+    },
+    {
+      "src": "../images/interviews/polina-zagumenova/SUGARFREE EYESCREAM.jpg",
+      "author": "Полина Загуменова",
+      "project": "SUGARFREE EYESCREAM",
+      "subtitle": "Флексибельные рамки",
+      "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-16"
+    },
+    {
+      "src": "../images/interviews/polina-zagumenova/SUGARFREE EYESCREAM2.jpg",
+      "author": "Полина Загуменова",
+      "project": "SUGARFREE EYESCREAM",
+      "subtitle": "Флексибельные рамки",
+      "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-17"
     },
     {
       "src": "../images/23847e1b7eebea4ba968.jpg",
