@@ -75,6 +75,27 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.m-photo-row--equal .m-photo-slot__image {
+  aspect-ratio: var(--photo-row-ratio, 4 / 3);
+  overflow: hidden;
+}
+
+.m-photo-row--equal .m-photo-slot__image > img,
+.m-photo-row--equal .m-photo-slot__image > video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.m-photo-row--ratio-8-5 {
+  --photo-row-ratio: 8 / 5;
+}
+
+.m-photo-row--ratio-2-3 {
+  --photo-row-ratio: 2 / 3;
+}
+
 @media (max-width: 767px) {
   .m-photo-row,
   .m-photo-row--three {
