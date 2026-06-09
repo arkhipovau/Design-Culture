@@ -5,8 +5,6 @@
 const fs = require('node:fs');
 const path = require('node:path');
 
-const { markInstagramMentions } = require('./instagram-disclaimer');
-
 const ROOT = path.resolve(__dirname, '..');
 const MD_DIR = path.join(ROOT, 'content', 'interviews');
 const HTML_DIR = path.join(ROOT, 'src', 'pages', 'interviews');
@@ -42,7 +40,7 @@ function inlineMdToHtml(text) {
 }
 
 function paragraphsToHtml(paragraphs) {
-  return paragraphs.map((p) => `<p>${inlineMdToHtml(markInstagramMentions(p))}</p>`).join('');
+  return paragraphs.map((p) => `<p>${inlineMdToHtml(p)}</p>`).join('');
 }
 
 function stripPublishable(md) {

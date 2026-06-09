@@ -61,7 +61,6 @@
     '.m-quote-block',
     '.m-article-info > div',
     '.footer-grid > div',
-    '.footer-bottom',
     '.newsletter-inner',
     '.journal-page .m-journal-card',
     '.gallery-page .m-gallery-card'
@@ -78,7 +77,7 @@
   };
 
   revealNodes.forEach((el) => {
-    if (el.matches('.footer-grid > div, .footer-bottom, .meta')) {
+    if (el.matches('.footer-grid > div, .meta')) {
       markReveal(el, 'soft');
     } else if (el.matches('.gallery-slide')) {
       markReveal(el, 'scale');

@@ -2,32 +2,22 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { INTERVIEW_LINKS } = require('./interview-links-data');
-const {
-  META_INSTAGRAM_DISCLAIMER_HTML,
-  isInstagramHref,
-} = require('./instagram-disclaimer');
 
 const ROOT = path.resolve(__dirname, '..');
 const META_PATH = path.join(ROOT, 'content/interviews-meta.json');
 const HTML_DIR = path.join(ROOT, 'src/pages/interviews');
 
-function renderLinkLabel(link) {
-  return isInstagramHref(link.href) ? `${link.label}*` : link.label;
-}
-
 function renderLinksUl(links) {
   if (!links.length) {
     return '          <ul>\n              <li>–</li>\n          </ul>';
   }
-  const hasInstagram = links.some((link) => isInstagramHref(link.href));
   const items = links
     .map(
       (link) =>
-        `            <li><a href="${link.href}" target="_blank" rel="noopener noreferrer">${renderLinkLabel(link)}</a></li>`
+        `            <li><a href="${link.href}" target="_blank" rel="noopener noreferrer">${link.label}</a></li>`
     )
     .join('\n');
-  const disclaimer = hasInstagram ? `\n          ${META_INSTAGRAM_DISCLAIMER_HTML}` : '';
-  return `          <ul>\n${items}\n          </ul>${disclaimer}`;
+  return `          <ul>\n${items}\n          </ul>`;
 }
 
 function updateHtml(slug, links) {

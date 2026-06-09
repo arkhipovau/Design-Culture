@@ -1,4 +1,7 @@
 (() => {
+  const META_DISCLAIMER =
+    '* Meta Platforms Inc. признана экстремистской организацией, деятельность которой запрещена на территории РФ.';
+
   function enhanceExternalLinks() {
     document.querySelectorAll('a[href]').forEach((anchor) => {
       const href = anchor.getAttribute('href');
@@ -21,6 +24,15 @@
     });
   }
 
+  function ensureMetaDisclaimer(footer) {
+    if (footer.querySelector('.footer-meta-disclaimer')) return;
+
+    const note = document.createElement('p');
+    note.className = 'footer-meta-disclaimer';
+    note.textContent = META_DISCLAIMER;
+    footer.appendChild(note);
+  }
+
   function enhanceFooter() {
     document.querySelectorAll('.footer').forEach((footer) => {
       footer.classList.add('s-footer');
@@ -40,6 +52,8 @@
         tg.classList.remove('footer-link-icon');
         tg.innerHTML = 'Telegram';
       }
+
+      ensureMetaDisclaimer(footer);
     });
 
     document.querySelectorAll('.footer .footer-up .a-arrow-button--up').forEach((btn) => {
