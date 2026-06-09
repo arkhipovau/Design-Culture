@@ -88,6 +88,20 @@ window.deFindingsGalleryData = {
       "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-1"
     },
     {
+      "src": "../images/interviews/polina-zagumenova/Purpur.jpg",
+      "author": "Полина Загуменова",
+      "project": "Purpur",
+      "subtitle": "Флексибельные рамки",
+      "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-5"
+    },
+    {
+      "src": "../images/interviews/polina-zagumenova/Purpur2.jpg",
+      "author": "Полина Загуменова",
+      "project": "Purpur",
+      "subtitle": "Флексибельные рамки",
+      "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-6"
+    },
+    {
       "src": "../images/interviews/polina-zagumenova/Nume.png",
       "author": "Полина Загуменова",
       "project": "Nume",
@@ -107,20 +121,6 @@ window.deFindingsGalleryData = {
       "project": "Photozhir",
       "subtitle": "Флексибельные рамки",
       "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-4"
-    },
-    {
-      "src": "../images/interviews/polina-zagumenova/Purpur.jpg",
-      "author": "Полина Загуменова",
-      "project": "Purpur",
-      "subtitle": "Флексибельные рамки",
-      "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-5"
-    },
-    {
-      "src": "../images/interviews/polina-zagumenova/Purpur2.jpg",
-      "author": "Полина Загуменова",
-      "project": "Purpur",
-      "subtitle": "Флексибельные рамки",
-      "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-6"
     },
     {
       "src": "../images/interviews/polina-zagumenova/Headies.jpg",
