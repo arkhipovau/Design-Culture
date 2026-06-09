@@ -1,6 +1,6 @@
 /**
  * Sync interview Q&A body text from content/interviews/*.md into src/pages/interviews/*.html.
- * Preserves: hero H1/subtitle, lede, speaker name labels, photos, article-info, next-article.
+ * Preserves: hero H1/subtitle, speaker name labels, photos, article-info, next-article.
  */
 const fs = require('node:fs');
 const path = require('node:path');

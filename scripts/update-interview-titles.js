@@ -7,7 +7,6 @@ const path = require('node:path');
 
 const ROOT = path.resolve(__dirname, '..');
 const HTML_DIR = path.join(ROOT, 'src', 'pages', 'interviews');
-const MD_DIR = path.join(ROOT, 'content', 'interviews');
 const META_PATH = path.join(ROOT, 'content', 'interviews-meta.json');
 
 const TITLES = {
@@ -137,11 +136,6 @@ function updateInterviewHtml(filePath, slug) {
     `$1${data.title}$2`
   );
 
-  html = html.replace(
-    /(<p class="lede">)[^<]*(<\/p>)/,
-    `$1${data.description}$2`
-  );
-
   html = html.replace(/\s*<p class="interview-hero__subtitle">[^<]*<\/p>\s*/g, '\n          ');
 
   const hrefMatch = html.match(/m-next-article__circle[^"]*" href="\.\/([^"]+)"/);
@@ -157,31 +151,6 @@ function updateInterviewHtml(filePath, slug) {
 
   if (html !== before) {
     fs.writeFileSync(filePath, html, 'utf8');
-    return true;
-  }
-  return false;
-}
-
-function updateMdLede(slug, description) {
-  const mdPath = path.join(MD_DIR, `${slug}.md`);
-  if (!fs.existsSync(mdPath)) return false;
-  let md = fs.readFileSync(mdPath, 'utf8');
-  const before = md;
-
-  if (slug === 'togetherwithyou') {
-    md = md.replace(/^#[^\n]+\n\n[^\n]+\n/m, (block) => {
-      const lines = block.trimEnd().split('\n');
-      return `${lines[0]}\n\n${description}\n`;
-    });
-  } else {
-    md = md.replace(/^#[^\n]+\n\n\*[^*]+\*\n/m, (block) => {
-      const lines = block.trimEnd().split('\n');
-      return `${lines[0]}\n\n*${description}*\n`;
-    });
-  }
-
-  if (md !== before) {
-    fs.writeFileSync(mdPath, md, 'utf8');
     return true;
   }
   return false;
@@ -222,8 +191,7 @@ function main() {
     const slug = file.replace(/\.html$/, '');
     if (!TITLES[slug]) continue;
     const changed = updateInterviewHtml(path.join(HTML_DIR, file), slug);
-    const mdChanged = updateMdLede(slug, TITLES[slug].description);
-    console.log(`${slug}: html ${changed ? 'updated' : 'unchanged'}, md ${mdChanged ? 'updated' : 'unchanged'}`);
+    console.log(`${slug}: html ${changed ? 'updated' : 'unchanged'}`);
   }
 
   for (const [pagePath, baseHref] of [
