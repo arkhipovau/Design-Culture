@@ -15,3 +15,6 @@ yarn-error.log
 /dev_build/*/*.*
 /src/audio*.txt
 /docs/audio*.txt
+/canvases/
+**/*headlines-review*
+**/*.canvas.tsx
