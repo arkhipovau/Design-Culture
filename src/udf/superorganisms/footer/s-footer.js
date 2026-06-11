@@ -47,12 +47,6 @@
         grid.appendChild(up);
       }
 
-      const tg = grid.querySelector('.footer-link-icon');
-      if (tg) {
-        tg.classList.remove('footer-link-icon');
-        tg.innerHTML = 'Telegram';
-      }
-
       ensureMetaDisclaimer(footer);
     });
 

@@ -52,7 +52,7 @@
   const isMobile = window.matchMedia('(max-width: 767px)').matches;
 
   const revealSelectors = [
-    'main section:not(.interviews-journal):not(.journal-hero):not(.gallery-hero):not(.interview-hero):not(:has(.gallery-grid))',
+    'main section:not(.interviews-journal):not(.journal-hero):not(.gallery-hero):not(.interview-hero):not(.about-intro):not(:has(.gallery-grid))',
     '.card',
     '.highlight',
 
@@ -130,7 +130,6 @@
 
   const heroIntro = document.querySelector('.hero-intro');
   if (heroIntro) {
-
     const overLayer = heroIntro.querySelector('.hero-over');
 
     const isHeroTokenVisible = (el) => {
