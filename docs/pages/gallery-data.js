@@ -2,40 +2,284 @@
 window.deFindingsGalleryData = {
   "entries": [
     {
-      "src": "../images/003ae98843e7d2f3fbc0.webp",
+      "src": "../images/interviews/togetherwithyou/Biceps%20Grotesk.webp",
       "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Biceps Grotesk",
       "subtitle": "Мир постдизайна",
       "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-0"
     },
     {
-      "src": "../images/021b91e97f3a271d2d59.webp",
+      "src": "../images/interviews/togetherwithyou/Biceps%20Grotesk%202.webp",
       "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Biceps Grotesk",
       "subtitle": "Мир постдизайна",
       "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-1"
     },
     {
-      "src": "../images/0237d06fef5459819fb4.webp",
+      "src": "../images/interviews/togetherwithyou/Arrival.webp",
       "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Arrival",
       "subtitle": "Мир постдизайна",
       "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-2"
     },
     {
-      "src": "../images/047c3fedf2c9c1bae271.jpg",
+      "src": "../images/interviews/togetherwithyou/Arrival%203.webp",
       "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Arrival",
       "subtitle": "Мир постдизайна",
       "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-3"
     },
     {
-      "src": "../images/058f26395560d618ad13.jpg",
+      "src": "../images/interviews/togetherwithyou/Arrival%204.webp",
       "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Arrival",
       "subtitle": "Мир постдизайна",
       "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-4"
     },
     {
-      "src": "../images/069f8d03833eaa78ed3d.webp",
+      "src": "../images/interviews/togetherwithyou/Arrival%207.webp",
       "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Arrival",
       "subtitle": "Мир постдизайна",
       "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-5"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Arrival%2013.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Arrival",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-6"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Ather.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Äther",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-7"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Ather%202.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Äther",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-8"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Ather%203.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Äther",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-9"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Ather%204.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Äther",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-10"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Ather%205.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Äther",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-11"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Ather%206.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Äther",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-12"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Ather%207.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Äther",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-13"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Ather%208.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Äther",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-14"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Ather%209.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Äther",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-15"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Etoso.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Etoso",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-16"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Etoso%202.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Etoso",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-17"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Etoso%204.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Etoso",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-18"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/MARCO.png",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "MARCO",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-19"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/MARCO%202.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "MARCO",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-20"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/MARCO%205.png",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "MARCO",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-21"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Silk%20%26%20Silk%20Road.png",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Silk &amp; Silk Road",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-22"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Silk%20%26%20Silk%20Road%205.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Silk &amp; Silk Road",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-23"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Silk%20%26%20Silk%20Road%202.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Silk &amp; Silk Road",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-24"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Silk%20%26%20Silk%20Road%203.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Silk &amp; Silk Road",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-25"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Eleganza%202.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Eleganza",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-26"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Eleganza%201.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Eleganza",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-27"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Ather%2010.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Eleganza",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-28"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Arrival%206.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Arrival",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-29"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Arrival%208.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Arrival",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-30"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Arrival%209.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Arrival",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-31"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Arrival%205.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Arrival",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-32"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Arrival%2012.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Arrival",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-33"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Arrival%2010.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Arrival",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-34"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Arrival%2011.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Arrival",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-35"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Arrival%202.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Arrival",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-36"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Ather%2011.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Äther",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-37"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Etoso%205.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Etoso",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-38"
+    },
+    {
+      "src": "../images/interviews/togetherwithyou/Etoso%203.webp",
+      "author": "Артём Тарасов и Артём Тарадаш",
+      "project": "Etoso",
+      "subtitle": "Мир постдизайна",
+      "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-39"
     },
     {
       "src": "../images/07fe256693582605e691.webp",

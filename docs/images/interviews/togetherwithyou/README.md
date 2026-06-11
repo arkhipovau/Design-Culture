@@ -1,12 +1,8 @@
 # Артём Тарасов и Артём Тарадаш
 
 slug: `togetherwithyou`
-статус: нужны фото — в HTML пока плейсхолдеры
-слотов в интервью: 7
+подключено в интервью: 40 кадров
 
-## Что загружать
+Проекты в папке: Äther, Arrival, Biceps Grotesk, Etoso, Eleganza, MARCO, Silk & Silk Road.
 
-Клади сюда PNG или JPG. Имена — латиницей, через дефис:
-`{проект}-{вариант}.png`, например `pragmatica-station-duo.png`.
-
-Когда файлы готовы — попроси подключить в интервью (скрипт `wire-project-images.js`).
+Переподключение: `node scripts/wire-togetherwithyou-images.js`

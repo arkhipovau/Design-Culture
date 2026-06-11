@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Саша Барабонова – deFindings</title>
+    <link rel="stylesheet" href="../../stylesheets/index.css?v=20260522" />
+    <link rel="stylesheet" href="../../udf/tokens/colors.css" />
+    <link rel="stylesheet" href="../../udf/tokens/typography.css" />
+    <link rel="stylesheet" href="../../udf/tokens/grid.css" />
+    <link rel="stylesheet" href="../../udf/atoms/sticky-scroll/a-sticky-scroll.css" />
+    <link rel="stylesheet" href="../../udf/atoms/arrow-buttons/a-arrow-buttons.css" />
+    <link rel="stylesheet" href="../../udf/atoms/arrow-button-xl/a-arrow-button-xl.css" />
+    <link rel="stylesheet" href="../article.css?v=20260522" />
+    <link rel="stylesheet" href="../../udf/molecules/qa-row/m-qa-row.css" />
+    <link rel="stylesheet" href="../../udf/molecules/quote-block/m-quote-block.css" />
+    <link rel="stylesheet" href="../../udf/molecules/next-article/m-next-article.css" />
+    <link rel="stylesheet" href="../../udf/molecules/article-info/m-article-info.css" />
+    <link rel="stylesheet" href="./interview.css?v=20260522" />
+    <link rel="stylesheet" href="../../udf/molecules/interview-section/m-interview-section.css" />
+    <link rel="stylesheet" href="../../udf/molecules/photo-slot/m-photo-slot.css" />
+    <link rel="stylesheet" href="../../stylesheets/micro-animations.css" />
+    <link rel="stylesheet" href="../../udf/superorganisms/menu/s-menu.css" />
+    <link rel="stylesheet" href="../../udf/superorganisms/footer/s-footer.css" />
+    <link rel="stylesheet" href="../../udf/quarks/findings/q-findings.css" />
+    <link rel="stylesheet" href="../../udf/atoms/button/a-button.css?v=20260522c" />
+    <link rel="stylesheet" href="../../stylesheets/cookie-consent.css" />
+    <script defer src="../../javascripts/cookie-consent.js"></script>
+  </head>
+  <body data-reading-page="Саша Барабонова">
+    <header class="topbar topbar--menu s-menu article-topbar">
+      <a class="logo" href="../../index.html" aria-label="deFindings">
+        <img class="logo-mark" src="../../udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
+        <span class="visually-hidden">deFindings</span>
+      </a>
+    </header>
+
+    <main class="article-page interview-page">
+      <section class="article-hero interview-hero" id="hero">
+        <div class="hero-content section">
+          <p class="article-author">Саша Барабонова</p>
+          <h1 class="interview-hero__title">Случайный путь в дизайн, эмпатия как основа профессии и примирение с AI</h1>
+          <p class="article-meta">Армения • Ереван • Продукт • Фриланс</p>
+        </div>
+        <figure class="interview-portrait">
+          <img src="../../images/%D0%A1%D0%B0%D1%88%D0%B0%20%D0%91%D0%B0%D1%80%D0%B0%D0%B1%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0.jpg" alt="Саша Барабонова" width="200" height="267" loading="lazy" decoding="async" />
+        </figure>
+      </section>
+
+      <div class="article-body interview-body section">
+        
+        <p class="lede">Саша попала в дизайн через «программирование» и называет профессию эмпатией. В Phygital+ сначала отвергала нейросети, потом нашла с ними общий язык.</p>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Что для тебя культура дизайна: принципы, ценности, фундамент?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Саша Барабонова">СБ</span></div>
+            <div class="m-qa-row__answer"><p>Я подумала, культура дизайна – обширное понятие. Если вопрос обширный, ответ тоже может быть обширным.</p><p>Для меня это эмпатия. Дизайн – это буквально про эмпатию в любом смысле: в процессах, в подходе, в решении. Неважно какой этап, неважно какой даже дизайн: цифровой, графический, продуктовый. Это всегда про эмпатию с обеих сторон.</p><p>В целом тема эмпатии у меня очень важна в жизни. Я супер эмпатична, ко всему стараюсь относиться эмпатично. Даже к психотерапевтке приходила с таким же запросом: я очень многим жертвую для других людей, ставлю себя на первое место других.</p><p>В дизайне у меня точно так же. Был момент: я делала тестовое в Тенеко Яндекс. И в фигме сделала супер огромный флоу. Это был онбординг первого дня для сотрудника, для дизайнера, неважно для кого. Ребята подметили, что подход супер эмпатичный, я буквально человека веду за ручку: показываю так, и так, и так. Я тогда поняла: всё, что я делаю, всё, что я думаю, буквально через эмпатию. Либо с одной стороны, либо с другой.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+        <blockquote class="m-quote-block">
+          <p><strong>Дизайн – это буквально про эмпатию в любом смысле. В процессах, в подходе, в решении.</strong></p>
+          <cite class="m-quote-block__cite">– Саша Барабонова</cite>
+        </blockquote>
+        
+        
+      </div>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Как пришла в профессию?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Саша Барабонова">СБ</span></div>
+            <div class="m-qa-row__answer"><p>Когда я первый раз прочитала этот вопрос, я вспомнила, что на защите диплома, в напутственных словах, сказала: на «дизайне программирования» я супер случайна.</p><p>Где-то в девятом-десятом классе я думала про универ. Пришла на день открытых дверей с папой. Папа листает брошюрку и такой: «О, дизайн программирования, звучит перспективно». Я изначально хотела на коммуникационный дизайн, смотрела картинки на странице дизпрога, а там какие-то ноутбуки, серьёзные штуки, программирование. Меня вообще это не притягивало.</p><p>С детства всегда занималась рисованием или около. Я выросла в Лобне, большом подмосковном городе. С Захаром, с которым я сейчас делаю наш проект, мы там же росли, жёстко сдружились на первом курсе из-за того, что я такая «я тоже из Лобни», а он: «блин, есть кто, круто». В Лобне сто тысяч человек и одна художественная школа, в которую я хотела поступить, но не поступила. Мама нашла кружок по прикладному дизайну: брали икейские тарелки и расписывали – иллюстрация, паттерн. Параллельно немножко колористики, немножко композиции.</p><p>До девятого класса была уверена, что буду поступать на архитектурный. Казалось логичным продолжением всех моих увлечений. Потом случайно в инстаграме наткнулась на девчонку из Прибалтики (я большая фанатка балтийской части, просто так сложилось). Она училась в Вышке. Я начала следить за теми, кто только поступил, в моём 11-м классе, и поняла: всё, я хочу только сюда, больше никуда. И как-то всё сошлось довольно случайно.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+    <div class="m-photo-row">
+        <figure class="m-photo-slot" id="photo-sasha-barabonova-0">
+          <div class="m-photo-slot__image">
+            <img src="../../images/867d102c07ba48557b86.webp" alt="" loading="lazy" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">Название проекта</span>
+          </figcaption>
+        </figure>
+        <figure class="m-photo-slot" id="photo-sasha-barabonova-1">
+          <div class="m-photo-slot__image">
+            <img src="../../images/86c2cda628bf2b209a91.webp" alt="" loading="lazy" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">Название проекта</span>
+          </figcaption>
+        </figure>
+    </div>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Что тебя сейчас держит в профессии?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Саша Барабонова">СБ</span></div>
+            <div class="m-qa-row__answer"><p>Последние два-три года я задумываюсь, что хочется чего-то другого. Либо я устала двигаться в фигме и хочется делать что-то физическое, либо вообще кардинально поменять, но всё равно как-то оставить искусство в жизни. Так или иначе, оно у меня присутствует: в одежде, в стиле жизни, в увлечениях.</p><p>Поэтому тут, наверное, привычка и безопасность.</p><p>И ещё – желание доказать самой себе, что могу ещё круче, ещё лучше. На всём пути меня двигал синдром перфекциониста. Хочу, чтобы было идеально; знаю, что хочу – этого достигну, это получу. Последние шесть-семь лет я такая: «вот я хочу ещё, я сделаю лучше, я покажу всем, я докажу всем». Это жёстко мотивировало.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+    <figure class="m-photo-slot m-photo-slot--wide" id="photo-sasha-barabonova-2">
+      <div class="m-photo-slot__image">
+        <img src="../../images/885b01afa6b9752b47a1.webp" alt="" loading="lazy" />
+      </div>
+      <figcaption class="m-photo-slot__caption">
+        <span class="m-photo-slot__title">Название проекта</span>
+      </figcaption>
+    </figure>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Расскажи про людей, которые сформировали видение.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Саша Барабонова">СБ</span></div>
+            <div class="m-qa-row__answer"><p>Это даже не проекты – это люди.</p><p>Первым человеком, который сформировал моё желание развиваться в дизайне, была Таня Егошина. Я весь 11-й класс ездила на подготовительные курсы Вышки. Иногда Таня к нам приходила, что-то рассказывала, что-то показывала. Не помню, как конкретно, но когда увидела Таню в работе, я поняла: жутко нравится, хочу так же.</p><p>На первом курсе мы даже что-то совместное успели поделать. Какие-то проекты она мне отдавала, где-то я ей помогала. Первые два-три года я жёстко на неё равнялась – на её работы, на её стиль. Поэтому у меня преобладают цветные работы, я даже пытаюсь совместить все цвета. Вообще мне такое – всё яркое.</p><p>И при этом я жёстко про системность. Все, когда меня встречают, удивляются – обычно у тебя либо системность, либо креативность. Когда смотрят моё портфолио, говорят: «о, как будто ты суперкреативна». А я наоборот, не могу ничего делать без системы. Пока не пойму, что мне всё понятно, всё изучено, всё приоритизировано – табличку сделала, или табличку из табличек, мне будет сложно начать.</p><p>Поэтому второй человек – Вадим Булгаков, наш куратор в Вышке, 23 года курировал. Я даже на первом курсе набила тату, не то чтобы прямо в его честь, но в честь Вадима и второго курса. Изначально это должен был быть кролик, но кролика заняли, поэтому у меня велосипед. Правда, не самое удачное решение: если я двину рукой, он из кружочка превращается в овал. Но это так и осталось единственной татуировкой. Вадим сыграл такую роль, как раз через него я поняла систему: подход к задаче, понимание дизайна.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+        <blockquote class="m-quote-block">
+          <p><strong>Все, когда меня встречают, удивляются – обычно либо системность, либо креативность. Я не могу начать без таблички из табличек.</strong></p>
+          <cite class="m-quote-block__cite">– Саша Барабонова</cite>
+        </blockquote>
+        
+        
+      </div>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>А если про опыт работы?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Саша Барабонова">СБ</span></div>
+            <div class="m-qa-row__answer"><p>Это были разные места – корпорации, стартапы, студии. Просто приходишь и учишься индивидуально.</p><p>В корпорации понимаешь, как работает большая машина: куча людей, ты отвечаешь за небольшую часть. В стартапе можешь делать всё, что захочешь, но всё должно работать быстро, и нужны очень крутые софт-скиллы. В студии – правда делаешь крутые штуки, всем вместе, весело. У каждого формата свой плюс.</p><p>Последние два года были очень насыщенными – пробовала разные форматы. И за эти два года я могу сказать, что поняла всё. И в дизайне, и в жизни. Потому что после каждого места я выходила и такая: «о, теперь я поняла, что я не хочу там работать». Каждый проект чему-то учил, особенно если форматы разные.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+        <blockquote class="m-quote-block">
+          <p><strong>После каждого места работы я выходила и такая: о, теперь я поняла, что я не хочу там работать.</strong></p>
+          <cite class="m-quote-block__cite">– Саша Барабонова</cite>
+        </blockquote>
+        
+        
+      </div>
+
+    <div class="m-photo-row m-photo-row--three">
+        <figure class="m-photo-slot" id="photo-sasha-barabonova-3">
+          <div class="m-photo-slot__image">
+            <img src="../../images/8a6ae07d69c4e874b52c.jpg" alt="" loading="lazy" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">Название проекта</span>
+          </figcaption>
+        </figure>
+        <figure class="m-photo-slot" id="photo-sasha-barabonova-4">
+          <div class="m-photo-slot__image">
+            <img src="../../images/8b152b88b9dd93d09ea7.jpg" alt="" loading="lazy" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">Название проекта</span>
+          </figcaption>
+        </figure>
+        <figure class="m-photo-slot" id="photo-sasha-barabonova-5">
+          <div class="m-photo-slot__image">
+            <img src="../../images/8b766d8eda2e684e5bb3.webp" alt="" loading="lazy" />
+          </div>
+          <figcaption class="m-photo-slot__caption">
+            <span class="m-photo-slot__title">Название проекта</span>
+          </figcaption>
+        </figure>
+    </div>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Расскажи про практики и ритуалы.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Саша Барабонова">СБ</span></div>
+            <div class="m-qa-row__answer"><p>Я зависла минут на десять, когда первый раз прочитала этот вопрос. Стала перебирать в голове – вообще всё, что у меня есть.</p><p>Многое поменялось после учёбы. Когда учёба была главным фокусом, я думала только о ней – было всё равно, поела или нет, поспала или нет. Была цель и результат, и я к ним шла.</p><p>Сейчас посвободнее, но переключение произошло слишком резко. Теперь просыпаюсь, и вообще ничего не хочу делать. Хочется выходных, хочется ничего не делать.</p><p>Из практик – отсылка снова на универ. Мне было полтора-два часа ехать в одну сторону. Я боялась работать с ноутом в метро и в электричках, поэтому смотрела картинки на Pinterest. Полтора часа смотришь красивые картинки – заряжаешься, всё впитываешь. Приезжаешь, и хочется жёстко ебашить что-то крутое, потому что мозг всё уже обработал.</p><p>Это даже мой способ отдохнуть. После тяжёлого дня встреч могу открыть Figma и Pinterest и просто смотреть картинки, ни о чём не думать. Голова не работает, ни о чём не переживаю. Просто смотрю.</p><p>Нюанс – теперь мало что мне нравится, мало что вызывает эффект «вау». Готовясь к нашей встрече, вспоминала: последний раз такое прям «вау» в рамках цифрового продукта было года полтора назад. Нашла проект очень классного чувака, он разработал полноценную визуальную систему для веб-3 продукта. Я её минут десять изучала. Видимо, у меня очень завышены стандарты.</p><p>И ещё, раньше у меня было всё хорошо с памятью. Я могла запомнить всё что угодно: посмотрела проект три года назад – помню название, как выглядит, авторов даже. В какой-то момент щёлкнуло, и я резко начала плохо помнить. Хожу на скалолазание, тренер задаёт конкретную трассу с десятью разными зацепками. Раньше для меня это не составляло труда – посмотрела, запомнила, у меня визуальная память. Сейчас: «давай мы третий раз посмотрим, четвёртый раз, ты мне ещё раз объяснишь, и я это запомню». С картинками теперь та же проблема – посмотришь, и в момент забывается. Жонглировать ими, как раньше, уже не получается.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Что у тебя первично в проекте?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Саша Барабонова">СБ</span></div>
+            <div class="m-qa-row__answer"><p>Первые пять лет в дизайне я жёстко придерживалась продуктового процесса – иду по шагам, всё должно быть учтено.</p><p>Потом попала в стартап. Там тебе говорят: «У тебя есть один день, делай что хочешь, ты должен собрать нам лендинг». Идея в том, чтобы донести её через лендинг и получить рост метрик.</p><p>В книжке Бирмана про управление проектами есть фреймворк, кажется, FFF (или нет, не уверена – снова вопрос про память). Он говорит про время, про качество и что-то третье. Тебе всегда придётся жертвовать чем-то, никогда не получится уместить все три.</p><p>Когда я работала в студии, мы с Женей Нировым буквально два месяца делали один лендинг для Сами Гавриш. Задача была привнести что-то новое – выпустить так, чтобы все дизайнеры на русском рынке охуели от того, как это может быть. Что лендинг – это какой-то новый формат. Цель там была больше про визуал и идею.</p><p>В стартапе – наоборот, на визуал второстепенно. Важно уложиться в сроки и решить задачу.</p><p>Сейчас в Figital, уже джонглирование всем, и решения на основании того контекста, который есть. Одного выделить не могу. Мне в любом продуктовом процессе всё нравилось: и ресёрчи, и поиск идеи, и визуализация, и финишинг. В разных форматах. Главное, чтобы всего было понемножку, потому что когда чего-то много, превращается в рутину. А с рутиной мне в последнее время сложно работать.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+    <figure class="m-photo-slot m-photo-slot--placeholder m-photo-slot--wide" id="photo-sasha-barabonova-6">
+      <div class="m-photo-slot__image" data-placeholder-label="Фото будет добавлено" aria-label="Фото будет добавлено"></div>
+      <figcaption class="m-photo-slot__caption">
+        <span class="m-photo-slot__title">Название проекта</span>
+      </figcaption>
+    </figure>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Преподавание в Ереванской вышке – как это было?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Саша Барабонова">СБ</span></div>
+            <div class="m-qa-row__answer"><p>Уже всё, не складывается – было полгода.</p><p>Ереванская вышка очень сильно отличается от Московской. Если Московская – это про то, что ты не спишь, добиваешься результатов, тебе важен рейтинг, то ребята там совсем наоборот. Они про то, чтобы клёво потусить и классно провести время. Рейтинг не важен. Просто живут лучшую жизнь, ходят на пары, что-то делают.</p><p>Я приходила с настроем: «сейчас будем жёстко ебашить, классные штуки делать». Оказалось – ребята вообще не про это. Им клёво тусить и в весёлом формате это изучать, не так напряжённо, как у нас в Москве. Первые несколько недель меня сломало, я не понимала, как может быть иначе. И начала пытаться скорее заинтересовать – привить интерес к проекту, потому что у ребят учёба не была на первом месте.</p><p>Меня это особенно ломало, потому что у меня учёба была на первом месте. У меня не было свободного времени, я помню, когда смогла впервые посмотреть хотя бы 20 минут мультика, для меня это была большая радость.</p><p>Я преподавала второму курсу комдиза цифровой дизайн – лендинги и мобильное приложение. Ребята вообще не были знакомы с цифровым дизайном, не понимали, что такое responsive, как работает дизайн на сайте. Поэтому моя главная задача была донести, что это не так сложно, как кажется.</p><p>Я соотносила это с тем, что им уже понятно – с брендингом, с коммуникационным дизайном. Что в дизайне продукта, как и в коммуникационном, есть структура, на которую что-то наслаивается. Есть базовые правила: композиция, колористика, типографика – их учишь, чтобы понимать, как работать. С дизайном продукта точно так же – есть база, которую нужно выучить, и дальше уже свободнее. Тот же формат дизайн-системы, просто другой контекст.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="m-interview-section">
+        <div class="m-interview-section__body">
+          <div class="m-qa-row m-qa-row--question">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+            <div class="m-qa-row__answer"><p>Крафт и AI – это противоположности или дополнение?</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+          <div class="m-qa-row">
+            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Саша Барабонова">СБ</span></div>
+            <div class="m-qa-row__answer"><p>Со временем я поняла: я тот типашек, который немножко боится пробовать новое. Если моё работает – зачем мне ещё что-то.</p><p>Когда начали появляться нейронки для генерации изображений, меня вообще не цепляло. Видела все эти огромные промты в Midjourney, эти большие сложные запросы. Думала: нет, это ещё одна эпоха, как с кодом, мне нужно будет разбираться. Прям не хотелось. Я скипала – следила, видела, что происходит, но сама не тыкала.</p><p>Потом я попала в Figital, который занимается… Ладно, ты знаешь. Поначалу мне приходилось делать усилие над собой, чтобы тыкать все эти нейронки, изучать разницу. У них супер сложные названия – Stable Diffusion XL, Stable Diffusion 3. Нужно понимать разницу, что с чем можно соединять – это же суть продукта.</p><p>Первые пару месяцев было прям сложно. Пыталась соотнести, понять, выучить. В процессе втянулась. Очень понравилось. У нас можно было ходить на демо других команд – коллеги рассказывали, как использовать нейронки в работе, как их объединять, чтобы получать суперрезультаты. Стало интересно, начала сама генерить, экспериментировать. Подружились.</p><p>Хотя раньше я отвергала и говорила: «нет, я не буду пользоваться искусственным интеллектом». ChatGPT – пользуюсь больше трёх с половиной лет. Сейчас вообще ежедневно для работы и не только. Любой вопрос – это уже не Google, не Яндекс. Это ChatGPT.</p><p>Нейронки – классный инструмент, который упрощает работу так же, как в своё время Photoshop. Раньше вручную сидела, рисовала буквы, печатала на станке. Пришёл Photoshop – сделать что-то стало значительно быстрее. Сейчас то же – нейронки. Не идёшь, не устраиваешь съёмку, просто делаешь запрос, генеришь.</p><p>Но важно совмещать AI и ремесло. Пару недель назад был анонс – какой-то крупный бренд жёстко сэкономил бюджет, сделал всю рекламную кампанию только в нейронке. Выглядело очень бездушно и не совсем уместно. Цель была – в сжатые сроки выдать продукт. Но в итоге это не решало задачу. Не вызвало положительных эмоций. Скорее негативные.</p><p>В ближайшее время точно нужно соотносить и крафт, и ремесло. Может быть, через пару лет ИИ обучится делать всё это на профессиональном уровне. Но пока большинство работ, которые нас восхищают, это соединение и контроль. Некий арт-дирекшен над нейронкой.</p><p>И ещё, про массовизацию. Бум среди людей был связан с тем, что в ChatGPT появилась генерация изображений и видео. Я подумала на примере карточек Wildberries: два года назад, когда генерация только появилась, не так много её использовали. А за последний год буквально любой запрос – на первой и второй странице точно будет карточка с анимированным видео или с генерацией. Это для меня флажок: нейронки становятся массовыми, даже в карточках Wildberries реагируют.</p><p>Интересно ещё, что одновременно есть тренд наоборот – OpenAI, Anthropic делают свои съёмки и релизы максимально крафтово, обязательно пишут «в процессе не использовался искусственный интеллект». «Мы вообще все за людей, про людей и ради людей». Интересно, как это балансирует и куда мы придём.</p></div>
+            <div class="m-qa-row__spacer" aria-hidden="true"></div>
+          </div>
+        </div>
+        <blockquote class="m-quote-block">
+          <p><strong>Я тот типашек, который боится пробовать новое. Если моё работает – зачем мне ещё что-то.</strong></p>
+          <cite class="m-quote-block__cite">– Саша Барабонова</cite>
+        </blockquote>
+        <blockquote class="m-quote-block">
+          <p><strong>Какой-то бренд жёстко сэкономил бюджет – выглядело очень бездушно и не совсем уместно.</strong></p>
+          <cite class="m-quote-block__cite">– Саша Барабонова</cite>
+        </blockquote>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+
+      <section class="m-article-info section">
+        <div>
+          <h3>Линки</h3>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/sashabarabonova" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://www.are.na/sasha-barabonova" target="_blank" rel="noopener noreferrer">are.na</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>О практике</h3>
+          <p>Саша Барабонова – сеньер продуктовый дизайнер, ex Phygital+, T-банк, VK, Yandex, Pragmatica, LALAL.AI.</p>
+        </div>
+      </section>
+
+      <section class="m-next-article section">
+        <a class="m-next-article__circle a-arrow-button-xl" href="./stefan-lashko.html" aria-label="Следующая статья"></a>
+        <p>Читать дальше</p>
+        <h3>
+          <span class="m-next-article__author">Стефан Лашко</span>
+          <span class="m-next-article__title">Порядок из хаоса, метафора в знаке и отказ от клиентов без ценностей</span>
+        </h3>
+      </section>
+    </main>
+
+    <div class="a-sticky-scroll-wrap">
+      <div class="a-sticky-scroll">
+        <span class="a-sticky-scroll__rec" aria-hidden="true"></span>
+        <span class="a-sticky-scroll__content">
+          <span class="a-sticky-scroll__dot" aria-hidden="true"></span>
+          <span class="a-sticky-scroll__text">
+            <span class="a-sticky-scroll__prefix">Вы читаете</span>
+            <span class="a-sticky-scroll__current">«Саша Барабонова»</span>
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <footer class="footer s-footer">
+      <div class="footer-grid">
+        <div>
+          <h4>Смотрите</h4>
+          <a href="../journal.html">Журнал</a>
+          <a href="../gallery.html">Галерея</a>
+        </div>
+        <div>
+          <h4>Узнайте больше</h4>
+          <a href="../about.html">О проекте</a>
+          <a href="../privacy.html">Политика конфиденциальности</a>
+        </div>
+        <div>
+          <h4>Подписывайтесь</h4>
+          <a href="../newsletter.html">Рассылка</a>
+        </div>
+        <div>
+          <h4>Другие медиумы</h4>
+          <a class="footer-link-icon" href="https://t.me/defindings">
+            <img src="../../udf/quarks/icons/q-icon-telegram-24-black.svg" alt="" aria-hidden="true" />
+            <span>Telegram</span>
+          </a>
+          <a href="https://www.linkedin.com/in/arkhipovau/">LinkedIn</a>
+        </div>
+        <div>
+          <h4>Реализация проекта</h4>
+          <a href="https://arkhipovau.xyz/">Юлия Архипова</a>
+          <a href="https://t.me/dayglobal">Куратор – Захар День</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 – 2026 deFindings</span>
+        <span>HSE Art&amp;Design School</span>
+      </div>
+    </footer>
+
+    <script defer src="../../udf/superorganisms/menu/menu-overlay.js"></script>
+    <script defer src="../../udf/superorganisms/menu/s-menu.js"></script>
+    <script defer src="../../udf/superorganisms/footer/s-footer.js"></script>
+    <script defer src="../../javascripts/sticky-scroll.js"></script>
+    <script defer src="../../javascripts/micro-animations.js"></script>
+  </body>
+</html>
