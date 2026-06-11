@@ -181,7 +181,12 @@
 @media (max-width: 767px) {
   .footer.s-footer {
     --s-footer-pad-x: var(--grid-margin);
-    --s-footer-logo-block-h: 152px;
+    --s-footer-logo-block-h: max(
+      152px,
+      calc(
+        var(--s-footer-logo-top) + (100vw - var(--s-footer-pad-x) * 2) * 20 / 97 - var(--s-footer-pad-y)
+      )
+    );
     --s-footer-logo-top: 77.91px;
     --s-footer-gradient-h: 112.9px;
     --s-footer-grid-h: 298px;
