@@ -803,13 +803,6 @@ window.deFindingsGalleryData = {
       "href": "./interviews/anastasia-sycheva.html#photo-anastasia-sycheva-5"
     },
     {
-      "src": "../images/anastasia-sycheva-noxus-04.png",
-      "author": "Анастасия Сычева",
-      "project": "Noxus",
-      "subtitle": "AI как краска",
-      "href": "./interviews/anastasia-sycheva.html#photo-anastasia-sycheva-6"
-    },
-    {
       "src": "../images/anastasia-sycheva-elementor.png",
       "author": "Анастасия Сычева",
       "project": "Elementor",

@@ -76,7 +76,6 @@ function wireAnastasia(html) {
     [3, 'anastasia-sycheva-noxus.png', 'Noxus', 'Noxus'],
     [4, 'anastasia-sycheva-noxus-02.png', 'Noxus', 'Noxus'],
     [5, 'anastasia-sycheva-noxus-03.png', 'Noxus', 'Noxus'],
-    [6, 'anastasia-sycheva-noxus-04.png', 'Noxus', 'Noxus', true],
   ];
   for (const [id, src, alt, title, wide] of slots) {
     const fig = wide
@@ -85,16 +84,27 @@ function wireAnastasia(html) {
     html = replaceFigureById(html, 'anastasia-sycheva', id, fig);
   }
 
-  const extra = `
-${wideSlot('anastasia-sycheva', 7, 'anastasia-sycheva-elementor.png', 'Elementor', 'Elementor')}
-
+  const elementorSlot = wideSlot('anastasia-sycheva', 7, 'anastasia-sycheva-elementor.png', 'Elementor', 'Elementor');
+  const basicCapitalRow = `
     <div class="m-photo-row">
 ${slotImg('anastasia-sycheva', 8, 'anastasia-sycheva-basic-capital.png', 'Basic Capital', 'Basic Capital')}
 ${slotImg('anastasia-sycheva', 9, 'anastasia-sycheva-basic-capital-02.png', 'Basic Capital', 'Basic Capital')}
     </div>`;
 
   if (!html.includes('photo-anastasia-sycheva-7')) {
-    html = insertAfterFigure(html, 'anastasia-sycheva', 6, extra);
+    const brandingAnchor = /(Её мы будем транслировать в первую очередь\.<\/p><\/div>[\s\S]*?<\/div>\s*<\/div>\s*<\/div>)/;
+    if (!brandingAnchor.test(html)) {
+      throw new Error('Anastasia branding section not found for Elementor insert');
+    }
+    html = html.replace(brandingAnchor, `$1\n\n${elementorSlot.trim()}`);
+  }
+
+  if (!html.includes('photo-anastasia-sycheva-8')) {
+    const quoteAnchor = /(<blockquote class="m-quote-block">[\s\S]*?<\/blockquote>\s*<\/div>)/;
+    if (!quoteAnchor.test(html)) {
+      throw new Error('Anastasia quote block not found for Basic Capital insert');
+    }
+    html = html.replace(quoteAnchor, `$1\n\n${basicCapitalRow.trim()}`);
   }
   return html;
 }
@@ -186,7 +196,6 @@ function updateGalleryData() {
     ['anastasia-sycheva-noxus.png', 'Noxus', 3],
     ['anastasia-sycheva-noxus-02.png', 'Noxus', 4],
     ['anastasia-sycheva-noxus-03.png', 'Noxus', 5],
-    ['anastasia-sycheva-noxus-04.png', 'Noxus', 6],
     ['anastasia-sycheva-elementor.png', 'Elementor', 7],
     ['anastasia-sycheva-basic-capital.png', 'Basic Capital', 8],
     ['anastasia-sycheva-basic-capital-02.png', 'Basic Capital', 9],
@@ -262,7 +271,6 @@ function updateMeta() {
     { src: '../images/anastasia-sycheva-noxus.png', title: 'Noxus' },
     { src: '../images/anastasia-sycheva-noxus-02.png', title: 'Noxus' },
     { src: '../images/anastasia-sycheva-noxus-03.png', title: 'Noxus' },
-    { src: '../images/anastasia-sycheva-noxus-04.png', title: 'Noxus' },
     { src: '../images/anastasia-sycheva-elementor.png', title: 'Elementor' },
     { src: '../images/anastasia-sycheva-basic-capital.png', title: 'Basic Capital' },
     { src: '../images/anastasia-sycheva-basic-capital-02.png', title: 'Basic Capital' },

@@ -100,6 +100,10 @@
   --photo-row-ratio: 2 / 3;
 }
 
+.m-photo-row--ratio-7-8 {
+  --photo-row-ratio: 7 / 8;
+}
+
 @media (max-width: 767px) {
   .m-photo-row,
   .m-photo-row--three {
