@@ -46,7 +46,7 @@ Layout grid (Figma-aligned):
 
 Viewport policy:
 - `1440..1919`: desktop base rail uses locked content width (`1330px` max)
-- `1920+`: wide desktop rail switches to stretch width (`100% - 2 * margin`)
+- `1920+`: wide desktop rail switches to stretch width (`100% – 2 * margin`)
 
 Core tokens:
 - `--grid-columns`
