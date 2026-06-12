@@ -1,39 +1,51 @@
 
 (function () {
-  const box = document.createElement('pre');
-  box.style.cssText =
-    'position:fixed;left:8px;bottom:8px;z-index:9999;max-width:90vw;max-height:40vh;overflow:auto;padding:8px 10px;background:#111;color:#f55;border:1px solid #333;border-radius:8px;font:12px/1.4 ui-monospace,Menlo,monospace;display:none';
-  document.addEventListener('DOMContentLoaded', () => document.body.appendChild(box));
-  function show(msg) {
-    box.style.display = 'block';
-    box.textContent = String(msg);
+  const searchParams = new URLSearchParams(window.location.search);
+  const isSphereDebug =
+    searchParams.get('debug') === '1' ||
+    window.location.protocol === 'file:' ||
+    window.location.hostname === 'localhost' ||
+    window.location.hostname === '127.0.0.1';
+
+  let show = function () {};
+
+  if (isSphereDebug) {
+    const box = document.createElement('pre');
+    box.style.cssText =
+      'position:fixed;left:8px;bottom:8px;z-index:9999;max-width:90vw;max-height:40vh;overflow:auto;padding:8px 10px;background:#111;color:#f55;border:1px solid #333;border-radius:8px;font:12px/1.4 ui-monospace,Menlo,monospace;display:none';
+    document.addEventListener('DOMContentLoaded', () => document.body.appendChild(box));
+    show = function showDebug(msg) {
+      box.style.display = 'block';
+      box.textContent = String(msg);
+    };
+    window.addEventListener('error', (e) => show(e.error?.stack || e.message || e));
+    window.addEventListener('unhandledrejection', (e) => show(e.reason?.stack || e.reason || e));
   }
+
   window.__sphereShowError = show;
-  window.addEventListener('error', (e) => show(e.error?.stack || e.message || e));
-  window.addEventListener('unhandledrejection', (e) => show(e.reason?.stack || e.reason || e));
 })();
 
 const FALLBACK_IMAGE_FILES = [
+  '047c3fedf2c9c1bae271.jpg',
+  '058f26395560d618ad13.jpg',
+  '0e33494abc2193d45071.jpg',
+  '274aa46655d50318dc54.webp',
+  '324b9db98c5f779e2f2c.jpg',
+  '45603f1b4adcc73ea37b.jpg',
+  '5797605502626eb5eaa3.jpg',
+  '770dbd58aff7b3c49d2d.jpg',
   '8a6ae07d69c4e874b52c.jpg',
   'd801538041a9350ba5d2.webp',
-  '513f0a449c59e7eb2dcb.webp',
-  '8c30a668aa8d06217ed6.webp',
-  '45603f1b4adcc73ea37b.jpg',
-  '86c2cda628bf2b209a91.webp',
-  '324b9db98c5f779e2f2c.jpg',
-  '5797605502626eb5eaa3.jpg',
-  '1d0536b32e76aa8ad169.webp',
-  'c25d1847bc1ef5479f62.webp',
-  '0237d06fef5459819fb4.webp',
-  'ca62f442cf615b875906.webp',
-  '0e33494abc2193d45071.jpg',
-  'ee6efa91848e07840982.webp',
-  '021b91e97f3a271d2d59.webp',
   'fd0ea6238b2fd03feb38.jpg',
-  '40e2b54269cdc31ad913.png',
   '28312b8b4b547b0e8974.png',
   '359b9d0fb7d97121e465.jpg',
-  '96f7d4116789d1f7784d.webp',
+  '5bbb57c918847647a42a.webp',
+  'c25d1847bc1ef5479f62.webp',
+  'ca62f442cf615b875906.webp',
+  'ee6efa91848e07840982.webp',
+  '326ccddccc1073e47e55.webp',
+  '4c250660004e186b56f2.webp',
+  '62fdc8ec9235f6923ec7.webp',
 ];
 
 const IMAGES_BASE = new URL('../images/', window.location.href);
@@ -304,13 +316,13 @@ async function init() {
       parentNotified = true;
       notifyParentReady();
     }
-    if (loadedTextures === 0 && failedTextures > 0 && window.__sphereShowError) {
+    if (loadedTextures === 0 && failedTextures > 0) {
       window.__sphereShowError(
         `Textures did not load (${failedTextures}/${expectedTextures}). ` +
           `Usually this is browser cache or file:// restrictions. Reload hard or run via local server.`
       );
     }
-  }, 3500);
+  }, 8000);
 
   let targetRotX = 0;
   let targetRotY = 0;
