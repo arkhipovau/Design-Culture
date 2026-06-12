@@ -29,7 +29,6 @@
 
 .about-process__image {
   width: 100%;
-  aspect-ratio: 3 / 4;
   background: var(--color-light-grey);
   border: 1px dashed var(--color-dark-grey);
   display: flex;
@@ -46,9 +45,8 @@
 
 .about-process__image img {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: block;
-  object-fit: cover;
 }
 
 .about-process__image:has(img)::before {
