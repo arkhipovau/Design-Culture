@@ -77,8 +77,8 @@
 }
 
 .m-split-card--journal {
-  background: url("../../../images/journal-split-card.jpg?v=20260612") center / cover no-repeat;
-  color: var(--color-white);
+  background: url("../../../images/journal-split-card.png?v=20260612b") center / cover no-repeat;
+  color: var(--color-black);
 }
 
 .m-split-card--gallery {
