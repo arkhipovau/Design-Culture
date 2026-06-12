@@ -157,7 +157,7 @@
         subtitle: 'Метафора продукта',
         kind: 'Статья',
         href: interview('dasha-makurina'),
-        keywords: 'москва rarible pont design фриланс 3d cgi',
+        keywords: 'москва rarible pont design продукт 3d cgi',
         priority: 70
       },
       {

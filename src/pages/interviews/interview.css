@@ -260,12 +260,5 @@ main.article-page.interview-page {
 .interview-body .m-interview-section__body > .m-photo-row,
 .interview-body .m-interview-section > .m-photo-slot,
 .interview-body .m-interview-section > .m-photo-row {
-  margin-top: 56px;
-}
-
-.interview-body .m-interview-section__body > .m-quote-block + .m-photo-slot,
-.interview-body .m-interview-section__body > .m-quote-block + .m-photo-row,
-.interview-body .m-interview-section__body > .article-prose + .m-photo-slot,
-.interview-body .m-interview-section__body > .article-prose + .m-photo-row {
-  margin-top: 56px;
+  margin-block: 56px;
 }
