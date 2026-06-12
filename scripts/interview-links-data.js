@@ -99,6 +99,12 @@ const INTERVIEW_LINKS = {
     { label: 'Dprofile', href: 'https://dprofile.ru/andrewmaximenkov' },
     { label: 'Normal Mode', href: 'https://t.me/normal_mode' },
   ],
+  'nikita-petrov': [
+    { label: 'nikipetrov.com', href: 'https://nikipetrov.com' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/n1kipetrov' },
+    { label: 'Medium', href: 'https://medium.com/@n1kipetrov' },
+  ],
+  'maxim-aksenov': [],
 };
 
 module.exports = { INTERVIEW_LINKS };

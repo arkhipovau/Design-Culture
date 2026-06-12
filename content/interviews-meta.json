@@ -19,7 +19,9 @@
     "gavril-perov",
     "elena-chinakova",
     "dariia-chertanova",
-    "andrey-maksimenkov"
+    "andrey-maksimenkov",
+    "nikita-petrov",
+    "maxim-aksenov"
   ],
   "interviews": {
     "togetherwithyou": {
@@ -838,7 +840,7 @@
     },
     "elena-chinakova": {
       "author": "Елена Чинакова",
-      "meta": "Великобритания • Лондон • Сообщество",
+      "meta": "Великобритания • Лондон • Сообщество • Проект",
       "hero": "../../images/Елена Чинакова.jpg",
       "about": "Елена Чинакова – основатель дизайн-митапов в Лондоне Zorky, ex дизайн-лид Avito.",
       "links": [
@@ -862,7 +864,7 @@
     },
     "andrey-maksimenkov": {
       "author": "Андрей Максименков",
-      "meta": "Россия • Ростов-на-Дону • Проект",
+      "meta": "Россия • Ростов-на-Дону • Проект • Сообщество",
       "hero": "../../images/Андрей Максименков.jpg",
       "about": "Андрей Максименков – свободный диджитал-дизайнер, создатель проекта spros (t.me/sprosspros).",
       "links": [
@@ -885,6 +887,28 @@
           "title": "spros app"
         }
       ]
+    },
+    "nikita-petrov": {
+      "author": "Никита Петров",
+      "meta": "Россия • Москва • Продукт • Проект",
+      "hero": "../../images/Никита Петров.jpg",
+      "about": "Никита Петров – product designer, автор nikipetrov.com. Делает продуктовый дизайн и собственные проекты.",
+      "links": [
+        "nikipetrov.com",
+        "linkedin.com/in/n1kipetrov",
+        "medium.com/@n1kipetrov"
+      ],
+      "subtitle": "Портфолио как продукт, data-driven подход и собственные проекты",
+      "images": []
+    },
+    "maxim-aksenov": {
+      "author": "Максим Аксенов",
+      "meta": "Россия • Москва • Фриланс",
+      "hero": "../../images/Максим Аксенов.jpg",
+      "about": "Максим Аксенов – дизайнер, Москва.",
+      "links": [],
+      "subtitle": "Интервью готовится",
+      "images": []
     }
   }
 }

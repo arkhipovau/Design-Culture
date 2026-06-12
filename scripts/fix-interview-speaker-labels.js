@@ -28,6 +28,8 @@ const LABEL = {
   'elena-chinakova': 'ЕЧ',
   'andrey-maksimenkov': 'АМ',
   'dasha-makurina': 'ДМ',
+  'nikita-petrov': 'НП',
+  'maxim-aksenov': 'МА',
 };
 
 const TOGETHER = {

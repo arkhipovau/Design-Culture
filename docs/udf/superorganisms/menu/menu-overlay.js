@@ -239,6 +239,22 @@
         href: interview('dariia-chertanova'),
         keywords: 'москва the blueprint blueprint bang bang education werkstatt продукт смыслы контекст кодинг',
         priority: 70
+      },
+      {
+        title: 'Никита Петров',
+        subtitle: 'Портфолио как продукт',
+        kind: 'Статья',
+        href: interview('nikita-petrov'),
+        keywords: 'москва nikipetrov продукт проект foliobin savi medium portfolio',
+        priority: 70
+      },
+      {
+        title: 'Максим Аксенов',
+        subtitle: 'Интервью готовится',
+        kind: 'Статья',
+        href: interview('maxim-aksenov'),
+        keywords: 'москва фриланс дизайн',
+        priority: 70
       }
     ];
 
