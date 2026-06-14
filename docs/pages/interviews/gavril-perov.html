@@ -3,181 +3,175 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- deFindings favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="../../udf/quarks/branding/favicon-light.png" media="(prefers-color-scheme: light)" />
     <link rel="icon" type="image/png" sizes="32x32" href="../../udf/quarks/branding/favicon-dark.png" media="(prefers-color-scheme: dark)" />
     <link rel="icon" type="image/png" sizes="32x32" href="../../udf/quarks/branding/favicon-light.png" />
-    <!-- /deFindings favicons -->
     <title>Гаврил Перов – deFindings</title>
-    <link rel="stylesheet" href="../../stylesheets/index.css?v=20260522" />
-    <link rel="stylesheet" href="../../udf/tokens/colors.css" />
-    <link rel="stylesheet" href="../../udf/tokens/typography.css" />
-    <link rel="stylesheet" href="../../udf/tokens/grid.css" />
-    <link rel="stylesheet" href="../../udf/atoms/sticky-scroll/a-sticky-scroll.css" />
-    <link rel="stylesheet" href="../../udf/atoms/arrow-buttons/a-arrow-buttons.css" />
-    <link rel="stylesheet" href="../../udf/atoms/arrow-button-xl/a-arrow-button-xl.css" />
-    <link rel="stylesheet" href="../article.css?v=20260522" />
-    <link rel="stylesheet" href="../../udf/molecules/qa-row/m-qa-row.css" />
-    <link rel="stylesheet" href="../../udf/molecules/quote-block/m-quote-block.css" />
-    <link rel="stylesheet" href="../../udf/molecules/next-article/m-next-article.css" />
-    <link rel="stylesheet" href="../../udf/molecules/article-info/m-article-info.css" />
-    <link rel="stylesheet" href="./interview.css?v=20260522" />
-    <link rel="stylesheet" href="../../udf/molecules/interview-section/m-interview-section.css" />
-    <link rel="stylesheet" href="../../stylesheets/micro-animations.css" />
-    <link rel="stylesheet" href="../../udf/superorganisms/menu/s-menu.css" />
-    <link rel="stylesheet" href="../../udf/superorganisms/footer/s-footer.css" />
-    <link rel="stylesheet" href="../../udf/quarks/findings/q-findings.css" />
-    <link rel="stylesheet" href="../../udf/atoms/button/a-button.css?v=20260522c" />
-    <link rel="stylesheet" href="../../stylesheets/cookie-consent.css" />
-    <script defer src="../../javascripts/cookie-consent.js"></script>
+    <link rel="stylesheet" href="../../stylesheets/index.css" />
+    <link rel="stylesheet" href="../../udf/bundles/shell.css" />
+    <link rel="stylesheet" href="../../udf/bundles/interview.css?v=20260601a" />
+    <link rel="stylesheet" href="../../udf/runtime/micro-animations.css" />
+    <script defer src="../../udf/molecules/cookie-consent/m-cookie-consent.js"></script>
   </head>
-  <body data-reading-page="Гаврил Перов">
-    <header class="topbar topbar--menu s-menu article-topbar">
-      <a class="logo" href="../../index.html" aria-label="deFindings">
-        <img class="logo-mark" src="../../udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
-        <span class="visually-hidden">deFindings</span>
+  <body class="o-site-shell" data-reading-page="Гаврил Перов">
+    <div class="q-findings-overlay" aria-hidden="true"></div>
+    <header class="s-menu s-menu--ready s-menu--article">
+      <button class="s-menu__search" type="button" aria-label="Поиск" aria-expanded="false"></button>
+      <a class="s-menu__logo" href="../../index.html" aria-label="deFindings">
+        <img class="s-menu__logo-mark" src="../../udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
+        <span class="a-visually-hidden">deFindings</span>
       </a>
+    <button class="s-menu__toggle" type="button" aria-label="Открыть меню" aria-expanded="false"></button>
     </header>
 
-    <main class="article-page interview-page">
-      <section class="article-hero interview-hero" id="hero">
-        <div class="hero-content section">
-          <p class="article-author">Гаврил Перов</p>
-          <h1 class="interview-hero__title">Good enough в Drinkit, баланс интересов и AI без страха</h1>
-          <p class="article-meta">Франция • Париж • Продукт</p>
-        </div>
-        <figure class="interview-portrait">
-          <img src="../../images/%D0%93%D0%B0%D0%B2%D1%80%D0%B8%D0%BB%20%D0%9F%D0%B5%D1%80%D0%BE%D0%B2.jpg" alt="Гаврил Перов" width="200" height="267" loading="lazy" decoding="async" />
-        </figure>
-      </section>
-
-      <div class="article-body interview-body section">
-        
-
-      <div class="m-interview-section">
-        <div class="m-interview-section__body">
-          <div class="m-qa-row m-qa-row--question">
-            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
-            <div class="m-qa-row__answer"><p>Как ты для себя определяешь культуру дизайна? Что в это понятие входит – принципы, ценности, ритуалы внутри команды, подход к принятию решений, ответственность – или что-то иное?</p></div>
-            <div class="m-qa-row__spacer" aria-hidden="true"></div>
-          </div>
-          <div class="m-qa-row">
-            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Гаврил Перов">ГП</span></div>
-            <div class="m-qa-row__answer"><p>Культура дизайна – тема широкая. Для меня она в балансе и честности: перед собой, перед теми, для кого ты делаешь дизайн, и перед теми, кто за него платит. Часто дизайнеры делают дизайн для себя, иногда – только чтобы угодить бизнесу или клиенту, а иногда слишком думают о том, что скажет комьюнити.</p><p>Культура – это когда ты каждый раз понимаешь, почему принимаешь то или иное решение, осознанно чувствуешь точку, где пойман баланс. Это не обязательно должно быть самое крутое или «дизрапт» решение – оно должно быть good enough, и в 99% случаев этого достаточно.</p></div>
-            <div class="m-qa-row__spacer" aria-hidden="true"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="m-interview-section">
-        <div class="m-interview-section__body">
-          <div class="m-qa-row m-qa-row--question">
-            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
-            <div class="m-qa-row__answer"><p>Немного о твоём пути: как ты пришёл в дизайн и чем занимаешься сейчас? Интересно на примере 1–3 проектов, которые особенно повлияли на твоё восприятие профессии или подход.</p></div>
-            <div class="m-qa-row__spacer" aria-hidden="true"></div>
-          </div>
-          <div class="m-qa-row">
-            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Гаврил Перов">ГП</span></div>
-            <div class="m-qa-row__answer"><p>Я пришёл в дизайн из моды, но по сути с детства мне нравилось систематизировать вещи, делать некрасивое красивым, строить логику, иерархию и подчинять всё понятным правилам. Сейчас я отвечаю за продуктовый дизайн в сети кофеен Drinkit.</p><p>Любая задача или проект – крупный или мелкий – влияет на тебя. Это постепенный процесс: постоянно чему-то учишься, если хотя бы чуть-чуть пробуешь новое. На меня редко влияли конкретные проекты – на меня влияла смена ниш. Восемь лет я делал в основном сайты, потом почти на два года ушёл в айдентику, потом сфокусировался на продукте. Я и раньше делал всё, но есть периоды яркого фокуса – и именно в них ты сильнее всего растёшь. Расширяется диапазон решений, идей, мысли становятся шире и ты чувствуешь себя увереннее.</p></div>
-            <div class="m-qa-row__spacer" aria-hidden="true"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="m-interview-section">
-        <div class="m-interview-section__body">
-          <div class="m-qa-row m-qa-row--question">
-            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
-            <div class="m-qa-row__answer"><p>Какие рабочие практики или ритуалы остаются неизменными? Что поддерживает и вдохновляет больше всего? Есть ли повторяющийся паттерн, который ты замечаешь?</p></div>
-            <div class="m-qa-row__spacer" aria-hidden="true"></div>
-          </div>
-          <div class="m-qa-row">
-            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Гаврил Перов">ГП</span></div>
-            <div class="m-qa-row__answer"><p>Я смотрю референсы каждый день. В каждой новой задаче стараюсь попробовать что-то новое. У меня нет ни одной моей работы, которую я бы скопировал один в один – я просто физически не могу сделать то же самое, что делал до этого, я обязательно должен что-то попробовать сделать иначе.</p><p>Да, проекты могут быть похожими, но в них всегда есть что-то новое, пусть это даже мелочь – другой отступ, выравнивание, шрифт, который я раньше не использовал. Я остаюсь верен себе и ожиданиям принимающей стороны, но при этом каждый раз пытаюсь привнести что-то новое, и это даёт удовольствие. Это и держит интерес к профессии: вдохновение от постоянной насмотренности и желание попробовать новую идею в своей задаче или проекте.</p></div>
-            <div class="m-qa-row__spacer" aria-hidden="true"></div>
-          </div>
-        </div>
-        <blockquote class="m-quote-block">
+    <main class="o-interview-page">
+      <section class="o-interview-hero a-section" id="hero">
+              <div class="o-interview-hero__content">
+                <p class="o-interview-hero__author">Гаврил Перов</p>
+                <h1 class="o-interview-hero__title">Архитектура, город и графический язык</h1>
+                <p class="o-interview-hero__meta">Франция • Париж • Продукт</p>
+              </div>
+              <figure class="m-interview-portrait">
+                <img src="../../images/%D0%93%D0%B0%D0%B2%D1%80%D0%B8%D0%BB%20%D0%9F%D0%B5%D1%80%D0%BE%D0%B2.jpg" alt="Гаврил Перов" width="200" height="267" loading="lazy" decoding="async" />
+              </figure>
+            </section>
+      <div class="o-interview-body a-section">
+              
+      
+            <div class="m-interview-section">
+              <div class="m-interview-section__body">
+                <div class="m-qa-row m-qa-row--question">
+                  <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+                  <div class="m-qa-row__answer"><p>Как ты для себя определяешь культуру дизайна? Что в это понятие входит – принципы, ценности, ритуалы внутри команды, подход к принятию решений, ответственность – или что-то иное?</p></div>
+                  <div class="m-qa-row__spacer" aria-hidden="true"></div>
+                </div>
+                <div class="m-qa-row">
+                  <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Гаврил Перов">ГП</span></div>
+                  <div class="m-qa-row__answer"><p>Культура дизайна – тема широкая. Для меня она в балансе и честности: перед собой, перед теми, для кого ты делаешь дизайн, и перед теми, кто за него платит. Часто дизайнеры делают дизайн для себя, иногда – только чтобы угодить бизнесу или клиенту, а иногда слишком думают о том, что скажет комьюнити.</p><p>Культура – это когда ты каждый раз понимаешь, почему принимаешь то или иное решение, осознанно чувствуешь точку, где пойман баланс. Это не обязательно должно быть самое крутое или «дизрапт» решение – оно должно быть good enough, и в 99% случаев этого достаточно.</p></div>
+                  <div class="m-qa-row__spacer" aria-hidden="true"></div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="m-interview-section">
+              <div class="m-interview-section__body">
+                <div class="m-qa-row m-qa-row--question">
+                  <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+                  <div class="m-qa-row__answer"><p>Немного о твоём пути: как ты пришёл в дизайн и чем занимаешься сейчас? Интересно на примере 1–3 проектов, которые особенно повлияли на твоё восприятие профессии или подход.</p></div>
+                  <div class="m-qa-row__spacer" aria-hidden="true"></div>
+                </div>
+                <div class="m-qa-row">
+                  <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Гаврил Перов">ГП</span></div>
+                  <div class="m-qa-row__answer"><p>Я пришёл в дизайн из моды, но по сути с детства мне нравилось систематизировать вещи, делать некрасивое красивым, строить логику, иерархию и подчинять всё понятным правилам. Сейчас я отвечаю за продуктовый дизайн в сети кофеен Drinkit.</p><p>Любая задача или проект – крупный или мелкий – влияет на тебя. Это постепенный процесс: постоянно чему-то учишься, если хотя бы чуть-чуть пробуешь новое. На меня редко влияли конкретные проекты – на меня влияла смена ниш. Восемь лет я делал в основном сайты, потом почти на два года ушёл в айдентику, потом сфокусировался на продукте. Я и раньше делал всё, но есть периоды яркого фокуса – и именно в них ты сильнее всего растёшь. Расширяется диапазон решений, идей, мысли становятся шире и ты чувствуешь себя увереннее.</p></div>
+                  <div class="m-qa-row__spacer" aria-hidden="true"></div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="m-interview-section">
+              <div class="m-interview-section__body">
+                <div class="m-qa-row m-qa-row--question">
+                  <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+                  <div class="m-qa-row__answer"><p>Какие рабочие практики или ритуалы остаются неизменными? Что поддерживает и вдохновляет больше всего? Есть ли повторяющийся паттерн, который ты замечаешь?</p></div>
+                  <div class="m-qa-row__spacer" aria-hidden="true"></div>
+                </div>
+                <div class="m-qa-row">
+                  <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Гаврил Перов">ГП</span></div>
+                  <div class="m-qa-row__answer"><p>Я смотрю референсы каждый день. В каждой новой задаче стараюсь попробовать что-то новое. У меня нет ни одной моей работы, которую я бы скопировал один в один – я просто физически не могу сделать то же самое, что делал до этого, я обязательно должен что-то попробовать сделать иначе.</p><p>Да, проекты могут быть похожими, но в них всегда есть что-то новое, пусть это даже мелочь – другой отступ, выравнивание, шрифт, который я раньше не использовал. Я остаюсь верен себе и ожиданиям принимающей стороны, но при этом каждый раз пытаюсь привнести что-то новое, и это даёт удовольствие. Это и держит интерес к профессии: вдохновение от постоянной насмотренности и желание попробовать новую идею в своей задаче или проекте.</p></div>
+                  <div class="m-qa-row__spacer" aria-hidden="true"></div>
+                </div>
+              </div>
+              <blockquote class="m-quote-block">
           <p><strong>Есть ещё важный момент, который я вкладываю в слово «культура»: процесс должен быть экологичным. В нём есть челлендж, стремление сделать максимально хорошо, узнать новое, вырасти. Но при этом важно не сжечь ни себя, ни команду, не уходить в ложные цели, доводить задачи вовремя и держать все обещания – себе, команде, клиенту / бизнесу.</strong></p>
           
         </blockquote>
-        
-        
-        
-        
-        
-        
-      </div>
-
-      <div class="m-interview-section">
-        <div class="m-interview-section__body">
-          <div class="m-qa-row m-qa-row--question">
-            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
-            <div class="m-qa-row__answer"><p>Расскажи про текущий опыт работы и процессы в Drinkit. Как вы переводите ценности в дизайн-решения? На что опираетесь в первую очередь, а что остаётся вторичным? В центре внимания – вижен и большая идея, польза для других, этичность, метрики или что-то ещё? Можно раскрыть это на примере одного небольшого кейса: как подходили к задаче, что было главным и что намеренно оставляли за рамками.</p></div>
-            <div class="m-qa-row__spacer" aria-hidden="true"></div>
-          </div>
-          <div class="m-qa-row">
-            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Гаврил Перов">ГП</span></div>
-            <div class="m-qa-row__answer"><p>Важно всё – реально всё. Бизнесу важно, чтобы команды были эффективными и дизайн приносил деньги. Продукту важно, чтобы фичи улучшали метрики. Разработке важно быстро закрывать задачи и делать частые релизы.</p><p>А дизайнеру важно всё сразу: и как выглядит, и как работает. Это поверхностный уровень. На самом деле дизайнер влияет даже на отношения продукта с c-level: скорость и качество дизайнерских решений напрямую влияют на метрики, настроение команды, темп и продуктивность.</p><p>Тонких материй много. Иногда сам дизайн – вторичен. Первично – твоё понимание контекста: когда нужно быть быстрым, когда – проактивным, когда – генерить фичи, а когда – наоборот, уйти в концепты. Где нужно надавить, а где – отпустить. Возможностей влиять масса – сделать как хуже, так и лучше. Это намного больше, чем просто дизайн-макеты.</p></div>
-            <div class="m-qa-row__spacer" aria-hidden="true"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="m-interview-section">
-        <div class="m-interview-section__body">
-          <div class="m-qa-row m-qa-row--question">
-            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
-            <div class="m-qa-row__answer"><p>В команде – что вы артикулируете как качество?</p></div>
-            <div class="m-qa-row__spacer" aria-hidden="true"></div>
-          </div>
-          <div class="m-qa-row">
-            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Гаврил Перов">ГП</span></div>
-            <div class="m-qa-row__answer"><p>Качество – максимально субъективно. У каждого в команде своя планка. И у любого качества есть градации.</p><p>Для меня качество – это когда мы выпустили решение, которое реально решило задачу (улучшило, исправило или изменило то, что требовалось), сделали это максимально быстро и при этом никто не пострадал по пути.</p><p>Я не вижу большого смысла в «идеальных» решениях, отполированных до последнего пикселя, на которые уходит десятки или сотни часов. Чаще всего это мало что даёт. Я выбираю скорость и количество проверенных гипотез.</p></div>
-            <div class="m-qa-row__spacer" aria-hidden="true"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="m-interview-section">
-        <div class="m-interview-section__body">
-          <div class="m-qa-row m-qa-row--question">
-            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
-            <div class="m-qa-row__answer"><p>Крафт и технологии (AI) – видишь ли ты конфликт между этими понятиями или они усиливают друг друга?</p></div>
-            <div class="m-qa-row__spacer" aria-hidden="true"></div>
-          </div>
-          <div class="m-qa-row">
-            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Гаврил Перов">ГП</span></div>
-            <div class="m-qa-row__answer"><p>Если честно, я устал от того, как люди боятся, осуждают или сопротивляются AI. После появления компьютеров, интернета и мобильных телефонов – это самое важное, что с нами произошло.</p><p>Я вижу ноль негатива в AI, кроме самого названия «AI» – это не искусственный интеллект, а обученные модели. Они не мыслят, у них нет сознания. Просто термин «Machine Learning» видимо было бы сложнее продать массам.</p><p>AI убирает рутину, сокращает время на типовые задачи и делает жизнь проще. Значит, люди, которые работают головой, а не исключительно руками, будут в порядке. Художник, фотограф, дизайнер, разработчик, писатель – любой талантливый человек, который адаптируется, учится и остаётся актуальным, не потеряет ничего. Наоборот – выиграет.</p></div>
-            <div class="m-qa-row__spacer" aria-hidden="true"></div>
-          </div>
-        </div>
-      </div>
-
-      <section class="m-article-info section">
-        <div>
-          <h3>Линки</h3>
-          <ul>
-            <li><a href="https://gavril.webflow.io" target="_blank" rel="noopener noreferrer">gavril.webflow.io</a></li>
-            <li><a href="https://www.behance.net/gavrilperov" target="_blank" rel="noopener noreferrer">Behance</a></li>
-            <li><a href="https://www.linkedin.com/in/gavrilperov" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            <li><a href="https://dprofile.ru/gavril" target="_blank" rel="noopener noreferrer">Dprofile</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>О практике</h3>
-          <p>Гаврил Перов – дизайнер и арт-директор Drinkit.</p>
-        </div>
-      </section>
-
-      <section class="m-next-article section">
-        <a class="m-next-article__circle a-arrow-button-xl" href="./artem-gerts.html" aria-label="Следующая статья"></a>
-        <p>Читать дальше</p>
-        <h3>
-          <span class="m-next-article__author">Артём Герц</span>
-          <span class="m-next-article__title">Язык с нуля в айдентике: Redis, Nil Foundation и честность в решениях</span>
-        </h3>
-      </section>
+              
+              
+              
+              
+              
+              
+              
+            </div>
+      
+            <div class="m-interview-section">
+              <div class="m-interview-section__body">
+                <div class="m-qa-row m-qa-row--question">
+                  <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+                  <div class="m-qa-row__answer"><p>Расскажи про текущий опыт работы и процессы в Drinkit. Как вы переводите ценности в дизайн-решения? На что опираетесь в первую очередь, а что остаётся вторичным? В центре внимания – вижен и большая идея, польза для других, этичность, метрики или что-то ещё? Можно раскрыть это на примере одного небольшого кейса: как подходили к задаче, что было главным и что намеренно оставляли за рамками.</p></div>
+                  <div class="m-qa-row__spacer" aria-hidden="true"></div>
+                </div>
+                <div class="m-qa-row">
+                  <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Гаврил Перов">ГП</span></div>
+                  <div class="m-qa-row__answer"><p>Важно всё – реально всё. Бизнесу важно, чтобы команды были эффективными и дизайн приносил деньги. Продукту важно, чтобы фичи улучшали метрики. Разработке важно быстро закрывать задачи и делать частые релизы.</p><p>А дизайнеру важно всё сразу: и как выглядит, и как работает. Это поверхностный уровень. На самом деле дизайнер влияет даже на отношения продукта с c-level: скорость и качество дизайнерских решений напрямую влияют на метрики, настроение команды, темп и продуктивность.</p><p>Тонких материй много. Иногда сам дизайн – вторичен. Первично – твоё понимание контекста: когда нужно быть быстрым, когда – проактивным, когда – генерить фичи, а когда – наоборот, уйти в концепты. Где нужно надавить, а где – отпустить. Возможностей влиять масса – сделать как хуже, так и лучше. Это намного больше, чем просто дизайн-макеты.</p></div>
+                  <div class="m-qa-row__spacer" aria-hidden="true"></div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="m-interview-section">
+              <div class="m-interview-section__body">
+                <div class="m-qa-row m-qa-row--question">
+                  <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+                  <div class="m-qa-row__answer"><p>В команде – что вы артикулируете как качество?</p></div>
+                  <div class="m-qa-row__spacer" aria-hidden="true"></div>
+                </div>
+                <div class="m-qa-row">
+                  <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Гаврил Перов">ГП</span></div>
+                  <div class="m-qa-row__answer"><p>Качество – максимально субъективно. У каждого в команде своя планка. И у любого качества есть градации.</p><p>Для меня качество – это когда мы выпустили решение, которое реально решило задачу (улучшило, исправило или изменило то, что требовалось), сделали это максимально быстро и при этом никто не пострадал по пути.</p><p>Я не вижу большого смысла в «идеальных» решениях, отполированных до последнего пикселя, на которые уходит десятки или сотни часов. Чаще всего это мало что даёт. Я выбираю скорость и количество проверенных гипотез.</p></div>
+                  <div class="m-qa-row__spacer" aria-hidden="true"></div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="m-interview-section">
+              <div class="m-interview-section__body">
+                <div class="m-qa-row m-qa-row--question">
+                  <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+                  <div class="m-qa-row__answer"><p>Крафт и технологии (AI) – видишь ли ты конфликт между этими понятиями или они усиливают друг друга?</p></div>
+                  <div class="m-qa-row__spacer" aria-hidden="true"></div>
+                </div>
+                <div class="m-qa-row">
+                  <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Гаврил Перов">ГП</span></div>
+                  <div class="m-qa-row__answer"><p>Если честно, я устал от того, как люди боятся, осуждают или сопротивляются AI. После появления компьютеров, интернета и мобильных телефонов – это самое важное, что с нами произошло.</p><p>Я вижу ноль негатива в AI, кроме самого названия «AI» – это не искусственный интеллект, а обученные модели. Они не мыслят, у них нет сознания. Просто термин «Machine Learning» видимо было бы сложнее продать массам.</p><p>AI убирает рутину, сокращает время на типовые задачи и делает жизнь проще. Значит, люди, которые работают головой, а не исключительно руками, будут в порядке. Художник, фотограф, дизайнер, разработчик, писатель – любой талантливый человек, который адаптируется, учится и остаётся актуальным, не потеряет ничего. Наоборот – выиграет.</p></div>
+                  <div class="m-qa-row__spacer" aria-hidden="true"></div>
+                </div>
+              </div>
+            </div>
+      
+            </div>
+      <div class="o-interview-footer">
+      
+      
+              <section class="m-article-info a-section">
+              <div class="m-article-info__col">
+                <h3 class="m-article-info__heading">Линки</h3>
+                <ul class="m-article-info__list">
+                  <li class="m-article-info__item"><a href="https://gavril.webflow.io" target="_blank" rel="noopener noreferrer">gavril.webflow.io</a></li>
+                  <li class="m-article-info__item"><a href="https://www.behance.net/gavrilperov" target="_blank" rel="noopener noreferrer">Behance</a></li>
+                  <li class="m-article-info__item"><a href="https://www.linkedin.com/in/gavrilperov" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                  <li class="m-article-info__item"><a href="https://dprofile.ru/gavril" target="_blank" rel="noopener noreferrer">Dprofile</a></li>
+                </ul>
+              </div>
+              <div class="m-article-info__col">
+                <h3 class="m-article-info__heading">О практике</h3>
+                <p class="m-article-info__bio">Гаврил Перов – дизайнер и арт-директор Drinkit.</p>
+              </div>
+            </section>
+      
+      
+      
+              <section class="m-next-article a-section">
+              <a class="m-next-article__circle a-arrow-button-xl" href="./artem-gerts.html" aria-label="Следующая статья"></a>
+              <p class="m-next-article__lead">Читать дальше</p>
+              <h3 class="m-next-article__heading">
+                <span class="m-next-article__author">Артём Герц</span>
+                <span class="m-next-article__title">Язык с нуля в айдентике: Redis, Nil Foundation и честность в решениях</span>
+              </h3>
+            </section>
+      
+      
+            </div>
     </main>
 
     <div class="a-sticky-scroll-wrap">
@@ -193,8 +187,8 @@
       </div>
     </div>
 
-    <footer class="footer s-footer">
-      <div class="footer-grid">
+    <footer class="s-footer">
+      <div class="s-footer__grid">
         <div>
           <h4>Смотрите</h4>
           <a href="../journal.html">Журнал</a>
@@ -219,8 +213,11 @@
           <a href="https://arkhipovau.xyz/">Юлия Архипова</a>
           <a href="https://t.me/dayglobal">Куратор – Захар День</a>
         </div>
+        <div class="s-footer__up">
+          <button class="a-arrow-button a-arrow-button--up" type="button" aria-label="Наверх"></button>
+        </div>
       </div>
-      <div class="footer-bottom">
+      <div class="s-footer__bottom">
         <span>© 2025 – 2026 deFindings</span>
         <span>HSE Art&amp;Design School</span>
       </div>
@@ -229,7 +226,7 @@
     <script defer src="../../udf/superorganisms/menu/menu-overlay.js"></script>
     <script defer src="../../udf/superorganisms/menu/s-menu.js"></script>
     <script defer src="../../udf/superorganisms/footer/s-footer.js"></script>
-    <script defer src="../../javascripts/sticky-scroll.js"></script>
-    <script defer src="../../javascripts/micro-animations.js"></script>
+    <script defer src="../../udf/atoms/sticky-scroll/a-sticky-scroll.js"></script>
+    <script defer src="../../udf/runtime/micro-animations.js"></script>
   </body>
 </html>

@@ -9,15 +9,15 @@ const HTML_DIR = path.join(ROOT, 'src/pages/interviews');
 
 function renderLinksUl(links) {
   if (!links.length) {
-    return '          <ul>\n              <li>–</li>\n          </ul>';
+    return '          <ul class="m-article-info__list">\n              <li class="m-article-info__item">–</li>\n          </ul>';
   }
   const items = links
     .map(
       (link) =>
-        `            <li><a href="${link.href}" target="_blank" rel="noopener noreferrer">${link.label}</a></li>`
+        `            <li class="m-article-info__item"><a href="${link.href}" target="_blank" rel="noopener noreferrer">${link.label}</a></li>`
     )
     .join('\n');
-  return `          <ul>\n${items}\n          </ul>`;
+  return `          <ul class="m-article-info__list">\n${items}\n          </ul>`;
 }
 
 function updateHtml(slug, links) {
@@ -25,11 +25,11 @@ function updateHtml(slug, links) {
   let html = fs.readFileSync(fp, 'utf8');
   const ulHtml = renderLinksUl(links);
   const linksBlockRe =
-    /<h3>Линки<\/h3>\s*<ul>[\s\S]*?<\/ul>(?:\s*<p class="m-article-info__disclaimer">[\s\S]*?<\/p>)?/;
+    /<h3 class="m-article-info__heading">Линки<\/h3>\s*<ul class="m-article-info__list">[\s\S]*?<\/ul>(?:\s*<p class="m-article-info__disclaimer">[\s\S]*?<\/p>)?/;
   if (!linksBlockRe.test(html)) {
     throw new Error(`Could not find links block in ${slug}.html`);
   }
-  const next = html.replace(linksBlockRe, `<h3>Линки</h3>\n${ulHtml}`);
+  const next = html.replace(linksBlockRe, `<h3 class="m-article-info__heading">Линки</h3>\n${ulHtml}`);
   if (next !== html) {
     fs.writeFileSync(fp, next);
   }

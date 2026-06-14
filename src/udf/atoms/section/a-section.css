@@ -1,0 +1,32 @@
+.a-section {
+  width: var(--grid-content-width);
+  margin: 0 auto;
+}
+
+.a-section--fixed {
+  width: var(--grid-content-width-locked);
+}
+
+.a-section--wide {
+  width: var(--grid-content-width-wide);
+}
+
+.a-section h2 {
+  font-weight: 400;
+  line-height: var(--type-h2-lh);
+  margin: 0;
+  font-size: var(--type-h2);
+}
+
+.a-section__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .a-section {
+    width: var(--grid-content-width);
+  }
+}

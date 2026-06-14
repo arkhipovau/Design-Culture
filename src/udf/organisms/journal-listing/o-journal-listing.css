@@ -1,0 +1,31 @@
+.o-journal-listing {
+  padding-bottom: 120px;
+}
+
+.o-journal-listing--page {
+  padding: 0 0 120px;
+}
+
+.o-journal-listing__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  row-gap: 80px;
+  column-gap: var(--grid-gutter);
+}
+
+.o-journal-listing--page .o-journal-listing__grid {
+  gap: 80px var(--grid-gutter);
+}
+
+@media (max-width: 1200px) {
+  .o-journal-listing__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .o-journal-listing__grid {
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+  }
+}

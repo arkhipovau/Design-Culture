@@ -3,74 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- deFindings favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="udf/quarks/branding/favicon-light.png" media="(prefers-color-scheme: light)" />
     <link rel="icon" type="image/png" sizes="32x32" href="udf/quarks/branding/favicon-dark.png" media="(prefers-color-scheme: dark)" />
     <link rel="icon" type="image/png" sizes="32x32" href="udf/quarks/branding/favicon-light.png" />
-    <!-- /deFindings favicons -->
     <title>deFindings – медиа о дизайн-культуре</title>
-    <link rel="stylesheet" href="./stylesheets/index.css" />
-    <link rel="stylesheet" href="./udf/tokens/colors.css" />
-    <link rel="stylesheet" href="./udf/tokens/typography.css" />
-    <link rel="stylesheet" href="./stylesheets/micro-animations.css" />
-    <link rel="stylesheet" href="./udf/quarks/findings/q-findings.css" />
-    <link rel="stylesheet" href="./udf/quarks/image-journal/q-image-journal.css" />
-    <link rel="stylesheet" href="./udf/atoms/arrow-buttons/a-arrow-buttons.css" />
-    <link rel="stylesheet" href="./udf/atoms/image-journal-link/a-image-journal-link.css" />
-    <link rel="stylesheet" href="./udf/atoms/button/a-button.css?v=20260522c" />
-    <link rel="stylesheet" href="./udf/atoms/sticky-scroll/a-sticky-scroll.css" />
-    <link rel="stylesheet" href="./udf/atoms/slider/a-slider.css" />
-    <link rel="stylesheet" href="./udf/atoms/mail-input/a-mail-input.css" />
-    <link rel="stylesheet" href="./udf/molecules/journal-card/m-journal-card.css" />
-    <link rel="stylesheet" href="./udf/molecules/mail-form/m-mail-form.css" />
-    <link rel="stylesheet" href="./udf/molecules/split-links/m-split-links.css?v=20260612b" />
-    <link rel="stylesheet" href="./udf/molecules/slider-controllers/m-slider-controllers.css" />
-    <link rel="stylesheet" href="./udf/superorganisms/menu/s-menu.css" />
-    <link rel="stylesheet" href="./udf/superorganisms/footer/s-footer.css" />
-    <!-- MailerLite Universal tracking – pairs with the m-mail-form POST in m-mail-form.js -->
+    <link rel="stylesheet" href="./stylesheets/index.css?v=20260531a" />
+    <link rel="stylesheet" href="./udf/bundles/shell.css" />
+    <link rel="stylesheet" href="./udf/bundles/home.css?v=20260531a" />
+    <link rel="stylesheet" href="./udf/runtime/micro-animations.css" />
     <script>
       (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[]).push(arguments);},l=d.createElement(e),l.async=1,l.src=u,n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})(window,document,"script","https://assets.mailerlite.com/js/universal.js","ml");
       ml("account", "2370552");
     </script>
-    <link rel="stylesheet" href="stylesheets/cookie-consent.css" />
-    <script defer src="javascripts/cookie-consent.js"></script>
+    <script defer src="udf/molecules/cookie-consent/m-cookie-consent.js"></script>
   </head>
-  <body data-reading-page="Медиа о дизайн-культуре deFindings">
+  <body class="o-site-shell" data-reading-page="Медиа о дизайн-культуре deFindings">
     <div class="q-findings-overlay" aria-hidden="true"></div>
-    <header class="topbar topbar--menu s-menu">
-      <a class="logo" href="#top" aria-label="deFindings">
-        <img class="logo-mark" src="./udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
-        <span class="visually-hidden">deFindings</span>
+    <header class="s-menu s-menu--ready">
+      <button class="s-menu__search" type="button" aria-label="Поиск" aria-expanded="false"></button>
+      <a class="s-menu__logo" href="#top" aria-label="deFindings">
+        <img class="s-menu__logo-mark" src="./udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
+        <span class="a-visually-hidden">deFindings</span>
       </a>
+    <button class="s-menu__toggle" type="button" aria-label="Открыть меню" aria-expanded="false"></button>
     </header>
 
     <main id="top">
-      <section class="hero-sphere" data-reading="Медиа о дизайн-культуре deFindings">
+      <section class="o-hero-sphere" data-reading="Медиа о дизайн-культуре deFindings">
         <iframe
-          class="sphere-frame"
+          class="o-hero-sphere__frame"
           src="./pages/sphere-embed.html?v=20260612d&sphereScale=0.8"
           title="Интерактивная сфера deFindings"
           loading="eager"
         ></iframe>
       </section>
 
-      <section class="hero-intro section" data-reading="Медиа о дизайн-культуре deFindings">
-        <div class="hero-copy">
-          <div class="hero-layout">
-            <div class="hero-under" aria-hidden="true">
-              <h1><span>deFindings&nbsp;–</span> <span>медиа</span><br class="hero-break-mobile" /> <span>о</span><span class="hero-pill-slot"></span><span>дизайн-культуре.</span></h1>
-              <p><span class="hero-tie"><span>Мы</span> <span>разговариваем</span></span> <span class="hero-tie"><span>с</span> <span>дизайнерами</span></span><span class="hero-pill-slot"></span><span class="hero-studios-line"><span class="hero-studios-desktop"><span class="hero-tie"><span>из</span> <span>студий,</span></span><br class="hero-break" /> <span class="hero-tie"><span>продуктовых</span> <span>команд</span></span></span><span class="hero-studios-mobile"><span class="hero-tie"><span>из</span> <span>студий,</span> <span>продуктовых</span></span><br class="hero-break-mobile" /> <span class="hero-tie"><span>команд</span></span></span></span> <span class="hero-tie"><span>и</span> <span>фриланса</span></span> <span class="hero-tie"><span>и</span> <span>показываем,</span></span><br class="hero-break" /><br class="hero-break-mobile" /> <span class="hero-tie"><span>как</span> <span>ценности</span></span><span class="hero-pill-slot"></span><span>трансформируются</span> <span class="hero-tie"><span>в</span> <span>решения.</span></span></p>
+      <section class="o-hero-intro a-section" data-reading="Медиа о дизайн-культуре deFindings">
+        <div class="o-hero-intro__copy">
+          <div class="o-hero-intro__layout">
+            <div class="o-hero-intro__under" aria-hidden="true">
+              <h1><span>deFindings&nbsp;–</span> <span>медиа</span><br class="o-hero-intro__break--mobile" /> <span>о</span><span class="o-hero-intro__pill-slot"></span><span>дизайн-культуре.</span></h1>
+              <p><span class="o-hero-intro__tie"><span>Мы</span> <span>разговариваем</span></span> <span class="o-hero-intro__tie"><span>с</span> <span>дизайнерами</span></span><span class="o-hero-intro__pill-slot"></span><span class="o-hero-intro__studios-line"><span class="o-hero-intro__studios--desktop"><span class="o-hero-intro__tie"><span>из</span> <span>студий,</span></span><br class="o-hero-intro__break" /> <span class="o-hero-intro__tie"><span>продуктовых</span> <span>команд</span></span></span><span class="o-hero-intro__studios--mobile"><span class="o-hero-intro__tie"><span>из</span> <span>студий,</span> <span>продуктовых</span></span><br class="o-hero-intro__break--mobile" /> <span class="o-hero-intro__tie"><span>команд</span></span></span></span> <span class="o-hero-intro__tie"><span>и</span> <span>фриланса</span></span> <span class="o-hero-intro__tie"><span>и</span> <span>показываем,</span></span><br class="o-hero-intro__break" /><br class="o-hero-intro__break--mobile" /> <span class="o-hero-intro__tie"><span>как</span> <span>ценности</span></span><span class="o-hero-intro__pill-slot"></span><span>трансформируются</span> <span class="o-hero-intro__tie"><span>в</span> <span>решения.</span></span></p>
             </div>
-            <div class="hero-over">
-              <h1><span class="hero-word">deFindings&nbsp;–</span> <span class="hero-word">медиа</span><br class="hero-break-mobile" /> <span class="hero-word">о</span><span class="hero-pill hero-pill-a"><span class="hero-pill-inner"><img src="./images/3.png" alt="" /></span></span><span class="hero-word">дизайн-культуре.</span></h1>
-              <p><span class="hero-tie"><span class="hero-word">Мы</span> <span class="hero-word">разговариваем</span></span> <span class="hero-tie"><span class="hero-word">с</span> <span class="hero-word">дизайнерами</span></span><span class="hero-pill hero-pill-b"><span class="hero-pill-inner"><img src="./images/1.png" alt="" /></span></span><span class="hero-studios-line"><span class="hero-studios-desktop"><span class="hero-tie"><span class="hero-word">из</span> <span class="hero-word">студий,</span></span><br class="hero-break" /> <span class="hero-tie"><span class="hero-word">продуктовых</span> <span class="hero-word">команд</span></span></span><span class="hero-studios-mobile"><span class="hero-tie"><span class="hero-word">из</span> <span class="hero-word">студий,</span> <span class="hero-word">продуктовых</span></span><br class="hero-break-mobile" /> <span class="hero-word">команд</span></span></span> <span class="hero-tie"><span class="hero-word">и</span> <span class="hero-word">фриланса</span></span> <span class="hero-tie"><span class="hero-word">и</span> <span class="hero-word">показываем,</span></span><br class="hero-break" /><br class="hero-break-mobile" /> <span class="hero-tie"><span class="hero-word">как</span> <span class="hero-word">ценности</span></span><span class="hero-pill hero-pill-c"><span class="hero-pill-inner"><img src="./images/2.png" alt="" /></span></span><span class="hero-word">трансформируются</span> <span class="hero-tie"><span class="hero-word">в</span> <span class="hero-word">решения.</span></span></p>
+            <div class="o-hero-intro__over">
+              <h1><span class="o-hero-intro__word">deFindings&nbsp;–</span> <span class="o-hero-intro__word">медиа</span><br class="o-hero-intro__break--mobile" /> <span class="o-hero-intro__word">о</span><span class="o-hero-intro__pill o-hero-intro__pill--a"><span class="o-hero-intro__pill-inner"><img src="./images/3.png" alt="" /></span></span><span class="o-hero-intro__word">дизайн-культуре.</span></h1>
+              <p><span class="o-hero-intro__tie"><span class="o-hero-intro__word">Мы</span> <span class="o-hero-intro__word">разговариваем</span></span> <span class="o-hero-intro__tie"><span class="o-hero-intro__word">с</span> <span class="o-hero-intro__word">дизайнерами</span></span><span class="o-hero-intro__pill o-hero-intro__pill--b"><span class="o-hero-intro__pill-inner"><img src="./images/1.png" alt="" /></span></span><span class="o-hero-intro__studios-line"><span class="o-hero-intro__studios--desktop"><span class="o-hero-intro__tie"><span class="o-hero-intro__word">из</span> <span class="o-hero-intro__word">студий,</span></span><br class="o-hero-intro__break" /> <span class="o-hero-intro__tie"><span class="o-hero-intro__word">продуктовых</span> <span class="o-hero-intro__word">команд</span></span></span><span class="o-hero-intro__studios--mobile"><span class="o-hero-intro__tie"><span class="o-hero-intro__word">из</span> <span class="o-hero-intro__word">студий,</span> <span class="o-hero-intro__word">продуктовых</span></span><br class="o-hero-intro__break--mobile" /> <span class="o-hero-intro__word">команд</span></span></span> <span class="o-hero-intro__tie"><span class="o-hero-intro__word">и</span> <span class="o-hero-intro__word">фриланса</span></span> <span class="o-hero-intro__tie"><span class="o-hero-intro__word">и</span> <span class="o-hero-intro__word">показываем,</span></span><br class="o-hero-intro__break" /><br class="o-hero-intro__break--mobile" /> <span class="o-hero-intro__tie"><span class="o-hero-intro__word">как</span> <span class="o-hero-intro__word">ценности</span></span><span class="o-hero-intro__pill o-hero-intro__pill o-hero-intro__pill--c"><span class="o-hero-intro__pill-inner"><img src="./images/2.png" alt="" /></span></span><span class="o-hero-intro__word">трансформируются</span> <span class="o-hero-intro__tie"><span class="o-hero-intro__word">в</span> <span class="o-hero-intro__word">решения.</span></span></p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="journal" class="section interviews" data-reading="Журнал deFindings">
-        <div class="cards-grid">
+      <section id="journal" class="o-journal-listing a-section" data-reading="Журнал deFindings">
+        <div class="o-journal-listing__grid">
           <article class="m-journal-card" data-href="./pages/interviews/aleksey-pyankov.html">
             <a class="a-image-journal-link a-image-journal-link--m" href="./pages/interviews/aleksey-pyankov.html">
               <img class="q-image-journal" src="./images/Алексей Пьянков.jpg" alt="Алексей Пьянков" loading="eager" fetchpriority="high" decoding="async" />
@@ -163,15 +147,15 @@
         </div>
       </section>
 
-      <section id="issue" class="section issue" data-reading="Выпуск deFindings №1">
-        <div class="issue-gallery">
+      <section id="issue" class="a-section o-home-issue" data-reading="Выпуск deFindings №1">
+        <div class="o-home-issue__gallery">
           <img src="./images/A_ImagesBook 1.png" alt="Выпуск deFindings – разворот 1" />
           <img src="./images/A_ImagesBook 2.png" alt="Выпуск deFindings – разворот 2" />
           <img src="./images/Q_ImageBook 3.png" alt="Выпуск deFindings – разворот 3" />
         </div>
-        <div class="issue-copy">
+        <div class="o-home-issue__copy">
           <h2>Выпуск deFindings Nº1.</h2>
-          <p class="lead">Интервью и работы – в одном выпуске.</p>
+          <p class="o-home-issue__lead">Интервью и работы – в одном выпуске.</p>
           <p>
             Печатный сборник о дизайн-культуре: выбранные интервью, краткие выжимки и галерея
             работ респондентов. Первый печатный выпуск был сделан в конце 2025 в рамках визуального
@@ -182,34 +166,34 @@
         </div>
       </section>
 
-      <section class="section highlights" data-reading="Интервью и практики" hidden>
+      <section class="a-section o-home-highlights" data-reading="Интервью и практики" hidden>
         <h2>Мы поговорили о дизайн-культуре 1505 минут.</h2>
-        <p>В Журнале вы можете найти все интервью.</p>
-        <div class="highlights-stage">
-          <button class="slider-arrow a-arrow-button a-arrow-button--left" type="button" aria-label="Предыдущий слайд"></button>
-          <div class="highlight-row">
-            <article class="highlight" style="background-image:url('./images/324b9db98c5f779e2f2c.jpg')">
+        <p class="o-home-highlights__intro">В Журнале вы можете найти все интервью.</p>
+        <div class="o-home-highlights__stage">
+          <button class="o-home-highlights__arrow a-arrow-button a-arrow-button--left" type="button" aria-label="Предыдущий слайд"></button>
+          <div class="o-home-highlights__row">
+            <article class="o-home-highlights__card" style="background-image:url('./images/324b9db98c5f779e2f2c.jpg')">
               <span>Together with you</span>
               <strong>Марина Кондратенко</strong>
             </article>
-            <article class="highlight" style="background-image:url('./images/5797605502626eb5eaa3.jpg')">
+            <article class="o-home-highlights__card" style="background-image:url('./images/5797605502626eb5eaa3.jpg')">
               <span>Together with you</span>
               <strong>Артём Тарасов и Артём Тарадаш</strong>
             </article>
-            <article class="highlight" style="background-image:url('./images/1d0536b32e76aa8ad169.webp')">
+            <article class="o-home-highlights__card" style="background-image:url('./images/1d0536b32e76aa8ad169.webp')">
               <span>Together with you</span>
               <strong>Полина Загуменова</strong>
             </article>
           </div>
-          <button class="slider-arrow a-arrow-button a-arrow-button--right" type="button" aria-label="Следующий слайд"></button>
+          <button class="o-home-highlights__arrow a-arrow-button a-arrow-button--right" type="button" aria-label="Следующий слайд"></button>
         </div>
-        <div class="slider-indicator a-slider" data-auto data-total="9" data-active="4" aria-label="Индикатор слайдера"></div>
+        <div class="o-home-highlights__indicator a-slider" data-auto data-total="9" data-active="4" aria-label="Индикатор слайдера"></div>
       </section>
 
-      <section id="gallery" class="section gallery" data-reading="Галерея deFindings" hidden>
+      <section id="gallery" class="a-section o-home-gallery-preview" data-reading="Галерея deFindings" hidden>
         <h2>И собрали 2939 дизайнов, за которыми стоят идеи.</h2>
-        <p>В Галерее вы можете найти избранные работы.</p>
-        <div class="gallery-strip">
+        <p class="o-home-gallery-preview__intro">В Галерее вы можете найти избранные работы.</p>
+        <div class="o-home-gallery-preview__strip">
           <img src="./images/c25d1847bc1ef5479f62.webp" alt="Галерея 1" />
           <img src="./images/0237d06fef5459819fb4.webp" alt="Галерея 2" />
           <img src="./images/ca62f442cf615b875906.webp" alt="Галерея 3" />
@@ -220,7 +204,7 @@
         </div>
       </section>
 
-      <section class="section m-split-links m-split-links--after-issue" data-reading="Журнал и Галерея">
+      <section class="a-section m-split-links m-split-links--after-issue" data-reading="Журнал и Галерея">
         <a class="m-split-card m-split-card--journal" href="./pages/journal.html">
           <h3>Журнал</h3>
           <p>В Журнале вы можете читать диалоги с дизайнерами.</p>
@@ -233,14 +217,14 @@
         </a>
       </section>
 
-      <section id="newsletter" class="section newsletter" data-reading="Рассылка deFindings">
+      <section id="newsletter" class="a-section o-home-newsletter" data-reading="Рассылка deFindings">
         <h2>Ежемесячная рассылка deFindings о людях, процессах и вещах, которые делают дизайн осмысленным.</h2>
-        <div class="newsletter-subscribe">
-          <p>Подписаться на рассылку</p>
-          <form class="newsletter-form m-mail-form" data-state="default" data-privacy-url="./pages/privacy.html" action="#" method="post" novalidate>
+        <div class="o-home-newsletter__subscribe">
+          <p class="o-home-newsletter__label">Подписаться на рассылку</p>
+          <form class="m-mail-form" data-state="default" data-privacy-url="./pages/privacy.html" action="#" method="post" novalidate>
             <div class="m-mail-form__lead">
               <span class="m-mail-form__dot" aria-hidden="true"></span>
-              <label for="newsletter-email-home" class="visually-hidden">Ваш email</label>
+              <label for="newsletter-email-home" class="a-visually-hidden">Ваш email</label>
               <input
                 class="a-mail-input"
                 data-state="default"
@@ -271,8 +255,8 @@
       </div>
     </div>
 
-    <footer class="footer s-footer">
-      <div class="footer-grid">
+    <footer class="s-footer">
+      <div class="s-footer__grid">
         <div>
           <h4>Смотрите</h4>
           <a href="./pages/journal.html">Журнал</a>
@@ -297,8 +281,11 @@
           <a href="https://arkhipovau.xyz/">Юлия Архипова</a>
           <a href="https://t.me/dayglobal">Куратор – Захар День</a>
         </div>
+        <div class="s-footer__up">
+          <button class="a-arrow-button a-arrow-button--up" type="button" aria-label="Наверх"></button>
+        </div>
       </div>
-      <div class="footer-bottom">
+      <div class="s-footer__bottom">
         <span>© 2025 – 2026 deFindings</span>
         <span>HSE Art&Design School</span>
       </div>
@@ -309,9 +296,9 @@
     <script defer src="./udf/superorganisms/menu/menu-overlay.js"></script>
     <script defer src="./udf/superorganisms/menu/s-menu.js"></script>
     <script defer src="./udf/superorganisms/footer/s-footer.js"></script>
-    <script defer src="./javascripts/sticky-scroll.js"></script>
-    <script defer src="./javascripts/micro-animations.js"></script>
-    <script defer src="./javascripts/card-reveal.js"></script>
+    <script defer src="./udf/atoms/sticky-scroll/a-sticky-scroll.js"></script>
+    <script defer src="./udf/runtime/micro-animations.js"></script>
+    <script defer src="./udf/molecules/card-reveal/m-card-reveal.js"></script>
     <script defer src="./udf/molecules/split-links/m-split-links.js"></script>
   </body>
 </html>

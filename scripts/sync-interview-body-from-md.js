@@ -465,7 +465,7 @@ function syncHtmlFromMd(html, turns, quotes) {
 }
 
 function extractHeroAndLede(html) {
-  const hero = html.match(/<h1 class="interview-hero__title">[\s\S]*?<\/h1>/);
+  const hero = html.match(/<h1 class="o-interview-hero__title">[\s\S]*?<\/h1>/);
   const lede = html.match(/<p class="lede">[\s\S]*?<\/p>/);
   return { hero: hero?.[0] ?? '', lede: lede?.[0] ?? '' };
 }

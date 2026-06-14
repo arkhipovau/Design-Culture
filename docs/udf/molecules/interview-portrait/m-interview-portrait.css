@@ -1,0 +1,51 @@
+.m-interview-portrait {
+  margin: 32px auto 0;
+  padding: 0;
+  width: 200px;
+  max-width: 200px;
+  flex: 0 0 auto;
+}
+
+.o-interview-page .o-interview-hero .m-interview-portrait img {
+  width: 200px;
+  max-width: 200px;
+  height: 267px;
+  max-height: 267px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  background: var(--color-coloring-grey);
+}
+
+.m-interview-portrait--placeholder .m-interview-portrait__image {
+  width: 200px;
+  height: 267px;
+  margin: 0 auto;
+  background: var(--color-light-grey);
+  border: 1px dashed var(--color-dark-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.m-interview-portrait--placeholder .m-interview-portrait__image::before {
+  content: attr(data-placeholder-label);
+  font-size: var(--type-button-s);
+  line-height: var(--type-button-s-lh);
+  color: var(--color-dark-grey);
+}
+
+@media (max-width: 767px) {
+  .m-interview-portrait {
+    width: 160px;
+  }
+
+  .m-interview-portrait img,
+  .m-interview-portrait--placeholder .m-interview-portrait__image {
+    width: 160px;
+    height: 213px;
+  }
+}

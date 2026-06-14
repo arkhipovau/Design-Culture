@@ -1,7 +1,3 @@
-/**
- * m-split-links: decorative .a-button inside .m-split-card (pointer-events: none).
- * Toggle is-hover / is-pressed on the card so button styles in m-split-links.css apply.
- */
 (() => {
   document.querySelectorAll('.m-split-card').forEach((card) => {
     if (card.dataset.splitLinksBound === '1') return;

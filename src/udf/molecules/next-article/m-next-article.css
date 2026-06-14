@@ -11,7 +11,7 @@
   font-size: 0;
 }
 
-.m-next-article p {
+.m-next-article__lead {
   margin: 0;
   width: min(664px, 100%);
   text-align: center;
@@ -19,7 +19,7 @@
   color: var(--color-dark-grey);
 }
 
-.m-next-article h3 {
+.m-next-article__heading {
   margin: 0;
   width: min(664px, 100%);
   text-align: center;

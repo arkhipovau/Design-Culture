@@ -3,61 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- deFindings favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="../udf/quarks/branding/favicon-light.png" media="(prefers-color-scheme: light)" />
     <link rel="icon" type="image/png" sizes="32x32" href="../udf/quarks/branding/favicon-dark.png" media="(prefers-color-scheme: dark)" />
     <link rel="icon" type="image/png" sizes="32x32" href="../udf/quarks/branding/favicon-light.png" />
-    <!-- /deFindings favicons -->
     <title>Галерея – deFindings</title>
     <link rel="stylesheet" href="../stylesheets/index.css" />
-    <link rel="stylesheet" href="../udf/tokens/colors.css" />
-    <link rel="stylesheet" href="../udf/tokens/typography.css" />
-    <link rel="stylesheet" href="../udf/atoms/arrow-buttons/a-arrow-buttons.css" />
-    <link rel="stylesheet" href="../udf/atoms/button/a-button.css?v=20260522c" />
-    <link rel="stylesheet" href="../udf/atoms/sticky-scroll/a-sticky-scroll.css" />
-    <link rel="stylesheet" href="../udf/atoms/slider/a-slider.css" />
-    <link rel="stylesheet" href="../udf/molecules/page-hero/m-page-hero.css" />
-    <link rel="stylesheet" href="../udf/molecules/gallery-card/m-gallery-card.css" />
-    <link rel="stylesheet" href="../udf/molecules/split-links/m-split-links.css?v=20260612b" />
-    <link rel="stylesheet" href="./gallery.css" />
-    <link rel="stylesheet" href="../udf/superorganisms/gallery-lightbox/s-gallery-lightbox.css" />
-    <link rel="stylesheet" href="../stylesheets/micro-animations.css" />
-    <link rel="stylesheet" href="../udf/superorganisms/menu/s-menu.css" />
-    <link rel="stylesheet" href="../udf/superorganisms/footer/s-footer.css" />
-    <link rel="stylesheet" href="../udf/quarks/findings/q-findings.css" />
-    <link rel="stylesheet" href="../stylesheets/cookie-consent.css" />
-    <script defer src="../javascripts/cookie-consent.js"></script>
+    <link rel="stylesheet" href="../udf/bundles/shell.css" />
+    <link rel="stylesheet" href="../udf/bundles/gallery.css?v=20260531a" />
+    <link rel="stylesheet" href="../udf/runtime/micro-animations.css" />
+    <script defer src="../udf/molecules/cookie-consent/m-cookie-consent.js"></script>
   </head>
-  <body data-reading-page="Галерея deFindings">
+  <body class="o-site-shell" data-reading-page="Галерея deFindings">
     <div class="q-findings-overlay" aria-hidden="true"></div>
-    <header class="topbar topbar--menu s-menu gallery-topbar">
-      <a class="logo" href="../index.html" aria-label="deFindings">
-        <img class="logo-mark" src="../udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
-        <span class="visually-hidden">deFindings</span>
+    <header class="s-menu s-menu--ready">
+      <button class="s-menu__search" type="button" aria-label="Поиск" aria-expanded="false"></button>
+      <a class="s-menu__logo" href="../index.html" aria-label="deFindings">
+        <img class="s-menu__logo-mark" src="../udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
+        <span class="a-visually-hidden">deFindings</span>
       </a>
+    <button class="s-menu__toggle" type="button" aria-label="Открыть меню" aria-expanded="false"></button>
     </header>
 
-    <main class="gallery-page">
-      <section class="gallery-hero section">
-        <h1>Галерея</h1>
-        <div class="view-switch" role="tablist" aria-label="Режим просмотра">
-          <button id="tableBtn" class="switch-btn is-active" type="button" role="tab" aria-selected="true">
-            <img class="switch-icon" src="../udf/quarks/icons/q-icon-table-16-black.svg" alt="" aria-hidden="true" />
+    <main class="o-gallery-page">
+      <section class="m-page-hero m-page-hero--gallery a-section">
+        <h1 class="m-page-hero__title">Галерея</h1>
+        <div class="m-view-switch" role="tablist" aria-label="Режим просмотра">
+          <button id="tableBtn" class="m-view-switch__btn is-active" type="button" role="tab" aria-selected="true">
+            <img class="m-view-switch__icon" src="../udf/quarks/icons/q-icon-table-16-black.svg" alt="" aria-hidden="true" />
             Таблица
           </button>
-          <button id="sliderBtn" class="switch-btn" type="button" role="tab" aria-selected="false">
-            <img class="switch-icon" src="../udf/quarks/icons/q-icon-slider-16-black.svg" alt="" aria-hidden="true" />
+          <button id="sliderBtn" class="m-view-switch__btn" type="button" role="tab" aria-selected="false">
+            <img class="m-view-switch__icon" src="../udf/quarks/icons/q-icon-slider-16-black.svg" alt="" aria-hidden="true" />
             Слайдер
           </button>
         </div>
       </section>
 
-      <section class="section">
-        <div id="tableView" class="gallery-grid"></div>
-        <div id="sliderView" class="gallery-slider" hidden></div>
+      <section class="o-gallery-listing a-section">
+        <div id="tableView" class="o-gallery-listing__grid"></div>
       </section>
 
-      <section class="section m-split-links">
+      <section class="a-section m-split-links">
         <a class="m-split-card m-split-card--journal" href="./journal.html">
           <h3>Журнал</h3>
           <p>В Журнале вы можете читать диалоги с дизайнерами.</p>
@@ -66,7 +52,7 @@
         <a class="m-split-card m-split-card--issue" href="https://www.calameo.com/read/008119339762d3db33f24?authid=pJV9q2gR5n3i">
           <img class="m-split-card__image" src="../images/A_ImagesBook 1.png" alt="Выпуск deFindings №1" />
           <h3>Выпуск deFindings Nº1.</h3>
-          <span class="a-button a-button--m a-button--white" aria-hidden="true">Пролистать</span>
+          <span class="a-button a-button--m a-button--white" aria-hidden="true">Полистать</span>
         </a>
       </section>
 
@@ -107,8 +93,8 @@
       </div>
     </div>
 
-    <footer class="footer s-footer">
-      <div class="footer-grid">
+    <footer class="s-footer">
+      <div class="s-footer__grid">
         <div>
           <h4>Смотрите</h4>
           <a href="./journal.html">Журнал</a>
@@ -133,8 +119,11 @@
           <a href="https://arkhipovau.xyz/">Юлия Архипова</a>
           <a href="https://t.me/dayglobal">Куратор – Захар День</a>
         </div>
+        <div class="s-footer__up">
+          <button class="a-arrow-button a-arrow-button--up" type="button" aria-label="Наверх"></button>
+        </div>
       </div>
-      <div class="footer-bottom">
+      <div class="s-footer__bottom">
         <span>© 2025 – 2026 deFindings</span>
         <span>HSE Art&Design School</span>
       </div>
@@ -145,9 +134,9 @@
     <script defer src="../udf/superorganisms/menu/menu-overlay.js"></script>
     <script defer src="../udf/superorganisms/menu/s-menu.js"></script>
     <script defer src="../udf/superorganisms/footer/s-footer.js"></script>
-    <script defer src="../javascripts/sticky-scroll.js"></script>
-    <script defer src="../javascripts/micro-animations.js"></script>
-    <script defer src="../javascripts/card-reveal.js"></script>
+    <script defer src="../udf/atoms/sticky-scroll/a-sticky-scroll.js"></script>
+    <script defer src="../udf/runtime/micro-animations.js"></script>
+    <script defer src="../udf/molecules/card-reveal/m-card-reveal.js"></script>
     <script defer src="../udf/molecules/split-links/m-split-links.js"></script>
   </body>
 </html>

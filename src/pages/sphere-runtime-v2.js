@@ -62,9 +62,7 @@ function notifyParentReady() {
   if (!isEmbedded || window.parent === window) return;
   try {
     window.parent.postMessage({ type: 'sphere-ready' }, '*');
-  } catch (_) {
-    /* ignore */
-  }
+  } catch (_) {}
 }
 
 const searchParams = new URLSearchParams(window.location.search);

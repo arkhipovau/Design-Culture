@@ -55,8 +55,8 @@
   background-image: url("./q-findings-dot-2-coloring-grey.svg");
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1199px) {
   .q-findings-overlay {
-    display: none;
+    background-size: calc((100% - 2px) / 4) 225px;
   }
 }

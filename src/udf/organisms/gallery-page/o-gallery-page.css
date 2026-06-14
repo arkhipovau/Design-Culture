@@ -1,0 +1,9 @@
+.o-gallery-page {
+  padding-top: 200px;
+}
+
+@media (max-width: 768px) {
+  .o-gallery-page {
+    padding-top: 140px;
+  }
+}

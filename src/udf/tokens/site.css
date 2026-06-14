@@ -1,0 +1,11 @@
+:root {
+  --bg: var(--color-light-grey);
+  --paper: var(--color-coloring-grey);
+  --ink: var(--color-black);
+  --muted: var(--color-dark-grey);
+  --line: var(--color-animated-text);
+  --pill: var(--color-elements-72);
+  --radius: 18px;
+  --pill-shadow: 0 -5px 15px rgba(0, 0, 0, 0.04), 0 12px 38px rgba(0, 0, 0, 0.04),
+    0 5px 46px rgba(0, 0, 0, 0.04), 0 5px 15px rgba(0, 0, 0, 0.04);
+}

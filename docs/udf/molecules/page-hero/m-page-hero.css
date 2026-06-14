@@ -1,10 +1,4 @@
-.journal-page,
-.gallery-page {
-  padding-top: 200px;
-}
-
-.journal-hero,
-.gallery-hero {
+.m-page-hero {
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -12,8 +6,7 @@
   padding-bottom: 12px;
 }
 
-.journal-hero h1,
-.gallery-hero h1 {
+.m-page-hero__title {
   margin: 0;
   font-weight: 400;
   font-size: clamp(36px, 8vw, 80px);
@@ -21,18 +14,12 @@
   text-align: center;
 }
 
-.gallery-hero h1 {
+.m-page-hero--gallery .m-page-hero__title {
   font-size: clamp(36px, 7.8vw, 80px);
 }
 
 @media (max-width: 768px) {
-  .journal-page,
-  .gallery-page {
-    padding-top: 140px;
-  }
-
-  .journal-hero,
-  .gallery-hero {
+  .m-page-hero {
     gap: 100px;
   }
 }

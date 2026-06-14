@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../udf/quarks/branding/favicon-light.png" media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../udf/quarks/branding/favicon-dark.png" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../udf/quarks/branding/favicon-light.png" />
+    <title>{{TITLE}} – deFindings</title>
+    <link rel="stylesheet" href="../../stylesheets/index.css" />
+    <link rel="stylesheet" href="../../udf/bundles/shell.css" />
+    <link rel="stylesheet" href="../../udf/bundles/interview.css?v=20260601a" />
+    <link rel="stylesheet" href="../../udf/runtime/micro-animations.css" />
+    <script defer src="../../udf/molecules/cookie-consent/m-cookie-consent.js"></script>
+  </head>
+  <body class="o-site-shell" data-reading-page="{{READING_PAGE}}">
+    <div class="q-findings-overlay" aria-hidden="true"></div>
+    <header class="s-menu s-menu--ready s-menu--article">
+      <button class="s-menu__search" type="button" aria-label="Поиск" aria-expanded="false"></button>
+      <a class="s-menu__logo" href="../../index.html" aria-label="deFindings">
+        <img class="s-menu__logo-mark" src="../../udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
+        <span class="a-visually-hidden">deFindings</span>
+      </a>
+      <button class="s-menu__toggle" type="button" aria-label="Открыть меню" aria-expanded="false"></button>
+    </header>
+
+    <main class="o-interview-page">
+{{HERO}}
+{{BODY}}
+{{FOOTER}}
+    </main>
+
+    <div class="a-sticky-scroll-wrap">
+      <div class="a-sticky-scroll">
+        <span class="a-sticky-scroll__rec" aria-hidden="true"></span>
+        <span class="a-sticky-scroll__content">
+          <span class="a-sticky-scroll__dot" aria-hidden="true"></span>
+          <span class="a-sticky-scroll__text">
+            <span class="a-sticky-scroll__prefix">Вы читаете</span>
+            <span class="a-sticky-scroll__current">«{{STICKY_NAME}}»</span>
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <footer class="s-footer">
+      <div class="s-footer__grid">
+        <div>
+          <h4>Смотрите</h4>
+          <a href="../journal.html">Журнал</a>
+          <a href="../gallery.html">Галерея</a>
+        </div>
+        <div>
+          <h4>Узнайте больше</h4>
+          <a href="../about.html">О проекте</a>
+          <a href="../privacy.html">Политика конфиденциальности</a>
+        </div>
+        <div>
+          <h4>Подписывайтесь</h4>
+          <a href="../newsletter.html">Рассылка</a>
+        </div>
+        <div>
+          <h4>Другие медиумы</h4>
+          <a href="https://t.me/defindings">Telegram</a>
+          <a href="https://www.linkedin.com/in/arkhipovau/">LinkedIn</a>
+        </div>
+        <div>
+          <h4>Реализация проекта</h4>
+          <a href="https://arkhipovau.xyz/">Юлия Архипова</a>
+          <a href="https://t.me/dayglobal">Куратор – Захар День</a>
+        </div>
+        <div class="s-footer__up">
+          <button class="a-arrow-button a-arrow-button--up" type="button" aria-label="Наверх"></button>
+        </div>
+      </div>
+      <div class="s-footer__bottom">
+        <span>© 2025 – 2026 deFindings</span>
+        <span>HSE Art&amp;Design School</span>
+      </div>
+    </footer>
+
+    <script defer src="../../udf/superorganisms/menu/menu-overlay.js"></script>
+    <script defer src="../../udf/superorganisms/menu/s-menu.js"></script>
+    <script defer src="../../udf/superorganisms/footer/s-footer.js"></script>
+    <script defer src="../../udf/atoms/sticky-scroll/a-sticky-scroll.js"></script>
+    <script defer src="../../udf/runtime/micro-animations.js"></script>
+  </body>
+</html>

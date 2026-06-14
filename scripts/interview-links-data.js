@@ -104,7 +104,10 @@ const INTERVIEW_LINKS = {
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/n1kipetrov' },
     { label: 'Medium', href: 'https://medium.com/@n1kipetrov' },
   ],
-  'maxim-aksenov': [],
+  'maxim-aksenov': [
+    { label: 'Behance', href: 'https://www.behance.net/aksenovmaxim' },
+    { label: 'Instagram', href: 'https://www.instagram.com/saint.maxim' },
+  ],
 };
 
 module.exports = { INTERVIEW_LINKS };

@@ -1,17 +1,31 @@
 .m-interview-section {
-  width: min(886px, 100%);
+  width: var(--interview-text-width, min(886px, 100%));
   display: flex;
   flex-direction: column;
-  gap: 120px;
+  gap: var(--interview-block-gap, 120px);
   scroll-margin-top: 80px;
+  overflow: visible;
 }
 
-.m-interview-section__heading {
-  margin: 0;
-  font-weight: 400;
-  font-size: var(--type-h3);
-  line-height: var(--type-h3-lh);
-  color: var(--color-black);
+/* In-section photos aligned with Q&A text */
+.m-interview-section > .m-photo-row:not(.m-photo-row--three):not(.m-photo-row--four),
+.m-interview-section__body > .m-photo-row:not(.m-photo-row--three):not(.m-photo-row--four),
+.m-interview-section > .m-photo-slot.m-photo-slot--wide:not(.m-photo-slot--compact),
+.m-interview-section__body > .m-photo-slot.m-photo-slot--wide:not(.m-photo-slot--compact) {
+  width: 100%;
+  align-self: stretch;
+}
+
+/* Gallery rows inside sections: at least text width, up to 1108px, centered */
+.m-interview-section > .m-photo-row.m-photo-row--three,
+.m-interview-section > .m-photo-row.m-photo-row--four,
+.m-interview-section__body > .m-photo-row.m-photo-row--three,
+.m-interview-section__body > .m-photo-row.m-photo-row--four {
+  width: var(--interview-gallery-width, min(1108px, var(--grid-content-width)));
+  min-width: 100%;
+  max-width: none;
+  flex-shrink: 0;
+  align-self: center;
 }
 
 .m-interview-section__body {
@@ -20,14 +34,9 @@
   gap: 32px;
 }
 
-@media (max-width: 1200px) {
-  .m-interview-section {
-    gap: 24px;
-  }
-}
-
-@media (max-width: 767px) {
-  .m-interview-section {
-    gap: 16px;
-  }
+.m-interview-section__prose {
+  margin: 0;
+  font-size: var(--type-body-xl);
+  line-height: var(--type-body-xl-lh);
+  color: var(--color-black);
 }

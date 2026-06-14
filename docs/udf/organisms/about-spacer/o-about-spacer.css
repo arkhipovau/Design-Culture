@@ -1,0 +1,15 @@
+.o-about-spacer {
+  height: 220px;
+}
+
+@media (max-width: 1200px) {
+  .o-about-spacer {
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .o-about-spacer {
+    height: 140px;
+  }
+}

@@ -18,17 +18,17 @@
   color: var(--color-black);
 }
 
-.interview-body .m-quote-block {
+.o-interview-body .m-quote-block {
   width: min(886px, 100%);
   margin: 0;
-  padding: 32px 0 0;
+  padding: 32px 0;
   display: flex;
   flex-direction: column;
   gap: 32px;
   border-top: 1px solid var(--color-black);
 }
 
-.interview-body .m-quote-block p {
+.o-interview-body .m-quote-block p {
   margin: 0;
   font-size: clamp(24px, 4vw, 36px);
   line-height: 1.15;
@@ -43,8 +43,8 @@
 }
 
 @media (max-width: 767px) {
-  .interview-body .m-quote-block {
-    padding-top: 28px;
+  .o-interview-body .m-quote-block {
+    padding-block: 28px;
     gap: 16px;
   }
 }

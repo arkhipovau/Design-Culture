@@ -25,32 +25,35 @@
   }
 
   function ensureMetaDisclaimer(footer) {
-    if (footer.querySelector('.footer-meta-disclaimer')) return;
+    if (footer.querySelector('.s-footer__disclaimer')) return;
 
     const note = document.createElement('p');
-    note.className = 'footer-meta-disclaimer';
+    note.className = 's-footer__disclaimer';
     note.textContent = META_DISCLAIMER;
     footer.appendChild(note);
   }
 
   function enhanceFooter() {
-    document.querySelectorAll('.footer').forEach((footer) => {
-      footer.classList.add('s-footer');
-
-      const grid = footer.querySelector('.footer-grid');
+    document.querySelectorAll('.s-footer').forEach((footer) => {
+      const grid = footer.querySelector('.s-footer__grid');
       if (!grid) return;
 
-      if (!grid.querySelector('.footer-up')) {
+      if (!grid.querySelector('.s-footer__up')) {
         const up = document.createElement('div');
-        up.className = 'footer-up';
-        up.innerHTML = '<button class="a-arrow-button a-arrow-button--up" type="button" aria-label="Наверх"></button>';
+        up.className = 's-footer__up';
         grid.appendChild(up);
       }
+
+      grid.querySelectorAll('.s-footer__up').forEach((up) => {
+        if (up.querySelector('.a-arrow-button--up')) return;
+        up.innerHTML =
+          '<button class="a-arrow-button a-arrow-button--up" type="button" aria-label="Наверх"></button>';
+      });
 
       ensureMetaDisclaimer(footer);
     });
 
-    document.querySelectorAll('.footer .footer-up .a-arrow-button--up').forEach((btn) => {
+    document.querySelectorAll('.s-footer .s-footer__up .a-arrow-button--up').forEach((btn) => {
       if (btn.dataset.bound === '1') return;
       btn.dataset.bound = '1';
       btn.addEventListener('click', () => {

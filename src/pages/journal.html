@@ -3,49 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- deFindings favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="../udf/quarks/branding/favicon-light.png" media="(prefers-color-scheme: light)" />
     <link rel="icon" type="image/png" sizes="32x32" href="../udf/quarks/branding/favicon-dark.png" media="(prefers-color-scheme: dark)" />
     <link rel="icon" type="image/png" sizes="32x32" href="../udf/quarks/branding/favicon-light.png" />
-    <!-- /deFindings favicons -->
     <title>Журнал – deFindings</title>
     <link rel="stylesheet" href="../stylesheets/index.css" />
-    <link rel="stylesheet" href="../udf/tokens/colors.css" />
-    <link rel="stylesheet" href="../udf/tokens/typography.css" />
-    <link rel="stylesheet" href="../udf/quarks/image-journal/q-image-journal.css" />
-    <link rel="stylesheet" href="../udf/atoms/sticky-scroll/a-sticky-scroll.css" />
-    <link rel="stylesheet" href="../udf/atoms/image-journal-link/a-image-journal-link.css" />
-    <link rel="stylesheet" href="../udf/atoms/button/a-button.css?v=20260522c" />
-    <link rel="stylesheet" href="../udf/molecules/page-hero/m-page-hero.css" />
-    <link rel="stylesheet" href="../udf/molecules/journal-card/m-journal-card.css" />
-    <link rel="stylesheet" href="../udf/molecules/split-links/m-split-links.css?v=20260612b" />
-    <link rel="stylesheet" href="../udf/atoms/filter/a-filter.css" />
-    <link rel="stylesheet" href="../udf/atoms/tag/a-tag.css" />
-    <link rel="stylesheet" href="./journal.css" />
-    <link rel="stylesheet" href="../udf/atoms/arrow-buttons/a-arrow-buttons.css" />
-    <link rel="stylesheet" href="../stylesheets/micro-animations.css" />
-    <link rel="stylesheet" href="../udf/superorganisms/menu/s-menu.css" />
-    <link rel="stylesheet" href="../udf/superorganisms/footer/s-footer.css" />
-    <link rel="stylesheet" href="../udf/quarks/findings/q-findings.css" />
-    <link rel="stylesheet" href="../stylesheets/cookie-consent.css" />
-    <script defer src="../javascripts/cookie-consent.js"></script>
+    <link rel="stylesheet" href="../udf/bundles/shell.css" />
+    <link rel="stylesheet" href="../udf/bundles/journal.css?v=20260531a" />
+    <link rel="stylesheet" href="../udf/runtime/micro-animations.css" />
+    <script defer src="../udf/molecules/cookie-consent/m-cookie-consent.js"></script>
   </head>
-  <body data-reading-page="Журнал deFindings">
+  <body class="o-site-shell" data-reading-page="Журнал deFindings">
     <div class="q-findings-overlay" aria-hidden="true"></div>
-    <header class="topbar topbar--menu s-menu journal-topbar">
-      <a class="logo" href="../index.html" aria-label="deFindings">
-        <img class="logo-mark" src="../udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
-        <span class="visually-hidden">deFindings</span>
+    <header class="s-menu s-menu--ready">
+      <button class="s-menu__search" type="button" aria-label="Поиск" aria-expanded="false"></button>
+      <a class="s-menu__logo" href="../index.html" aria-label="deFindings">
+        <img class="s-menu__logo-mark" src="../udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
+        <span class="a-visually-hidden">deFindings</span>
       </a>
+    <button class="s-menu__toggle" type="button" aria-label="Открыть меню" aria-expanded="false"></button>
     </header>
 
-    <main class="journal-page" id="top">
-      <section class="journal-hero section">
-        <h1>Журнал</h1>
-        <div class="filters" aria-label="Фильтры журнала">
-          <button class="a-filter is-enabled" type="button" aria-label="Фильтр" aria-enabled="true">
-            <img class="a-filter__icon" src="../udf/quarks/icons/q-icon-filter-16-black.svg" alt="" aria-hidden="true" />
-          </button>
+    <main class="o-journal-page" id="top">
+      <section class="m-page-hero a-section">
+        <h1 class="m-page-hero__title">Журнал</h1>
+        <div class="m-journal-filters" aria-label="Фильтры журнала">
           <button class="a-tag is-active" type="button" data-filter="all">Все</button>
           <button class="a-tag is-enabled" type="button" data-filter="2026" aria-enabled="true">2026</button>
           <button class="a-tag" type="button" data-filter="2025">2025</button>
@@ -72,345 +54,345 @@
         </div>
       </section>
 
-      <section class="section interviews interviews-journal" id="journal-list">
-        <div class="cards-grid journal-grid">
-          <article class="m-journal-card" data-tags="2025 студия екатеринбург" data-href="./interviews/aleksey-pyankov.html">
-            <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/aleksey-pyankov.html">
-              <img class="q-image-journal" width="440" height="458" src="../images/Алексей Пьянков.jpg" alt="Алексей Пьянков" loading="eager" fetchpriority="high" decoding="async" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Алексей Пьянков</h3>
-                <h4 class="m-journal-card__subtitle">Как в Pragmatica живёт дизайн-ДНК: белый лист на школьном сборе и треугольник результата</h4>
-              </div>
-              <p class="m-journal-card__description">Алексей начинал с принтов на футболках, сейчас дизайн-директор в Pragmatica. В студии культуру называют ДНК, а не декор; ещё со школьного белого листа для него полдела подать.</p>
-              <div class="m-journal-card__meta">Россия • Екатеринбург • Студия</div>
-            </div>
-          </article>
-
-          <article class="m-journal-card" data-tags="2025 студия белград" data-href="./interviews/anastasia-sycheva.html">
-            <a class="a-image-journal-link a-image-journal-link--l" href="./interviews/anastasia-sycheva.html">
-              <img class="q-image-journal" width="440" height="458" src="../images/Анастасия Сычева.jpg" alt="Анастасия Сычева" loading="eager" fetchpriority="high" decoding="async" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Анастасия Сычева</h3>
-                <h4 class="m-journal-card__subtitle">Бизнес-контекст, кор-идея бренда и AI как краска в палитре, а не замена руки</h4>
-              </div>
-              <p class="m-journal-card__description">Анастасия делает проекты в двух студиях для западных стартапов. Без бизнес-контекста визуал для неё красивый шот, а AI новая краска, не замена руки.</p>
-              <div class="m-journal-card__meta">Сербия • Белград • Студия</div>
-            </div>
-          </article>
-
-          <article class="m-journal-card" data-tags="2025 студия бали" data-href="./interviews/anya-golub.html">
-            <a class="a-image-journal-link a-image-journal-link--s" href="./interviews/anya-golub.html">
-              <img class="q-image-journal" width="440" height="458" src="../images/Аня Голубь.jpg" alt="Аня Голубь" loading="eager" fetchpriority="high" decoding="async" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Аня Голубь</h3>
-                <h4 class="m-journal-card__subtitle">Культура как уважение, «санитар леса» и зона комфорта, без которой дизайн не держится</h4>
-              </div>
-              <p class="m-journal-card__description">Аня делает проекты в Prizma с Бали и работает с повседневными брендами от White Secret до Do I Do. Культуру сводит к уважению, образ «санитар леса» использует буквально.</p>
-              <div class="m-journal-card__meta">Индонезия • Бали • Студия</div>
-            </div>
-          </article>
-
-          <article class="m-journal-card" data-tags="2025 продукт москва" data-href="./interviews/dasha-makurina.html">
-            <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/dasha-makurina.html">
-              <img class="q-image-journal" width="440" height="458" src="../images/Даша Макурина.jpg" alt="Даша Макурина" loading="lazy" decoding="async" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Даша Макурина</h3>
-                <h4 class="m-journal-card__subtitle">CGI, метафоры продукта и инклюзивный визуал в pont.design и Rarible</h4>
-              </div>
-              <p class="m-journal-card__description">Даша делает CGI для pont.design и 3D для Rarible. В работе ищет метафору продукта и говорит про инклюзивный визуал на примере THX.</p>
-              <div class="m-journal-card__meta">Россия • Москва • Продукт</div>
-            </div>
-          </article>
-
+      <section class="o-journal-listing o-journal-listing--page a-section" id="journal-list">
+                        <div class="o-journal-listing__grid">
           <article class="m-journal-card" data-tags="2025 студия тбилиси" data-href="./interviews/togetherwithyou.html">
-            <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/togetherwithyou.html">
-              <img class="q-image-journal" width="440" height="458" src="../images/Артём Тарасов и Артём Тарадаш.jpg" alt="Артём Тарасов и Артём Тарадаш" loading="eager" fetchpriority="high" decoding="async" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Артём Тарасов и Артём Тарадаш</h3>
-                <h4 class="m-journal-card__subtitle">Антидисциплинарный подход, мир постдизайна и крафт в эпоху AI</h4>
-              </div>
-              <p class="m-journal-card__description">Студия Артёма Тарасова и Артёма Тарадаша считает себя антидисциплинарной: дизайн начинается раньше Figma. Разговор про манифест, ритуалы и крафт в эпоху AI.</p>
-              <div class="m-journal-card__meta">Грузия • Тбилиси • Студия</div>
-            </div>
-          </article>
+                      <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/togetherwithyou.html">
+                        <img class="q-image-journal" width="440" height="458" src="../images/Артём Тарасов и Артём Тарадаш.jpg" alt="Артём Тарасов и Артём Тарадаш" loading="eager" fetchpriority="high" decoding="async" />
+                        <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
+                      </a>
+                      <div class="m-journal-card__content">
+                        <div class="m-journal-card__header">
+                          <h3 class="m-journal-card__author">Артём Тарасов и Артём Тарадаш</h3>
+                          <h4 class="m-journal-card__subtitle">Антидисциплинарный подход, мир постдизайна и крафт в эпоху AI</h4>
+                        </div>
+                        <p class="m-journal-card__description">Студия Артёма Тарасова и Артёма Тарадаша считает себя антидисциплинарной: дизайн начинается раньше Figma. Разговор про манифест, ритуалы и крафт в эпоху AI.</p>
+                        <div class="m-journal-card__meta">Грузия • Тбилиси • Студия</div>
+                      </div>
+                    </article>
 
           <article class="m-journal-card" data-tags="2025 продукт копенгаген" data-href="./interviews/masha-chern.html">
-            <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/masha-chern.html">
-              <img class="q-image-journal" width="440" height="458" src="../images/Маша Черн.jpg" alt="Маша Черн" loading="eager" fetchpriority="high" decoding="async" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Маша Черн</h3>
-                <h4 class="m-journal-card__subtitle">От «сделаю всё сама» к коллаборациям, ребрендинг TON и границы с генеративными картинками</h4>
-              </div>
-              <p class="m-journal-card__description">Маша пришла в коммдиз почти случайно и отошла от «сделаю всё сама» к коллаборациям. В TON Foundation делает ребрендинг в команде и говорит о границах с AI-картинками.</p>
-              <div class="m-journal-card__meta">Дания • Копенгаген • Продукт</div>
-            </div>
-          </article>
-
-          <article class="m-journal-card" data-tags="2025 продукт калининград" data-href="./interviews/olya-bazanova.html">
-            <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/olya-bazanova.html">
-              <img class="q-image-journal" width="440" height="458" src="../images/Оля Базанова.jpg" alt="Оля Базанова" loading="eager" fetchpriority="high" decoding="async" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Оля Базанова</h3>
-                <h4 class="m-journal-card__subtitle">Когда лучше не сделать, игра «Хвостики» и душа в сувенирном производстве</h4>
-              </div>
-              <p class="m-journal-card__description">Оля делает «Подписные изделия» в Калининграде, до этого три года в «Додо». Дизайн для неё помощь продукту; если можно что-то не сделать, лучше не сделать.</p>
-              <div class="m-journal-card__meta">Россия • Калининград • Продукт</div>
-            </div>
-          </article>
+                      <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/masha-chern.html">
+                        <img class="q-image-journal" width="440" height="458" src="../images/Маша Черн.jpg" alt="Маша Черн" loading="eager" fetchpriority="high" decoding="async" />
+                        <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
+                      </a>
+                      <div class="m-journal-card__content">
+                        <div class="m-journal-card__header">
+                          <h3 class="m-journal-card__author">Маша Черн</h3>
+                          <h4 class="m-journal-card__subtitle">От «сделаю всё сама» к коллаборациям, ребрендинг TON и границы с генеративными картинками</h4>
+                        </div>
+                        <p class="m-journal-card__description">Маша пришла в коммдиз почти случайно и отошла от «сделаю всё сама» к коллаборациям. В TON Foundation делает ребрендинг в команде и говорит о границах с AI-картинками.</p>
+                        <div class="m-journal-card__meta">Дания • Копенгаген • Продукт</div>
+                      </div>
+                    </article>
 
           <article class="m-journal-card" data-tags="2025 фриланс берлин" data-href="./interviews/polina-zagumenova.html">
-            <a class="a-image-journal-link a-image-journal-link--l" href="./interviews/polina-zagumenova.html">
-              <img class="q-image-journal" width="440" height="458" src="../images/Полина Загуменова.jpg" alt="Полина Загуменова" loading="lazy" decoding="async" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Полина Загуменова</h3>
-                <h4 class="m-journal-card__subtitle">Гибкие рамки в Берлине, неожиданные заказы и скепсис к AI-картинкам</h4>
-              </div>
-              <p class="m-journal-card__description">Полина Загуменова из Берлина. О неожиданных заказах, любви к текстам и сомнениях в AI-визуале.</p>
-              <div class="m-journal-card__meta">Германия • Берлин • Фриланс</div>
-            </div>
-          </article>
-
-          <article class="m-journal-card" data-tags="2025 продукт фриланс ереван" data-href="./interviews/sasha-barabonova.html">
-            <a class="a-image-journal-link a-image-journal-link--s" href="./interviews/sasha-barabonova.html">
-              <img class="q-image-journal" width="440" height="458" src="../images/Саша Барабонова.jpg" alt="Саша Барабонова" loading="lazy" decoding="async" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Саша Барабонова</h3>
-                <h4 class="m-journal-card__subtitle">Случайный путь в дизайн, эмпатия как основа профессии и примирение с AI</h4>
-              </div>
-              <p class="m-journal-card__description">Саша попала в дизайн через «программирование» и называет профессию эмпатией. В Phygital+ сначала отвергала нейросети, потом нашла с ними общий язык.</p>
-              <div class="m-journal-card__meta">Армения • Ереван • Продукт • Фриланс</div>
-            </div>
-          </article>
-
-          <article class="m-journal-card" data-tags="2025 студия москва" data-href="./interviews/sergey-breus.html">
-            <a class="a-image-journal-link a-image-journal-link--s" href="./interviews/sergey-breus.html">
-              <img class="q-image-journal" width="440" height="458" src="../images/Сергей Бреус.jpg" alt="Сергей Бреус" loading="lazy" decoding="async" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Сергей Бреус</h3>
-                <h4 class="m-journal-card__subtitle">Недели на мудборде, ремесло с пользой и страх однотипного AI-контента</h4>
-              </div>
-              <p class="m-journal-card__description">Сергей пришёл в дизайн из танцев в пандемийную осень. Для него это ремесло с пользой: мудборды по неделям и страх однотипного AI-контента.</p>
-              <div class="m-journal-card__meta">Россия • Москва • Студия</div>
-            </div>
-          </article>
-
-          <article class="m-journal-card" data-tags="2025 продукт москва" data-href="./interviews/sergey-kudinov.html">
-            <a class="a-image-journal-link a-image-journal-link--l" href="./interviews/sergey-kudinov.html">
-              <img class="q-image-journal" width="440" height="458" src="../images/Сергей Кудинов.jpg" alt="Сергей Кудинов" loading="lazy" decoding="async" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Сергей Кудинов</h3>
-                <h4 class="m-journal-card__subtitle">Культура против симулятора в продуктовом дизайне и ценность ручного труда</h4>
-              </div>
-              <p class="m-journal-card__description">Сергей в Яндексе разделяет дизайн на жизнь и работу. Культура для него мышление результатом, а нарисованные ритуалы он называет симулятором.</p>
-              <div class="m-journal-card__meta">Россия • Москва • Продукт</div>
-            </div>
-          </article>
-
-          <article class="m-journal-card" data-tags="2025 студия москва" data-href="./interviews/stefan-lashko.html">
-            <a class="a-image-journal-link a-image-journal-link--l" href="./interviews/stefan-lashko.html">
-              <img class="q-image-journal" width="440" height="458" src="../images/Стефан Лашко.jpg" alt="Стефан Лашко" loading="lazy" decoding="async" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Стефан Лашко</h3>
-                <h4 class="m-journal-card__subtitle">Порядок из хаоса, метафора в знаке и отказ от клиентов без ценностей</h4>
-              </div>
-              <p class="m-journal-card__description">Стефан почти десять лет делает брендинг в ESH gruppa. Каждый проект начинается с эскиза в блокноте, студия отказывается от клиентов без ценностей.</p>
-              <div class="m-journal-card__meta">Россия • Москва • Студия</div>
-            </div>
-          </article>
-
-          <article class="m-journal-card" data-tags="2025 школа тбилиси" data-href="./interviews/yulya-kondratyeva.html">
-            <a class="a-image-journal-link a-image-journal-link--s" href="./interviews/yulya-kondratyeva.html">
-              <img class="q-image-journal" width="440" height="458" src="../images/Юля Кондратьева.jpg" alt="Юля Кондратьева" loading="lazy" decoding="async" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Юля Кондратьева</h3>
-                <h4 class="m-journal-card__subtitle">Уместный дизайн, «Типомания», Werkstatt и границы слова «дизайн-культура»</h4>
-              </div>
-              <p class="m-journal-card__description">Юля сооснователь Werkstatt и не любит термин «дизайн-культура». Формулирует проще: хороший дизайн уместный.</p>
-              <div class="m-journal-card__meta">Грузия • Тбилиси • Школа</div>
-            </div>
-          </article>
-
-          <article class="m-journal-card" data-tags="2025 студия продукт санкт-петербург" data-href="./interviews/yan-zaretsky.html">
-            <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/yan-zaretsky.html">
-              <img class="q-image-journal" width="440" height="458" src="../images/Ян Зарецкий.jpg" alt="Ян Зарецкий" loading="lazy" decoding="async" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Ян Зарецкий</h3>
-                <h4 class="m-journal-card__subtitle">Генотип и фенотип бренда, цельность как критерий и «Мастерская» в Петербурге</h4>
-              </div>
-              <p class="m-journal-card__description">Ян делает брендинг и продукт для отраслевого софта, соучредитель «Мастерской». У долгого проекта есть генотип и фенотип под разные форматы.</p>
-              <div class="m-journal-card__meta">Россия • Санкт‑Петербург • Студия • Продукт</div>
-            </div>
-          </article>
+                      <a class="a-image-journal-link a-image-journal-link--l" href="./interviews/polina-zagumenova.html">
+                        <img class="q-image-journal" width="440" height="458" src="../images/Полина Загуменова.jpg" alt="Полина Загуменова" loading="lazy" decoding="async" />
+                        <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
+                      </a>
+                      <div class="m-journal-card__content">
+                        <div class="m-journal-card__header">
+                          <h3 class="m-journal-card__author">Полина Загуменова</h3>
+                          <h4 class="m-journal-card__subtitle">Гибкие рамки в Берлине, неожиданные заказы и скепсис к AI-картинкам</h4>
+                        </div>
+                        <p class="m-journal-card__description">Полина Загуменова из Берлина. О неожиданных заказах, любви к текстам и сомнениях в AI-визуале.</p>
+                        <div class="m-journal-card__meta">Германия • Берлин • Фриланс</div>
+                      </div>
+                    </article>
 
           <article class="m-journal-card" data-tags="2025 продукт париж" data-href="./interviews/gavril-perov.html">
-            <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/gavril-perov.html">
-              <img class="q-image-journal" width="440" height="458" src="../images/Гаврил Перов.jpg" alt="Гаврил Перов" loading="lazy" decoding="async" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Гаврил Перов</h3>
-                <h4 class="m-journal-card__subtitle">Good enough в Drinkit, баланс интересов и AI без страха</h4>
-              </div>
-              <p class="m-journal-card__description">Гаврил делает продуктовый дизайн в Drinkit, пришёл из моды. В большинстве случаев для него достаточно good enough.</p>
-              <div class="m-journal-card__meta">Франция • Париж • Продукт</div>
-            </div>
-          </article>
+                      <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/gavril-perov.html">
+                        <img class="q-image-journal" width="440" height="458" src="../images/Гаврил Перов.jpg" alt="Гаврил Перов" loading="lazy" decoding="async" />
+                        <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
+                      </a>
+                      <div class="m-journal-card__content">
+                        <div class="m-journal-card__header">
+                          <h3 class="m-journal-card__author">Гаврил Перов</h3>
+                          <h4 class="m-journal-card__subtitle">Архитектура, город и графический язык</h4>
+                        </div>
+                        <p class="m-journal-card__description">Гаврил отвечает за продуктовый дизайн в Drinkit, пришёл из моды. Разговор про город, графический язык, баланс интересов и AI без страха.</p>
+                        <div class="m-journal-card__meta">Франция • Париж • Продукт</div>
+                      </div>
+                    </article>
 
-          <article class="m-journal-card" data-tags="2025 сообщество проект лондон" data-href="./interviews/elena-chinakova.html">
-            <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/elena-chinakova.html">
-              <img class="q-image-journal" width="440" height="458" src="../images/Елена Чинакова.jpg" alt="Елена Чинакова" loading="lazy" decoding="async" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Елена Чинакова</h3>
-                <h4 class="m-journal-card__subtitle">Zorky в Лондоне, роль дизайнера в Avito и взросление в профессии</h4>
-              </div>
-              <p class="m-journal-card__description">Елена основатель Zorky в Лондоне, до эмиграции была дизайн-лидом Авито. Культура для неё начинается с роли дизайнера: партнёр или «руки».</p>
-              <div class="m-journal-card__meta">Великобритания • Лондон • Сообщество • Проект</div>
-            </div>
-          </article>
-
-          <article class="m-journal-card" data-tags="2026 проект сообщество ростов" data-href="./interviews/andrey-maksimenkov.html">
-            <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/andrey-maksimenkov.html">
-              <img class="q-image-journal" width="440" height="458" src="../images/Андрей Максименков.jpg" alt="Андрей Максименков" loading="lazy" decoding="async" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Андрей Максименков</h3>
-                <h4 class="m-journal-card__subtitle">spros, пять принципов мышления и ночные идеи, которые нельзя терять</h4>
-              </div>
-              <p class="m-journal-card__description">Андрей из Ростова, автор spros про мышление дизайнеров. Пять принципов формулирует прямо в тексте и записывает ночные идеи, пока не забылись.</p>
-              <div class="m-journal-card__meta">Россия • Ростов-на-Дону • Проект • Сообщество</div>
-            </div>
-          </article>
+          <article class="m-journal-card" data-tags="2025 студия екатеринбург" data-href="./interviews/aleksey-pyankov.html">
+                      <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/aleksey-pyankov.html">
+                        <img class="q-image-journal" width="440" height="458" src="../images/Алексей Пьянков.jpg" alt="Алексей Пьянков" loading="eager" fetchpriority="high" decoding="async" />
+                        <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
+                      </a>
+                      <div class="m-journal-card__content">
+                        <div class="m-journal-card__header">
+                          <h3 class="m-journal-card__author">Алексей Пьянков</h3>
+                          <h4 class="m-journal-card__subtitle">Как в Pragmatica живёт дизайн-ДНК: белый лист на школьном сборе и треугольник результата</h4>
+                        </div>
+                        <p class="m-journal-card__description">Алексей начинал с принтов на футболках, сейчас дизайн-директор в Pragmatica. В студии культуру называют ДНК, а не декор; ещё со школьного белого листа для него полдела подать.</p>
+                        <div class="m-journal-card__meta">Россия • Екатеринбург • Студия</div>
+                      </div>
+                    </article>
 
           <article class="m-journal-card" data-tags="2026 продукт москва" data-href="./interviews/dariia-chertanova.html">
-            <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/dariia-chertanova.html">
-              <img class="q-image-journal" width="440" height="458" src="../images/Дария Чертанова.jpg" alt="Даша Чертанова" loading="lazy" decoding="async" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Даша Чертанова</h3>
-                <h4 class="m-journal-card__subtitle">Смыслы, контекст и люди, меняющие профессию</h4>
-              </div>
-              <p class="m-journal-card__description">Даша работает в The Blueprint, кодит интерактивные визуалы, преподавала в Bang Bang Education и менторит. К дизайну пришла после социологии и барной стойки, оба разворота оказались про идею и контекст.</p>
-              <div class="m-journal-card__meta">Россия • Москва • Продукт</div>
-            </div>
-          </article>
+                      <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/dariia-chertanova.html">
+                        <img class="q-image-journal" width="440" height="458" src="../images/Дария Чертанова.jpg" alt="Даша Чертанова" loading="lazy" decoding="async" />
+                        <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
+                      </a>
+                      <div class="m-journal-card__content">
+                        <div class="m-journal-card__header">
+                          <h3 class="m-journal-card__author">Даша Чертанова</h3>
+                          <h4 class="m-journal-card__subtitle">Смыслы, контекст и люди, меняющие профессию</h4>
+                        </div>
+                        <p class="m-journal-card__description">Даша работает в The Blueprint, кодит интерактивные визуалы, преподавала в Bang Bang Education и менторит. К дизайну пришла после социологии и барной стойки, оба разворота оказались про идею и контекст.</p>
+                        <div class="m-journal-card__meta">Россия • Москва • Продукт</div>
+                      </div>
+                    </article>
 
           <article class="m-journal-card" data-tags="2025 продукт москва" data-href="./interviews/sergey-mekryukov.html">
-            <a class="a-image-journal-link a-image-journal-link--l" href="./interviews/sergey-mekryukov.html">
-              <img class="q-image-journal" width="440" height="458" src="../images/Сергей Мекрюков.jpg" alt="Сергей Мекрюков" loading="lazy" decoding="async" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Сергей Мекрюков</h3>
-                <h4 class="m-journal-card__subtitle">Гемба в ресторанах, метрики Dodo Brands и честные UX-ревью</h4>
-              </div>
-              <p class="m-journal-card__description">Сергей делает дизайн продукта в Dodo Brands. Сначала гемба в ресторанах, потом данные; слабый UX признавать важнее самоуспокоения.</p>
-              <div class="m-journal-card__meta">Россия • Москва • Продукт</div>
-            </div>
-          </article>
-
-          <article class="m-journal-card" data-tags="2025 студия москва" data-href="./interviews/artem-gerts.html">
-            <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/artem-gerts.html">
-              <img class="q-image-journal" width="440" height="458" src="../images/Артём Герц.jpg" alt="Артём Герц" loading="lazy" decoding="async" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Артём Герц</h3>
-                <h4 class="m-journal-card__subtitle">Язык с нуля в айдентике: Redis, Nil Foundation и честность в решениях</h4>
-              </div>
-              <p class="m-journal-card__description">Артём берётся за айдентику, где язык нужно создать с нуля. В Nil Foundation и RSquad искал честный визуальный код для технологии.</p>
-              <div class="m-journal-card__meta">Россия • Москва • Студия</div>
-            </div>
-          </article>
-
-          <article class="m-journal-card" data-tags="2026 продукт проект москва" data-href="./interviews/nikita-petrov.html">
-            <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/nikita-petrov.html">
-              <img class="q-image-journal" width="440" height="458" src="../images/Никита Петров.jpg" alt="Никита Петров" loading="lazy" decoding="async" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Никита Петров</h3>
-                <h4 class="m-journal-card__subtitle">Портфолио как продукт, data-driven подход и собственные проекты</h4>
-              </div>
-              <p class="m-journal-card__description">Никита делает продуктовый дизайн и собственные проекты, автор nikipetrov.com. Относится к портфолио как к продукту и итерирует его в открытую.</p>
-              <div class="m-journal-card__meta">Россия • Москва • Продукт • Проект</div>
-            </div>
-          </article>
+                      <a class="a-image-journal-link a-image-journal-link--l" href="./interviews/sergey-mekryukov.html">
+                        <img class="q-image-journal" width="440" height="458" src="../images/Сергей Мекрюков.jpg" alt="Сергей Мекрюков" loading="lazy" decoding="async" />
+                        <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
+                      </a>
+                      <div class="m-journal-card__content">
+                        <div class="m-journal-card__header">
+                          <h3 class="m-journal-card__author">Сергей Мекрюков</h3>
+                          <h4 class="m-journal-card__subtitle">Гемба в ресторанах, метрики Dodo Brands и честные UX-ревью</h4>
+                        </div>
+                        <p class="m-journal-card__description">Сергей делает дизайн продукта в Dodo Brands. Сначала гемба в ресторанах, потом данные; слабый UX признавать важнее самоуспокоения.</p>
+                        <div class="m-journal-card__meta">Россия • Москва • Продукт</div>
+                      </div>
+                    </article>
 
           <article class="m-journal-card" data-tags="2026 фриланс москва" data-href="./interviews/maxim-aksenov.html">
-            <a class="a-image-journal-link a-image-journal-link--s" href="./interviews/maxim-aksenov.html">
-              <img class="q-image-journal" width="440" height="458" src="../images/Максим Аксенов.jpg" alt="Максим Аксенов" loading="lazy" decoding="async" />
-              <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
-            </a>
-            <div class="m-journal-card__content">
-              <div class="m-journal-card__header">
-                <h3 class="m-journal-card__author">Максим Аксенов</h3>
-                <h4 class="m-journal-card__subtitle">Интервью готовится</h4>
-              </div>
-              <p class="m-journal-card__description">Максим Аксенов – дизайнер из Москвы. Интервью скоро появится в журнале.</p>
-              <div class="m-journal-card__meta">Россия • Москва • Фриланс</div>
-            </div>
-          </article>
-        </div>
+                      <a class="a-image-journal-link a-image-journal-link--s" href="./interviews/maxim-aksenov.html">
+                        <img class="q-image-journal" width="440" height="458" src="../images/Максим Аксенов.jpg" alt="Максим Аксенов" loading="lazy" decoding="async" />
+                        <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
+                      </a>
+                      <div class="m-journal-card__content">
+                        <div class="m-journal-card__header">
+                          <h3 class="m-journal-card__author">Максим Аксенов</h3>
+                          <h4 class="m-journal-card__subtitle">Архитектурный бэкграунд, дизайн как система и дисциплина мышления</h4>
+                        </div>
+                        <p class="m-journal-card__description">Графический дизайнер с архитектурным бэкграундом – про культуру дизайна, ЛАШ и отношение к AI.</p>
+                        <div class="m-journal-card__meta">Россия • Москва • Фриланс</div>
+                      </div>
+                    </article>
+
+          <article class="m-journal-card" data-tags="2025 продукт фриланс ереван" data-href="./interviews/sasha-barabonova.html">
+                      <a class="a-image-journal-link a-image-journal-link--s" href="./interviews/sasha-barabonova.html">
+                        <img class="q-image-journal" width="440" height="458" src="../images/Саша Барабонова.jpg" alt="Саша Барабонова" loading="lazy" decoding="async" />
+                        <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
+                      </a>
+                      <div class="m-journal-card__content">
+                        <div class="m-journal-card__header">
+                          <h3 class="m-journal-card__author">Саша Барабонова</h3>
+                          <h4 class="m-journal-card__subtitle">Случайный путь в дизайн, эмпатия как основа профессии и примирение с AI</h4>
+                        </div>
+                        <p class="m-journal-card__description">Саша попала в дизайн через «программирование» и называет профессию эмпатией. В Phygital+ сначала отвергала нейросети, потом нашла с ними общий язык.</p>
+                        <div class="m-journal-card__meta">Армения • Ереван • Продукт • Фриланс</div>
+                      </div>
+                    </article>
+
+          <article class="m-journal-card" data-tags="2025 студия москва" data-href="./interviews/sergey-breus.html">
+                      <a class="a-image-journal-link a-image-journal-link--s" href="./interviews/sergey-breus.html">
+                        <img class="q-image-journal" width="440" height="458" src="../images/Сергей Бреус.jpg" alt="Сергей Бреус" loading="lazy" decoding="async" />
+                        <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
+                      </a>
+                      <div class="m-journal-card__content">
+                        <div class="m-journal-card__header">
+                          <h3 class="m-journal-card__author">Сергей Бреус</h3>
+                          <h4 class="m-journal-card__subtitle">Недели на мудборде, ремесло с пользой и страх однотипного AI-контента</h4>
+                        </div>
+                        <p class="m-journal-card__description">Сергей пришёл в дизайн из танцев в пандемийную осень. Для него это ремесло с пользой: мудборды по неделям и страх однотипного AI-контента.</p>
+                        <div class="m-journal-card__meta">Россия • Москва • Студия</div>
+                      </div>
+                    </article>
+
+          <article class="m-journal-card" data-tags="2025 продукт москва" data-href="./interviews/sergey-kudinov.html">
+                      <a class="a-image-journal-link a-image-journal-link--l" href="./interviews/sergey-kudinov.html">
+                        <img class="q-image-journal" width="440" height="458" src="../images/Сергей Кудинов.jpg" alt="Сергей Кудинов" loading="lazy" decoding="async" />
+                        <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
+                      </a>
+                      <div class="m-journal-card__content">
+                        <div class="m-journal-card__header">
+                          <h3 class="m-journal-card__author">Сергей Кудинов</h3>
+                          <h4 class="m-journal-card__subtitle">Культура против симулятора в продуктовом дизайне и ценность ручного труда</h4>
+                        </div>
+                        <p class="m-journal-card__description">Сергей в Яндексе разделяет дизайн на жизнь и работу. Культура для него мышление результатом, а нарисованные ритуалы он называет симулятором.</p>
+                        <div class="m-journal-card__meta">Россия • Москва • Продукт</div>
+                      </div>
+                    </article>
+
+          <article class="m-journal-card" data-tags="2025 студия москва" data-href="./interviews/stefan-lashko.html">
+                      <a class="a-image-journal-link a-image-journal-link--l" href="./interviews/stefan-lashko.html">
+                        <img class="q-image-journal" width="440" height="458" src="../images/Стефан Лашко.jpg" alt="Стефан Лашко" loading="lazy" decoding="async" />
+                        <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
+                      </a>
+                      <div class="m-journal-card__content">
+                        <div class="m-journal-card__header">
+                          <h3 class="m-journal-card__author">Стефан Лашко</h3>
+                          <h4 class="m-journal-card__subtitle">Порядок из хаоса, метафора в знаке и отказ от клиентов без ценностей</h4>
+                        </div>
+                        <p class="m-journal-card__description">Стефан почти десять лет делает брендинг в ESH gruppa. Каждый проект начинается с эскиза в блокноте, студия отказывается от клиентов без ценностей.</p>
+                        <div class="m-journal-card__meta">Россия • Москва • Студия</div>
+                      </div>
+                    </article>
+
+          <article class="m-journal-card" data-tags="2025 школа тбилиси" data-href="./interviews/yulya-kondratyeva.html">
+                      <a class="a-image-journal-link a-image-journal-link--s" href="./interviews/yulya-kondratyeva.html">
+                        <img class="q-image-journal" width="440" height="458" src="../images/Юля Кондратьева.jpg" alt="Юля Кондратьева" loading="lazy" decoding="async" />
+                        <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
+                      </a>
+                      <div class="m-journal-card__content">
+                        <div class="m-journal-card__header">
+                          <h3 class="m-journal-card__author">Юля Кондратьева</h3>
+                          <h4 class="m-journal-card__subtitle">Уместный дизайн, «Типомания», Werkstatt и границы слова «дизайн-культура»</h4>
+                        </div>
+                        <p class="m-journal-card__description">Юля сооснователь Werkstatt и не любит термин «дизайн-культура». Формулирует проще: хороший дизайн уместный.</p>
+                        <div class="m-journal-card__meta">Грузия • Тбилиси • Школа</div>
+                      </div>
+                    </article>
+
+          <article class="m-journal-card" data-tags="2025 студия продукт санкт-петербург" data-href="./interviews/yan-zaretsky.html">
+                      <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/yan-zaretsky.html">
+                        <img class="q-image-journal" width="440" height="458" src="../images/Ян Зарецкий.jpg" alt="Ян Зарецкий" loading="lazy" decoding="async" />
+                        <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
+                      </a>
+                      <div class="m-journal-card__content">
+                        <div class="m-journal-card__header">
+                          <h3 class="m-journal-card__author">Ян Зарецкий</h3>
+                          <h4 class="m-journal-card__subtitle">Генотип и фенотип бренда, цельность как критерий и «Мастерская» в Петербурге</h4>
+                        </div>
+                        <p class="m-journal-card__description">Ян делает брендинг и продукт для отраслевого софта, соучредитель «Мастерской». У долгого проекта есть генотип и фенотип под разные форматы.</p>
+                        <div class="m-journal-card__meta">Россия • Санкт‑Петербург • Студия • Продукт</div>
+                      </div>
+                    </article>
+
+          <article class="m-journal-card" data-tags="2026 проект сообщество ростов" data-href="./interviews/andrey-maksimenkov.html">
+                      <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/andrey-maksimenkov.html">
+                        <img class="q-image-journal" width="440" height="458" src="../images/Андрей Максименков.jpg" alt="Андрей Максименков" loading="lazy" decoding="async" />
+                        <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
+                      </a>
+                      <div class="m-journal-card__content">
+                        <div class="m-journal-card__header">
+                          <h3 class="m-journal-card__author">Андрей Максименков</h3>
+                          <h4 class="m-journal-card__subtitle">spros, пять принципов мышления и ночные идеи, которые нельзя терять</h4>
+                        </div>
+                        <p class="m-journal-card__description">Андрей из Ростова, автор spros про мышление дизайнеров. Пять принципов формулирует прямо в тексте и записывает ночные идеи, пока не забылись.</p>
+                        <div class="m-journal-card__meta">Россия • Ростов-на-Дону • Проект • Сообщество</div>
+                      </div>
+                    </article>
+
+          <article class="m-journal-card" data-tags="2025 студия белград" data-href="./interviews/anastasia-sycheva.html">
+                      <a class="a-image-journal-link a-image-journal-link--l" href="./interviews/anastasia-sycheva.html">
+                        <img class="q-image-journal" width="440" height="458" src="../images/Анастасия Сычева.jpg" alt="Анастасия Сычева" loading="eager" fetchpriority="high" decoding="async" />
+                        <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
+                      </a>
+                      <div class="m-journal-card__content">
+                        <div class="m-journal-card__header">
+                          <h3 class="m-journal-card__author">Анастасия Сычева</h3>
+                          <h4 class="m-journal-card__subtitle">Бизнес-контекст, кор-идея бренда и AI как краска в палитре, а не замена руки</h4>
+                        </div>
+                        <p class="m-journal-card__description">Анастасия делает проекты в двух студиях для западных стартапов. Без бизнес-контекста визуал для неё красивый шот, а AI новая краска, не замена руки.</p>
+                        <div class="m-journal-card__meta">Сербия • Белград • Студия</div>
+                      </div>
+                    </article>
+
+          <article class="m-journal-card" data-tags="2025 студия бали" data-href="./interviews/anya-golub.html">
+                      <a class="a-image-journal-link a-image-journal-link--s" href="./interviews/anya-golub.html">
+                        <img class="q-image-journal" width="440" height="458" src="../images/Аня Голубь.jpg" alt="Аня Голубь" loading="eager" fetchpriority="high" decoding="async" />
+                        <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
+                      </a>
+                      <div class="m-journal-card__content">
+                        <div class="m-journal-card__header">
+                          <h3 class="m-journal-card__author">Аня Голубь</h3>
+                          <h4 class="m-journal-card__subtitle">Культура как уважение, «санитар леса» и зона комфорта, без которой дизайн не держится</h4>
+                        </div>
+                        <p class="m-journal-card__description">Аня делает проекты в Prizma с Бали и работает с повседневными брендами от White Secret до Do I Do. Культуру сводит к уважению, образ «санитар леса» использует буквально.</p>
+                        <div class="m-journal-card__meta">Индонезия • Бали • Студия</div>
+                      </div>
+                    </article>
+
+          <article class="m-journal-card" data-tags="2025 продукт москва" data-href="./interviews/dasha-makurina.html">
+                      <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/dasha-makurina.html">
+                        <img class="q-image-journal" width="440" height="458" src="../images/Даша Макурина.jpg" alt="Даша Макурина" loading="lazy" decoding="async" />
+                        <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
+                      </a>
+                      <div class="m-journal-card__content">
+                        <div class="m-journal-card__header">
+                          <h3 class="m-journal-card__author">Даша Макурина</h3>
+                          <h4 class="m-journal-card__subtitle">CGI, метафоры продукта и инклюзивный визуал в pont.design и Rarible</h4>
+                        </div>
+                        <p class="m-journal-card__description">Даша делает CGI для pont.design и 3D для Rarible. В работе ищет метафору продукта и говорит про инклюзивный визуал на примере THX.</p>
+                        <div class="m-journal-card__meta">Россия • Москва • Продукт</div>
+                      </div>
+                    </article>
+
+          <article class="m-journal-card" data-tags="2025 сообщество проект лондон" data-href="./interviews/elena-chinakova.html">
+                      <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/elena-chinakova.html">
+                        <img class="q-image-journal" width="440" height="458" src="../images/Елена Чинакова.jpg" alt="Елена Чинакова" loading="lazy" decoding="async" />
+                        <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
+                      </a>
+                      <div class="m-journal-card__content">
+                        <div class="m-journal-card__header">
+                          <h3 class="m-journal-card__author">Елена Чинакова</h3>
+                          <h4 class="m-journal-card__subtitle">Zorky в Лондоне, роль дизайнера в Avito и взросление в профессии</h4>
+                        </div>
+                        <p class="m-journal-card__description">Елена основатель Zorky в Лондоне, до эмиграции была дизайн-лидом Авито. Культура для неё начинается с роли дизайнера: партнёр или «руки».</p>
+                        <div class="m-journal-card__meta">Великобритания • Лондон • Сообщество • Проект</div>
+                      </div>
+                    </article>
+
+          <article class="m-journal-card" data-tags="2025 студия москва" data-href="./interviews/artem-gerts.html">
+                      <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/artem-gerts.html">
+                        <img class="q-image-journal" width="440" height="458" src="../images/Артём Герц.jpg" alt="Артём Герц" loading="lazy" decoding="async" />
+                        <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
+                      </a>
+                      <div class="m-journal-card__content">
+                        <div class="m-journal-card__header">
+                          <h3 class="m-journal-card__author">Артём Герц</h3>
+                          <h4 class="m-journal-card__subtitle">Язык с нуля в айдентике: Redis, Nil Foundation и честность в решениях</h4>
+                        </div>
+                        <p class="m-journal-card__description">Артём берётся за айдентику, где язык нужно создать с нуля. В Nil Foundation и RSquad искал честный визуальный код для технологии.</p>
+                        <div class="m-journal-card__meta">Россия • Москва • Студия</div>
+                      </div>
+                    </article>
+
+          <article class="m-journal-card" data-tags="2025 продукт калининград" data-href="./interviews/olya-bazanova.html">
+                      <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/olya-bazanova.html">
+                        <img class="q-image-journal" width="440" height="458" src="../images/Оля Базанова.jpg" alt="Оля Базанова" loading="eager" fetchpriority="high" decoding="async" />
+                        <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
+                      </a>
+                      <div class="m-journal-card__content">
+                        <div class="m-journal-card__header">
+                          <h3 class="m-journal-card__author">Оля Базанова</h3>
+                          <h4 class="m-journal-card__subtitle">Когда лучше не сделать, игра «Хвостики» и душа в сувенирном производстве</h4>
+                        </div>
+                        <p class="m-journal-card__description">Оля делает «Подписные изделия» в Калининграде, до этого три года в «Додо». Дизайн для неё помощь продукту; если можно что-то не сделать, лучше не сделать.</p>
+                        <div class="m-journal-card__meta">Россия • Калининград • Продукт</div>
+                      </div>
+                    </article>
+
+          <article class="m-journal-card" data-tags="2026 продукт проект москва" data-href="./interviews/nikita-petrov.html">
+                      <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/nikita-petrov.html">
+                        <img class="q-image-journal" width="440" height="458" src="../images/Никита Петров.jpg" alt="Никита Петров" loading="lazy" decoding="async" />
+                        <span class="a-arrow-button a-arrow-button--corner" aria-hidden="true"></span>
+                      </a>
+                      <div class="m-journal-card__content">
+                        <div class="m-journal-card__header">
+                          <h3 class="m-journal-card__author">Никита Петров</h3>
+                          <h4 class="m-journal-card__subtitle">Портфолио как продукт, data-driven подход и собственные проекты</h4>
+                        </div>
+                        <p class="m-journal-card__description">Coming soon</p>
+                        <div class="m-journal-card__meta">Россия • Москва • Продукт • Проект</div>
+                      </div>
+                    </article>
+</div>
       </section>
 
-      <section class="section m-split-links m-split-links--flush-top">
+      <section class="a-section m-split-links m-split-links--flush-top">
         <a class="m-split-card m-split-card--issue" href="https://www.calameo.com/read/008119339762d3db33f24?authid=pJV9q2gR5n3i">
           <img class="m-split-card__image" src="../images/A_ImagesBook 1.png" alt="Выпуск deFindings №1" />
           <h3>Выпуск deFindings Nº1.</h3>
-          <span class="a-button a-button--m a-button--white" aria-hidden="true">Пролистать</span>
+          <span class="a-button a-button--m a-button--white" aria-hidden="true">Полистать</span>
         </a>
         <a class="m-split-card m-split-card--gallery" href="./gallery.html">
           <h3>Галерея</h3>
@@ -434,8 +416,8 @@
       </div>
     </div>
 
-    <footer class="footer s-footer">
-      <div class="footer-grid">
+    <footer class="s-footer">
+      <div class="s-footer__grid">
         <div>
           <h4>Смотрите</h4>
           <a href="./journal.html">Журнал</a>
@@ -460,8 +442,11 @@
           <a href="https://arkhipovau.xyz/">Юлия Архипова</a>
           <a href="https://t.me/dayglobal">Куратор – Захар День</a>
         </div>
+        <div class="s-footer__up">
+          <button class="a-arrow-button a-arrow-button--up" type="button" aria-label="Наверх"></button>
+        </div>
       </div>
-      <div class="footer-bottom">
+      <div class="s-footer__bottom">
         <span>© 2025 – 2026 deFindings</span>
         <span>HSE Art&amp;Design School</span>
       </div>
@@ -472,9 +457,9 @@
     <script defer src="../udf/superorganisms/menu/menu-overlay.js"></script>
     <script defer src="../udf/superorganisms/menu/s-menu.js"></script>
     <script defer src="../udf/superorganisms/footer/s-footer.js"></script>
-    <script defer src="../javascripts/sticky-scroll.js"></script>
-    <script defer src="../javascripts/micro-animations.js"></script>
-    <script defer src="../javascripts/card-reveal.js"></script>
+    <script defer src="../udf/atoms/sticky-scroll/a-sticky-scroll.js"></script>
+    <script defer src="../udf/runtime/micro-animations.js"></script>
+    <script defer src="../udf/molecules/card-reveal/m-card-reveal.js"></script>
     <script defer src="../udf/molecules/split-links/m-split-links.js"></script>
   </body>
 </html>

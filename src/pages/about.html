@@ -3,87 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- deFindings favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="../udf/quarks/branding/favicon-light.png" media="(prefers-color-scheme: light)" />
     <link rel="icon" type="image/png" sizes="32x32" href="../udf/quarks/branding/favicon-dark.png" media="(prefers-color-scheme: dark)" />
     <link rel="icon" type="image/png" sizes="32x32" href="../udf/quarks/branding/favicon-light.png" />
-    <!-- /deFindings favicons -->
     <title>О проекте – deFindings</title>
-    <link rel="stylesheet" href="../stylesheets/index.css?v=20260612c" />
-    <link rel="stylesheet" href="../udf/tokens/colors.css" />
-    <link rel="stylesheet" href="../udf/tokens/typography.css" />
-    <link rel="stylesheet" href="./about.css?v=20260612c" />
-    <link rel="stylesheet" href="../stylesheets/micro-animations.css" />
-    <link rel="stylesheet" href="../udf/atoms/arrow-buttons/a-arrow-buttons.css" />
-    <link rel="stylesheet" href="../udf/atoms/sticky-scroll/a-sticky-scroll.css" />
-    <link rel="stylesheet" href="../udf/superorganisms/menu/s-menu.css" />
-    <link rel="stylesheet" href="../udf/superorganisms/footer/s-footer.css" />
-    <link rel="stylesheet" href="../udf/quarks/findings/q-findings.css" />
-    <link rel="stylesheet" href="../udf/atoms/button/a-button.css?v=20260522c" />
-    <link rel="stylesheet" href="../stylesheets/cookie-consent.css" />
-    <script defer src="../javascripts/cookie-consent.js"></script>
+    <link rel="stylesheet" href="../stylesheets/index.css" />
+    <link rel="stylesheet" href="../udf/bundles/shell.css" />
+    <link rel="stylesheet" href="../udf/bundles/about.css?v=20260613q" />
+    <link rel="stylesheet" href="../udf/runtime/micro-animations.css" />
+    <script defer src="../udf/molecules/cookie-consent/m-cookie-consent.js"></script>
   </head>
-  <body data-reading-page="О проекте deFindings">
+  <body class="o-site-shell" data-reading-page="О проекте deFindings">
     <div class="q-findings-overlay" aria-hidden="true"></div>
-    <header class="topbar topbar--menu s-menu about-topbar">
-      <a class="logo" href="../index.html" aria-label="deFindings">
-        <img class="logo-mark" src="../udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
-        <span class="visually-hidden">deFindings</span>
+    <header class="s-menu s-menu--ready">
+      <button class="s-menu__search" type="button" aria-label="Поиск" aria-expanded="false"></button>
+      <a class="s-menu__logo" href="../index.html" aria-label="deFindings">
+        <img class="s-menu__logo-mark" src="../udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
+        <span class="a-visually-hidden">deFindings</span>
       </a>
+    <button class="s-menu__toggle" type="button" aria-label="Открыть меню" aria-expanded="false"></button>
     </header>
 
-    <main class="about-page">
-      <section class="about-intro hero-intro section" data-reading="Медиа о дизайн-культуре deFindings">
-        <div class="hero-copy">
-          <div class="hero-layout">
-            <div class="hero-under" aria-hidden="true">
-              <h1><span>deFindings&nbsp;–</span> <span>медиа</span><br class="hero-break-mobile" /> <span>о</span><span class="hero-pill-slot"></span><span>дизайн-культуре.</span></h1>
-              <p><span class="hero-tie"><span>Мы</span> <span>разговариваем</span></span> <span class="hero-tie"><span>с</span> <span>дизайнерами</span></span><span class="hero-pill-slot"></span><span class="hero-studios-line"><span class="hero-studios-desktop"><span class="hero-tie"><span>из</span> <span>студий,</span></span><br class="hero-break" /> <span class="hero-tie"><span>продуктовых</span> <span>команд</span></span></span><span class="hero-studios-mobile"><span class="hero-tie"><span>из</span> <span>студий,</span> <span>продуктовых</span></span><br class="hero-break-mobile" /> <span class="hero-tie"><span>команд</span></span></span></span> <span class="hero-tie"><span>и</span> <span>фриланса</span></span> <span class="hero-tie"><span>и</span> <span>показываем,</span></span><br class="hero-break" /><br class="hero-break-mobile" /> <span class="hero-tie"><span>как</span> <span>ценности</span></span><span class="hero-pill-slot"></span><span>трансформируются</span> <span class="hero-tie"><span>в</span> <span>решения.</span></span></p>
+    <main class="o-about-page">
+      <section class="o-hero-intro o-hero-intro--about a-section" data-reading="Медиа о дизайн-культуре deFindings">
+        <div class="o-hero-intro__copy">
+          <div class="o-hero-intro__layout">
+            <div class="o-hero-intro__under" aria-hidden="true">
+              <h1><span>deFindings&nbsp;–</span> <span>медиа</span><br class="o-hero-intro__break--mobile" /> <span>о</span><span class="o-hero-intro__pill-slot"></span><span>дизайн-культуре.</span></h1>
+              <p><span class="o-hero-intro__tie"><span>Мы</span> <span>разговариваем</span></span> <span class="o-hero-intro__tie"><span>с</span> <span>дизайнерами</span></span><span class="o-hero-intro__pill-slot"></span><span class="o-hero-intro__studios-line"><span class="o-hero-intro__studios--desktop"><span class="o-hero-intro__tie"><span>из</span> <span>студий,</span></span><br class="o-hero-intro__break" /> <span class="o-hero-intro__tie"><span>продуктовых</span> <span>команд</span></span></span><span class="o-hero-intro__studios--mobile"><span class="o-hero-intro__tie"><span>из</span> <span>студий,</span> <span>продуктовых</span></span><br class="o-hero-intro__break--mobile" /> <span class="o-hero-intro__tie"><span>команд</span></span></span></span> <span class="o-hero-intro__tie"><span>и</span> <span>фриланса</span></span> <span class="o-hero-intro__tie"><span>и</span> <span>показываем,</span></span><br class="o-hero-intro__break" /><br class="o-hero-intro__break--mobile" /> <span class="o-hero-intro__tie"><span>как</span> <span>ценности</span></span><span class="o-hero-intro__pill-slot"></span><span>трансформируются</span> <span class="o-hero-intro__tie"><span>в</span> <span>решения.</span></span></p>
             </div>
-            <div class="hero-over">
-              <h1><span class="hero-word">deFindings&nbsp;–</span> <span class="hero-word">медиа</span><br class="hero-break-mobile" /> <span class="hero-word">о</span><span class="hero-pill hero-pill-a"><span class="hero-pill-inner"><img src="../images/3.png" alt="" /></span></span><span class="hero-word">дизайн-культуре.</span></h1>
-              <p><span class="hero-tie"><span class="hero-word">Мы</span> <span class="hero-word">разговариваем</span></span> <span class="hero-tie"><span class="hero-word">с</span> <span class="hero-word">дизайнерами</span></span><span class="hero-pill hero-pill-b"><span class="hero-pill-inner"><img src="../images/1.png" alt="" /></span></span><span class="hero-studios-line"><span class="hero-studios-desktop"><span class="hero-tie"><span class="hero-word">из</span> <span class="hero-word">студий,</span></span><br class="hero-break" /> <span class="hero-tie"><span class="hero-word">продуктовых</span> <span class="hero-word">команд</span></span></span><span class="hero-studios-mobile"><span class="hero-tie"><span class="hero-word">из</span> <span class="hero-word">студий,</span> <span class="hero-word">продуктовых</span></span><br class="hero-break-mobile" /> <span class="hero-word">команд</span></span></span> <span class="hero-tie"><span class="hero-word">и</span> <span class="hero-word">фриланса</span></span> <span class="hero-tie"><span class="hero-word">и</span> <span class="hero-word">показываем,</span></span><br class="hero-break" /><br class="hero-break-mobile" /> <span class="hero-tie"><span class="hero-word">как</span> <span class="hero-word">ценности</span></span><span class="hero-pill hero-pill-c"><span class="hero-pill-inner"><img src="../images/2.png" alt="" /></span></span><span class="hero-word">трансформируются</span> <span class="hero-tie"><span class="hero-word">в</span> <span class="hero-word">решения.</span></span></p>
+            <div class="o-hero-intro__over">
+              <h1><span class="o-hero-intro__word">deFindings&nbsp;–</span> <span class="o-hero-intro__word">медиа</span><br class="o-hero-intro__break--mobile" /> <span class="o-hero-intro__word">о</span><span class="o-hero-intro__pill o-hero-intro__pill--a"><span class="o-hero-intro__pill-inner"><img src="../images/3.png" alt="" /></span></span><span class="o-hero-intro__word">дизайн-культуре.</span></h1>
+              <p><span class="o-hero-intro__tie"><span class="o-hero-intro__word">Мы</span> <span class="o-hero-intro__word">разговариваем</span></span> <span class="o-hero-intro__tie"><span class="o-hero-intro__word">с</span> <span class="o-hero-intro__word">дизайнерами</span></span><span class="o-hero-intro__pill o-hero-intro__pill--b"><span class="o-hero-intro__pill-inner"><img src="../images/1.png" alt="" /></span></span><span class="o-hero-intro__studios-line"><span class="o-hero-intro__studios--desktop"><span class="o-hero-intro__tie"><span class="o-hero-intro__word">из</span> <span class="o-hero-intro__word">студий,</span></span><br class="o-hero-intro__break" /> <span class="o-hero-intro__tie"><span class="o-hero-intro__word">продуктовых</span> <span class="o-hero-intro__word">команд</span></span></span><span class="o-hero-intro__studios--mobile"><span class="o-hero-intro__tie"><span class="o-hero-intro__word">из</span> <span class="o-hero-intro__word">студий,</span> <span class="o-hero-intro__word">продуктовых</span></span><br class="o-hero-intro__break--mobile" /> <span class="o-hero-intro__word">команд</span></span></span> <span class="o-hero-intro__tie"><span class="o-hero-intro__word">и</span> <span class="o-hero-intro__word">фриланса</span></span> <span class="o-hero-intro__tie"><span class="o-hero-intro__word">и</span> <span class="o-hero-intro__word">показываем,</span></span><br class="o-hero-intro__break" /><br class="o-hero-intro__break--mobile" /> <span class="o-hero-intro__tie"><span class="o-hero-intro__word">как</span> <span class="o-hero-intro__word">ценности</span></span><span class="o-hero-intro__pill o-hero-intro__pill o-hero-intro__pill--c"><span class="o-hero-intro__pill-inner"><img src="../images/2.png" alt="" /></span></span><span class="o-hero-intro__word">трансформируются</span> <span class="o-hero-intro__tie"><span class="o-hero-intro__word">в</span> <span class="o-hero-intro__word">решения.</span></span></p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="about-process section" aria-label="Процесс создания">
-        <div class="cards-grid">
+      <section class="o-about-process a-section" aria-label="Процесс создания">
+        <div class="o-about-process__grid">
           <figure>
-            <div class="about-process__image" aria-label="Процесс 1">
+            <div class="o-about-process__image" aria-label="Процесс 1">
               <img src="../images/about/A_ImageJournalLink.jpg" alt="Процесс 1" loading="lazy" decoding="async" />
             </div>
           </figure>
           <figure>
-            <div class="about-process__image" aria-label="Процесс 2">
+            <div class="o-about-process__image" aria-label="Процесс 2">
               <img src="../images/about/M_JournalC4ard.jpg?v=20260612c" alt="Процесс 2" loading="lazy" decoding="async" />
             </div>
           </figure>
           <figure>
-            <div class="about-process__image" aria-label="Процесс 3">
+            <div class="o-about-process__image" aria-label="Процесс 3">
               <img src="../images/about/M_JournalCard.jpg?v=20260612c" alt="Процесс 3" loading="lazy" decoding="async" />
             </div>
           </figure>
         </div>
       </section>
 
-      <article class="about-stack about-stack--narrow section">
-        <section class="about-block">
+      <article class="o-about-content o-about-content--narrow a-section">
+        <section class="m-about-block">
           <p>
             Проект придумала и собрала Юля Архипова – выпускница HSE Art&amp;Design School.
           </p>
         </section>
 
-        <section class="about-block">
+        <section class="m-about-block">
           <p>
-            deFindings устроен как небольшая комната для разговора. Интервью публикуются целиком, без
-            сокращений и без суеты. Один редактор собирает каждый выпуск вручную и выпускает его, когда
-            материал готов к показу. Здесь важна внимательная работа, но допустимы ошибки.
+            deFindings устроен как творческая комната для разговора. Это журналы, постеры, заметки и
+            артефакты, которыми дизайнер окружён каждый день, – только теперь оцифрованы. Один редактор
+            собирает каждый выпуск вручную и выпускает его, когда материал готов к показу. Здесь важна
+            внимательная работа, но допустимы ошибки.
           </p>
         </section>
 
-        <section class="about-block">
+        <section class="m-about-block">
           <p>
             Подписаться на рассылку – <a href="./newsletter.html">здесь</a>.
             Предложить героя или задать вопрос –
@@ -93,8 +86,21 @@
       </article>
     </main>
 
-    <footer class="footer s-footer">
-      <div class="footer-grid">
+    <div class="a-sticky-scroll-wrap">
+      <div class="a-sticky-scroll">
+        <span class="a-sticky-scroll__rec" aria-hidden="true"></span>
+        <span class="a-sticky-scroll__content">
+          <span class="a-sticky-scroll__dot" aria-hidden="true"></span>
+          <span class="a-sticky-scroll__text">
+            <span class="a-sticky-scroll__prefix">Вы читаете</span>
+            <span class="a-sticky-scroll__current">«О проекте deFindings»</span>
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <footer class="s-footer">
+      <div class="s-footer__grid">
         <div>
           <h4>Смотрите</h4>
           <a href="./journal.html">Журнал</a>
@@ -119,30 +125,20 @@
           <a href="https://arkhipovau.xyz/">Юлия Архипова</a>
           <a href="https://t.me/dayglobal">Куратор – Захар День</a>
         </div>
+        <div class="s-footer__up">
+          <button class="a-arrow-button a-arrow-button--up" type="button" aria-label="Наверх"></button>
+        </div>
       </div>
-      <div class="footer-bottom">
+      <div class="s-footer__bottom">
         <span>© 2025 – 2026 deFindings</span>
         <span>HSE Art&amp;Design School</span>
       </div>
     </footer>
 
-    <div class="a-sticky-scroll-wrap">
-      <div class="a-sticky-scroll">
-        <span class="a-sticky-scroll__rec" aria-hidden="true"></span>
-        <span class="a-sticky-scroll__content">
-          <span class="a-sticky-scroll__dot" aria-hidden="true"></span>
-          <span class="a-sticky-scroll__text">
-            <span class="a-sticky-scroll__prefix">Вы читаете</span>
-            <span class="a-sticky-scroll__current">«О проекте deFindings»</span>
-          </span>
-        </span>
-      </div>
-    </div>
-
     <script defer src="../udf/superorganisms/menu/menu-overlay.js"></script>
     <script defer src="../udf/superorganisms/menu/s-menu.js"></script>
     <script defer src="../udf/superorganisms/footer/s-footer.js"></script>
-    <script defer src="../javascripts/sticky-scroll.js"></script>
-    <script defer src="../javascripts/micro-animations.js"></script>
+    <script defer src="../udf/atoms/sticky-scroll/a-sticky-scroll.js"></script>
+    <script defer src="../udf/runtime/micro-animations.js"></script>
   </body>
 </html>

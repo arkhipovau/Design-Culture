@@ -45,7 +45,6 @@
   pointer-events: none;
 }
 
-/* Decorative button: hover/press follow the card link, not the span */
 .m-split-card:hover .a-button.a-button--white,
 .m-split-card:focus-visible .a-button.a-button--white,
 .m-split-card.is-hover .a-button.a-button--white {

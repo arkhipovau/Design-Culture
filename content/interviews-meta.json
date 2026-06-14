@@ -1,27 +1,27 @@
 {
   "order": [
     "togetherwithyou",
-    "aleksey-pyankov",
-    "polina-zagumenova",
     "masha-chern",
-    "yulya-kondratyeva",
-    "yan-zaretsky",
+    "polina-zagumenova",
+    "gavril-perov",
+    "aleksey-pyankov",
+    "dariia-chertanova",
+    "sergey-mekryukov",
+    "maxim-aksenov",
+    "sasha-barabonova",
     "sergey-breus",
     "sergey-kudinov",
+    "stefan-lashko",
+    "yulya-kondratyeva",
+    "yan-zaretsky",
+    "andrey-maksimenkov",
+    "anastasia-sycheva",
     "anya-golub",
     "dasha-makurina",
-    "sasha-barabonova",
-    "stefan-lashko",
-    "olya-bazanova",
-    "anastasia-sycheva",
-    "artem-gerts",
-    "sergey-mekryukov",
-    "gavril-perov",
     "elena-chinakova",
-    "dariia-chertanova",
-    "andrey-maksimenkov",
-    "nikita-petrov",
-    "maxim-aksenov"
+    "artem-gerts",
+    "olya-bazanova",
+    "nikita-petrov"
   ],
   "interviews": {
     "togetherwithyou": {
@@ -835,7 +835,7 @@
         "linkedin.com/in/gavrilperov",
         "dprofile.ru/gavril"
       ],
-      "subtitle": "Good enough в Drinkit, баланс интересов и AI без страха",
+      "subtitle": "Архитектура, город и графический язык",
       "images": []
     },
     "elena-chinakova": {
@@ -905,10 +905,110 @@
       "author": "Максим Аксенов",
       "meta": "Россия • Москва • Фриланс",
       "hero": "../../images/Максим Аксенов.jpg",
-      "about": "Максим Аксенов – дизайнер, Москва.",
-      "links": [],
-      "subtitle": "Интервью готовится",
-      "images": []
+      "about": "Максим Аксенов – графический дизайнер с архитектурным бэкграундом и большой любовью к типографике.",
+      "links": [
+        "behance.net/aksenovmaxim",
+        "instagram.com/saint.maxim"
+      ],
+      "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
+      "images": [
+        {
+          "src": "../images/interviews/maxim-aksenov/Easy%20Cycling%20Club%201.webp",
+          "title": "Easy Cycling Club"
+        },
+        {
+          "src": "../images/interviews/maxim-aksenov/Easy%20Cycling%20Club%202.webp",
+          "title": "Easy Cycling Club"
+        },
+        {
+          "src": "../images/interviews/maxim-aksenov/Easy%20Cycling%20Club%204.webp",
+          "title": "Easy Cycling Club"
+        },
+        {
+          "src": "../images/interviews/maxim-aksenov/Easy%20Cycling%20Club%205.gif",
+          "title": "Easy Cycling Club"
+        },
+        {
+          "src": "../images/interviews/maxim-aksenov/DNA.jpg",
+          "title": "DNA"
+        },
+        {
+          "src": "../images/interviews/maxim-aksenov/DNA%202.jpg",
+          "title": "DNA"
+        },
+        {
+          "src": "../images/interviews/maxim-aksenov/Type%20Conference%201.webp",
+          "title": "Type Conference"
+        },
+        {
+          "src": "../images/interviews/maxim-aksenov/Type%20Conference%202.webp",
+          "title": "Type Conference"
+        },
+        {
+          "src": "../images/interviews/maxim-aksenov/Type%20Conference%203.webp",
+          "title": "Type Conference"
+        },
+        {
+          "src": "../images/interviews/maxim-aksenov/GE%20(2024).png",
+          "title": "ЛАШ 2024"
+        },
+        {
+          "src": "../images/interviews/maxim-aksenov/GE%20(2025).png",
+          "title": "ЛАШ 2025"
+        },
+        {
+          "src": "../images/interviews/maxim-aksenov/GE%20(2026).png",
+          "title": "ЛАШ 2026"
+        },
+        {
+          "src": "../images/interviews/maxim-aksenov/L2024%20(1).jpg",
+          "title": "ЛАШ 2024"
+        },
+        {
+          "src": "../images/interviews/maxim-aksenov/L2024%20(2).jpg",
+          "title": "ЛАШ 2024"
+        },
+        {
+          "src": "../images/interviews/maxim-aksenov/L2024%20(3).jpg",
+          "title": "ЛАШ 2024"
+        },
+        {
+          "src": "../images/interviews/maxim-aksenov/L2024%20(4).jpg",
+          "title": "ЛАШ 2024"
+        },
+        {
+          "src": "../images/interviews/maxim-aksenov/L2025%20(1).png",
+          "title": "ЛАШ 2025"
+        },
+        {
+          "src": "../images/interviews/maxim-aksenov/L2025%20(2).png",
+          "title": "ЛАШ 2025"
+        },
+        {
+          "src": "../images/interviews/maxim-aksenov/L2025%20(3).png",
+          "title": "ЛАШ 2025"
+        },
+        {
+          "src": "../images/interviews/maxim-aksenov/L2025%20(4).png",
+          "title": "ЛАШ 2025"
+        },
+        {
+          "src": "../images/interviews/maxim-aksenov/L2026%20(1).jpg",
+          "title": "ЛАШ 2026"
+        },
+        {
+          "src": "../images/interviews/maxim-aksenov/L2026%20(2).jpg",
+          "title": "ЛАШ 2026"
+        },
+        {
+          "src": "../images/interviews/maxim-aksenov/L2026%20(3).jpg",
+          "title": "ЛАШ 2026"
+        },
+        {
+          "src": "../images/interviews/maxim-aksenov/L2026%20(4).jpg",
+          "title": "ЛАШ 2026"
+        }
+      ]
     }
   }
 }

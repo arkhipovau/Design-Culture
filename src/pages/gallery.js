@@ -1,19 +1,17 @@
 (function () {
 
   var data = window.deFindingsGalleryData || { entries: [] };
-  var entries = (data.entries || []).map(function (e, idx) {
+  var entries = (data.entries || []).map(function (e) {
     return {
       src: e.src,
       author: e.author || '',
       project: e.project || e.subtitle || '',
       subtitle: e.subtitle || '',
-      href: e.href || '#',
-      kind: idx % 3 === 0 ? 'tall' : 'wide'
+      href: e.href || '#'
     };
   });
 
   var tableView = document.getElementById('tableView');
-  var sliderView = document.getElementById('sliderView');
   var tableBtn = document.getElementById('tableBtn');
   var sliderBtn = document.getElementById('sliderBtn');
 
@@ -22,8 +20,7 @@
 
   entries.forEach(function (item, idx) {
     var card = document.createElement('a');
-    card.className =
-      'm-gallery-card m-gallery-card--' + (item.kind === 'tall' ? 'tall' : 'wide');
+    card.className = 'm-gallery-card';
     card.href = item.href;
     card.setAttribute('data-gallery-index', idx);
 
@@ -31,18 +28,20 @@
     img.decoding = 'async';
     img.alt = item.author || '';
     img.loading = idx < EAGER_CARDS ? 'eager' : 'lazy';
-    if (item.kind === 'tall') {
-      img.width = 218;
-      img.height = 272;
-    } else {
-      img.width = 218;
-      img.height = 145;
-    }
     if (idx < EAGER_CARDS) {
       try { img.fetchPriority = 'high'; } catch (_) {  }
     }
 
     img.src = item.src;
+
+    var markLoaded = function () {
+      if (!img.naturalWidth) return;
+      img.setAttribute('width', img.naturalWidth);
+      img.setAttribute('height', img.naturalHeight);
+      card.classList.add('is-loaded');
+    };
+
+    img.addEventListener('load', markLoaded);
 
     var media = document.createElement('span');
     media.className = 'm-gallery-card__media';
@@ -55,8 +54,8 @@
 
     card.appendChild(media);
 
-    if (img.complete && img.naturalWidth > 0) {
-      card.classList.add('is-loaded');
+    if (img.complete) {
+      markLoaded();
     }
 
     var overlay = document.createElement('span');

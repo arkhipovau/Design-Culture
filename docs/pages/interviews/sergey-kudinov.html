@@ -3,209 +3,202 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- deFindings favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="../../udf/quarks/branding/favicon-light.png" media="(prefers-color-scheme: light)" />
     <link rel="icon" type="image/png" sizes="32x32" href="../../udf/quarks/branding/favicon-dark.png" media="(prefers-color-scheme: dark)" />
     <link rel="icon" type="image/png" sizes="32x32" href="../../udf/quarks/branding/favicon-light.png" />
-    <!-- /deFindings favicons -->
     <title>Сергей Кудинов – deFindings</title>
-    <link rel="stylesheet" href="../../stylesheets/index.css?v=20260522" />
-    <link rel="stylesheet" href="../../udf/tokens/colors.css" />
-    <link rel="stylesheet" href="../../udf/tokens/typography.css" />
-    <link rel="stylesheet" href="../../udf/tokens/grid.css" />
-    <link rel="stylesheet" href="../../udf/atoms/sticky-scroll/a-sticky-scroll.css" />
-    <link rel="stylesheet" href="../../udf/atoms/arrow-buttons/a-arrow-buttons.css" />
-    <link rel="stylesheet" href="../../udf/atoms/arrow-button-xl/a-arrow-button-xl.css" />
-    <link rel="stylesheet" href="../article.css?v=20260522" />
-    <link rel="stylesheet" href="../../udf/molecules/qa-row/m-qa-row.css" />
-    <link rel="stylesheet" href="../../udf/molecules/quote-block/m-quote-block.css" />
-    <link rel="stylesheet" href="../../udf/molecules/next-article/m-next-article.css" />
-    <link rel="stylesheet" href="../../udf/molecules/article-info/m-article-info.css" />
-    <link rel="stylesheet" href="./interview.css?v=20260522" />
-    <link rel="stylesheet" href="../../udf/molecules/interview-section/m-interview-section.css" />
-    <link rel="stylesheet" href="../../udf/molecules/photo-slot/m-photo-slot.css" />
-    <link rel="stylesheet" href="../../stylesheets/micro-animations.css" />
-    <link rel="stylesheet" href="../../udf/superorganisms/menu/s-menu.css" />
-    <link rel="stylesheet" href="../../udf/superorganisms/footer/s-footer.css" />
-    <link rel="stylesheet" href="../../udf/quarks/findings/q-findings.css" />
-    <link rel="stylesheet" href="../../udf/atoms/button/a-button.css?v=20260522c" />
-    <link rel="stylesheet" href="../../stylesheets/cookie-consent.css" />
-    <script defer src="../../javascripts/cookie-consent.js"></script>
+    <link rel="stylesheet" href="../../stylesheets/index.css" />
+    <link rel="stylesheet" href="../../udf/bundles/shell.css" />
+    <link rel="stylesheet" href="../../udf/bundles/interview.css?v=20260601a" />
+    <link rel="stylesheet" href="../../udf/runtime/micro-animations.css" />
+    <script defer src="../../udf/molecules/cookie-consent/m-cookie-consent.js"></script>
   </head>
-  <body data-reading-page="Сергей Кудинов">
-    <header class="topbar topbar--menu s-menu article-topbar">
-      <a class="logo" href="../../index.html" aria-label="deFindings">
-        <img class="logo-mark" src="../../udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
-        <span class="visually-hidden">deFindings</span>
+  <body class="o-site-shell" data-reading-page="Сергей Кудинов">
+    <div class="q-findings-overlay" aria-hidden="true"></div>
+    <header class="s-menu s-menu--ready s-menu--article">
+      <button class="s-menu__search" type="button" aria-label="Поиск" aria-expanded="false"></button>
+      <a class="s-menu__logo" href="../../index.html" aria-label="deFindings">
+        <img class="s-menu__logo-mark" src="../../udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
+        <span class="a-visually-hidden">deFindings</span>
       </a>
+    <button class="s-menu__toggle" type="button" aria-label="Открыть меню" aria-expanded="false"></button>
     </header>
 
-    <main class="article-page interview-page">
-      <section class="article-hero interview-hero" id="hero">
-        <div class="hero-content section">
-          <p class="article-author">Сергей Кудинов</p>
-          <h1 class="interview-hero__title">Культура против симулятора в продуктовом дизайне и ценность ручного труда</h1>
-          <p class="article-meta">Россия • Москва • Продукт</p>
-        </div>
-        <figure class="interview-portrait">
-          <img src="../../images/%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9%20%D0%9A%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%B2.jpg" alt="Сергей Кудинов" width="200" height="267" loading="lazy" decoding="async" />
-        </figure>
-      </section>
-
-      <div class="article-body interview-body section">
-        
-
-      <div class="m-interview-section">
-        <div class="m-interview-section__body">
-          <div class="m-qa-row m-qa-row--question">
-            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
-            <div class="m-qa-row__answer"><p>Что такое культура дизайна, что это для тебя значит?</p></div>
-            <div class="m-qa-row__spacer" aria-hidden="true"></div>
-          </div>
-          <div class="m-qa-row">
-            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Сергей Кудинов">СК</span></div>
-            <div class="m-qa-row__answer"><p>Я бы разделял: есть дизайн в жизни вообще, дизайн самой жизни. И есть дизайн-культура на работе. Давай начнем с работы.</p><p>В зависимости от людей, размера организации и задач, которые они решают, эта культура может появиться, а может мешать. Если подразумевать под дизайн-культурой какие-то бюрократические, процессные штуки, выстроенный процесс, по которому должны все следовать – это не культура. Это симулятор. Многие путают дизайн-культуру с процессной штукой, по которой надо идти всей команде, чтобы получить результат. Я так не считаю. Я отношу это к процессу.</p><p>Культура в большой организации – это когда люди понимают важность своей роли и важность соседней роли. Есть доверие, доверяет экспертизе и мыслит результатом, а не своим конкретным участком работы.</p><p>Часто распространенная практика: дизайнер получил задачу от маркетинга, очень конкретно. Дизайнер её сделал, отдал. А потом выясняется, что это намного более широкая вещь. И выясняется, что это вообще не надо было делать. Но когда человек мыслит: мне дал маркетинг, я выполнил эту задачу – с меня не спросишь. Это отсутствие дизайн-культуры.</p><p>Её присутствие – это когда человек задаётся вопросами, знает общие цели, куда мы идём, и оценивает свою роль и вклад в процесс. Насколько эффективно эта роль будет отрабатывать и вклад будет полезен.</p><p>В Яндексе я вижу, что дизайн-культура очень сильно развита. И не потому, что это был приказ сверху, а потому что сложилось из людей. Люди понимают, что они делают, и зачем. Есть человек, который «зачем» думает. Это важно.</p><p>Когда я пришёл в Яндекс, я видел, что всем интересно: почему ты это делаешь? А не просто сделай. Это здоровый скептицизм. Эта культура позволяет высказать своё мнение, даже если ты дизайнер и тебя спросили что-то другое.</p><p>Культура дизайна – это, в первую очередь, честность с самим собой. Честность в том, что ты делаешь. Зачем ты это делаешь? Если у тебя есть задача, ты должен её переосмыслить. Не просто выполнить, но понять, правильная ли она. Это требует смелости. Потому что заказчик может не захотеть услышать, что задача не совсем правильная.</p><p>Также это уважение к людям, с которыми ты работаешь. Понимание, что у каждого человека есть своя экспертиза, и ты должен её слушать.</p><p>И третье – это результат. Не просто процесс, а именно результат. Культура дизайна строится вокруг того, что мы все вместе делаем что-то нужное людям. Дизайн – это не просто красивые картинки. Дизайн – это решение проблем. Если ты применяешь этот принцип к жизни, то ты становишься лучше.</p><p>На работе ты приходишь с утра и нужно решить какую-то проблему. Если ты подходишь к этому с позиции дизайнера, то ты будешь думать не только о себе, но и о том, как это повлияет на команду, на компанию, на пользователя. Это и есть культура дизайна.</p><p>В большой организации всегда есть системы и процессы. И они важны. Но они не должны быть выше культуры. Я видел компании, где процессы задавили людей. Они просто идут по какому-то пути и не думают, почему они это делают.</p><p>А в Яндексе процессы служат культуре, а не наоборот. Люди используют процессы, чтобы быть эффективнее, а не чтобы выполнять формальные требования.</p><p>Если у тебя есть процесс, но нет культуры – это бюрократия. Если у тебя есть культура, но нет процесса – это хаос. Нужно оба.</p><p>Культура дизайна зависит от того, как люди ведут за собой других. Если у тебя есть лидер, который просто дает приказы и не слушает, то культуры не будет. Но если у тебя есть лидер, который слушает, который объясняет, почему нужно делать именно так, и готов изменить свой взгляд, если его переубедят – вот это создаёт культуру.</p><p>Руководители, с которыми я работаю в Яндексе, не боятся высказывать противоположное мнение. Они готовы слушать. Это очень сильно повлияло на то, как я сам понимаю дизайн-культуру.</p><p>Дизайн-культура в команде строится на основе доверия и честного общения. Когда я пришёл в команду, я был новенький. И я видел, что ребята очень открыты для обсуждения. Они готовы помочь. Они готовы объяснить, почему они что-то делают так, а не иначе. Это создаёт ощущение, что ты не просто выполняешь свою работу, а ты часть команды, которая решает общую проблему.</p><p>В хорошей дизайн-культуре ошибки – это не что-то страшное. Ошибки – это часть процесса обучения. Я знаю, что если я сделаю ошибку, мне помогут её исправить. И я узнаю что-то новое. Это отличается от культур, где ошибка – это повод для наказания. В Яндексе ошибки рассматриваются как возможность улучшить систему. Не отругать человека, а понять, почему это произошло, и что можно изменить. Это создаёт безопасное пространство для экспериментов и инноваций.</p><p>Но ядро культуры остаётся. Это честность, доверие, результативность. Когда я вижу компанию, которая смогла сохранить эти ценности, несмотря на рост и изменения – вот это я уважаю.</p></div>
-            <div class="m-qa-row__spacer" aria-hidden="true"></div>
-          </div>
-        </div>
-        <blockquote class="m-quote-block">
+    <main class="o-interview-page">
+      <section class="o-interview-hero a-section" id="hero">
+              <div class="o-interview-hero__content">
+                <p class="o-interview-hero__author">Сергей Кудинов</p>
+                <h1 class="o-interview-hero__title">Культура против симулятора в продуктовом дизайне и ценность ручного труда</h1>
+                <p class="o-interview-hero__meta">Россия • Москва • Продукт</p>
+              </div>
+              <figure class="m-interview-portrait">
+                <img src="../../images/%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9%20%D0%9A%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%B2.jpg" alt="Сергей Кудинов" width="200" height="267" loading="lazy" decoding="async" />
+              </figure>
+            </section>
+      <div class="o-interview-body a-section">
+              
+      
+            <div class="m-interview-section">
+              <div class="m-interview-section__body">
+                <div class="m-qa-row m-qa-row--question">
+                  <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+                  <div class="m-qa-row__answer"><p>Что такое культура дизайна, что это для тебя значит?</p></div>
+                  <div class="m-qa-row__spacer" aria-hidden="true"></div>
+                </div>
+                <div class="m-qa-row">
+                  <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Сергей Кудинов">СК</span></div>
+                  <div class="m-qa-row__answer"><p>Я бы разделял: есть дизайн в жизни вообще, дизайн самой жизни. И есть дизайн-культура на работе. Давай начнем с работы.</p><p>В зависимости от людей, размера организации и задач, которые они решают, эта культура может появиться, а может мешать. Если подразумевать под дизайн-культурой какие-то бюрократические, процессные штуки, выстроенный процесс, по которому должны все следовать – это не культура. Это симулятор. Многие путают дизайн-культуру с процессной штукой, по которой надо идти всей команде, чтобы получить результат. Я так не считаю. Я отношу это к процессу.</p><p>Культура в большой организации – это когда люди понимают важность своей роли и важность соседней роли. Есть доверие, доверяет экспертизе и мыслит результатом, а не своим конкретным участком работы.</p><p>Часто распространенная практика: дизайнер получил задачу от маркетинга, очень конкретно. Дизайнер её сделал, отдал. А потом выясняется, что это намного более широкая вещь. И выясняется, что это вообще не надо было делать. Но когда человек мыслит: мне дал маркетинг, я выполнил эту задачу – с меня не спросишь. Это отсутствие дизайн-культуры.</p><p>Её присутствие – это когда человек задаётся вопросами, знает общие цели, куда мы идём, и оценивает свою роль и вклад в процесс. Насколько эффективно эта роль будет отрабатывать и вклад будет полезен.</p><p>В Яндексе я вижу, что дизайн-культура очень сильно развита. И не потому, что это был приказ сверху, а потому что сложилось из людей. Люди понимают, что они делают, и зачем. Есть человек, который «зачем» думает. Это важно.</p><p>Когда я пришёл в Яндекс, я видел, что всем интересно: почему ты это делаешь? А не просто сделай. Это здоровый скептицизм. Эта культура позволяет высказать своё мнение, даже если ты дизайнер и тебя спросили что-то другое.</p><p>Культура дизайна – это, в первую очередь, честность с самим собой. Честность в том, что ты делаешь. Зачем ты это делаешь? Если у тебя есть задача, ты должен её переосмыслить. Не просто выполнить, но понять, правильная ли она. Это требует смелости. Потому что заказчик может не захотеть услышать, что задача не совсем правильная.</p><p>Также это уважение к людям, с которыми ты работаешь. Понимание, что у каждого человека есть своя экспертиза, и ты должен её слушать.</p><p>И третье – это результат. Не просто процесс, а именно результат. Культура дизайна строится вокруг того, что мы все вместе делаем что-то нужное людям. Дизайн – это не просто красивые картинки. Дизайн – это решение проблем. Если ты применяешь этот принцип к жизни, то ты становишься лучше.</p><p>На работе ты приходишь с утра и нужно решить какую-то проблему. Если ты подходишь к этому с позиции дизайнера, то ты будешь думать не только о себе, но и о том, как это повлияет на команду, на компанию, на пользователя. Это и есть культура дизайна.</p><p>В большой организации всегда есть системы и процессы. И они важны. Но они не должны быть выше культуры. Я видел компании, где процессы задавили людей. Они просто идут по какому-то пути и не думают, почему они это делают.</p><p>А в Яндексе процессы служат культуре, а не наоборот. Люди используют процессы, чтобы быть эффективнее, а не чтобы выполнять формальные требования.</p><p>Если у тебя есть процесс, но нет культуры – это бюрократия. Если у тебя есть культура, но нет процесса – это хаос. Нужно оба.</p><p>Культура дизайна зависит от того, как люди ведут за собой других. Если у тебя есть лидер, который просто дает приказы и не слушает, то культуры не будет. Но если у тебя есть лидер, который слушает, который объясняет, почему нужно делать именно так, и готов изменить свой взгляд, если его переубедят – вот это создаёт культуру.</p><p>Руководители, с которыми я работаю в Яндексе, не боятся высказывать противоположное мнение. Они готовы слушать. Это очень сильно повлияло на то, как я сам понимаю дизайн-культуру.</p><p>Дизайн-культура в команде строится на основе доверия и честного общения. Когда я пришёл в команду, я был новенький. И я видел, что ребята очень открыты для обсуждения. Они готовы помочь. Они готовы объяснить, почему они что-то делают так, а не иначе. Это создаёт ощущение, что ты не просто выполняешь свою работу, а ты часть команды, которая решает общую проблему.</p><p>В хорошей дизайн-культуре ошибки – это не что-то страшное. Ошибки – это часть процесса обучения. Я знаю, что если я сделаю ошибку, мне помогут её исправить. И я узнаю что-то новое. Это отличается от культур, где ошибка – это повод для наказания. В Яндексе ошибки рассматриваются как возможность улучшить систему. Не отругать человека, а понять, почему это произошло, и что можно изменить. Это создаёт безопасное пространство для экспериментов и инноваций.</p><p>Но ядро культуры остаётся. Это честность, доверие, результативность. Когда я вижу компанию, которая смогла сохранить эти ценности, несмотря на рост и изменения – вот это я уважаю.</p></div>
+                  <div class="m-qa-row__spacer" aria-hidden="true"></div>
+                </div>
+              </div>
+              <blockquote class="m-quote-block">
           <p><strong>Дизайн-культура – это не что-то статичное. Это живой процесс. Компании меняются, люди меняются, задачи меняются. И культура должна адаптироваться к этим изменениям.</strong></p>
           <cite class="m-quote-block__cite">– Сергей Кудинов</cite>
         </blockquote>
-        
-        
-        
-        
-        
-        
-        
-      </div>
-
-    <div class="m-photo-row">
-        <figure class="m-photo-slot" id="photo-sergey-kudinov-0">
-          <div class="m-photo-slot__image">
-            <img src="../../images/sergey-kudinov-simulators.jpg" alt="Яндекс Практикум – симуляторы" loading="lazy" decoding="async" />
+              
+              
+              
+              
+              
+              
+              
+              
+            </div>
+      
+          <div class="m-photo-row">
+              <figure class="m-photo-slot" id="photo-sergey-kudinov-0">
+                <div class="m-photo-slot__image">
+                  <img src="../../images/sergey-kudinov-simulators.jpg" alt="Яндекс Практикум – симуляторы" loading="lazy" decoding="async" />
+                </div>
+                <figcaption class="m-photo-slot__caption">
+                  <span class="m-photo-slot__title">Яндекс Практикум</span>
+                </figcaption>
+              </figure>
+              <figure class="m-photo-slot" id="photo-sergey-kudinov-1">
+                <div class="m-photo-slot__image">
+                  <img src="../../images/sergey-kudinov-practicum-brand.png" alt="Яндекс Практикум – брендинг" loading="lazy" decoding="async" />
+                </div>
+                <figcaption class="m-photo-slot__caption">
+                  <span class="m-photo-slot__title">Яндекс Практикум</span>
+                </figcaption>
+              </figure>
           </div>
-          <figcaption class="m-photo-slot__caption">
-            <span class="m-photo-slot__title">Яндекс Практикум</span>
-          </figcaption>
-        </figure>
-        <figure class="m-photo-slot" id="photo-sergey-kudinov-1">
-          <div class="m-photo-slot__image">
-            <img src="../../images/sergey-kudinov-practicum-brand.png" alt="Яндекс Практикум – брендинг" loading="lazy" decoding="async" />
+      
+          <figure class="m-photo-slot m-photo-slot--wide" id="photo-sergey-kudinov-2">
+            <div class="m-photo-slot__image">
+              <img src="../../images/sergey-kudinov-practicum-wide.jpg" alt="Яндекс Практикум – интерфейс" loading="lazy" decoding="async" />
+            </div>
+            <figcaption class="m-photo-slot__caption">
+              <span class="m-photo-slot__title">Яндекс Практикум</span>
+            </figcaption>
+          </figure>
+      
+          <div class="m-photo-row m-photo-row--three">
+              <figure class="m-photo-slot" id="photo-sergey-kudinov-3">
+                <div class="m-photo-slot__image">
+                  <img src="../../images/sergey-kudinov-music.jpg" alt="Яндекс Музыка – лендинг" loading="lazy" decoding="async" />
+                </div>
+                <figcaption class="m-photo-slot__caption">
+                  <span class="m-photo-slot__title">Яндекс Музыка</span>
+                </figcaption>
+              </figure>
+              <figure class="m-photo-slot" id="photo-sergey-kudinov-4">
+                <div class="m-photo-slot__image">
+                  <img src="../../images/sergey-kudinov-music-mobile.jpg" alt="Яндекс Музыка – мобильное приложение" loading="lazy" decoding="async" />
+                </div>
+                <figcaption class="m-photo-slot__caption">
+                  <span class="m-photo-slot__title">Яндекс Музыка</span>
+                </figcaption>
+              </figure>
+              <figure class="m-photo-slot" id="photo-sergey-kudinov-5">
+                <div class="m-photo-slot__image">
+                  <img src="../../images/sergey-kudinov-browser.jpg" alt="Яндекс Браузер" loading="lazy" decoding="async" />
+                </div>
+                <figcaption class="m-photo-slot__caption">
+                  <span class="m-photo-slot__title">Яндекс Браузер</span>
+                </figcaption>
+              </figure>
           </div>
-          <figcaption class="m-photo-slot__caption">
-            <span class="m-photo-slot__title">Яндекс Практикум</span>
-          </figcaption>
-        </figure>
-    </div>
-
-    <figure class="m-photo-slot m-photo-slot--wide" id="photo-sergey-kudinov-2">
-      <div class="m-photo-slot__image">
-        <img src="../../images/sergey-kudinov-practicum-wide.jpg" alt="Яндекс Практикум – интерфейс" loading="lazy" decoding="async" />
-      </div>
-      <figcaption class="m-photo-slot__caption">
-        <span class="m-photo-slot__title">Яндекс Практикум</span>
-      </figcaption>
-    </figure>
-
-    <div class="m-photo-row m-photo-row--three">
-        <figure class="m-photo-slot" id="photo-sergey-kudinov-3">
-          <div class="m-photo-slot__image">
-            <img src="../../images/sergey-kudinov-music.jpg" alt="Яндекс Музыка – лендинг" loading="lazy" decoding="async" />
-          </div>
-          <figcaption class="m-photo-slot__caption">
-            <span class="m-photo-slot__title">Яндекс Музыка</span>
-          </figcaption>
-        </figure>
-        <figure class="m-photo-slot" id="photo-sergey-kudinov-4">
-          <div class="m-photo-slot__image">
-            <img src="../../images/sergey-kudinov-music-mobile.jpg" alt="Яндекс Музыка – мобильное приложение" loading="lazy" decoding="async" />
-          </div>
-          <figcaption class="m-photo-slot__caption">
-            <span class="m-photo-slot__title">Яндекс Музыка</span>
-          </figcaption>
-        </figure>
-        <figure class="m-photo-slot" id="photo-sergey-kudinov-5">
-          <div class="m-photo-slot__image">
-            <img src="../../images/sergey-kudinov-browser.jpg" alt="Яндекс Браузер" loading="lazy" decoding="async" />
-          </div>
-          <figcaption class="m-photo-slot__caption">
-            <span class="m-photo-slot__title">Яндекс Браузер</span>
-          </figcaption>
-        </figure>
-    </div>
-
-      <div class="m-interview-section">
-        <div class="m-interview-section__body">
-          <div class="m-qa-row m-qa-row--question">
-            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
-            <div class="m-qa-row__answer"><p>Книги, фильмы, люди, которые повлияли?</p></div>
-            <div class="m-qa-row__spacer" aria-hidden="true"></div>
-          </div>
-          <div class="m-qa-row">
-            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Сергей Кудинов">СК</span></div>
-            <div class="m-qa-row__answer"><p>Я много читаю, много смотрю. Но самое большое влияние оказала жизнь.</p><p>Когда я видел компании, которые построили хорошую культуру, я учился. Когда видел компании, которые этого не сделали, учился на их ошибках.</p><p>Есть классические книги по дизайну. Есть люди, которые много пишут и говорят о культуре. Но самое важное – видеть это в действии. В Яндексе я вижу это в действии: как люди ценят друг друга, как слушают, как строят что-то вместе. Это лучший учебник.</p></div>
-            <div class="m-qa-row__spacer" aria-hidden="true"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="m-interview-section">
-        <div class="m-interview-section__body">
-          <div class="m-qa-row m-qa-row--question">
-            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
-            <div class="m-qa-row__answer"><p>Как ты относишься к нейросетям и AI в дизайне?</p></div>
-            <div class="m-qa-row__spacer" aria-hidden="true"></div>
-          </div>
-          <div class="m-qa-row">
-            <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Сергей Кудинов">СК</span></div>
-            <div class="m-qa-row__answer"><p>Интересный вопрос. Я вижу, что нейросети появляются во всех областях, в том числе в дизайне.</p><p>На данном уровне польза от этого есть. Они сокращают время. Но я не вижу художественной ценности. Когда смотрю на результаты нейросетей – сразу вижу нейросетевую генерацию.</p><p>Мне более приятно смотреть на ручной труд. Это художник рисует. А если художник рисует как нейросеть, так бездушно – мне невероятно неприятно это смотреть.</p><p>Короче, пока искусственный интеллект, просто один из инструментов. Будут цениться люди, которые умеют этими инструментами пользоваться и смотрят широко. Они нас не заменят. Пока не появится настоящий искусственный интеллект. Когда он появится, не знаю.</p></div>
-            <div class="m-qa-row__spacer" aria-hidden="true"></div>
-          </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-      </div>
-
-    <figure class="m-photo-slot m-photo-slot--wide" id="photo-sergey-kudinov-6">
-      <div class="m-photo-slot__image">
-        <img src="../../images/sergey-kudinov-works.jpg" alt="Yandex Games – работы 2023–2025" loading="lazy" decoding="async" />
-      </div>
-      <figcaption class="m-photo-slot__caption">
-        <span class="m-photo-slot__title">Yandex Games</span>
-      </figcaption>
-    </figure>
-
-      <section class="m-article-info section">
-        <div>
-          <h3>Линки</h3>
-          <ul>
-            <li><a href="https://sergeikudinov.com" target="_blank" rel="noopener noreferrer">sergeikudinov.com</a></li>
-            <li><a href="https://www.linkedin.com/in/sergey-kudinov-83468658" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            <li><a href="https://h.careers/curators/sergey-kudinov" target="_blank" rel="noopener noreferrer">h.careers</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>О практике</h3>
-          <p>Сергей Кудинов – креативный директор Яндекс 360.</p>
-        </div>
-      </section>
-
-      <section class="m-next-article section">
-        <a class="m-next-article__circle a-arrow-button-xl" href="./anya-golub.html" aria-label="Следующая статья"></a>
-        <p>Читать дальше</p>
-        <h3>
-          <span class="m-next-article__author">Аня Голубь</span>
-          <span class="m-next-article__title">Культура как уважение, «санитар леса» и зона комфорта, без которой дизайн не держится</span>
-        </h3>
-      </section>
+      
+            <div class="m-interview-section">
+              <div class="m-interview-section__body">
+                <div class="m-qa-row m-qa-row--question">
+                  <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+                  <div class="m-qa-row__answer"><p>Книги, фильмы, люди, которые повлияли?</p></div>
+                  <div class="m-qa-row__spacer" aria-hidden="true"></div>
+                </div>
+                <div class="m-qa-row">
+                  <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Сергей Кудинов">СК</span></div>
+                  <div class="m-qa-row__answer"><p>Я много читаю, много смотрю. Но самое большое влияние оказала жизнь.</p><p>Когда я видел компании, которые построили хорошую культуру, я учился. Когда видел компании, которые этого не сделали, учился на их ошибках.</p><p>Есть классические книги по дизайну. Есть люди, которые много пишут и говорят о культуре. Но самое важное – видеть это в действии. В Яндексе я вижу это в действии: как люди ценят друг друга, как слушают, как строят что-то вместе. Это лучший учебник.</p></div>
+                  <div class="m-qa-row__spacer" aria-hidden="true"></div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="m-interview-section">
+              <div class="m-interview-section__body">
+                <div class="m-qa-row m-qa-row--question">
+                  <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="DF">DF</span></div>
+                  <div class="m-qa-row__answer"><p>Как ты относишься к нейросетям и AI в дизайне?</p></div>
+                  <div class="m-qa-row__spacer" aria-hidden="true"></div>
+                </div>
+                <div class="m-qa-row">
+                  <div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Сергей Кудинов">СК</span></div>
+                  <div class="m-qa-row__answer"><p>Интересный вопрос. Я вижу, что нейросети появляются во всех областях, в том числе в дизайне.</p><p>На данном уровне польза от этого есть. Они сокращают время. Но я не вижу художественной ценности. Когда смотрю на результаты нейросетей – сразу вижу нейросетевую генерацию.</p><p>Мне более приятно смотреть на ручной труд. Это художник рисует. А если художник рисует как нейросеть, так бездушно – мне невероятно неприятно это смотреть.</p><p>Короче, пока искусственный интеллект, просто один из инструментов. Будут цениться люди, которые умеют этими инструментами пользоваться и смотрят широко. Они нас не заменят. Пока не появится настоящий искусственный интеллект. Когда он появится, не знаю.</p></div>
+                  <div class="m-qa-row__spacer" aria-hidden="true"></div>
+                </div>
+              </div>
+              
+              
+              
+              
+              
+              
+              
+              
+            </div>
+      
+          <figure class="m-photo-slot m-photo-slot--wide" id="photo-sergey-kudinov-6">
+            <div class="m-photo-slot__image">
+              <img src="../../images/sergey-kudinov-works.jpg" alt="Yandex Games – работы 2023–2025" loading="lazy" decoding="async" />
+            </div>
+            <figcaption class="m-photo-slot__caption">
+              <span class="m-photo-slot__title">Yandex Games</span>
+            </figcaption>
+          </figure>
+      
+            </div>
+      <div class="o-interview-footer">
+      
+      
+              <section class="m-article-info a-section">
+              <div class="m-article-info__col">
+                <h3 class="m-article-info__heading">Линки</h3>
+                <ul class="m-article-info__list">
+                  <li class="m-article-info__item"><a href="https://sergeikudinov.com" target="_blank" rel="noopener noreferrer">sergeikudinov.com</a></li>
+                  <li class="m-article-info__item"><a href="https://www.linkedin.com/in/sergey-kudinov-83468658" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                  <li class="m-article-info__item"><a href="https://h.careers/curators/sergey-kudinov" target="_blank" rel="noopener noreferrer">h.careers</a></li>
+                </ul>
+              </div>
+              <div class="m-article-info__col">
+                <h3 class="m-article-info__heading">О практике</h3>
+                <p class="m-article-info__bio">Сергей Кудинов – креативный директор Яндекс 360.</p>
+              </div>
+            </section>
+      
+      
+      
+              <section class="m-next-article a-section">
+              <a class="m-next-article__circle a-arrow-button-xl" href="./anya-golub.html" aria-label="Следующая статья"></a>
+              <p class="m-next-article__lead">Читать дальше</p>
+              <h3 class="m-next-article__heading">
+                <span class="m-next-article__author">Аня Голубь</span>
+                <span class="m-next-article__title">Культура как уважение, «санитар леса» и зона комфорта, без которой дизайн не держится</span>
+              </h3>
+            </section>
+      
+      
+            </div>
     </main>
 
     <div class="a-sticky-scroll-wrap">
@@ -221,8 +214,8 @@
       </div>
     </div>
 
-    <footer class="footer s-footer">
-      <div class="footer-grid">
+    <footer class="s-footer">
+      <div class="s-footer__grid">
         <div>
           <h4>Смотрите</h4>
           <a href="../journal.html">Журнал</a>
@@ -247,8 +240,11 @@
           <a href="https://arkhipovau.xyz/">Юлия Архипова</a>
           <a href="https://t.me/dayglobal">Куратор – Захар День</a>
         </div>
+        <div class="s-footer__up">
+          <button class="a-arrow-button a-arrow-button--up" type="button" aria-label="Наверх"></button>
+        </div>
       </div>
-      <div class="footer-bottom">
+      <div class="s-footer__bottom">
         <span>© 2025 – 2026 deFindings</span>
         <span>HSE Art&amp;Design School</span>
       </div>
@@ -257,7 +253,7 @@
     <script defer src="../../udf/superorganisms/menu/menu-overlay.js"></script>
     <script defer src="../../udf/superorganisms/menu/s-menu.js"></script>
     <script defer src="../../udf/superorganisms/footer/s-footer.js"></script>
-    <script defer src="../../javascripts/sticky-scroll.js"></script>
-    <script defer src="../../javascripts/micro-animations.js"></script>
+    <script defer src="../../udf/atoms/sticky-scroll/a-sticky-scroll.js"></script>
+    <script defer src="../../udf/runtime/micro-animations.js"></script>
   </body>
 </html>

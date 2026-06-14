@@ -80,9 +80,10 @@
         priority: 85
       },
 
+      // SEARCH_INTERVIEWS_START
       {
         title: 'Артём Тарасов и Артём Тарадаш',
-        subtitle: 'Мир постдизайна',
+        subtitle: 'Антидисциплинарный подход, мир постдизайна и крафт в эпоху AI',
         kind: 'Статья',
         href: interview('togetherwithyou'),
         keywords: 'студия тбилиси анти дисциплина брендинг крафт ai',
@@ -90,7 +91,7 @@
       },
       {
         title: 'Алексей Пьянков',
-        subtitle: 'Белый лист',
+        subtitle: 'Как в Pragmatica живёт дизайн-ДНК: белый лист на школьном сборе и треугольник результата',
         kind: 'Статья',
         href: interview('aleksey-pyankov'),
         keywords: 'екатеринбург pragmatica прагматика студия',
@@ -98,7 +99,7 @@
       },
       {
         title: 'Полина Загуменова',
-        subtitle: 'Флексибельные рамки',
+        subtitle: 'Гибкие рамки в Берлине, неожиданные заказы и скепсис к AI-картинкам',
         kind: 'Статья',
         href: interview('polina-zagumenova'),
         keywords: 'берлин фриланс щука ai',
@@ -106,7 +107,7 @@
       },
       {
         title: 'Маша Черн',
-        subtitle: 'Дизайн про коллаборации',
+        subtitle: 'От «сделаю всё сама» к коллаборациям, ребрендинг TON и границы с генеративными картинками',
         kind: 'Статья',
         href: interview('masha-chern'),
         keywords: 'копенгаген дания ton tone verle продукт',
@@ -114,7 +115,7 @@
       },
       {
         title: 'Юля Кондратьева',
-        subtitle: 'Уместный дизайн',
+        subtitle: 'Уместный дизайн, «Типомания», Werkstatt и границы слова «дизайн-культура»',
         kind: 'Статья',
         href: interview('yulya-kondratyeva'),
         keywords: 'тбилиси werkstatt гроза holystick школа',
@@ -122,7 +123,7 @@
       },
       {
         title: 'Ян Зарецкий',
-        subtitle: 'Генотип бренда',
+        subtitle: 'Генотип и фенотип бренда, цельность как критерий и «Мастерская» в Петербурге',
         kind: 'Статья',
         href: interview('yan-zaretsky'),
         keywords: 'санкт-петербург питер munk мастерская продукт студия',
@@ -130,7 +131,7 @@
       },
       {
         title: 'Сергей Бреус',
-        subtitle: 'Недели на мудборде',
+        subtitle: 'Недели на мудборде, ремесло с пользой и страх однотипного AI-контента',
         kind: 'Статья',
         href: interview('sergey-breus'),
         keywords: 'москва ony oni f61 студия',
@@ -138,7 +139,7 @@
       },
       {
         title: 'Сергей Кудинов',
-        subtitle: 'Симулятор культуры',
+        subtitle: 'Культура против симулятора в продуктовом дизайне и ценность ручного труда',
         kind: 'Статья',
         href: interview('sergey-kudinov'),
         keywords: 'москва яндекс 360 продукт',
@@ -146,7 +147,7 @@
       },
       {
         title: 'Аня Голубь',
-        subtitle: 'Санитар леса',
+        subtitle: 'Культура как уважение, «санитар леса» и зона комфорта, без которой дизайн не держится',
         kind: 'Статья',
         href: interview('anya-golub'),
         keywords: 'бали призма prizma студия',
@@ -154,7 +155,7 @@
       },
       {
         title: 'Даша Макурина',
-        subtitle: 'Метафора продукта',
+        subtitle: 'CGI, метафоры продукта и инклюзивный визуал в pont.design и Rarible',
         kind: 'Статья',
         href: interview('dasha-makurina'),
         keywords: 'москва rarible pont design продукт 3d cgi',
@@ -162,7 +163,7 @@
       },
       {
         title: 'Саша Барабонова',
-        subtitle: 'Эмпатичный дизайн',
+        subtitle: 'Случайный путь в дизайн, эмпатия как основа профессии и примирение с AI',
         kind: 'Статья',
         href: interview('sasha-barabonova'),
         keywords: 'ереван phygital t-банк vk yandex pragmatica lalalai продукт',
@@ -170,7 +171,7 @@
       },
       {
         title: 'Стефан Лашко',
-        subtitle: 'Порядок из хаоса',
+        subtitle: 'Порядок из хаоса, метафора в знаке и отказ от клиентов без ценностей',
         kind: 'Статья',
         href: interview('stefan-lashko'),
         keywords: 'москва esh студия преподаватель',
@@ -178,7 +179,7 @@
       },
       {
         title: 'Оля Бажанова',
-        subtitle: 'Душа в сувенирке',
+        subtitle: 'Когда лучше не сделать, игра «Хвостики» и душа в сувенирном производстве',
         kind: 'Статья',
         href: interview('olya-bazanova'),
         keywords: 'калининград подписные додо издательство',
@@ -186,7 +187,7 @@
       },
       {
         title: 'Анастасия Сычева',
-        subtitle: 'AI как краска',
+        subtitle: 'Бизнес-контекст, кор-идея бренда и AI как краска в палитре, а не замена руки',
         kind: 'Статья',
         href: interview('anastasia-sycheva'),
         keywords: 'белград студия y combinator брендинг',
@@ -194,42 +195,34 @@
       },
       {
         title: 'Артём Герц',
-        subtitle: 'Язык с нуля',
+        subtitle: 'Язык с нуля в айдентике: Redis, Nil Foundation и честность в решениях',
         kind: 'Статья',
         href: interview('artem-gerts'),
         keywords: 'москва redis студия айдентика',
         priority: 70
       },
       {
+        title: 'Сергей Мекрюков',
+        subtitle: 'Гемба в ресторанах, метрики Dodo Brands и честные UX-ревью',
+        kind: 'Статья',
+        href: interview('sergey-mekryukov'),
+        keywords: 'москва dodo brands додо продукт ux сервисы',
+        priority: 70
+      },
+      {
         title: 'Гаврил Перов',
-        subtitle: 'Good enough',
+        subtitle: 'Архитектура, город и графический язык',
         kind: 'Статья',
         href: interview('gavril-perov'),
-        keywords: 'париж франция drinkit продукт',
+        keywords: 'париж франция drinkit продукт архитектура город графический',
         priority: 70
       },
       {
         title: 'Елена Чинакова',
-        subtitle: 'Зоркий взгляд',
+        subtitle: 'Zorky в Лондоне, роль дизайнера в Avito и взросление в профессии',
         kind: 'Статья',
         href: interview('elena-chinakova'),
         keywords: 'лондон великобритания сообщество zorky avito',
-        priority: 70
-      },
-      {
-        title: 'Андрей Максименков',
-        subtitle: 'Ночные идеи',
-        kind: 'Статья',
-        href: interview('andrey-maksimenkov'),
-        keywords: 'ростов spros диджитал интервью проект',
-        priority: 70
-      },
-      {
-        title: 'Сергей Мекрюков',
-        subtitle: 'Гемба в ресторанах',
-        kind: 'Статья',
-        href: interview('sergey-mekryukov'),
-        keywords: 'москва dodo brands додо продукт ux сервисы',
         priority: 70
       },
       {
@@ -241,8 +234,16 @@
         priority: 70
       },
       {
+        title: 'Андрей Максименков',
+        subtitle: 'spros, пять принципов мышления и ночные идеи, которые нельзя терять',
+        kind: 'Статья',
+        href: interview('andrey-maksimenkov'),
+        keywords: 'ростов spros диджитал интервью проект',
+        priority: 70
+      },
+      {
         title: 'Никита Петров',
-        subtitle: 'Портфолио как продукт',
+        subtitle: 'Портфолио как продукт, data-driven подход и собственные проекты',
         kind: 'Статья',
         href: interview('nikita-petrov'),
         keywords: 'москва nikipetrov продукт проект foliobin savi medium portfolio',
@@ -250,12 +251,13 @@
       },
       {
         title: 'Максим Аксенов',
-        subtitle: 'Интервью готовится',
+        subtitle: 'Архитектурный бэкграунд, дизайн как система и дисциплина мышления',
         kind: 'Статья',
         href: interview('maxim-aksenov'),
-        keywords: 'москва фриланс дизайн',
+        keywords: 'москва фриланс дизайн архитектура система lash',
         priority: 70
-      }
+      },
+      // SEARCH_INTERVIEWS_END
     ];
 
     return items.map(function (item, index) {
@@ -323,51 +325,51 @@
     };
 
     return (
-      '<div class="site-menu" role="dialog" aria-modal="true" aria-label="Меню сайта">' +
-      '  <div class="site-menu__panel">' +
-      '    <div class="site-menu__main">' +
-      '      <a class="site-menu__card" href="' +
+      '<div class="s-menu__drawer" role="dialog" aria-modal="true" aria-label="Меню сайта">' +
+      '  <div class="s-menu__panel">' +
+      '    <div class="s-menu__main">' +
+      '      <a class="s-menu__card" href="' +
       links.journal +
       '">' +
-      '        <span class="site-menu__card-thumb">' +
+      '        <span class="s-menu__card-thumb">' +
       '          <img src="' +
       prefix +
       'images/img_journal.png" alt="" loading="lazy" />' +
       '        </span>' +
-      '        <span class="site-menu__card-title">Журнал</span>' +
+      '        <span class="s-menu__card-title">Журнал</span>' +
       '      </a>' +
-      '      <a class="site-menu__card" href="' +
+      '      <a class="s-menu__card" href="' +
       links.gallery +
       '">' +
-      '        <span class="site-menu__card-thumb">' +
+      '        <span class="s-menu__card-thumb">' +
       '          <img src="' +
       prefix +
       'images/img_gallery.png" alt="" loading="lazy" />' +
       '        </span>' +
-      '        <span class="site-menu__card-title">Галерея</span>' +
+      '        <span class="s-menu__card-title">Галерея</span>' +
       '      </a>' +
-      '      <a class="site-menu__card site-menu__card--about" href="' +
+      '      <a class="s-menu__card s-menu__card--about" href="' +
       links.about +
       '">' +
-      '        <span class="site-menu__card-thumb">' +
+      '        <span class="s-menu__card-thumb">' +
       '          <img src="' +
       prefix +
       'images/Q_MenuImage_about.png" alt="" loading="lazy" />' +
       '        </span>' +
-      '        <span class="site-menu__card-title">О проекте</span>' +
+      '        <span class="s-menu__card-title">О проекте</span>' +
       '      </a>' +
-      '      <a class="site-menu__card site-menu__card--issue" href="' +
+      '      <a class="s-menu__card s-menu__card--issue" href="' +
       links.issue +
       '">' +
-      '        <span class="site-menu__card-thumb">' +
+      '        <span class="s-menu__card-thumb">' +
       '          <img src="' +
       prefix +
       'images/Q_MenuImage_print.png" alt="" loading="lazy" />' +
       '        </span>' +
-      '        <span class="site-menu__card-title">Печатный выпуск</span>' +
+      '        <span class="s-menu__card-title">Печатный выпуск</span>' +
       '      </a>' +
       '    </div>' +
-      '    <div class="site-menu__links">' +
+      '    <div class="s-menu__links">' +
       '      <a href="' +
       links.newsletter +
       '">Рассылка</a>' +
@@ -382,70 +384,82 @@
 
   function buildSearchMarkup(prefix) {
     return (
-      '<div class="site-search" role="dialog" aria-modal="true" aria-label="Поиск по сайту">' +
-      '  <form class="site-search__form" role="search" autocomplete="off">' +
-      '    <input class="site-search__input" type="search" name="q" placeholder="Поиск по сайту" aria-label="Поиск по сайту" />' +
-      '    <button class="site-search__close" type="button" aria-label="Закрыть поиск">' +
-      '      <img class="site-search__icon" src="' +
+      '<div class="s-menu__search-panel" role="dialog" aria-modal="true" aria-label="Поиск по сайту">' +
+      '  <form class="s-menu__search-form" role="search" autocomplete="off">' +
+      '    <input class="s-menu__search-input" type="search" name="q" placeholder="Поиск по сайту" aria-label="Поиск по сайту" />' +
+      '    <button class="s-menu__search-close" type="button" aria-label="Закрыть поиск">' +
+      '      <img class="s-menu__search-icon" src="' +
       prefix +
       'udf/quarks/icons/q-icon-close-16-black.svg" alt="" aria-hidden="true" />' +
       '    </button>' +
       '  </form>' +
-      '  <div class="site-search__results" role="listbox" aria-label="Результаты поиска"></div>' +
+      '  <div class="s-menu__search-results" role="listbox" aria-label="Результаты поиска"></div>' +
       '</div>'
     );
   }
 
+  function ensureMenuButton(btn, iconSrc, ariaLabel) {
+    if (!btn) return null;
+    btn.setAttribute('aria-label', ariaLabel);
+    var img = btn.querySelector('.s-menu__icon');
+    if (!img) {
+      img = document.createElement('img');
+      img.className = 's-menu__icon';
+      img.alt = '';
+      img.setAttribute('aria-hidden', 'true');
+      btn.appendChild(img);
+    }
+    img.src = iconSrc;
+    return btn;
+  }
+
   function initMenuOverlay() {
-    var topbar = document.querySelector('.topbar');
-    if (!topbar || topbar.dataset.menuReady === '1') return;
-    topbar.classList.add('topbar--menu');
+    var menuHeader = document.querySelector('header.s-menu');
+    if (!menuHeader || menuHeader.dataset.menuReady === '1') return;
+    menuHeader.classList.add('s-menu--ready');
 
     var prefix = getPrefix();
     var searchIcon = prefix + 'udf/quarks/icons/q-icon-magnifying-glass-16-black.svg';
     var burgerIcon = prefix + 'udf/quarks/icons/q-icon-burger-16-black.svg';
     var closeIcon = prefix + 'udf/quarks/icons/q-icon-close-16-black.svg';
 
-    var menuSearch = document.createElement('button');
-    menuSearch.type = 'button';
-    menuSearch.className = 'menu-search';
-    menuSearch.setAttribute('aria-label', 'Поиск');
-    menuSearch.setAttribute('aria-expanded', 'false');
-    menuSearch.innerHTML =
-      '<img class="menu-icon" src="' +
-      searchIcon +
-      '" alt="" aria-hidden="true" />';
+    var menuSearch = menuHeader.querySelector('.s-menu__search');
+    if (!menuSearch) {
+      menuSearch = document.createElement('button');
+      menuSearch.type = 'button';
+      menuSearch.className = 's-menu__search';
+      menuSearch.setAttribute('aria-expanded', 'false');
+      menuHeader.insertBefore(menuSearch, menuHeader.firstChild);
+    }
+    ensureMenuButton(menuSearch, searchIcon, 'Поиск');
 
-    var menuToggle = document.createElement('button');
-    menuToggle.type = 'button';
-    menuToggle.className = 'menu-toggle';
-    menuToggle.setAttribute('aria-label', 'Открыть меню');
-    menuToggle.setAttribute('aria-expanded', 'false');
-    menuToggle.innerHTML =
-      '<img class="menu-icon" src="' +
-      burgerIcon +
-      '" alt="" aria-hidden="true" />';
-
-    topbar.insertBefore(menuSearch, topbar.firstChild);
-    topbar.appendChild(menuToggle);
-    topbar.dataset.menuReady = '1';
+    var menuToggle = menuHeader.querySelector('.s-menu__toggle');
+    if (!menuToggle) {
+      menuToggle = document.createElement('button');
+      menuToggle.type = 'button';
+      menuToggle.className = 's-menu__toggle';
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuHeader.appendChild(menuToggle);
+    }
+    ensureMenuButton(menuToggle, burgerIcon, 'Открыть меню');
+    menuHeader.dataset.menuReady = '1';
 
     var layer = document.createElement('div');
-    layer.className = 'site-menu-layer';
+    layer.className = 's-menu__layer';
     layer.setAttribute('aria-hidden', 'true');
     layer.innerHTML = buildMenuMarkup(prefix);
     document.body.appendChild(layer);
 
     var searchLayer = document.createElement('div');
-    searchLayer.className = 'site-search-layer';
+    searchLayer.className = 's-menu__search-layer';
     searchLayer.setAttribute('aria-hidden', 'true');
     searchLayer.innerHTML = buildSearchMarkup(prefix);
     document.body.appendChild(searchLayer);
 
-    var searchForm = searchLayer.querySelector('.site-search__form');
-    var searchInput = searchLayer.querySelector('.site-search__input');
-    var searchClose = searchLayer.querySelector('.site-search__close');
-    var searchResults = searchLayer.querySelector('.site-search__results');
+    var searchForm = searchLayer.querySelector('.s-menu__search-form');
+    var searchInput = searchLayer.querySelector('.s-menu__search-input');
+    var searchClose = searchLayer.querySelector('.s-menu__search-close');
+    var searchResults = searchLayer.querySelector('.s-menu__search-results');
     var searchIndex = buildSearchIndex(prefix);
     var latestResults = [];
 
@@ -455,7 +469,7 @@
 
       if (!latestResults.length) {
         var empty = document.createElement('div');
-        empty.className = 'site-search__empty';
+        empty.className = 's-menu__search-empty';
         empty.textContent = 'Ничего не найдено';
         searchResults.appendChild(empty);
         return;
@@ -463,22 +477,22 @@
 
       latestResults.forEach(function (item) {
         var link = document.createElement('a');
-        link.className = 'site-search__item';
+        link.className = 's-menu__search-item';
         link.href = item.href;
 
         var content = document.createElement('span');
-        content.className = 'site-search__content';
+        content.className = 's-menu__search-content';
 
         var title = document.createElement('span');
-        title.className = 'site-search__title';
+        title.className = 's-menu__search-title';
         title.textContent = item.title;
 
         var subtitle = document.createElement('span');
-        subtitle.className = 'site-search__subtitle';
+        subtitle.className = 's-menu__search-subtitle';
         subtitle.textContent = item.subtitle;
 
         var kind = document.createElement('span');
-        kind.className = 'site-search__kind';
+        kind.className = 's-menu__search-kind';
         kind.textContent = item.kind;
 
         content.appendChild(title);

@@ -1,0 +1,30 @@
+.m-journal-filters {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+
+  mask-image: linear-gradient(
+    to right,
+    black 0%,
+    black calc(100% - 96px),
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    black 0%,
+    black calc(100% - 96px),
+    transparent 100%
+  );
+}
+
+.m-journal-filters::-webkit-scrollbar {
+  display: none;
+}

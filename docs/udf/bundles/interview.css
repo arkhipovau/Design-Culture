@@ -1,0 +1,12 @@
+@import '../organisms/interview-page/o-interview-page.css';
+@import '../atoms/arrow-button-xl/a-arrow-button-xl.css';
+@import '../molecules/qa-row/m-qa-row.css';
+@import '../molecules/quote-block/m-quote-block.css';
+@import '../molecules/next-article/m-next-article.css';
+@import '../molecules/article-info/m-article-info.css';
+@import '../molecules/interview-portrait/m-interview-portrait.css';
+@import '../molecules/interview-section/m-interview-section.css';
+@import '../molecules/photo-slot/m-photo-slot.css';
+@import '../organisms/interview-hero/o-interview-hero.css';
+@import '../organisms/interview-body/o-interview-body.css';
+@import '../organisms/interview-footer/o-interview-footer.css';

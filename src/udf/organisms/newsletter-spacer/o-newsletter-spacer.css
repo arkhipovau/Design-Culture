@@ -1,0 +1,3 @@
+.o-newsletter-spacer {
+  min-height: clamp(120px, 18vw, 200px);
+}

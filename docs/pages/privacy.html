@@ -3,42 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- deFindings favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="../udf/quarks/branding/favicon-light.png" media="(prefers-color-scheme: light)" />
     <link rel="icon" type="image/png" sizes="32x32" href="../udf/quarks/branding/favicon-dark.png" media="(prefers-color-scheme: dark)" />
     <link rel="icon" type="image/png" sizes="32x32" href="../udf/quarks/branding/favicon-light.png" />
-    <!-- /deFindings favicons -->
     <title>Политика конфиденциальности – deFindings</title>
     <link rel="stylesheet" href="../stylesheets/index.css" />
-    <link rel="stylesheet" href="../udf/tokens/colors.css" />
-    <link rel="stylesheet" href="../udf/tokens/typography.css" />
-    <link rel="stylesheet" href="./about.css?v=20260612" />
-    <link rel="stylesheet" href="../stylesheets/micro-animations.css" />
-    <link rel="stylesheet" href="../udf/atoms/arrow-buttons/a-arrow-buttons.css" />
-    <link rel="stylesheet" href="../udf/atoms/sticky-scroll/a-sticky-scroll.css" />
-    <link rel="stylesheet" href="../udf/superorganisms/menu/s-menu.css" />
-    <link rel="stylesheet" href="../udf/superorganisms/footer/s-footer.css" />
-    <link rel="stylesheet" href="../udf/quarks/findings/q-findings.css" />
-    <link rel="stylesheet" href="../udf/atoms/button/a-button.css?v=20260522c" />
-    <link rel="stylesheet" href="../stylesheets/cookie-consent.css" />
-    <script defer src="../javascripts/cookie-consent.js"></script>
+    <link rel="stylesheet" href="../udf/bundles/shell.css" />
+    <link rel="stylesheet" href="../udf/bundles/about.css?v=20260531a" />
+    <link rel="stylesheet" href="../udf/runtime/micro-animations.css" />
+    <script defer src="../udf/molecules/cookie-consent/m-cookie-consent.js"></script>
   </head>
-  <body data-reading-page="Политика конфиденциальности deFindings">
+  <body class="o-site-shell" data-reading-page="Политика конфиденциальности deFindings">
     <div class="q-findings-overlay" aria-hidden="true"></div>
-    <header class="topbar topbar--menu s-menu about-topbar">
-      <a class="logo" href="../index.html" aria-label="deFindings">
-        <img class="logo-mark" src="../udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
-        <span class="visually-hidden">deFindings</span>
+    <header class="s-menu s-menu--ready">
+      <button class="s-menu__search" type="button" aria-label="Поиск" aria-expanded="false"></button>
+      <a class="s-menu__logo" href="../index.html" aria-label="deFindings">
+        <img class="s-menu__logo-mark" src="../udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
+        <span class="a-visually-hidden">deFindings</span>
       </a>
+    <button class="s-menu__toggle" type="button" aria-label="Открыть меню" aria-expanded="false"></button>
     </header>
 
-    <main class="about-page">
-      <section class="about-spacer section"></section>
+    <main class="o-about-page">
+      <section class="o-about-spacer a-section"></section>
 
-      <article class="about-stack section">
-        <header class="about-block about-block--hero">
+      <article class="o-about-content a-section">
+        <header class="m-about-block m-about-block--hero">
           <h1>Политика конфиденциальности</h1>
-          <p class="about-meta">Дата публикации: 8 июня 2026 г. · Сайт: <a href="https://defindings.com">defindings.com</a></p>
+          <p class="m-about-block__meta">Дата публикации: 8 июня 2026 г. · Сайт: <a href="https://defindings.com">defindings.com</a></p>
           <p>
             deFindings – некоммерческий учебный медиа-проект: дипломная работа Юлии Архиповой в Школе
             дизайна НИУ ВШЭ (2026). Сайт не продаёт товары и услуги, не показывает рекламу и не
@@ -51,7 +43,7 @@
           </p>
         </header>
 
-        <section class="about-block">
+        <section class="m-about-block">
           <h2>1. Оператор персональных данных</h2>
           <p>
             Оператором персональных данных в рамках учебного проекта deFindings является
@@ -69,7 +61,7 @@
           </p>
         </section>
 
-        <section class="about-block">
+        <section class="m-about-block">
           <h2>2. Какие данные мы обрабатываем</h2>
           <p>На сайте могут обрабатываться следующие категории данных:</p>
           <ul>
@@ -90,7 +82,7 @@
           </p>
         </section>
 
-        <section class="about-block">
+        <section class="m-about-block">
           <h2>3. Цели обработки</h2>
           <p>Данные обрабатываются только в объёме, необходимом для учебного проекта:</p>
           <ul>
@@ -105,7 +97,7 @@
           </p>
         </section>
 
-        <section class="about-block">
+        <section class="m-about-block">
           <h2>4. Правовые основания</h2>
           <p>Мы обрабатываем персональные данные на следующих основаниях:</p>
           <ul>
@@ -124,7 +116,7 @@
           </ul>
         </section>
 
-        <section class="about-block">
+        <section class="m-about-block">
           <h2>5. Cookie и аналитика</h2>
           <p>
             Сайт использует cookie и схожие технологии для работы сервисов веб-аналитики. При первом
@@ -153,7 +145,7 @@
           </p>
         </section>
 
-        <section class="about-block">
+        <section class="m-about-block">
           <h2>6. Передача данных третьим лицам</h2>
           <p>
             Мы передаём данные только тем сервисам, которые нужны для работы сайта и рассылки:
@@ -170,7 +162,7 @@
           </p>
         </section>
 
-        <section class="about-block">
+        <section class="m-about-block">
           <h2>7. Срок хранения</h2>
           <ul>
             <li>
@@ -188,7 +180,7 @@
           </ul>
         </section>
 
-        <section class="about-block">
+        <section class="m-about-block">
           <h2>8. Ваши права</h2>
           <p>В соответствии с 152-ФЗ вы вправе:</p>
           <ul>
@@ -208,7 +200,7 @@
           </p>
         </section>
 
-        <section class="about-block">
+        <section class="m-about-block">
           <h2>9. Защита данных</h2>
           <p>
             Мы принимаем разумные меры для защиты данных в рамках учебного проекта: используем HTTPS,
@@ -217,7 +209,7 @@
           </p>
         </section>
 
-        <section class="about-block">
+        <section class="m-about-block">
           <h2>10. Учебный характер проекта</h2>
           <p>
             deFindings публикуется как дипломный и исследовательский проект. После завершения
@@ -230,7 +222,7 @@
           </p>
         </section>
 
-        <section class="about-block">
+        <section class="m-about-block">
           <h2>11. Изменения политики</h2>
           <p>
             Мы можем обновлять эту политику. Актуальная версия всегда доступна на этой странице.
@@ -240,8 +232,21 @@
       </article>
     </main>
 
-    <footer class="footer s-footer">
-      <div class="footer-grid">
+    <div class="a-sticky-scroll-wrap">
+      <div class="a-sticky-scroll">
+        <span class="a-sticky-scroll__rec" aria-hidden="true"></span>
+        <span class="a-sticky-scroll__content">
+          <span class="a-sticky-scroll__dot" aria-hidden="true"></span>
+          <span class="a-sticky-scroll__text">
+            <span class="a-sticky-scroll__prefix">Вы читаете</span>
+            <span class="a-sticky-scroll__current">«Политика конфиденциальности deFindings»</span>
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <footer class="s-footer">
+      <div class="s-footer__grid">
         <div>
           <h4>Смотрите</h4>
           <a href="./journal.html">Журнал</a>
@@ -266,30 +271,20 @@
           <a href="https://arkhipovau.xyz/">Юлия Архипова</a>
           <a href="https://t.me/dayglobal">Куратор – Захар День</a>
         </div>
+        <div class="s-footer__up">
+          <button class="a-arrow-button a-arrow-button--up" type="button" aria-label="Наверх"></button>
+        </div>
       </div>
-      <div class="footer-bottom">
+      <div class="s-footer__bottom">
         <span>© 2025 – 2026 deFindings</span>
         <span>HSE Art&amp;Design School</span>
       </div>
     </footer>
 
-    <div class="a-sticky-scroll-wrap">
-      <div class="a-sticky-scroll">
-        <span class="a-sticky-scroll__rec" aria-hidden="true"></span>
-        <span class="a-sticky-scroll__content">
-          <span class="a-sticky-scroll__dot" aria-hidden="true"></span>
-          <span class="a-sticky-scroll__text">
-            <span class="a-sticky-scroll__prefix">Вы читаете</span>
-            <span class="a-sticky-scroll__current">«Политика конфиденциальности deFindings»</span>
-          </span>
-        </span>
-      </div>
-    </div>
-
     <script defer src="../udf/superorganisms/menu/menu-overlay.js"></script>
     <script defer src="../udf/superorganisms/menu/s-menu.js"></script>
     <script defer src="../udf/superorganisms/footer/s-footer.js"></script>
-    <script defer src="../javascripts/sticky-scroll.js"></script>
-    <script defer src="../javascripts/micro-animations.js"></script>
+    <script defer src="../udf/atoms/sticky-scroll/a-sticky-scroll.js"></script>
+    <script defer src="../udf/runtime/micro-animations.js"></script>
   </body>
 </html>

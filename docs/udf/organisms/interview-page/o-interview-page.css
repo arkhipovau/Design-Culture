@@ -1,0 +1,12 @@
+.o-interview-page {
+  background: var(--color-light-grey);
+}
+
+.s-menu--article {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 60;
+  width: var(--grid-content-width);
+}

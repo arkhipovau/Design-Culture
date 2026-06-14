@@ -6,3 +6,21 @@
   object-fit: cover;
   border-radius: 0;
 }
+
+.q-image-journal--placeholder {
+  background: var(--color-light-grey);
+  border: 1px dashed var(--color-dark-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px;
+  box-sizing: border-box;
+  color: var(--color-dark-grey);
+  font-size: var(--type-button-s);
+  line-height: var(--type-button-s-lh);
+}
+
+.q-image-journal--placeholder::before {
+  content: attr(data-placeholder-label);
+}

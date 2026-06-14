@@ -1,9 +1,6 @@
 (() => {
   function markMenuNodes() {
-    document.querySelectorAll('.topbar').forEach((el) => {
-      el.classList.add('s-menu');
-    });
-    document.querySelectorAll('.site-menu-layer, .site-search-layer').forEach((el) => {
+    document.querySelectorAll('.s-menu__layer, .s-menu__search-layer').forEach((el) => {
       el.classList.add('s-menu');
     });
   }

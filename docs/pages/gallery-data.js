@@ -840,6 +840,174 @@ window.deFindingsGalleryData = {
       "author": "Андрей Максименков",
       "subtitle": "Ночные идеи",
       "href": "./interviews/andrey-maksimenkov.html#photo-andrey-maksimenkov-2"
+    },
+    {
+      "src": "../images/interviews/maxim-aksenov/Easy%20Cycling%20Club%201.webp",
+      "author": "Максим Аксенов",
+      "project": "Easy Cycling Club",
+      "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
+      "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-3"
+    },
+    {
+      "src": "../images/interviews/maxim-aksenov/Easy%20Cycling%20Club%202.webp",
+      "author": "Максим Аксенов",
+      "project": "Easy Cycling Club",
+      "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
+      "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-4"
+    },
+    {
+      "src": "../images/interviews/maxim-aksenov/Easy%20Cycling%20Club%204.webp",
+      "author": "Максим Аксенов",
+      "project": "Easy Cycling Club",
+      "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
+      "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-6"
+    },
+    {
+      "src": "../images/interviews/maxim-aksenov/Easy%20Cycling%20Club%205.gif",
+      "author": "Максим Аксенов",
+      "project": "Easy Cycling Club",
+      "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
+      "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-7"
+    },
+    {
+      "src": "../images/interviews/maxim-aksenov/DNA.jpg",
+      "author": "Максим Аксенов",
+      "project": "DNA",
+      "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
+      "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-0"
+    },
+    {
+      "src": "../images/interviews/maxim-aksenov/DNA%202.jpg",
+      "author": "Максим Аксенов",
+      "project": "DNA",
+      "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
+      "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-1"
+    },
+    {
+      "src": "../images/interviews/maxim-aksenov/Type%20Conference%201.webp",
+      "author": "Максим Аксенов",
+      "project": "Type Conference",
+      "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
+      "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-8"
+    },
+    {
+      "src": "../images/interviews/maxim-aksenov/Type%20Conference%202.webp",
+      "author": "Максим Аксенов",
+      "project": "Type Conference",
+      "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
+      "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-9"
+    },
+    {
+      "src": "../images/interviews/maxim-aksenov/Type%20Conference%203.webp",
+      "author": "Максим Аксенов",
+      "project": "Type Conference",
+      "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
+      "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-10"
+    },
+    {
+      "src": "../images/interviews/maxim-aksenov/GE%20(2024).png",
+      "author": "Максим Аксенов",
+      "project": "ЛАШ 2024",
+      "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
+      "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-11"
+    },
+    {
+      "src": "../images/interviews/maxim-aksenov/GE%20(2025).png",
+      "author": "Максим Аксенов",
+      "project": "ЛАШ 2025",
+      "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
+      "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-12"
+    },
+    {
+      "src": "../images/interviews/maxim-aksenov/GE%20(2026).png",
+      "author": "Максим Аксенов",
+      "project": "ЛАШ 2026",
+      "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
+      "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-13"
+    },
+    {
+      "src": "../images/interviews/maxim-aksenov/L2024%20(1).jpg",
+      "author": "Максим Аксенов",
+      "project": "ЛАШ 2024",
+      "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
+      "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-14"
+    },
+    {
+      "src": "../images/interviews/maxim-aksenov/L2024%20(2).jpg",
+      "author": "Максим Аксенов",
+      "project": "ЛАШ 2024",
+      "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
+      "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-15"
+    },
+    {
+      "src": "../images/interviews/maxim-aksenov/L2024%20(3).jpg",
+      "author": "Максим Аксенов",
+      "project": "ЛАШ 2024",
+      "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
+      "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-16"
+    },
+    {
+      "src": "../images/interviews/maxim-aksenov/L2024%20(4).jpg",
+      "author": "Максим Аксенов",
+      "project": "ЛАШ 2024",
+      "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
+      "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-17"
+    },
+    {
+      "src": "../images/interviews/maxim-aksenov/L2025%20(1).png",
+      "author": "Максим Аксенов",
+      "project": "ЛАШ 2025",
+      "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
+      "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-18"
+    },
+    {
+      "src": "../images/interviews/maxim-aksenov/L2025%20(2).png",
+      "author": "Максим Аксенов",
+      "project": "ЛАШ 2025",
+      "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
+      "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-19"
+    },
+    {
+      "src": "../images/interviews/maxim-aksenov/L2025%20(3).png",
+      "author": "Максим Аксенов",
+      "project": "ЛАШ 2025",
+      "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
+      "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-20"
+    },
+    {
+      "src": "../images/interviews/maxim-aksenov/L2025%20(4).png",
+      "author": "Максим Аксенов",
+      "project": "ЛАШ 2025",
+      "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
+      "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-21"
+    },
+    {
+      "src": "../images/interviews/maxim-aksenov/L2026%20(1).jpg",
+      "author": "Максим Аксенов",
+      "project": "ЛАШ 2026",
+      "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
+      "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-22"
+    },
+    {
+      "src": "../images/interviews/maxim-aksenov/L2026%20(2).jpg",
+      "author": "Максим Аксенов",
+      "project": "ЛАШ 2026",
+      "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
+      "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-23"
+    },
+    {
+      "src": "../images/interviews/maxim-aksenov/L2026%20(3).jpg",
+      "author": "Максим Аксенов",
+      "project": "ЛАШ 2026",
+      "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
+      "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-24"
+    },
+    {
+      "src": "../images/interviews/maxim-aksenov/L2026%20(4).jpg",
+      "author": "Максим Аксенов",
+      "project": "ЛАШ 2026",
+      "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
+      "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-25"
     }
   ]
 };

@@ -13,8 +13,15 @@ yarn-error.log
 /dev_build/*.gif
 /dev_build/*.svg
 /dev_build/*/*.*
-/src/audio*.txt
-/docs/audio*.txt
 /canvases/
 **/*headlines-review*
 **/*.canvas.tsx
+
+# Interview asset notes — local editorial only, not for GitHub
+/src/images/interviews/README.md
+/src/images/interviews/*/README.md
+/docs/images/interviews/README.md
+/docs/images/interviews/*/README.md
+
+# Audio transcriptions — local editorial only
+**/audio*.txt

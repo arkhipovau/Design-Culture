@@ -1,10 +1,3 @@
-.m-qa-list {
-  width: min(886px, 100%);
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
 .m-qa-row {
   display: grid;
   grid-template-columns: 108px 1fr 108px;
@@ -36,28 +29,6 @@
 
 .m-qa-row__answer p + p {
   margin-top: 1.4em;
-}
-
-.m-qa-row__answer p + p.m-qa-row__after-colon,
-.m-qa-row__answer p.m-qa-row__after-colon + p.m-qa-row__after-colon {
-  margin-top: 0.35em;
-}
-
-.m-qa-row__olist {
-  margin: 0;
-  padding-left: 1.5em;
-  display: flex;
-  flex-direction: column;
-  gap: 0.65em;
-  list-style: decimal;
-}
-
-.m-qa-row__olist li {
-  padding-left: 0.35em;
-}
-
-.m-qa-row__olist li::marker {
-  color: var(--color-dark-grey);
 }
 
 .m-qa-row__answer a {

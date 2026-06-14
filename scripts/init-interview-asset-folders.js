@@ -4,7 +4,7 @@ const path = require('node:path');
 
 const ROOT = path.resolve(__dirname, '..');
 const META_PATH = path.join(ROOT, 'content/interviews-meta.json');
-const ASSETS = path.join(ROOT, 'assets/interviews');
+const ASSETS = path.join(ROOT, 'src/images/interviews');
 const IMAGES = path.join(ROOT, 'src/images');
 
 /** Filename prefixes in src/images for interviews already wired on the site. */

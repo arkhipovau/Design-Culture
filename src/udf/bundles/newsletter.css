@@ -1,0 +1,5 @@
+@import '../organisms/newsletter-page/o-newsletter-page.css';
+@import '../organisms/newsletter-spacer/o-newsletter-spacer.css';
+@import '../organisms/newsletter-block/o-newsletter-block.css';
+@import '../atoms/mail-input/a-mail-input.css';
+@import '../molecules/mail-form/m-mail-form.css';
