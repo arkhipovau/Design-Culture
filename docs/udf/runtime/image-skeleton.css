@@ -1,0 +1,63 @@
+@keyframes a-image-shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.a-image-journal-link.is-image-loading,
+.m-gallery-card__media.is-image-loading,
+.m-photo-slot__image.is-image-loading,
+.m-interview-portrait.is-image-loading {
+  background: var(--color-coloring-grey);
+  overflow: hidden;
+}
+
+.a-image-journal-link.is-image-loading::after,
+.m-gallery-card__media.is-image-loading::after,
+.m-photo-slot__image.is-image-loading::after,
+.m-interview-portrait.is-image-loading::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.42) 48%,
+    transparent 100%
+  );
+  transform: translateX(-100%);
+  animation: a-image-shimmer 1.35s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.a-image-journal-link.is-image-loading .q-image-journal,
+.m-gallery-card__media.is-image-loading img,
+.m-photo-slot__image.is-image-loading > img,
+.m-photo-slot__image.is-image-loading > video,
+.m-interview-portrait.is-image-loading img {
+  opacity: 0;
+}
+
+.a-image-journal-link.is-image-loaded .q-image-journal,
+.m-gallery-card__media.is-image-loaded img,
+.m-photo-slot__image.is-image-loaded > img,
+.m-photo-slot__image.is-image-loaded > video,
+.m-interview-portrait.is-image-loaded img {
+  opacity: 1;
+  transition: opacity 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .a-image-journal-link.is-image-loading::after,
+  .m-gallery-card__media.is-image-loading::after,
+  .m-photo-slot__image.is-image-loading::after,
+  .m-interview-portrait.is-image-loading::after {
+    animation: none;
+    opacity: 0.35;
+    transform: none;
+  }
+}

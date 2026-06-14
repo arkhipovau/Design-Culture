@@ -20,6 +20,11 @@
   transition: background-color 160ms ease, opacity 160ms ease, transform 100ms ease, filter 160ms ease;
 }
 
+.a-filter:focus,
+.a-filter:focus-visible {
+  outline: none;
+}
+
 .a-filter:hover:not(:disabled):not(.is-disabled):not(.is-unable):not(.is-enabled),
 .a-filter.is-hover:not(.is-enabled) {
   background: var(--color-medium-grey);

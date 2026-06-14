@@ -62,3 +62,53 @@
     padding-bottom: 80px;
   }
 }
+
+/* Essay variant for History materials: narrower column + sticky TOC on the left. */
+.o-interview-body--essay {
+  display: grid;
+  grid-template-columns: 220px 600px;
+  gap: 80px;
+  justify-content: center;
+  align-items: start;
+  padding: 80px 24px 120px;
+}
+
+.o-interview-body--essay > .m-interview-section {
+  width: 100%;
+  max-width: none;
+  grid-column: 2;
+}
+
+.o-interview-body--essay > .m-essay-toc {
+  grid-column: 1;
+}
+
+/* Each named section inside the essay body. We use block layout + sibling
+   margin-top (see m-essay-heading.css) instead of flex gap, because the
+   gap from the heading to the first paragraph needs to be different
+   from the gap between the rest of the blocks. */
+.m-interview-section__chapter {
+  scroll-margin-top: 100px;
+}
+
+@media (max-width: 1199px) {
+  .o-interview-body--essay {
+    grid-template-columns: 200px 540px;
+    gap: 56px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .o-interview-body--essay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 56px 24px 96px;
+  }
+
+  .o-interview-body--essay > .m-interview-section,
+  .o-interview-body--essay > .m-essay-toc {
+    width: min(640px, 100%);
+    grid-column: auto;
+  }
+}

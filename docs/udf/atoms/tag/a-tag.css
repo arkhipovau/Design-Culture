@@ -21,6 +21,11 @@
   transition: background-color 160ms ease, color 160ms ease, opacity 160ms ease, transform 100ms ease;
 }
 
+.a-tag:focus,
+.a-tag:focus-visible {
+  outline: none;
+}
+
 .a-tag:hover:not(:disabled):not(.is-disabled):not(.is-active):not(.is-enabled),
 .a-tag.is-hover:not(.is-active):not(.is-enabled) {
   background: var(--color-medium-grey);

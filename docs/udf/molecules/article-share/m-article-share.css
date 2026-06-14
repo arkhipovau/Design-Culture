@@ -1,0 +1,90 @@
+.m-article-share {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  width: min(1108px, var(--grid-content-width));
+  margin: 0 auto 32px;
+  padding: 0 56px;
+}
+
+.m-article-share__copy {
+  flex-shrink: 0;
+  --a-btn-bg: var(--color-black);
+  --a-btn-fg: var(--color-white);
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .m-article-share__copy:hover:not(:disabled):not(.is-disabled) {
+    --a-btn-bg: var(--color-dark-grey);
+    --a-btn-fg: var(--color-white);
+    background-color: var(--color-dark-grey);
+    color: var(--color-white);
+  }
+}
+
+.m-article-share__copy:active:not(:disabled):not(.is-disabled),
+.m-article-share__copy.is-pressed {
+  --a-btn-bg: var(--color-outside-elements);
+  --a-btn-fg: var(--color-black);
+  background-color: var(--color-outside-elements);
+  color: var(--color-black);
+}
+
+.m-article-share__telegram {
+  flex-shrink: 0;
+  --a-arrow-bg: var(--color-black);
+  --a-arrow-icon-default: url("../../quarks/icons/q-icon-telegram-24-white.svg");
+  --a-arrow-icon-active: url("../../quarks/icons/q-icon-telegram-24-black.svg");
+  --a-arrow-icon-current: var(--a-arrow-icon-default);
+  background: var(--color-black);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .m-article-share__telegram:hover:not(:disabled) {
+    --a-arrow-bg: var(--color-dark-grey);
+    background: var(--color-dark-grey);
+  }
+}
+
+.m-article-share__telegram:active:not(:disabled),
+.m-article-share__telegram.is-pressed {
+  --a-arrow-bg: var(--color-outside-elements);
+  --a-arrow-icon-current: var(--a-arrow-icon-active);
+  background: var(--color-outside-elements);
+}
+
+.m-article-share__status:empty {
+  display: none;
+}
+
+@media (min-width: 1201px) {
+  .o-interview-footer > .m-article-share {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    bottom: calc(24px + constant(safe-area-inset-bottom));
+    bottom: calc(24px + env(safe-area-inset-bottom));
+    z-index: 25;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .m-article-share {
+    justify-content: center;
+    padding: 0 32px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .m-article-share {
+    padding: 0 24px;
+    margin-bottom: 20px;
+  }
+}

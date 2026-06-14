@@ -43,6 +43,12 @@
   background-image: url("./q-findings-dot-10-violet.svg");
 }
 
+.q-findings-dot--10-coloring-grey {
+  width: 10px;
+  height: 10px;
+  background-image: url("./q-findings-dot-10-coloring-grey.svg");
+}
+
 .q-findings-dot--2-dark-grey {
   width: 2px;
   height: 2px;

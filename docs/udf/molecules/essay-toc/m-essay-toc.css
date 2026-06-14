@@ -1,0 +1,67 @@
+/* Sticky table of contents for History essays. Sits to the left of the
+   essay column. Active section is highlighted via IntersectionObserver
+   in m-essay-toc.js. Inactive items use a grey dot from q-findings;
+   the active item swaps it for the light-green accent dot. */
+
+.m-essay-toc {
+  position: sticky;
+  top: 120px;
+  align-self: start;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.m-essay-toc__label {
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--color-dark-grey);
+  margin: 0 0 16px;
+}
+
+.m-essay-toc__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.m-essay-toc__item {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 12px;
+  align-items: center;
+}
+
+.m-essay-toc__dot {
+  align-self: center;
+  justify-self: start;
+  /* width/height/background come from .q-findings-dot--10-* */
+}
+
+.m-essay-toc__item.is-active .m-essay-toc__dot {
+  background-image: url("../../quarks/findings/q-findings-dot-10-light-green.svg");
+}
+
+.m-essay-toc__link {
+  color: var(--color-dark-grey);
+  text-decoration: none;
+  transition: color 240ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.m-essay-toc__link:hover {
+  color: var(--color-black);
+}
+
+.m-essay-toc__item.is-active .m-essay-toc__link {
+  color: var(--color-black);
+  font-weight: 500;
+}
+
+/* Hide TOC entirely on tablet and mobile — keep the essay column readable. */
+@media (max-width: 1023px) {
+  .m-essay-toc {
+    display: none;
+  }
+}

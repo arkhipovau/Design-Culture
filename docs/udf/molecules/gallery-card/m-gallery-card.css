@@ -15,6 +15,7 @@
 
 .m-gallery-card__media {
   display: block;
+  position: relative;
   overflow: hidden;
 }
 

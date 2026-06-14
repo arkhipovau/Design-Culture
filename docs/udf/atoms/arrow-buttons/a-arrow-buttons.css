@@ -79,3 +79,14 @@
   --a-arrow-bg: var(--color-outside-elements);
   --a-arrow-icon-current: var(--a-arrow-icon-active);
 }
+
+.a-arrow-button--telegram {
+  --a-arrow-icon-default: url("../../quarks/icons/q-icon-telegram-24-black.svg");
+  --a-arrow-icon-active: url("../../quarks/icons/q-icon-telegram-24-white.svg");
+}
+
+.a-arrow-button--telegram::before {
+  width: 24px;
+  height: 24px;
+  background-size: 24px 24px;
+}

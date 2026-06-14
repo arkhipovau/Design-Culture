@@ -6,6 +6,10 @@
   flex: 0 0 auto;
 }
 
+.o-interview-page .o-interview-hero .m-interview-portrait {
+  position: relative;
+}
+
 .o-interview-page .o-interview-hero .m-interview-portrait img {
   width: 200px;
   max-width: 200px;

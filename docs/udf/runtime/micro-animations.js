@@ -53,6 +53,7 @@
 
   const revealSelectors = [
     'main section:not(.o-journal-listing):not(.m-page-hero):not(.o-interview-hero):not(.o-hero-intro):not(:has(.o-gallery-listing__grid))',
+    '.o-home-history',
 
     '.m-qa-row',
     '.m-quote-block',
@@ -207,6 +208,122 @@
   };
 
   setupHeroIntro();
+
+  const CARD_SELECTOR = '.m-journal-card, .m-gallery-card';
+  const IMAGE_SELECTOR =
+    '.a-image-journal-link img, .m-gallery-card__media img, .m-photo-slot__image img, .m-photo-slot__image video, .m-interview-portrait img';
+  const PARENT_SELECTOR =
+    '.a-image-journal-link, .m-gallery-card__media, .m-photo-slot__image, .m-interview-portrait';
+
+  const getImageParent = (img) => {
+    const parent = img.closest(PARENT_SELECTOR);
+    if (!parent) return null;
+    if (parent.closest('.m-photo-slot--placeholder, .m-interview-portrait--placeholder')) return null;
+    return parent;
+  };
+
+  const markCardLoaded = (card) => {
+    if (!card || card.classList.contains('is-loaded')) return;
+    if (reduced) {
+      card.classList.add('is-loaded');
+      return;
+    }
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        card.classList.add('is-loaded');
+      });
+    });
+  };
+
+  const markImageLoaded = (card, parent) => {
+    if (parent) {
+      parent.classList.remove('is-image-loading');
+      parent.classList.add('is-image-loaded');
+    }
+    markCardLoaded(card);
+  };
+
+  const startImageLoading = (parent) => {
+    if (!parent || parent.classList.contains('is-image-loaded')) return;
+    parent.classList.add('is-image-loading');
+    parent.classList.remove('is-image-loaded');
+  };
+
+  const whenImageReady = (media, done) => {
+    let fired = false;
+    const finish = () => {
+      if (fired) return;
+      fired = true;
+      done();
+    };
+
+    if (media.tagName === 'VIDEO') {
+      if (media.readyState >= 2) {
+        finish();
+        return;
+      }
+      media.addEventListener('loadeddata', finish, { once: true });
+      media.addEventListener('error', finish, { once: true });
+      return;
+    }
+
+    if (typeof media.decode === 'function') {
+      media.decode().then(finish).catch(finish);
+      return;
+    }
+
+    if (media.complete && media.naturalWidth > 0) {
+      finish();
+      return;
+    }
+
+    media.addEventListener('load', finish, { once: true });
+    media.addEventListener('error', finish, { once: true });
+  };
+
+  const watchImage = (img) => {
+    if (!img || img.dataset.imageLoadWatched === '1') return;
+    img.dataset.imageLoadWatched = '1';
+
+    const parent = getImageParent(img);
+    const card = img.closest(CARD_SELECTOR);
+
+    if (!img.hasAttribute('decoding')) img.setAttribute('decoding', 'async');
+
+    if (!parent) {
+      markCardLoaded(card);
+      return;
+    }
+
+    if (img.complete && img.naturalWidth > 0) {
+      markImageLoaded(card, parent);
+      return;
+    }
+
+    startImageLoading(parent);
+    whenImageReady(img, () => markImageLoaded(card, parent));
+  };
+
+  const scanImages = (root) => {
+    if (!root) return;
+    let nodes = [];
+    if (root.matches && root.matches('img, video')) {
+      nodes = [root];
+    } else if (root.querySelectorAll) {
+      nodes = Array.from(root.querySelectorAll(IMAGE_SELECTOR));
+    }
+    nodes.forEach(watchImage);
+  };
+
+  scanImages(document);
+  const imageObserver = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      mutation.addedNodes.forEach((node) => {
+        if (node.nodeType === 1) scanImages(node);
+      });
+    });
+  });
+  imageObserver.observe(document.body, { childList: true, subtree: true });
 
   if (!revealNodes.length) return;
 

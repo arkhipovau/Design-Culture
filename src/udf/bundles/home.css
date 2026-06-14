@@ -9,6 +9,7 @@
 @import '../organisms/hero-intro/o-hero-intro.css';
 @import '../organisms/journal-listing/o-journal-listing.css';
 @import '../organisms/home-issue/o-home-issue.css';
+@import '../organisms/home-history/o-home-history.css';
 @import '../organisms/home-highlights/o-home-highlights.css';
 @import '../organisms/home-gallery-preview/o-home-gallery-preview.css';
 @import '../organisms/home-newsletter/o-home-newsletter.css';

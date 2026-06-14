@@ -1,3 +1,5 @@
+@import './image-skeleton.css';
+
 html {
   scroll-behavior: smooth;
 }
@@ -73,22 +75,9 @@ header.s-menu {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .o-journal-page .m-journal-card.in-view:not(.is-loaded) .a-image-journal-link {
-    opacity: 0;
-  }
-
-  .o-journal-page .m-journal-card.in-view.is-loaded .a-image-journal-link {
-    opacity: 1;
-    transition: opacity 420ms cubic-bezier(0.22, 1, 0.36, 1);
-  }
-
-  .o-gallery-page .m-gallery-card.in-view:not(.is-loaded) .m-gallery-card__media {
-    opacity: 0;
-  }
-
+  .o-journal-page .m-journal-card.in-view.is-loaded .a-image-journal-link,
   .o-gallery-page .m-gallery-card.in-view.is-loaded .m-gallery-card__media {
     opacity: 1;
-    transition: opacity 420ms cubic-bezier(0.22, 1, 0.36, 1);
   }
 
   .o-gallery-page .m-gallery-card.in-view.is-loaded .m-gallery-card__media img {

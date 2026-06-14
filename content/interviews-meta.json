@@ -1,18 +1,18 @@
 {
   "order": [
-    "togetherwithyou",
     "masha-chern",
-    "polina-zagumenova",
-    "gavril-perov",
-    "aleksey-pyankov",
+    "togetherwithyou",
     "dariia-chertanova",
+    "gavril-perov",
+    "polina-zagumenova",
+    "aleksey-pyankov",
     "sergey-mekryukov",
-    "maxim-aksenov",
-    "sasha-barabonova",
-    "sergey-breus",
-    "sergey-kudinov",
-    "stefan-lashko",
     "yulya-kondratyeva",
+    "maxim-aksenov",
+    "stefan-lashko",
+    "sergey-kudinov",
+    "sergey-breus",
+    "sasha-barabonova",
     "yan-zaretsky",
     "andrey-maksimenkov",
     "anastasia-sycheva",
@@ -21,7 +21,15 @@
     "elena-chinakova",
     "artem-gerts",
     "olya-bazanova",
-    "nikita-petrov"
+    "bauhaus",
+    "ulm-hfg",
+    "ibm-rand",
+    "dieter-rams",
+    "muji-hara",
+    "digital-turn",
+    "design-systems",
+    "designops-scaling",
+    "ai-era"
   ],
   "interviews": {
     "togetherwithyou": {
@@ -205,7 +213,7 @@
         "pragmatica.design",
         "t.me/senior_designer_pragmatica"
       ],
-      "subtitle": "Как в Pragmatica живёт дизайн-ДНК: белый лист на школьном сборе и треугольник результата",
+      "subtitle": "Как в Pragmatica живёт дизайн-ДНК – белый лист на школьном сборе и треугольник результата",
       "images": [
         {
           "src": "../images/07fe256693582605e691.webp",
@@ -809,7 +817,7 @@
         "artemhertz.com",
         "instagram.com/temahertz"
       ],
-      "subtitle": "Язык с нуля в айдентике: Redis, Nil Foundation и честность в решениях",
+      "subtitle": "Язык с нуля в айдентике – Redis, Nil Foundation и честность в решениях",
       "images": []
     },
     "sergey-mekryukov": {
@@ -1009,6 +1017,106 @@
           "title": "ЛАШ 2026"
         }
       ]
+    },
+    "bauhaus": {
+      "author": "Баухаус",
+      "meta": "1919–1933 • Веймар • Школа",
+      "hero": "../../images/history/bauhaus.jpg",
+      "about": "Школа в Веймаре (1919–1933), которая впервые сформулировала дизайн как культурную практику, а не как ремесло или искусство. Дала языку проектирования слова, без которых сегодняшний разговор о дизайне невозможен.",
+      "links": [],
+      "subtitle": "Школа как культурная практика",
+      "images": []
+    },
+    "ulm-hfg": {
+      "author": "Ульмская школа",
+      "meta": "1953–1968 • Ульм • Школа",
+      "hero": "../../images/history/ulm-hfg.jpg",
+      "about": "Hochschule für Gestaltung Ulm (HfG Ulm) – немецкая дизайн-школа (1953–1968), переопределившая дизайн как системную методологическую деятельность. Заложила основу для современного понимания дизайн-процесса и сотрудничества с производством (Braun, Lufthansa).",
+      "links": [
+        "hfg-archiv.museum-ulm.de"
+      ],
+      "subtitle": "Методология как культура",
+      "images": []
+    },
+    "ibm-rand": {
+      "author": "IBM и Пол Рэнд",
+      "meta": "1956–1980 • Нью-Йорк • Корпорация",
+      "hero": "../../images/history/ibm-rand.jpg",
+      "about": "Пол Рэнд (1914–1996) – американский графический дизайнер, автор IBM Identity System (1956), логотипов ABC, UPS, Westinghouse и Yale. Заложил принципы корпоративного дизайна и роли визуального языка как кодификатора ценностей компании.",
+      "links": [
+        "ibm.com/design",
+        "paulrand.design"
+      ],
+      "subtitle": "Корпоративная идентичность как операционная система",
+      "images": []
+    },
+    "dieter-rams": {
+      "author": "Дитер Рамс",
+      "meta": "1950–2000 • Braun • Принципы",
+      "hero": "../../images/history/dieter-rams.jpg",
+      "about": "Дитер Рамс (род. 1932) – немецкий промышленный дизайнер, главный дизайнер Braun (1961–1995). Сформулировал десять принципов хорошего дизайна, ставшие основой эстетики Apple, MUJI и большинства product-oriented компаний.",
+      "links": [
+        "vitsoe.com",
+        "dieterrams.tv"
+      ],
+      "subtitle": "Десять принципов и формализация этики",
+      "images": []
+    },
+    "muji-hara": {
+      "author": "MUJI и Кения Хара",
+      "meta": "1960–2000 • Япония • Бренд",
+      "hero": "../../images/history/muji-hara.jpg",
+      "about": "Кения Хара (род. 1958) – японский графический дизайнер, арт-директор MUJI с 2001 года. Автор философии пустоты как активного присутствия. Куратор выставок Re-Design (2000) и Haptic (2004).",
+      "links": [
+        "muji.com",
+        "ndc.co.jp/hara"
+      ],
+      "subtitle": "Философия пустоты",
+      "images": []
+    },
+    "digital-turn": {
+      "author": "Цифровой поворот",
+      "meta": "1990–2013 • Веб • Поворот",
+      "hero": "../../images/history/digital-turn.jpg",
+      "about": "Период перехода дизайна в цифровое пространство: от скевоморфных интерфейсов 1990-х к плоскому дизайну iOS 7 в 2013-м. Дональд Норман в 1993 году вводит термин User Experience, основывая Nielsen Norman Group вместе с Якобом Нильсеном.",
+      "links": [
+        "nngroup.com / UX definition"
+      ],
+      "subtitle": "От скевоморфизма к плоскому дизайну",
+      "images": []
+    },
+    "design-systems": {
+      "author": "Дизайн-системы",
+      "meta": "2005–2020 • Цифра • Системы",
+      "hero": "../../images/history/design-systems.jpg",
+      "about": "Эпоха кодификации дизайна в системы: от Apple HIG (2005–2007) к Material Design (2014) и волне корпоративных дизайн-систем – Polaris (Shopify), Carbon (IBM), Fluent (Microsoft), Base Web (Uber). Дизайн-система становится инфраструктурой, а не артефактом.",
+      "links": [
+        "m3.material.io",
+        "Apple HIG"
+      ],
+      "subtitle": "Система как инфраструктура",
+      "images": []
+    },
+    "designops-scaling": {
+      "author": "DesignOps и масштабирование",
+      "meta": "2012–2018 • Команды • Процесс",
+      "hero": "../../images/history/designops-scaling.jpg",
+      "about": "DesignOps как дисциплина (2014–2018), Spotify-модель организации команд (squads/tribes/chapters/guilds), эпоха публичной рефлексии профессии через Medium, и студии типа Uncommon, переопределяющие дизайн как культурное действие.",
+      "links": [
+        "designopsassembly.com",
+        "uncommon.studio"
+      ],
+      "subtitle": "Операционализация культуры",
+      "images": []
+    },
+    "ai-era": {
+      "author": "AI-эпоха",
+      "meta": "2023–2025 • Сегодня • Кризис",
+      "hero": "../../images/history/ai-era.jpg",
+      "about": "Современный момент дизайн-культуры (2023–2025): AI как переопределяющая роль профессии, противоречие между скоростью генерации и долгосрочностью результата, доступность как минимальное требование, устойчивость как новая ценность.",
+      "links": [],
+      "subtitle": "Дизайнер как куратор",
+      "images": []
     }
   }
 }
