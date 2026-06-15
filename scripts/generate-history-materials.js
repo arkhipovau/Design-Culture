@@ -504,7 +504,7 @@ const MATERIALS = [
     slug: 'ai-era',
     author: 'AI-эпоха',
     title: 'Дизайнер как куратор',
-    meta: '2023–2025 • Сегодня • Кризис',
+    meta: '2023–2025 • Сегодня',
     tags: 'история сегодня ai',
     hero: '../../images/ai-era/ai-era-avatar.jpg',
     intro: 'Последняя из девяти историй – про время, в котором я пишу это. AI быстро меняет рабочие инструменты, но самые длинные паузы в разговорах с героями случаются, когда речь заходит о смысле этих изменений. Их я и хотела зафиксировать здесь.',
@@ -777,6 +777,7 @@ ${intro}${sections}${outro}
       </div>
     </footer>
 
+    <script defer src="../../udf/superorganisms/menu/search-matching.js"></script>
     <script defer src="../../udf/superorganisms/menu/menu-overlay.js"></script>
     <script defer src="../../udf/superorganisms/menu/s-menu.js"></script>
     <script defer src="../../udf/superorganisms/footer/s-footer.js"></script>
@@ -790,7 +791,9 @@ ${intro}${sections}${outro}
 }
 
 function renderJournalCard(m) {
-  const description = m.bio.split(/\.\s/)[0] + '.';
+  // Split on sentence boundary: period+space followed by a capital letter (Cyrillic or Latin).
+  // Prevents splitting on abbreviations like "род. 1932".
+  const description = m.bio.split(/\.\s(?=[А-ЯЁA-Z])/u)[0] + '.';
   return `
           <article class="m-journal-card" data-tags="${m.tags}" data-href="./interviews/${m.slug}.html">
                       <a class="a-image-journal-link a-image-journal-link--m" href="./interviews/${m.slug}.html">

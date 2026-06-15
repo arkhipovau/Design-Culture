@@ -7,7 +7,12 @@
     return './';
   }
 
+  var searchApi = window.DefindingsSearch || null;
+
   function normalizeText(value) {
+    if (searchApi && searchApi.normalizeText) {
+      return searchApi.normalizeText(value);
+    }
     return String(value || '')
       .toLowerCase()
       .replace(/ё/g, 'е')
@@ -33,7 +38,7 @@
     var items = [
       {
         title: 'Главная',
-        subtitle: 'Медиа о дизайн-культуре deFindings',
+        subtitle: 'Архитектурный бэкграунд, дизайн как система и дисциплина мышления',
         kind: 'Страница',
         href: links.home,
         keywords: 'home index медиа дизайн культура интервью',
@@ -82,6 +87,14 @@
 
       // SEARCH_INTERVIEWS_START
       {
+        title: 'Маша Черн',
+        subtitle: 'От одиночной работы к коллаборациям и осторожность с генеративным визуалом',
+        kind: 'Статья',
+        href: interview('masha-chern'),
+        keywords: 'копенгаген дания ton tone verle продукт',
+        priority: 70
+      },
+      {
         title: 'Артём Тарасов и Артём Тарадаш',
         subtitle: 'Антидисциплинарный подход, мир постдизайна и крафт в эпоху AI',
         kind: 'Статья',
@@ -90,123 +103,11 @@
         priority: 70
       },
       {
-        title: 'Алексей Пьянков',
-        subtitle: 'Как в Pragmatica живёт дизайн-ДНК: белый лист на школьном сборе и треугольник результата',
+        title: 'Даша Чертанова',
+        subtitle: 'Смыслы, контекст и непрерывное «пробовать новое»',
         kind: 'Статья',
-        href: interview('aleksey-pyankov'),
-        keywords: 'екатеринбург pragmatica прагматика студия',
-        priority: 70
-      },
-      {
-        title: 'Полина Загуменова',
-        subtitle: 'Гибкие рамки в Берлине, неожиданные заказы и скепсис к AI-картинкам',
-        kind: 'Статья',
-        href: interview('polina-zagumenova'),
-        keywords: 'берлин фриланс щука ai',
-        priority: 70
-      },
-      {
-        title: 'Маша Черн',
-        subtitle: 'От «сделаю всё сама» к коллаборациям, ребрендинг TON и границы с генеративными картинками',
-        kind: 'Статья',
-        href: interview('masha-chern'),
-        keywords: 'копенгаген дания ton tone verle продукт',
-        priority: 70
-      },
-      {
-        title: 'Юля Кондратьева',
-        subtitle: 'Уместный дизайн, «Типомания», Werkstatt и границы слова «дизайн-культура»',
-        kind: 'Статья',
-        href: interview('yulya-kondratyeva'),
-        keywords: 'тбилиси werkstatt гроза holystick школа',
-        priority: 70
-      },
-      {
-        title: 'Ян Зарецкий',
-        subtitle: 'Генотип и фенотип бренда, цельность как критерий и «Мастерская» в Петербурге',
-        kind: 'Статья',
-        href: interview('yan-zaretsky'),
-        keywords: 'санкт-петербург питер munk мастерская продукт студия',
-        priority: 70
-      },
-      {
-        title: 'Сергей Бреус',
-        subtitle: 'Недели на мудборде, ремесло с пользой и страх однотипного AI-контента',
-        kind: 'Статья',
-        href: interview('sergey-breus'),
-        keywords: 'москва ony oni f61 студия',
-        priority: 70
-      },
-      {
-        title: 'Сергей Кудинов',
-        subtitle: 'Культура против симулятора в продуктовом дизайне и ценность ручного труда',
-        kind: 'Статья',
-        href: interview('sergey-kudinov'),
-        keywords: 'москва яндекс 360 продукт',
-        priority: 70
-      },
-      {
-        title: 'Аня Голубь',
-        subtitle: 'Культура как уважение, «санитар леса» и зона комфорта, без которой дизайн не держится',
-        kind: 'Статья',
-        href: interview('anya-golub'),
-        keywords: 'бали призма prizma студия',
-        priority: 70
-      },
-      {
-        title: 'Даша Макурина',
-        subtitle: 'CGI, метафоры продукта и инклюзивный визуал в pont.design и Rarible',
-        kind: 'Статья',
-        href: interview('dasha-makurina'),
-        keywords: 'москва rarible pont design продукт 3d cgi',
-        priority: 70
-      },
-      {
-        title: 'Саша Барабонова',
-        subtitle: 'Случайный путь в дизайн, эмпатия как основа профессии и примирение с AI',
-        kind: 'Статья',
-        href: interview('sasha-barabonova'),
-        keywords: 'ереван phygital t-банк vk yandex pragmatica lalalai продукт',
-        priority: 70
-      },
-      {
-        title: 'Стефан Лашко',
-        subtitle: 'Порядок из хаоса, метафора в знаке и отказ от клиентов без ценностей',
-        kind: 'Статья',
-        href: interview('stefan-lashko'),
-        keywords: 'москва esh студия преподаватель',
-        priority: 70
-      },
-      {
-        title: 'Оля Бажанова',
-        subtitle: 'Когда лучше не сделать, игра «Хвостики» и душа в сувенирном производстве',
-        kind: 'Статья',
-        href: interview('olya-bazanova'),
-        keywords: 'калининград подписные додо издательство',
-        priority: 70
-      },
-      {
-        title: 'Анастасия Сычева',
-        subtitle: 'Бизнес-контекст, кор-идея бренда и AI как краска в палитре, а не замена руки',
-        kind: 'Статья',
-        href: interview('anastasia-sycheva'),
-        keywords: 'белград студия y combinator брендинг',
-        priority: 70
-      },
-      {
-        title: 'Артём Герц',
-        subtitle: 'Язык с нуля в айдентике: Redis, Nil Foundation и честность в решениях',
-        kind: 'Статья',
-        href: interview('artem-gerts'),
-        keywords: 'москва redis студия айдентика',
-        priority: 70
-      },
-      {
-        title: 'Сергей Мекрюков',
-        subtitle: 'Гемба в ресторанах, метрики Dodo Brands и честные UX-ревью',
-        kind: 'Статья',
-        href: interview('sergey-mekryukov'),
-        keywords: 'москва dodo brands додо продукт ux сервисы',
+        href: interview('dariia-chertanova'),
+        keywords: 'москва the blueprint blueprint bang bang education werkstatt продукт смыслы контекст кодинг',
         priority: 70
       },
       {
@@ -218,35 +119,35 @@
         priority: 70
       },
       {
-        title: 'Елена Чинакова',
-        subtitle: 'Zorky в Лондоне, роль дизайнера в Avito и взросление в профессии',
+        title: 'Полина Загуменова',
+        subtitle: 'Гибкие рамки в Берлине, неожиданные заказы и скепсис к AI-картинкам',
         kind: 'Статья',
-        href: interview('elena-chinakova'),
-        keywords: 'лондон великобритания сообщество zorky avito',
+        href: interview('polina-zagumenova'),
+        keywords: 'берлин фриланс щука ai',
         priority: 70
       },
       {
-        title: 'Даша Чертанова',
-        subtitle: 'Смыслы, контекст и люди, меняющие профессию',
+        title: 'Алексей Пьянков',
+        subtitle: 'Дизайн-ДНК команды и треугольник результата',
         kind: 'Статья',
-        href: interview('dariia-chertanova'),
-        keywords: 'москва the blueprint blueprint bang bang education werkstatt продукт смыслы контекст кодинг',
+        href: interview('aleksey-pyankov'),
+        keywords: 'екатеринбург pragmatica прагматика студия',
         priority: 70
       },
       {
-        title: 'Андрей Максименков',
-        subtitle: 'spros, пять принципов мышления и ночные идеи, которые нельзя терять',
+        title: 'Сергей Мекрюков',
+        subtitle: 'Полевые исследования, данные как основание и проверка вкуса результатом',
         kind: 'Статья',
-        href: interview('andrey-maksimenkov'),
-        keywords: 'ростов spros диджитал интервью проект',
+        href: interview('sergey-mekryukov'),
+        keywords: 'москва dodo brands додо продукт ux сервисы',
         priority: 70
       },
       {
-        title: 'Никита Петров',
-        subtitle: 'Портфолио как продукт, data-driven подход и собственные проекты',
+        title: 'Юля Кондратьева',
+        subtitle: 'Уместный дизайн, «Типомания», Werkstatt и границы слова «дизайн-культура»',
         kind: 'Статья',
-        href: interview('nikita-petrov'),
-        keywords: 'москва nikipetrov продукт проект foliobin savi medium portfolio',
+        href: interview('yulya-kondratyeva'),
+        keywords: 'тбилиси werkstatt гроза holystick школа',
         priority: 70
       },
       {
@@ -255,6 +156,174 @@
         kind: 'Статья',
         href: interview('maxim-aksenov'),
         keywords: 'москва фриланс дизайн архитектура система lash',
+        priority: 70
+      },
+      {
+        title: 'Стефан Лашко',
+        subtitle: 'Порядок из хаоса, метафора в знаке и работа с ценностями клиента',
+        kind: 'Статья',
+        href: interview('stefan-lashko'),
+        keywords: 'москва esh студия преподаватель',
+        priority: 70
+      },
+      {
+        title: 'Сергей Кудинов',
+        subtitle: 'Культура против симулятора в продуктовом дизайне и ценность ручного труда',
+        kind: 'Статья',
+        href: interview('sergey-kudinov'),
+        keywords: 'москва яндекс 360 продукт',
+        priority: 70
+      },
+      {
+        title: 'Сергей Бреус',
+        subtitle: 'Дизайн ради смысла и простота через тысячи итераций',
+        kind: 'Статья',
+        href: interview('sergey-breus'),
+        keywords: 'москва ony oni f61 студия',
+        priority: 70
+      },
+      {
+        title: 'Саша Барабонова',
+        subtitle: 'Случайный путь в дизайн, эмпатия как метод и примирение с AI',
+        kind: 'Статья',
+        href: interview('sasha-barabonova'),
+        keywords: 'ереван phygital t-банк vk yandex pragmatica lalalai продукт',
+        priority: 70
+      },
+      {
+        title: 'Ян Зарецкий',
+        subtitle: 'Генотип и фенотип бренда и цельность как критерий',
+        kind: 'Статья',
+        href: interview('yan-zaretsky'),
+        keywords: 'санкт-петербург питер munk мастерская продукт студия',
+        priority: 70
+      },
+      {
+        title: 'Андрей Максименков',
+        subtitle: 'spros, пять принципов мышления и устойчивость подхода поверх инструментов',
+        kind: 'Статья',
+        href: interview('andrey-maksimenkov'),
+        keywords: 'ростов spros диджитал интервью проект',
+        priority: 70
+      },
+      {
+        title: 'Анастасия Сычева',
+        subtitle: 'Бизнес-контекст, кор-идея бренда и место AI в работе дизайнера',
+        kind: 'Статья',
+        href: interview('anastasia-sycheva'),
+        keywords: 'белград студия y combinator брендинг',
+        priority: 70
+      },
+      {
+        title: 'Аня Голубь',
+        subtitle: 'Культура как уважение, «санитар леса» и зона комфорта в работе',
+        kind: 'Статья',
+        href: interview('anya-golub'),
+        keywords: 'бали призма prizma студия',
+        priority: 70
+      },
+      {
+        title: 'Даша Макурина',
+        subtitle: 'CGI, метафоры продукта и инклюзивный визуал',
+        kind: 'Статья',
+        href: interview('dasha-makurina'),
+        keywords: 'москва rarible pont design продукт 3d cgi',
+        priority: 70
+      },
+      {
+        title: 'Елена Чинакова',
+        subtitle: 'Своё дизайн-комьюнити Zorky в Лондоне и роль дизайнера в команде',
+        kind: 'Статья',
+        href: interview('elena-chinakova'),
+        keywords: 'лондон великобритания сообщество zorky avito',
+        priority: 70
+      },
+      {
+        title: 'Артём Герц',
+        subtitle: 'Когда язык бренда нужно создать с нуля',
+        kind: 'Статья',
+        href: interview('artem-gerts'),
+        keywords: 'москва redis студия айдентика',
+        priority: 70
+      },
+      {
+        title: 'Оля Бажанова',
+        subtitle: 'Когда лучше не сделать и душа в сувенирном производстве',
+        kind: 'Статья',
+        href: interview('olya-bazanova'),
+        keywords: 'калининград подписные додо издательство',
+        priority: 70
+      },
+      {
+        title: 'Баухаус',
+        subtitle: 'Школа как культурная практика',
+        kind: 'Статья',
+        href: interview('bauhaus'),
+        keywords: 'bauhaus баухаус вальтер гропиус веймар школа модерн история эссе',
+        priority: 70
+      },
+      {
+        title: 'Ульмская школа',
+        subtitle: 'Методология как культура',
+        kind: 'Статья',
+        href: interview('ulm-hfg'),
+        keywords: 'ulm hfg ульм школа мальдонадо braun методология история эссе',
+        priority: 70
+      },
+      {
+        title: 'IBM и Пол Рэнд',
+        subtitle: 'Корпоративная идентичность как операционная система',
+        kind: 'Статья',
+        href: interview('ibm-rand'),
+        keywords: 'ibm paul rand пол рэнд корпоративный идентичность история эссе',
+        priority: 70
+      },
+      {
+        title: 'Дитер Рамс',
+        subtitle: 'Десять принципов и формализация этики',
+        kind: 'Статья',
+        href: interview('dieter-rams'),
+        keywords: 'dieter rams диетер рамс braun принципы минимализм история эссе',
+        priority: 70
+      },
+      {
+        title: 'MUJI и Кения Хара',
+        subtitle: 'Философия пустоты',
+        kind: 'Статья',
+        href: interview('muji-hara'),
+        keywords: 'muji кения хара наото фукасава минимализм япония история эссе',
+        priority: 70
+      },
+      {
+        title: 'Цифровой поворот',
+        subtitle: 'От скевоморфизма к плоскому дизайну',
+        kind: 'Статья',
+        href: interview('digital-turn'),
+        keywords: 'цифровой скевоморфизм ios flat ux норман история эссе',
+        priority: 70
+      },
+      {
+        title: 'Дизайн-системы',
+        subtitle: 'Система как инфраструктура',
+        kind: 'Статья',
+        href: interview('design-systems'),
+        keywords: 'дизайн система material design hig apple история эссе',
+        priority: 70
+      },
+      {
+        title: 'DesignOps и масштабирование',
+        subtitle: 'Операционализация культуры',
+        kind: 'Статья',
+        href: interview('designops-scaling'),
+        keywords: 'designops spotify scaling команды процесс история эссе',
+        priority: 70
+      },
+      {
+        title: 'AI-эпоха',
+        subtitle: 'Дизайнер как куратор',
+        kind: 'Статья',
+        href: interview('ai-era'),
+        keywords: 'ai искусственный интеллект нейросеть история эссе куратор',
         priority: 70
       },
       // SEARCH_INTERVIEWS_END
@@ -279,6 +348,10 @@
   }
 
   function findSearchResults(index, query) {
+    if (searchApi && searchApi.findSearchResults) {
+      return searchApi.findSearchResults(index, query);
+    }
+
     var normalized = normalizeText(query);
     if (!normalized) {
       return index.slice(0, 8);

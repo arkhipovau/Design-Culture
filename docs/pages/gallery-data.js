@@ -282,40 +282,123 @@ window.deFindingsGalleryData = {
       "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-39"
     },
     {
-      "src": "../images/07fe256693582605e691.webp",
+      "src": "../images/interviews/aleksey-pyankov/bleep%20bleeps%201.webp",
       "author": "Алексей Пьянков",
-      "subtitle": "Белый лист",
+      "project": "bleep bleeps",
+      "subtitle": "Дизайн-ДНК",
       "href": "./interviews/aleksey-pyankov.html#photo-aleksey-pyankov-0"
     },
     {
-      "src": "../images/09253accd9a5c877603d.jpg",
+      "src": "../images/interviews/aleksey-pyankov/bleep%20bleeps%202.webp",
       "author": "Алексей Пьянков",
-      "subtitle": "Белый лист",
+      "project": "bleep bleeps",
+      "subtitle": "Дизайн-ДНК",
       "href": "./interviews/aleksey-pyankov.html#photo-aleksey-pyankov-1"
     },
     {
-      "src": "../images/0daf9041731bbca1f647.webp",
+      "src": "../images/interviews/aleksey-pyankov/bleep%20bleeps%203.webp",
       "author": "Алексей Пьянков",
-      "subtitle": "Белый лист",
+      "project": "bleep bleeps",
+      "subtitle": "Дизайн-ДНК",
       "href": "./interviews/aleksey-pyankov.html#photo-aleksey-pyankov-2"
     },
     {
-      "src": "../images/0e33494abc2193d45071.jpg",
+      "src": "../images/interviews/aleksey-pyankov/bleep%20bleeps%204.webp",
       "author": "Алексей Пьянков",
-      "subtitle": "Белый лист",
+      "project": "bleep bleeps",
+      "subtitle": "Дизайн-ДНК",
       "href": "./interviews/aleksey-pyankov.html#photo-aleksey-pyankov-3"
     },
     {
-      "src": "../images/104879cdddca4d48006a.webp",
+      "src": "../images/interviews/aleksey-pyankov/Heritage.webp",
       "author": "Алексей Пьянков",
-      "subtitle": "Белый лист",
+      "project": "Heritage",
+      "subtitle": "Дизайн-ДНК",
       "href": "./interviews/aleksey-pyankov.html#photo-aleksey-pyankov-4"
     },
     {
-      "src": "../images/104ea9ae5bdd016f1bf5.jpg",
+      "src": "../images/interviews/aleksey-pyankov/Heritage%202.webp",
       "author": "Алексей Пьянков",
-      "subtitle": "Белый лист",
+      "project": "Heritage",
+      "subtitle": "Дизайн-ДНК",
       "href": "./interviews/aleksey-pyankov.html#photo-aleksey-pyankov-5"
+    },
+    {
+      "src": "../images/interviews/aleksey-pyankov/Heritage%203.webp",
+      "author": "Алексей Пьянков",
+      "project": "Heritage",
+      "subtitle": "Дизайн-ДНК",
+      "href": "./interviews/aleksey-pyankov.html#photo-aleksey-pyankov-6"
+    },
+    {
+      "src": "../images/interviews/aleksey-pyankov/Heritage%204.webp",
+      "author": "Алексей Пьянков",
+      "project": "Heritage",
+      "subtitle": "Дизайн-ДНК",
+      "href": "./interviews/aleksey-pyankov.html#photo-aleksey-pyankov-7"
+    },
+    {
+      "src": "../images/interviews/aleksey-pyankov/Mission%20Luna%201.webp",
+      "author": "Алексей Пьянков",
+      "project": "Mission Luna",
+      "subtitle": "Дизайн-ДНК",
+      "href": "./interviews/aleksey-pyankov.html#photo-aleksey-pyankov-8"
+    },
+    {
+      "src": "../images/interviews/aleksey-pyankov/Mission%20Luna%202.webp",
+      "author": "Алексей Пьянков",
+      "project": "Mission Luna",
+      "subtitle": "Дизайн-ДНК",
+      "href": "./interviews/aleksey-pyankov.html#photo-aleksey-pyankov-9"
+    },
+    {
+      "src": "../images/interviews/aleksey-pyankov/Mission%20Luna%203.webp",
+      "author": "Алексей Пьянков",
+      "project": "Mission Luna",
+      "subtitle": "Дизайн-ДНК",
+      "href": "./interviews/aleksey-pyankov.html#photo-aleksey-pyankov-10"
+    },
+    {
+      "src": "../images/interviews/aleksey-pyankov/Mission%20Luna%204.webp",
+      "author": "Алексей Пьянков",
+      "project": "Mission Luna",
+      "subtitle": "Дизайн-ДНК",
+      "href": "./interviews/aleksey-pyankov.html#photo-aleksey-pyankov-11"
+    },
+    {
+      "src": "../images/interviews/aleksey-pyankov/BFS%20Promo%201.webp",
+      "author": "Алексей Пьянков",
+      "project": "BFS Promo",
+      "subtitle": "Дизайн-ДНК",
+      "href": "./interviews/aleksey-pyankov.html#photo-aleksey-pyankov-12"
+    },
+    {
+      "src": "../images/interviews/aleksey-pyankov/BFS%20Promo%202.webp",
+      "author": "Алексей Пьянков",
+      "project": "BFS Promo",
+      "subtitle": "Дизайн-ДНК",
+      "href": "./interviews/aleksey-pyankov.html#photo-aleksey-pyankov-13"
+    },
+    {
+      "src": "../images/interviews/aleksey-pyankov/BFS%20Promo%203.webp",
+      "author": "Алексей Пьянков",
+      "project": "BFS Promo",
+      "subtitle": "Дизайн-ДНК",
+      "href": "./interviews/aleksey-pyankov.html#photo-aleksey-pyankov-14"
+    },
+    {
+      "src": "../images/interviews/aleksey-pyankov/Payfect%20%201.webp",
+      "author": "Алексей Пьянков",
+      "project": "Payfect",
+      "subtitle": "Дизайн-ДНК",
+      "href": "./interviews/aleksey-pyankov.html#photo-aleksey-pyankov-15"
+    },
+    {
+      "src": "../images/interviews/aleksey-pyankov/Payfect%202.webp",
+      "author": "Алексей Пьянков",
+      "project": "Payfect",
+      "subtitle": "Дизайн-ДНК",
+      "href": "./interviews/aleksey-pyankov.html#photo-aleksey-pyankov-16"
     },
     {
       "src": "../images/interviews/polina-zagumenova/Berlin.jpg",
@@ -437,76 +520,172 @@ window.deFindingsGalleryData = {
       "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-16"
     },
     {
-      "src": "../images/23847e1b7eebea4ba968.jpg",
+      "src": "../images/interviews/masha-chern/Verle%20Cold%20Brew%20Packaging%20Design.webp",
       "author": "Маша Черн",
+      "project": "Verle",
       "subtitle": "Дизайн про коллаборации",
       "href": "./interviews/masha-chern.html#photo-masha-chern-0"
     },
     {
-      "src": "../images/274aa46655d50318dc54.webp",
+      "src": "../images/interviews/masha-chern/Verle%20Cold%20Brew%20Packaging%20Design%202.webp",
       "author": "Маша Черн",
+      "project": "Verle",
       "subtitle": "Дизайн про коллаборации",
       "href": "./interviews/masha-chern.html#photo-masha-chern-1"
     },
     {
-      "src": "../images/324b9db98c5f779e2f2c.jpg",
+      "src": "../images/interviews/masha-chern/VERLE%20AT%20PIR%20EXPO%202021.webp",
       "author": "Маша Черн",
+      "project": "Verle",
       "subtitle": "Дизайн про коллаборации",
       "href": "./interviews/masha-chern.html#photo-masha-chern-2"
     },
     {
-      "src": "../images/326ccddccc1073e47e55.webp",
+      "src": "../images/interviews/masha-chern/VERLE%20AT%20PIR%20EXPO%202021%202.webp",
       "author": "Маша Черн",
+      "project": "Verle",
       "subtitle": "Дизайн про коллаборации",
       "href": "./interviews/masha-chern.html#photo-masha-chern-3"
     },
     {
-      "src": "../images/35463d0a9e996f49aa3b.jpg",
+      "src": "../images/interviews/masha-chern/VERLE%20AT%20PIR%20EXPO%202021%203.webp",
       "author": "Маша Черн",
+      "project": "Verle",
       "subtitle": "Дизайн про коллаборации",
       "href": "./interviews/masha-chern.html#photo-masha-chern-4"
     },
     {
-      "src": "../images/359b9d0fb7d97121e465.jpg",
+      "src": "../images/interviews/masha-chern/VERLE%20AT%20PIR%20EXPO%202021%204.webp",
       "author": "Маша Черн",
+      "project": "Verle",
       "subtitle": "Дизайн про коллаборации",
       "href": "./interviews/masha-chern.html#photo-masha-chern-5"
     },
     {
-      "src": "../images/35fb03629903e0900af9.jpg",
+      "src": "../images/interviews/masha-chern/VERLE%20AT%20PIR%20EXPO%202021%205.webp",
+      "author": "Маша Черн",
+      "project": "Verle",
+      "subtitle": "Дизайн про коллаборации",
+      "href": "./interviews/masha-chern.html#photo-masha-chern-6"
+    },
+    {
+      "src": "../images/interviews/masha-chern/VERLE%20AT%20PIR%20EXPO%202021%206.webp",
+      "author": "Маша Черн",
+      "project": "Verle",
+      "subtitle": "Дизайн про коллаборации",
+      "href": "./interviews/masha-chern.html#photo-masha-chern-7"
+    },
+    {
+      "src": "../images/interviews/masha-chern/%D0%9C%D0%B5%D0%B1%D0%B5%D0%BB%D1%8C%20No%20Name%2C%20Name.webp",
+      "author": "Маша Черн",
+      "project": "No Name, Name",
+      "subtitle": "Дизайн про коллаборации",
+      "href": "./interviews/masha-chern.html#photo-masha-chern-8"
+    },
+    {
+      "src": "../images/interviews/masha-chern/%D0%9C%D0%B5%D0%B1%D0%B5%D0%BB%D1%8C%20No%20Name%2C%20Name%202.webp",
+      "author": "Маша Черн",
+      "project": "No Name, Name",
+      "subtitle": "Дизайн про коллаборации",
+      "href": "./interviews/masha-chern.html#photo-masha-chern-9"
+    },
+    {
+      "src": "../images/interviews/masha-chern/%D0%9C%D0%B5%D0%B1%D0%B5%D0%BB%D1%8C%20No%20Name%2C%20Name%204.webp",
+      "author": "Маша Черн",
+      "project": "No Name, Name",
+      "subtitle": "Дизайн про коллаборации",
+      "href": "./interviews/masha-chern.html#photo-masha-chern-10"
+    },
+    {
+      "src": "../images/interviews/masha-chern/%D0%9C%D0%B5%D0%B1%D0%B5%D0%BB%D1%8C%20No%20Name%2C%20Name%205.webp",
+      "author": "Маша Черн",
+      "project": "No Name, Name",
+      "subtitle": "Дизайн про коллаборации",
+      "href": "./interviews/masha-chern.html#photo-masha-chern-11"
+    },
+    {
+      "src": "../images/interviews/masha-chern/%D0%9C%D0%B5%D0%B1%D0%B5%D0%BB%D1%8C%20No%20Name%2C%20Name%206.webp",
+      "author": "Маша Черн",
+      "project": "No Name, Name",
+      "subtitle": "Дизайн про коллаборации",
+      "href": "./interviews/masha-chern.html#photo-masha-chern-12"
+    },
+    {
+      "src": "../images/interviews/masha-chern/Verle%20Cold%20Brew%20Packaging%20Design%203.webp",
+      "author": "Маша Черн",
+      "project": "Verle",
+      "subtitle": "Дизайн про коллаборации",
+      "href": "./interviews/masha-chern.html#photo-masha-chern-13"
+    },
+    {
+      "src": "../images/interviews/masha-chern/Verle%20Cold%20Brew%20Packaging%20Design%204.webp",
+      "author": "Маша Черн",
+      "project": "Verle",
+      "subtitle": "Дизайн про коллаборации",
+      "href": "./interviews/masha-chern.html#photo-masha-chern-14"
+    },
+    {
+      "src": "../images/interviews/masha-chern/Verle%20Cold%20Brew%20Packaging%20Design%205.webp",
+      "author": "Маша Черн",
+      "project": "Verle",
+      "subtitle": "Дизайн про коллаборации",
+      "href": "./interviews/masha-chern.html#photo-masha-chern-15"
+    },
+    {
+      "src": "../images/interviews/masha-chern/Verle%20Cold%20Brew%20Packaging%20Design%206.webp",
+      "author": "Маша Черн",
+      "project": "Verle",
+      "subtitle": "Дизайн про коллаборации",
+      "href": "./interviews/masha-chern.html#photo-masha-chern-16"
+    },
+    {
+      "src": "../images/interviews/masha-chern/Tmplt.webp",
+      "author": "Маша Черн",
+      "project": "Tmplt",
+      "subtitle": "Дизайн про коллаборации",
+      "href": "./interviews/masha-chern.html#photo-masha-chern-17"
+    },
+    {
+      "src": "../images/interviews/masha-chern/Tmplt%202.webp",
+      "author": "Маша Черн",
+      "project": "Tmplt",
+      "subtitle": "Дизайн про коллаборации",
+      "href": "./interviews/masha-chern.html#photo-masha-chern-18"
+    },
+    {
+      "src": "../images/interviews/masha-chern/Tmplt%203.webp",
+      "author": "Маша Черн",
+      "project": "Tmplt",
+      "subtitle": "Дизайн про коллаборации",
+      "href": "./interviews/masha-chern.html#photo-masha-chern-19"
+    },
+    {
+      "src": "../images/interviews/masha-chern/Tmplt%204.webp",
+      "author": "Маша Черн",
+      "project": "Tmplt",
+      "subtitle": "Дизайн про коллаборации",
+      "href": "./interviews/masha-chern.html#photo-masha-chern-20"
+    },
+    {
+      "src": "../images/interviews/masha-chern/Visual%20Exploration%20Social%20Distancing%20design.webp",
+      "author": "Маша Черн",
+      "project": "Social Distancing",
+      "subtitle": "Дизайн про коллаборации",
+      "href": "./interviews/masha-chern.html#photo-masha-chern-21"
+    },
+    {
+      "src": "../images/interviews/yulya-kondratyeva/Werkstatt.jpg",
       "author": "Юля Кондратьева",
+      "project": "Werkstatt",
       "subtitle": "Уместный дизайн",
       "href": "./interviews/yulya-kondratyeva.html#photo-yulya-kondratyeva-0"
     },
     {
-      "src": "../images/37760fdb835fdf374d29.jpg",
+      "src": "../images/interviews/yulya-kondratyeva/%D0%90%D0%B9%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%BA%D0%B0%D1%84%D0%B5%20%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%B8%D0%B5.jpg",
       "author": "Юля Кондратьева",
+      "project": "Великие",
       "subtitle": "Уместный дизайн",
       "href": "./interviews/yulya-kondratyeva.html#photo-yulya-kondratyeva-1"
-    },
-    {
-      "src": "../images/3acdee392dd98a0b3848.jpg",
-      "author": "Юля Кондратьева",
-      "subtitle": "Уместный дизайн",
-      "href": "./interviews/yulya-kondratyeva.html#photo-yulya-kondratyeva-2"
-    },
-    {
-      "src": "../images/3f7901bcc62741e03722.jpg",
-      "author": "Юля Кондратьева",
-      "subtitle": "Уместный дизайн",
-      "href": "./interviews/yulya-kondratyeva.html#photo-yulya-kondratyeva-3"
-    },
-    {
-      "src": "../images/4090a2aa9c6e0799b242.webp",
-      "author": "Юля Кондратьева",
-      "subtitle": "Уместный дизайн",
-      "href": "./interviews/yulya-kondratyeva.html#photo-yulya-kondratyeva-4"
-    },
-    {
-      "src": "../images/42b4739c40c04a4c9aa1.webp",
-      "author": "Юля Кондратьева",
-      "subtitle": "Уместный дизайн",
-      "href": "./interviews/yulya-kondratyeva.html#photo-yulya-kondratyeva-5"
     },
     {
       "src": "../images/43c43b136d43ecace532.webp",
@@ -545,40 +724,130 @@ window.deFindingsGalleryData = {
       "href": "./interviews/yan-zaretsky.html#photo-yan-zaretsky-5"
     },
     {
-      "src": "../images/48850af996dc5cd2949d.webp",
+      "src": "../images/interviews/sergey-breus/Wanna%3F%20Be%21.jpg",
       "author": "Сергей Бреус",
-      "subtitle": "Недели на мудборде",
+      "project": "Wanna? Be!",
+      "subtitle": "Дизайн ради смысла",
       "href": "./interviews/sergey-breus.html#photo-sergey-breus-0"
     },
     {
-      "src": "../images/495dedfd00682f76c71b.jpg",
+      "src": "../images/interviews/sergey-breus/Wanna%3F%20Be%21%202.jpg",
       "author": "Сергей Бреус",
-      "subtitle": "Недели на мудборде",
+      "project": "Wanna? Be!",
+      "subtitle": "Дизайн ради смысла",
       "href": "./interviews/sergey-breus.html#photo-sergey-breus-1"
     },
     {
-      "src": "../images/49af5d80da2a140a52d8.webp",
+      "src": "../images/interviews/sergey-breus/Smorodina.jpg",
       "author": "Сергей Бреус",
-      "subtitle": "Недели на мудборде",
+      "project": "Smorodina",
+      "subtitle": "Дизайн ради смысла",
       "href": "./interviews/sergey-breus.html#photo-sergey-breus-2"
     },
     {
-      "src": "../images/4b7784e88e6b7035c962.webp",
+      "src": "../images/interviews/sergey-breus/Smorodina%202.jpg",
       "author": "Сергей Бреус",
-      "subtitle": "Недели на мудборде",
+      "project": "Smorodina",
+      "subtitle": "Дизайн ради смысла",
       "href": "./interviews/sergey-breus.html#photo-sergey-breus-3"
     },
     {
-      "src": "../images/4c250660004e186b56f2.webp",
+      "src": "../images/interviews/sergey-breus/KMHN.jpg",
       "author": "Сергей Бреус",
-      "subtitle": "Недели на мудборде",
+      "project": "KMHN",
+      "subtitle": "Дизайн ради смысла",
       "href": "./interviews/sergey-breus.html#photo-sergey-breus-4"
     },
     {
-      "src": "../images/513f0a449c59e7eb2dcb.webp",
+      "src": "../images/interviews/sergey-breus/%D0%91%D1%8D%D0%B9%D0%BA%D0%B8.jpg",
       "author": "Сергей Бреус",
-      "subtitle": "Недели на мудборде",
+      "project": "Бэйки",
+      "subtitle": "Дизайн ради смысла",
       "href": "./interviews/sergey-breus.html#photo-sergey-breus-5"
+    },
+    {
+      "src": "../images/interviews/sergey-mekryukov/Dodo%201.jpg",
+      "author": "Сергей Мекрюков",
+      "project": "Dodo",
+      "subtitle": "Полевые исследования, данные как основание и проверка вкуса результатом",
+      "href": "./interviews/sergey-mekryukov.html#photo-sergey-mekryukov-0"
+    },
+    {
+      "src": "../images/interviews/sergey-mekryukov/Dodo%202.jpg",
+      "author": "Сергей Мекрюков",
+      "project": "Dodo",
+      "subtitle": "Полевые исследования, данные как основание и проверка вкуса результатом",
+      "href": "./interviews/sergey-mekryukov.html#photo-sergey-mekryukov-1"
+    },
+    {
+      "src": "../images/interviews/sergey-mekryukov/Dodo%203.jpg",
+      "author": "Сергей Мекрюков",
+      "project": "Dodo",
+      "subtitle": "Полевые исследования, данные как основание и проверка вкуса результатом",
+      "href": "./interviews/sergey-mekryukov.html#photo-sergey-mekryukov-2"
+    },
+    {
+      "src": "../images/interviews/sergey-mekryukov/Drinkit%201.jpg",
+      "author": "Сергей Мекрюков",
+      "project": "Drinkit",
+      "subtitle": "Полевые исследования, данные как основание и проверка вкуса результатом",
+      "href": "./interviews/sergey-mekryukov.html#photo-sergey-mekryukov-3"
+    },
+    {
+      "src": "../images/interviews/sergey-mekryukov/Dodo%204.jpg",
+      "author": "Сергей Мекрюков",
+      "project": "Dodo",
+      "subtitle": "Полевые исследования, данные как основание и проверка вкуса результатом",
+      "href": "./interviews/sergey-mekryukov.html#photo-sergey-mekryukov-4"
+    },
+    {
+      "src": "../images/interviews/sergey-mekryukov/Dodo%205.jpg",
+      "author": "Сергей Мекрюков",
+      "project": "Dodo",
+      "subtitle": "Полевые исследования, данные как основание и проверка вкуса результатом",
+      "href": "./interviews/sergey-mekryukov.html#photo-sergey-mekryukov-5"
+    },
+    {
+      "src": "../images/interviews/sergey-mekryukov/Drinkit%202.jpg",
+      "author": "Сергей Мекрюков",
+      "project": "Drinkit",
+      "subtitle": "Полевые исследования, данные как основание и проверка вкуса результатом",
+      "href": "./interviews/sergey-mekryukov.html#photo-sergey-mekryukov-6"
+    },
+    {
+      "src": "../images/interviews/sergey-mekryukov/Drinkit%203.jpg",
+      "author": "Сергей Мекрюков",
+      "project": "Drinkit",
+      "subtitle": "Полевые исследования, данные как основание и проверка вкуса результатом",
+      "href": "./interviews/sergey-mekryukov.html#photo-sergey-mekryukov-7"
+    },
+    {
+      "src": "../images/interviews/sergey-mekryukov/Drinkit%204.jpg",
+      "author": "Сергей Мекрюков",
+      "project": "Drinkit",
+      "subtitle": "Полевые исследования, данные как основание и проверка вкуса результатом",
+      "href": "./interviews/sergey-mekryukov.html#photo-sergey-mekryukov-8"
+    },
+    {
+      "src": "../images/interviews/sergey-mekryukov/Drinkit%205.jpg",
+      "author": "Сергей Мекрюков",
+      "project": "Drinkit",
+      "subtitle": "Полевые исследования, данные как основание и проверка вкуса результатом",
+      "href": "./interviews/sergey-mekryukov.html#photo-sergey-mekryukov-9"
+    },
+    {
+      "src": "../images/interviews/sergey-mekryukov/Dodo%206.jpg",
+      "author": "Сергей Мекрюков",
+      "project": "Dodo",
+      "subtitle": "Полевые исследования, данные как основание и проверка вкуса результатом",
+      "href": "./interviews/sergey-mekryukov.html#photo-sergey-mekryukov-10"
+    },
+    {
+      "src": "../images/interviews/sergey-mekryukov/Drinkit%206.jpg",
+      "author": "Сергей Мекрюков",
+      "project": "Drinkit",
+      "subtitle": "Полевые исследования, данные как основание и проверка вкуса результатом",
+      "href": "./interviews/sergey-mekryukov.html#photo-sergey-mekryukov-11"
     },
     {
       "src": "../images/52b87704e3aca4457af7.webp",
@@ -617,148 +886,557 @@ window.deFindingsGalleryData = {
       "href": "./interviews/sergey-kudinov.html#photo-sergey-kudinov-5"
     },
     {
-      "src": "../images/770dbd58aff7b3c49d2d.jpg",
+      "src": "../images/interviews/anya-golub/Bubbles%20%26%20Lobster.webp",
       "author": "Аня Голубь",
+      "project": "Bubbles & Lobster",
       "subtitle": "Санитар леса",
       "href": "./interviews/anya-golub.html#photo-anya-golub-0"
     },
     {
-      "src": "../images/798cbe8bc37efbdab3e9.jpg",
+      "src": "../images/interviews/anya-golub/Bubbles%20%26%20Lobster%202.webp",
       "author": "Аня Голубь",
+      "project": "Bubbles & Lobster",
       "subtitle": "Санитар леса",
       "href": "./interviews/anya-golub.html#photo-anya-golub-1"
     },
     {
-      "src": "../images/7d02371ac6d606b8a25a.webp",
+      "src": "../images/interviews/anya-golub/Bubbles%20%26%20Lobster%203.webp",
       "author": "Аня Голубь",
+      "project": "Bubbles & Lobster",
       "subtitle": "Санитар леса",
       "href": "./interviews/anya-golub.html#photo-anya-golub-2"
     },
     {
-      "src": "../images/7fc9db4484daa192c336.webp",
+      "src": "../images/interviews/anya-golub/Bubbles%20%26%20Lobster%204.webp",
       "author": "Аня Голубь",
+      "project": "Bubbles & Lobster",
       "subtitle": "Санитар леса",
       "href": "./interviews/anya-golub.html#photo-anya-golub-3"
     },
     {
-      "src": "../images/82acb1b74d2b70918238.jpg",
+      "src": "../images/interviews/anya-golub/White%20Secret%201.webp",
       "author": "Аня Голубь",
+      "project": "White Secret",
       "subtitle": "Санитар леса",
       "href": "./interviews/anya-golub.html#photo-anya-golub-4"
     },
     {
-      "src": "../images/8597087f8c22f43d653b.webp",
+      "src": "../images/interviews/anya-golub/White%20Secret%202.webp",
       "author": "Аня Голубь",
+      "project": "White Secret",
       "subtitle": "Санитар леса",
       "href": "./interviews/anya-golub.html#photo-anya-golub-5"
     },
     {
-      "src": "../images/867d102c07ba48557b86.webp",
+      "src": "../images/interviews/anya-golub/White%20Secret%203.webp",
+      "author": "Аня Голубь",
+      "project": "White Secret",
+      "subtitle": "Санитар леса",
+      "href": "./interviews/anya-golub.html#photo-anya-golub-6"
+    },
+    {
+      "src": "../images/interviews/anya-golub/White%20Secret%204.webp",
+      "author": "Аня Голубь",
+      "project": "White Secret",
+      "subtitle": "Санитар леса",
+      "href": "./interviews/anya-golub.html#photo-anya-golub-7"
+    },
+    {
+      "src": "../images/interviews/anya-golub/Do%20I%20Do.webp",
+      "author": "Аня Голубь",
+      "project": "Do I Do",
+      "subtitle": "Санитар леса",
+      "href": "./interviews/anya-golub.html#photo-anya-golub-8"
+    },
+    {
+      "src": "../images/interviews/anya-golub/Do%20I%20Do%202.webp",
+      "author": "Аня Голубь",
+      "project": "Do I Do",
+      "subtitle": "Санитар леса",
+      "href": "./interviews/anya-golub.html#photo-anya-golub-9"
+    },
+    {
+      "src": "../images/interviews/anya-golub/Do%20I%20Do%203.webp",
+      "author": "Аня Голубь",
+      "project": "Do I Do",
+      "subtitle": "Санитар леса",
+      "href": "./interviews/anya-golub.html#photo-anya-golub-10"
+    },
+    {
+      "src": "../images/interviews/anya-golub/Do%20I%20Do%204.webp",
+      "author": "Аня Голубь",
+      "project": "Do I Do",
+      "subtitle": "Санитар леса",
+      "href": "./interviews/anya-golub.html#photo-anya-golub-11"
+    },
+    {
+      "src": "../images/interviews/anya-golub/Do%20I%20Do%205.webp",
+      "author": "Аня Голубь",
+      "project": "Do I Do",
+      "subtitle": "Санитар леса",
+      "href": "./interviews/anya-golub.html#photo-anya-golub-12"
+    },
+    {
+      "src": "../images/interviews/anya-golub/%D0%A1%D0%B0%D0%BD%D0%B4%D1%83%D0%BD%D1%8B.webp",
+      "author": "Аня Голубь",
+      "project": "Сандуны",
+      "subtitle": "Санитар леса",
+      "href": "./interviews/anya-golub.html#photo-anya-golub-13"
+    },
+    {
+      "src": "../images/interviews/anya-golub/%D0%A1%D0%B0%D0%BD%D0%B4%D1%83%D0%BD%D1%8B%202.webp",
+      "author": "Аня Голубь",
+      "project": "Сандуны",
+      "subtitle": "Санитар леса",
+      "href": "./interviews/anya-golub.html#photo-anya-golub-14"
+    },
+    {
+      "src": "../images/interviews/anya-golub/%D0%A1%D0%B0%D0%BD%D0%B4%D1%83%D0%BD%D1%8B%203.webp",
+      "author": "Аня Голубь",
+      "project": "Сандуны",
+      "subtitle": "Санитар леса",
+      "href": "./interviews/anya-golub.html#photo-anya-golub-15"
+    },
+    {
+      "src": "../images/interviews/anya-golub/%D0%A1%D0%B0%D0%BD%D0%B4%D1%83%D0%BD%D1%8B%204.webp",
+      "author": "Аня Голубь",
+      "project": "Сандуны",
+      "subtitle": "Санитар леса",
+      "href": "./interviews/anya-golub.html#photo-anya-golub-16"
+    },
+    {
+      "src": "../images/interviews/anya-golub/%D0%A1%D0%B0%D0%BD%D0%B4%D1%83%D0%BD%D1%8B%205.webp",
+      "author": "Аня Голубь",
+      "project": "Сандуны",
+      "subtitle": "Санитар леса",
+      "href": "./interviews/anya-golub.html#photo-anya-golub-17"
+    },
+    {
+      "src": "../images/interviews/sasha-barabonova/LALAL.AI.png",
       "author": "Саша Барабонова",
+      "project": "LALAL.AI",
       "subtitle": "Эмпатичный дизайн",
       "href": "./interviews/sasha-barabonova.html#photo-sasha-barabonova-0"
     },
     {
-      "src": "../images/86c2cda628bf2b209a91.webp",
+      "src": "../images/interviews/sasha-barabonova/LALAL.AI%202.jpg",
       "author": "Саша Барабонова",
+      "project": "LALAL.AI",
       "subtitle": "Эмпатичный дизайн",
       "href": "./interviews/sasha-barabonova.html#photo-sasha-barabonova-1"
     },
     {
-      "src": "../images/885b01afa6b9752b47a1.webp",
+      "src": "../images/interviews/sasha-barabonova/LALAL.AI%203.png",
       "author": "Саша Барабонова",
+      "project": "LALAL.AI",
       "subtitle": "Эмпатичный дизайн",
       "href": "./interviews/sasha-barabonova.html#photo-sasha-barabonova-2"
     },
     {
-      "src": "../images/8a6ae07d69c4e874b52c.jpg",
+      "src": "../images/interviews/sasha-barabonova/LALAL.AI%204",
       "author": "Саша Барабонова",
+      "project": "LALAL.AI",
       "subtitle": "Эмпатичный дизайн",
       "href": "./interviews/sasha-barabonova.html#photo-sasha-barabonova-3"
     },
     {
-      "src": "../images/8b152b88b9dd93d09ea7.jpg",
+      "src": "../images/interviews/sasha-barabonova/LALAL.AI%205",
       "author": "Саша Барабонова",
+      "project": "LALAL.AI",
       "subtitle": "Эмпатичный дизайн",
       "href": "./interviews/sasha-barabonova.html#photo-sasha-barabonova-4"
     },
     {
-      "src": "../images/8b766d8eda2e684e5bb3.webp",
+      "src": "../images/interviews/sasha-barabonova/3D%20simulator.webp",
       "author": "Саша Барабонова",
+      "project": "3D Simulator",
       "subtitle": "Эмпатичный дизайн",
       "href": "./interviews/sasha-barabonova.html#photo-sasha-barabonova-5"
     },
     {
-      "src": "../images/8c30a668aa8d06217ed6.webp",
+      "src": "../images/interviews/sasha-barabonova/3D%20simulator%202.webp",
+      "author": "Саша Барабонова",
+      "project": "3D Simulator",
+      "subtitle": "Эмпатичный дизайн",
+      "href": "./interviews/sasha-barabonova.html#photo-sasha-barabonova-6"
+    },
+    {
+      "src": "../images/interviews/sasha-barabonova/3D%20simulator%203.webp",
+      "author": "Саша Барабонова",
+      "project": "3D Simulator",
+      "subtitle": "Эмпатичный дизайн",
+      "href": "./interviews/sasha-barabonova.html#photo-sasha-barabonova-7"
+    },
+    {
+      "src": "../images/interviews/sasha-barabonova/Essen%201.gif",
+      "author": "Саша Барабонова",
+      "project": "Essen",
+      "subtitle": "Эмпатичный дизайн",
+      "href": "./interviews/sasha-barabonova.html#photo-sasha-barabonova-8"
+    },
+    {
+      "src": "../images/interviews/sasha-barabonova/Essen%202.gif",
+      "author": "Саша Барабонова",
+      "project": "Essen",
+      "subtitle": "Эмпатичный дизайн",
+      "href": "./interviews/sasha-barabonova.html#photo-sasha-barabonova-9"
+    },
+    {
+      "src": "../images/interviews/sasha-barabonova/Mist%20app%201.png",
+      "author": "Саша Барабонова",
+      "project": "Mist app",
+      "subtitle": "Эмпатичный дизайн",
+      "href": "./interviews/sasha-barabonova.html#photo-sasha-barabonova-10"
+    },
+    {
+      "src": "../images/interviews/sasha-barabonova/Mist%20app%202.png",
+      "author": "Саша Барабонова",
+      "project": "Mist app",
+      "subtitle": "Эмпатичный дизайн",
+      "href": "./interviews/sasha-barabonova.html#photo-sasha-barabonova-11"
+    },
+    {
+      "src": "../images/interviews/sasha-barabonova/Mist%20app%203.png",
+      "author": "Саша Барабонова",
+      "project": "Mist app",
+      "subtitle": "Эмпатичный дизайн",
+      "href": "./interviews/sasha-barabonova.html#photo-sasha-barabonova-12"
+    },
+    {
+      "src": "../images/interviews/sasha-barabonova/Mist%20app%204.png",
+      "author": "Саша Барабонова",
+      "project": "Mist app",
+      "subtitle": "Эмпатичный дизайн",
+      "href": "./interviews/sasha-barabonova.html#photo-sasha-barabonova-13"
+    },
+    {
+      "src": "../images/interviews/gavril-perov/Arny%20Praht%20by%20Gavril.jpeg",
+      "author": "Гаврил Перов",
+      "project": "Arny Praht",
+      "subtitle": "Архитектура, город и графический язык",
+      "href": "./interviews/gavril-perov.html#photo-gavril-perov-0"
+    },
+    {
+      "src": "../images/interviews/gavril-perov/Arny%20Praht%20by%20Gavril%20%281%29.jpeg",
+      "author": "Гаврил Перов",
+      "project": "Arny Praht",
+      "subtitle": "Архитектура, город и графический язык",
+      "href": "./interviews/gavril-perov.html#photo-gavril-perov-1"
+    },
+    {
+      "src": "../images/interviews/gavril-perov/Doka%20Robots%20by%20Gavril.jpeg",
+      "author": "Гаврил Перов",
+      "project": "Doka Robots",
+      "subtitle": "Архитектура, город и графический язык",
+      "href": "./interviews/gavril-perov.html#photo-gavril-perov-2"
+    },
+    {
+      "src": "../images/interviews/gavril-perov/Doka%20Robots%20by%20Gavril%20%281%29.jpeg",
+      "author": "Гаврил Перов",
+      "project": "Doka Robots",
+      "subtitle": "Архитектура, город и графический язык",
+      "href": "./interviews/gavril-perov.html#photo-gavril-perov-3"
+    },
+    {
+      "src": "../images/interviews/gavril-perov/Drinkit%201.jpeg",
+      "author": "Гаврил Перов",
+      "project": "Drinkit",
+      "subtitle": "Архитектура, город и графический язык",
+      "href": "./interviews/gavril-perov.html#photo-gavril-perov-4"
+    },
+    {
+      "src": "../images/interviews/gavril-perov/Drinkit%202.jpeg",
+      "author": "Гаврил Перов",
+      "project": "Drinkit",
+      "subtitle": "Архитектура, город и графический язык",
+      "href": "./interviews/gavril-perov.html#photo-gavril-perov-5"
+    },
+    {
+      "src": "../images/interviews/gavril-perov/Drinkit%20by%20Gavril.webp",
+      "author": "Гаврил Перов",
+      "project": "Drinkit",
+      "subtitle": "Архитектура, город и графический язык",
+      "href": "./interviews/gavril-perov.html#photo-gavril-perov-6"
+    },
+    {
+      "src": "../images/interviews/gavril-perov/Drinkit%20by%20Gavril%20%281%29.webp",
+      "author": "Гаврил Перов",
+      "project": "Drinkit",
+      "subtitle": "Архитектура, город и графический язык",
+      "href": "./interviews/gavril-perov.html#photo-gavril-perov-7"
+    },
+    {
+      "src": "../images/interviews/gavril-perov/Drinkit%20Designer%20by%20Gavril.webp",
+      "author": "Гаврил Перов",
+      "project": "Drinkit Designer",
+      "subtitle": "Архитектура, город и графический язык",
+      "href": "./interviews/gavril-perov.html#photo-gavril-perov-8"
+    },
+    {
+      "src": "../images/interviews/stefan-lashko/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%201.jpg",
       "author": "Стефан Лашко",
+      "project": "Современник",
       "subtitle": "Порядок из хаоса",
       "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-0"
     },
     {
-      "src": "../images/8cccd61905b498ef65f7.webp",
+      "src": "../images/interviews/stefan-lashko/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%202.jpg",
       "author": "Стефан Лашко",
+      "project": "Современник",
       "subtitle": "Порядок из хаоса",
       "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-1"
     },
     {
-      "src": "../images/8f11e0bd795ca71968ec.webp",
+      "src": "../images/interviews/stefan-lashko/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%203.webp",
       "author": "Стефан Лашко",
+      "project": "Современник",
       "subtitle": "Порядок из хаоса",
       "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-2"
     },
     {
-      "src": "../images/93f65b92363a9632650b.webp",
+      "src": "../images/interviews/stefan-lashko/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%204.webp",
       "author": "Стефан Лашко",
+      "project": "Современник",
       "subtitle": "Порядок из хаоса",
       "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-3"
     },
     {
-      "src": "../images/94f47e99f9a955852719.webp",
+      "src": "../images/interviews/stefan-lashko/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%205.webp",
       "author": "Стефан Лашко",
+      "project": "Современник",
       "subtitle": "Порядок из хаоса",
       "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-4"
     },
     {
-      "src": "../images/953677807d62e0ffae4a.webp",
+      "src": "../images/interviews/stefan-lashko/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%206.webp",
       "author": "Стефан Лашко",
+      "project": "Современник",
       "subtitle": "Порядок из хаоса",
       "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-5"
     },
     {
-      "src": "../images/96f7d4116789d1f7784d.webp",
+      "src": "../images/interviews/stefan-lashko/%D0%A0%D0%B8%D1%85%D1%82%D0%B5%D1%80.jpg",
+      "author": "Стефан Лашко",
+      "project": "Рихтер",
+      "subtitle": "Порядок из хаоса",
+      "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-6"
+    },
+    {
+      "src": "../images/interviews/stefan-lashko/%D0%A0%D0%B8%D1%85%D1%82%D0%B5%D1%80%202.jpg",
+      "author": "Стефан Лашко",
+      "project": "Рихтер",
+      "subtitle": "Порядок из хаоса",
+      "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-7"
+    },
+    {
+      "src": "../images/interviews/stefan-lashko/%D0%A0%D0%B8%D1%85%D1%82%D0%B5%D1%80%203.jpg",
+      "author": "Стефан Лашко",
+      "project": "Рихтер",
+      "subtitle": "Порядок из хаоса",
+      "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-8"
+    },
+    {
+      "src": "../images/interviews/stefan-lashko/%D0%A0%D0%B8%D1%85%D1%82%D0%B5%D1%80%204.jpg",
+      "author": "Стефан Лашко",
+      "project": "Рихтер",
+      "subtitle": "Порядок из хаоса",
+      "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-9"
+    },
+    {
+      "src": "../images/interviews/stefan-lashko/%D0%A0%D0%B8%D1%85%D1%82%D0%B5%D1%80%207.webp",
+      "author": "Стефан Лашко",
+      "project": "Рихтер",
+      "subtitle": "Порядок из хаоса",
+      "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-10"
+    },
+    {
+      "src": "../images/interviews/stefan-lashko/%D0%A0%D0%B8%D1%85%D1%82%D0%B5%D1%80%205.webp",
+      "author": "Стефан Лашко",
+      "project": "Рихтер",
+      "subtitle": "Порядок из хаоса",
+      "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-11"
+    },
+    {
+      "src": "../images/interviews/stefan-lashko/%D0%A0%D0%B8%D1%85%D1%82%D0%B5%D1%80%206.webp",
+      "author": "Стефан Лашко",
+      "project": "Рихтер",
+      "subtitle": "Порядок из хаоса",
+      "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-12"
+    },
+    {
+      "src": "../images/interviews/stefan-lashko/Young%26%26Yandex.webp",
+      "author": "Стефан Лашко",
+      "project": "Young&&Yandex",
+      "subtitle": "Порядок из хаоса",
+      "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-13"
+    },
+    {
+      "src": "../images/interviews/stefan-lashko/Young%26%26Yandex%202.webp",
+      "author": "Стефан Лашко",
+      "project": "Young&&Yandex",
+      "subtitle": "Порядок из хаоса",
+      "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-14"
+    },
+    {
+      "src": "../images/interviews/stefan-lashko/Young%26%26Yandex%203.webp",
+      "author": "Стефан Лашко",
+      "project": "Young&&Yandex",
+      "subtitle": "Порядок из хаоса",
+      "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-15"
+    },
+    {
+      "src": "../images/interviews/stefan-lashko/Young%26%26Yandex%204.webp",
+      "author": "Стефан Лашко",
+      "project": "Young&&Yandex",
+      "subtitle": "Порядок из хаоса",
+      "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-16"
+    },
+    {
+      "src": "../images/interviews/stefan-lashko/Yandex%20Rent.webp",
+      "author": "Стефан Лашко",
+      "project": "Yandex Rent",
+      "subtitle": "Порядок из хаоса",
+      "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-17"
+    },
+    {
+      "src": "../images/interviews/stefan-lashko/Yandex%20Rent%202.webp",
+      "author": "Стефан Лашко",
+      "project": "Yandex Rent",
+      "subtitle": "Порядок из хаоса",
+      "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-18"
+    },
+    {
+      "src": "../images/interviews/stefan-lashko/Yandex%20Rent%203.webp",
+      "author": "Стефан Лашко",
+      "project": "Yandex Rent",
+      "subtitle": "Порядок из хаоса",
+      "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-19"
+    },
+    {
+      "src": "../images/interviews/stefan-lashko/Yandex%20Rent%204.webp",
+      "author": "Стефан Лашко",
+      "project": "Yandex Rent",
+      "subtitle": "Порядок из хаоса",
+      "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-20"
+    },
+    {
+      "src": "../images/interviews/stefan-lashko/Jene%CC%88k.webp",
+      "author": "Стефан Лашко",
+      "project": "Jenëk",
+      "subtitle": "Порядок из хаоса",
+      "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-21"
+    },
+    {
+      "src": "../images/interviews/stefan-lashko/Jene%CC%88k%202.webp",
+      "author": "Стефан Лашко",
+      "project": "Jenëk",
+      "subtitle": "Порядок из хаоса",
+      "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-22"
+    },
+    {
+      "src": "../images/interviews/stefan-lashko/Jene%CC%88k%203.webp",
+      "author": "Стефан Лашко",
+      "project": "Jenëk",
+      "subtitle": "Порядок из хаоса",
+      "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-23"
+    },
+    {
+      "src": "../images/interviews/olya-bazanova/Kids%20pizza%20academy.webp",
       "author": "Оля Бажанова",
+      "project": "Kids Pizza Academy",
       "subtitle": "Душа в сувенирке",
       "href": "./interviews/olya-bazanova.html#photo-olya-bazanova-0"
     },
     {
-      "src": "../images/9762566fd2c33f14047a.webp",
+      "src": "../images/interviews/olya-bazanova/Kids%20pizza%20academy%202.webp",
       "author": "Оля Бажанова",
+      "project": "Kids Pizza Academy",
       "subtitle": "Душа в сувенирке",
       "href": "./interviews/olya-bazanova.html#photo-olya-bazanova-1"
     },
     {
-      "src": "../images/98253e296aa8238eb9e0.jpg",
+      "src": "../images/interviews/olya-bazanova/Kids%20pizza%20academy%203.webp",
       "author": "Оля Бажанова",
+      "project": "Kids Pizza Academy",
       "subtitle": "Душа в сувенирке",
       "href": "./interviews/olya-bazanova.html#photo-olya-bazanova-2"
     },
     {
-      "src": "../images/9cec02ffc1f00c44f08e.webp",
+      "src": "../images/interviews/olya-bazanova/Kids%20pizza%20academy%204.webp",
       "author": "Оля Бажанова",
+      "project": "Kids Pizza Academy",
       "subtitle": "Душа в сувенирке",
       "href": "./interviews/olya-bazanova.html#photo-olya-bazanova-3"
     },
     {
-      "src": "../images/a00ef8663b19aaeb7b06.webp",
+      "src": "../images/interviews/olya-bazanova/Tamagotchi%20game%20in%20the%20Dodo%20Pizza%20app%20in%20support%20of%20the%20animal%20shelter.jpg",
       "author": "Оля Бажанова",
+      "project": "Хвостики",
       "subtitle": "Душа в сувенирке",
       "href": "./interviews/olya-bazanova.html#photo-olya-bazanova-4"
     },
     {
-      "src": "../images/a121ddc08001816a4a08.jpg",
+      "src": "../images/interviews/olya-bazanova/Dodo%20Pizza%20Box%20Concepts%201.webp",
       "author": "Оля Бажанова",
+      "project": "Dodo Pizza",
       "subtitle": "Душа в сувенирке",
       "href": "./interviews/olya-bazanova.html#photo-olya-bazanova-5"
+    },
+    {
+      "src": "../images/interviews/olya-bazanova/Dodo%20Pizza%20Box%20Concepts%202.webp",
+      "author": "Оля Бажанова",
+      "project": "Dodo Pizza",
+      "subtitle": "Душа в сувенирке",
+      "href": "./interviews/olya-bazanova.html#photo-olya-bazanova-6"
+    },
+    {
+      "src": "../images/interviews/olya-bazanova/Dodo%20Pizza%20Box%20Concepts%204.webp",
+      "author": "Оля Бажанова",
+      "project": "Dodo Pizza",
+      "subtitle": "Душа в сувенирке",
+      "href": "./interviews/olya-bazanova.html#photo-olya-bazanova-7"
+    },
+    {
+      "src": "../images/interviews/olya-bazanova/Dodo%20Pizza%20Box%20Concepts%205.webp",
+      "author": "Оля Бажанова",
+      "project": "Dodo Pizza",
+      "subtitle": "Душа в сувенирке",
+      "href": "./interviews/olya-bazanova.html#photo-olya-bazanova-8"
+    },
+    {
+      "src": "../images/interviews/olya-bazanova/Poster%20At%20the%20Very%20Least%2C%20I%20Am%20Part%20of%20the%20Earth.jpg",
+      "author": "Оля Бажанова",
+      "project": "TTOI",
+      "subtitle": "Душа в сувенирке",
+      "href": "./interviews/olya-bazanova.html#photo-olya-bazanova-9"
+    },
+    {
+      "src": "../images/interviews/olya-bazanova/A%20Comic%20We%20can%20always%20talk.webp",
+      "author": "Оля Бажанова",
+      "project": "TTOI",
+      "subtitle": "Душа в сувенирке",
+      "href": "./interviews/olya-bazanova.html#photo-olya-bazanova-10"
+    },
+    {
+      "src": "../images/interviews/olya-bazanova/Cover%20for%20Vesnoy%20by%20Nika%20Borisovski.webp",
+      "author": "Оля Бажанова",
+      "project": "Vesnoy",
+      "subtitle": "Душа в сувенирке",
+      "href": "./interviews/olya-bazanova.html#photo-olya-bazanova-11"
+    },
+    {
+      "src": "../images/interviews/olya-bazanova/%D0%98%D0%BB%D0%BB%D1%8E%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE.gif",
+      "author": "Оля Бажанова",
+      "project": "Иллюстрация",
+      "subtitle": "Душа в сувенирке",
+      "href": "./interviews/olya-bazanova.html#photo-olya-bazanova-12"
+    },
+    {
+      "src": "../images/interviews/olya-bazanova/Mural%20for%20Dodo%20Pizza%20in%20Nigeria.jpg",
+      "author": "Оля Бажанова",
+      "project": "Dodo Pizza",
+      "subtitle": "Душа в сувенирке",
+      "href": "./interviews/olya-bazanova.html#photo-olya-bazanova-13"
     },
     {
       "src": "../images/anastasia-sycheva-lancer.png",
@@ -824,6 +1502,41 @@ window.deFindingsGalleryData = {
       "href": "./interviews/anastasia-sycheva.html#photo-anastasia-sycheva-9"
     },
     {
+    {
+      "src": "../images/interviews/dariia-chertanova/%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5%20%D1%80%D0%B8%D1%81%D1%83%D0%BD%D0%BA%D0%B8%202.jpg",
+      "author": "Даша Чертанова",
+      "project": "Детские рисунки",
+      "subtitle": "Смыслы и контекст",
+      "href": "./interviews/dariia-chertanova.html#photo-dariia-chertanova-1"
+    },
+    {
+      "src": "../images/interviews/dariia-chertanova/%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5%20%D1%80%D0%B8%D1%81%D1%83%D0%BD%D0%BA%D0%B8%203.jpg",
+      "author": "Даша Чертанова",
+      "project": "Детские рисунки",
+      "subtitle": "Смыслы и контекст",
+      "href": "./interviews/dariia-chertanova.html#photo-dariia-chertanova-2"
+    },
+    {
+      "src": "../images/interviews/dariia-chertanova/%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5%20%D1%80%D0%B8%D1%81%D1%83%D0%BD%D0%BA%D0%B8.jpg",
+      "author": "Даша Чертанова",
+      "project": "Детские рисунки",
+      "subtitle": "Смыслы и контекст",
+      "href": "./interviews/dariia-chertanova.html#photo-dariia-chertanova-3"
+    },
+    {
+      "src": "../images/interviews/dariia-chertanova/Time%20issue%205.jpg",
+      "author": "Даша Чертанова",
+      "project": "Time Issue",
+      "subtitle": "Смыслы и контекст",
+      "href": "./interviews/dariia-chertanova.html#photo-dariia-chertanova-5"
+    },
+    {
+      "src": "../images/interviews/dariia-chertanova/Japan%20issue%202.jpg",
+      "author": "Даша Чертанова",
+      "project": "Japan Issue",
+      "subtitle": "Смыслы и контекст",
+      "href": "./interviews/dariia-chertanova.html#photo-dariia-chertanova-7"
+    },
       "src": "../images/maksimenkov-principles.png",
       "author": "Андрей Максименков",
       "subtitle": "Ночные идеи",

@@ -39,6 +39,15 @@ const KEYWORDS = {
     'москва the blueprint blueprint bang bang education werkstatt продукт смыслы контекст кодинг',
   'nikita-petrov': 'москва nikipetrov продукт проект foliobin savi medium portfolio',
   'maxim-aksenov': 'москва фриланс дизайн архитектура система lash',
+  bauhaus: 'bauhaus баухаус вальтер гропиус веймар школа модерн история эссе',
+  'ulm-hfg': 'ulm hfg ульм школа мальдонадо braun методология история эссе',
+  'ibm-rand': 'ibm paul rand пол рэнд корпоративный идентичность история эссе',
+  'dieter-rams': 'dieter rams диетер рамс braun принципы минимализм история эссе',
+  'muji-hara': 'muji кения хара наото фукасава минимализм япония история эссе',
+  'digital-turn': 'цифровой скевоморфизм ios flat ux норман история эссе',
+  'design-systems': 'дизайн система material design hig apple история эссе',
+  'designops-scaling': 'designops spotify scaling команды процесс история эссе',
+  'ai-era': 'ai искусственный интеллект нейросеть история эссе куратор',
 };
 
 function escapeJsString(value) {

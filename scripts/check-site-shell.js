@@ -31,6 +31,7 @@ const FULL_REQUIRED = [
   'class="s-footer"',
   'bundles/shell.css',
   'm-cookie-consent.js',
+  'search-matching.js',
   'menu-overlay.js',
   'udf/atoms/sticky-scroll/a-sticky-scroll.js',
   'udf/runtime/micro-animations.js',
@@ -44,6 +45,7 @@ const INTERVIEW_REQUIRED = [
   'class="s-footer"',
   'bundles/shell.css',
   'bundles/interview.css',
+  'search-matching.js',
   'menu-overlay.js',
   'udf/atoms/sticky-scroll/a-sticky-scroll.js',
   'udf/runtime/micro-animations.js',
@@ -55,6 +57,7 @@ const MINIMAL_REQUIRED = [
   '<header class="s-menu',
   'bundles/shell.css',
   'm-cookie-consent.js',
+  'search-matching.js',
   'menu-overlay.js',
 ];
 
