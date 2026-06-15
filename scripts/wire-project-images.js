@@ -256,7 +256,7 @@ function updateMeta() {
 
   meta.interviews['sergey-kudinov'].images = [
     { src: '../images/sergey-kudinov-simulators.jpg', title: 'Яндекс Практикум' },
-    { src: '../images/sergey-kudinov-practicum-brand.png', title: 'Яндекс Практикум' },
+    { src: '../images/sergey-kudinov-practicum-brand.webp', title: 'Яндекс Практикум' },
     { src: '../images/sergey-kudinov-practicum-wide.jpg', title: 'Яндекс Практикум' },
     { src: '../images/sergey-kudinov-music.jpg', title: 'Яндекс Музыка' },
     { src: '../images/sergey-kudinov-music-mobile.jpg', title: 'Яндекс Музыка' },
@@ -273,7 +273,7 @@ function updateMeta() {
     { src: '../images/anastasia-sycheva-noxus-03.png', title: 'Noxus' },
     { src: '../images/anastasia-sycheva-elementor.png', title: 'Elementor' },
     { src: '../images/anastasia-sycheva-basic-capital.png', title: 'Basic Capital' },
-    { src: '../images/anastasia-sycheva-basic-capital-02.png', title: 'Basic Capital' },
+    { src: '../images/anastasia-sycheva-basic-capital-02.webp', title: 'Basic Capital' },
   ];
 
   meta.interviews['yan-zaretsky'].images = [

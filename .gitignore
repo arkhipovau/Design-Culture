@@ -23,5 +23,8 @@ yarn-error.log
 /docs/images/interviews/README.md
 /docs/images/interviews/*/README.md
 
+# FUSE/editor temp files — never commit
+**/.fuse_hidden*
+
 # Audio transcriptions — local editorial only
 **/audio*.txt

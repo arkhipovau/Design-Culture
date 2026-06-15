@@ -66,7 +66,7 @@ const MATERIALS = [
           'Эстетика в Баухаусе была идеологией. Чистая геометрия, отказ от орнамента, минимизация средств выражения – всё это не был поиск красоты как таковой. Гропиус и его коллеги (Василий Кандинский, Ласло Мохой-Надь, Герберт Байер) рассматривали визуальный язык как средство организации поведения и мышления. Принцип «форма следует функции» (form follows function) был не эстетическим манифестом, а этическим императивом: материалы должны быть честными, дизайн должен служить пользователю, ничего лишнего.',
         ],
         pullQuote: 'Принцип form follows function был не эстетическим манифестом, а этическим императивом.',
-        photos: ['../../images/bauhaus/Баухаус 3.jpg', '../../images/bauhaus/Баухаус 4.jpg'],
+        photos: ['../../images/bauhaus/Баухаус 3.webp', '../../images/bauhaus/Баухаус 4.jpg'],
       },
       {
         id: 'industry',
@@ -111,7 +111,7 @@ const MATERIALS = [
           'Томас Мальдонадо, принявший должность ректора в 1956 году, переопределил природу проектирования. Вместо акцента на форму-как-выражение Мальдонадо предложил проектирование как системную деятельность (design as systematic activity), интегрирующую научно обоснованное и интуитивное мышление.',
         ],
         pullQuote: 'Каждое решение должно было быть обосновано, сформулировано, документировано.',
-        photos: ['../../images/ulm-hfg/ulm 1.jpg'],
+        photos: ['../../images/ulm-hfg/ulm 1.webp'],
       },
       {
         id: 'curriculum',
@@ -177,7 +177,7 @@ const MATERIALS = [
         paragraphs: [
           'Рэнд не просто создал логотип. Он разработал систему принципов, язык коммуникации, подход к информационной иерархии. IBM Identity System была первой полностью интегрированной корпоративной дизайн-системой, охватывающей типографику, цветовую палитру, правила применения, принципы построения коммуникации. Это кодировало ценности компании – рациональность, надёжность, инновационность – не в словах, а в визуальной системе.',
         ],
-        photos: ['../../images/ibm-rand/ibm-rand 1.jpg', '../../images/ibm-rand/ibm-rand 2.jpg'],
+        photos: ['../../images/ibm-rand/ibm-rand 1.jpg', '../../images/ibm-rand/ibm-rand 2.webp'],
       },
       {
         id: 'subway',
@@ -212,7 +212,7 @@ const MATERIALS = [
     title: 'Десять принципов и формализация этики',
     meta: '1950–2000 • Braun • Принципы',
     tags: 'история принципы braun',
-    hero: '../../images/dieter-rams/dieter-rams-avatar.jpg',
+    hero: '../../images/dieter-rams/dieter-rams-avatar.webp',
     intro: 'Самый цитируемый промышленный дизайнер двадцатого века. Принципы Рамса знает каждый, кто хоть раз делал презентацию о хорошем дизайне. Но мало кто помнит – откуда они взялись и почему он сформулировал именно эти десять.',
     sections: [
       {
@@ -229,7 +229,7 @@ const MATERIALS = [
         paragraphs: [
           'В 1970–1980-х годах Рамс сформулировал десять принципов хорошего дизайна. Критически важно: это не были стилистические рекомендации, это была попытка артикулировать этику профессии.',
         ],
-        photos: ['../../images/dieter-rams/dieter-rams 1.jpg', '../../images/dieter-rams/dieter-rams 2.jpg'],
+        photos: ['../../images/dieter-rams/dieter-rams 1.webp', '../../images/dieter-rams/dieter-rams 2.jpg'],
         raw: `<ol class="m-interview-section__prose" style="padding-left: 1.5em; margin: 0; display: flex; flex-direction: column; gap: 12px;">
               <li><strong>Инновативность.</strong> Возможности для инноваций предоставляются технологией, но инновация должна развиваться в тандеме с ней.</li>
               <li><strong>Полезность.</strong> Дизайн должен делать продукт полезным.</li>
@@ -278,7 +278,7 @@ const MATERIALS = [
     title: 'Философия пустоты',
     meta: '1960–2000 • Япония • Бренд',
     tags: 'история бренд япония',
-    hero: '../../images/muji-hara/muji-hara-avatar.jpg',
+    hero: '../../images/muji-hara/muji-hara-avatar.webp',
     intro: 'Параллельно европейскому рационализму в Японии возникает другой минимализм. Он приходит не через дисциплину Рамса, а через доверие пользователю. Эту главу я добавила, потому что вся история дизайна, которую мы рассказываем себе на русском, обычно европоцентрична. А минимализм – универсальный язык, и японская его версия столь же важна.',
     sections: [
       {
@@ -302,7 +302,7 @@ const MATERIALS = [
         paragraphs: [
           'Это воплотилось в MUJI – бренде, который переопределил минимализм не как стиль, а как этическую установку. Философия MUJI кодируется в простой декларации: «Это просто. Это честно. Это функционально. Это доступно». Есть ключевое отличие от Рамса: отказ от демонстрации (rejection of display). Бренд MUJI не претендует на видимость. Он служит.',
         ],
-        photos: ['../../images/muji-hara/muji-hara 1.jpg'],
+        photos: ['../../images/muji-hara/muji-hara 1.webp'],
       },
       {
         id: 'universal',
@@ -329,7 +329,7 @@ const MATERIALS = [
     title: 'От скевоморфизма к плоскому дизайну',
     meta: '1990–2013 • Веб • Поворот',
     tags: 'история веб цифра',
-    hero: '../../images/digital-turn/digital-turn-avatar.jpg',
+    hero: '../../images/digital-turn/digital-turn-avatar.webp',
     intro: 'Когда дизайн впервые встретился с экраном, у него не было ни языка, ни конвенций. Эти двадцать лет – история о том, как профессия училась говорить с пользователем через цифровую плёнку, и как она прошла через свой подростковый период перегруженности и обмана, чтобы прийти к зрелости.',
     sections: [
       {
@@ -339,7 +339,7 @@ const MATERIALS = [
           'Когда компьютеры и интернет стали достоянием массового пользователя в 1995–2000 годах, дизайнеры столкнулись с радикальной проблемой: интерфейс был абсолютно незнаком большинству людей. Как помочь пользователю понять логику, которая не имела прецедента в физическом мире? Решение было логичным и, в ретроспективе, консервативным: скевоморфизм (skeuomorphism) – визуальное подражание физическим объектам.',
           'Папка выглядит как папка. Корзина выглядит как корзина. Это была когнитивная помощь: использование знакомого для обучения незнакомому.',
         ],
-        photos: ['../../images/digital-turn/digital-turn-sceomorfism 1.jpg', '../../images/digital-turn/digital-turn-sceomorfism 2.jpg'],
+        photos: ['../../images/digital-turn/digital-turn-sceomorfism 1.webp', '../../images/digital-turn/digital-turn-sceomorfism 2.jpg'],
       },
       {
         id: 'decay',
@@ -365,7 +365,7 @@ const MATERIALS = [
           'iOS 7 (2013) под руководством Джонатана Айва стал поворотной точкой. Айв отказался от скевоморфизма в пользу подхода, предложенного его коллегой Крэйгом Федериги (Craig Federighi), разработав плоский дизайн с глубиной (flat design with depth) – плоскую эстетику, но с иерархией, движением и прозрачностью.',
           'Айв сказал: «Я думаю, что есть глубокая и долгая красота в простоте, в ясности, в эффективности». Это было возвращением к Рамсу: честность материала (цифра – это не физика), ясность функции (каждый элемент служит задаче), минимализм (только необходимое).',
         ],
-        photos: ['../../images/digital-turn/digital-turn-ios 1.jpg', '../../images/digital-turn/digital-turn-ios 2.jpg', '../../images/digital-turn/digital-turn-ios 3.jpg'],
+        photos: ['../../images/digital-turn/digital-turn-ios 1.jpg', '../../images/digital-turn/digital-turn-ios 2.jpg', '../../images/digital-turn/digital-turn-ios 3.webp'],
       },
     ],
     outro: 'Когда сегодня кто-то из героев deFindings обсуждает «честность интерфейса», AI-генеративные картинки или границы между крафтом и автоматизацией – это та же дискуссия. Просто другая технологическая эпоха.',
@@ -386,7 +386,7 @@ const MATERIALS = [
     title: 'Система как инфраструктура',
     meta: '2005–2020 • Цифра • Системы',
     tags: 'история системы цифра',
-    hero: '../../images/design-systems/design-systems-material-design-avatar.jpg',
+    hero: '../../images/design-systems/design-systems-material-design-avatar.webp',
     intro: 'Один из самых тихих сдвигов в истории профессии: дизайн перестаёт быть актом и становится инфраструктурой. Спецификация компонентов оказывается важнее самих компонентов. Эта глава – про эпоху, в которой родились почти все дизайн-системы, которые сегодня используют наши герои в работе.',
     sections: [
       {
@@ -405,7 +405,7 @@ const MATERIALS = [
           'Во-вторых, это философия открытости: Material Design общедоступен. Google не держит эту систему в секрете (в отличие от IBM, Apple, Braun). Она публикует спецификации, компоненты, исходные коды, инструменты. Это инфраструктура, которую может использовать любой разработчик.',
         ],
         pullQuote: 'Методология проектирования становится общей собственностью.',
-        photos: ['../../images/design-systems/design-systems-material-design 1.jpg', '../../images/design-systems/design-systems-material-design 2.jpg', '../../images/design-systems/design-systems-material-design 3.jpg'],
+        photos: ['../../images/design-systems/design-systems-material-design 1.webp', '../../images/design-systems/design-systems-material-design 2.webp', '../../images/design-systems/design-systems-material-design 3.webp'],
       },
       {
         id: 'ubiquity',
@@ -451,8 +451,8 @@ const MATERIALS = [
           'DesignOps не является дизайном в традиционном смысле. Это операционализация культуры: структурирование ритуалов (критические сессии, проектные обзоры, синхронизации команды), документирование процессов, управление инструментами, установление метрик, определение ролей и компетенций. Design Operations Summit 2018 становится официальной кристаллизацией DesignOps как дисциплины.',
         ],
         photos: [
-          ['../../images/designops-scaling/designops-scaling-ops.jpg'],
-          ['../../images/designops-scaling/designops-scaling-ops-1.jpg'],
+          ['../../images/designops-scaling/designops-scaling-ops.webp'],
+          ['../../images/designops-scaling/designops-scaling-ops-1.webp'],
         ],
       },
       {
@@ -463,7 +463,7 @@ const MATERIALS = [
           'Для дизайн-культуры это имеет принципиальное значение. Каждый squad имеет дизайнера. Guilds позволяют дизайнерам из разных команд собираться, обсуждать практики, делиться знаниями, критиковать решения. Это создаёт горизонтальную структуру передачи культуры, а не только вертикальное управление.',
         ],
         pullQuote: 'Горизонтальная структура передачи культуры, а не только вертикальное управление.',
-        photos: ['../../images/designops-scaling/designops-scaling-spotify.jpg'],
+        photos: ['../../images/designops-scaling/designops-scaling-spotify.webp'],
       },
       {
         id: 'reflection',
@@ -471,7 +471,7 @@ const MATERIALS = [
         paragraphs: [
           'В этот же период происходит революция в публичности профессии. Дизайнеры начинают писать открыто не только о результатах, но о процессе, решениях, ошибках. Medium становится площадкой для высказывания – The Way We Build (Airbnb, 2016) и сотни других длинных текстов.',
         ],
-        photos: ['../../images/designops-scaling/designops-scaling-medium.jpg'],
+        photos: ['../../images/designops-scaling/designops-scaling-medium.webp'],
       },
       {
         id: 'uncommon',
@@ -482,7 +482,7 @@ const MATERIALS = [
         ],
         photos: [
           ['../../images/designops-scaling/designops-scaling-uncommon.jpg'],
-          ['../../images/designops-scaling/designops-scaling-uncommon 2.jpg'],
+          ['../../images/designops-scaling/designops-scaling-uncommon 2.webp'],
         ],
       },
     ],

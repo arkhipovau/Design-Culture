@@ -37,7 +37,7 @@ window.deFindingsGalleryData = {
       "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-4"
     },
     {
-      "src": "../images/interviews/togetherwithyou/MARCO.png",
+      "src": "../images/interviews/togetherwithyou/MARCO.webp",
       "author": "Артём Тарасов и Артём Тарадаш",
       "project": "MARCO",
       "subtitle": "Мир постдизайна",
@@ -51,7 +51,7 @@ window.deFindingsGalleryData = {
       "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-6"
     },
     {
-      "src": "../images/interviews/togetherwithyou/Silk%20%26%20Silk%20Road.png",
+      "src": "../images/interviews/togetherwithyou/Silk%20%26%20Silk%20Road.webp",
       "author": "Артём Тарасов и Артём Тарадаш",
       "project": "Silk &amp; Silk Road",
       "subtitle": "Мир постдизайна",
@@ -79,7 +79,7 @@ window.deFindingsGalleryData = {
       "href": "./interviews/togetherwithyou.html#photo-togetherwithyou-10"
     },
     {
-      "src": "../images/interviews/togetherwithyou/MARCO%205.png",
+      "src": "../images/interviews/togetherwithyou/MARCO%205.webp",
       "author": "Артём Тарасов и Артём Тарадаш",
       "project": "MARCO",
       "subtitle": "Мир постдизайна",
@@ -401,42 +401,42 @@ window.deFindingsGalleryData = {
       "href": "./interviews/aleksey-pyankov.html#photo-aleksey-pyankov-16"
     },
     {
-      "src": "../images/interviews/polina-zagumenova/Berlin.jpg",
+      "src": "../images/interviews/polina-zagumenova/Berlin.webp",
       "author": "Полина Загуменова",
       "project": "Berlin",
       "subtitle": "Флексибельные рамки",
       "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-0"
     },
     {
-      "src": "../images/interviews/polina-zagumenova/Berlin2.jpg",
+      "src": "../images/interviews/polina-zagumenova/Berlin2.webp",
       "author": "Полина Загуменова",
       "project": "Berlin",
       "subtitle": "Флексибельные рамки",
       "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-1"
     },
     {
-      "src": "../images/interviews/polina-zagumenova/Purpur.jpg",
+      "src": "../images/interviews/polina-zagumenova/Purpur.webp",
       "author": "Полина Загуменова",
       "project": "Purpur",
       "subtitle": "Флексибельные рамки",
       "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-5"
     },
     {
-      "src": "../images/interviews/polina-zagumenova/Purpur2.jpg",
+      "src": "../images/interviews/polina-zagumenova/Purpur2.webp",
       "author": "Полина Загуменова",
       "project": "Purpur",
       "subtitle": "Флексибельные рамки",
       "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-6"
     },
     {
-      "src": "../images/interviews/polina-zagumenova/Nume.png",
+      "src": "../images/interviews/polina-zagumenova/Nume.webp",
       "author": "Полина Загуменова",
       "project": "Nume",
       "subtitle": "Флексибельные рамки",
       "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-2"
     },
     {
-      "src": "../images/interviews/polina-zagumenova/Nume2.png",
+      "src": "../images/interviews/polina-zagumenova/Nume2.webp",
       "author": "Полина Загуменова",
       "project": "Nume",
       "subtitle": "Флексибельные рамки",
@@ -450,42 +450,42 @@ window.deFindingsGalleryData = {
       "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-4"
     },
     {
-      "src": "../images/interviews/polina-zagumenova/Headies.jpg",
+      "src": "../images/interviews/polina-zagumenova/Headies.webp",
       "author": "Полина Загуменова",
       "project": "Headies",
       "subtitle": "Флексибельные рамки",
       "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-7"
     },
     {
-      "src": "../images/interviews/polina-zagumenova/Headies2.jpg",
+      "src": "../images/interviews/polina-zagumenova/Headies2.webp",
       "author": "Полина Загуменова",
       "project": "Headies",
       "subtitle": "Флексибельные рамки",
       "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-8"
     },
     {
-      "src": "../images/interviews/polina-zagumenova/ESSAI1.jpg",
+      "src": "../images/interviews/polina-zagumenova/ESSAI1.webp",
       "author": "Полина Загуменова",
       "project": "ESSAI",
       "subtitle": "Флексибельные рамки",
       "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-9"
     },
     {
-      "src": "../images/interviews/polina-zagumenova/ESSAI2.jpg",
+      "src": "../images/interviews/polina-zagumenova/ESSAI2.webp",
       "author": "Полина Загуменова",
       "project": "ESSAI",
       "subtitle": "Флексибельные рамки",
       "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-10"
     },
     {
-      "src": "../images/interviews/polina-zagumenova/ESSAI3.jpg",
+      "src": "../images/interviews/polina-zagumenova/ESSAI3.webp",
       "author": "Полина Загуменова",
       "project": "ESSAI",
       "subtitle": "Флексибельные рамки",
       "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-11"
     },
     {
-      "src": "../images/interviews/polina-zagumenova/Self promo poster.jpg",
+      "src": "../images/interviews/polina-zagumenova/Self promo poster.webp",
       "author": "Полина Загуменова",
       "project": "Self promo poster",
       "subtitle": "Флексибельные рамки",
@@ -499,21 +499,21 @@ window.deFindingsGalleryData = {
       "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-13"
     },
     {
-      "src": "../images/interviews/polina-zagumenova/Zerion.jpg",
+      "src": "../images/interviews/polina-zagumenova/Zerion.webp",
       "author": "Полина Загуменова",
       "project": "Zerion",
       "subtitle": "Флексибельные рамки",
       "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-14"
     },
     {
-      "src": "../images/interviews/polina-zagumenova/SUGARFREE EYESCREAM.jpg",
+      "src": "../images/interviews/polina-zagumenova/SUGARFREE EYESCREAM.webp",
       "author": "Полина Загуменова",
       "project": "SUGARFREE EYESCREAM",
       "subtitle": "Флексибельные рамки",
       "href": "./interviews/polina-zagumenova.html#photo-polina-zagumenova-15"
     },
     {
-      "src": "../images/interviews/polina-zagumenova/SUGARFREE EYESCREAM2.jpg",
+      "src": "../images/interviews/polina-zagumenova/SUGARFREE EYESCREAM2.webp",
       "author": "Полина Загуменова",
       "project": "SUGARFREE EYESCREAM",
       "subtitle": "Флексибельные рамки",
@@ -674,14 +674,14 @@ window.deFindingsGalleryData = {
       "href": "./interviews/masha-chern.html#photo-masha-chern-21"
     },
     {
-      "src": "../images/interviews/yulya-kondratyeva/Werkstatt.jpg",
+      "src": "../images/interviews/yulya-kondratyeva/Werkstatt.webp",
       "author": "Юля Кондратьева",
       "project": "Werkstatt",
       "subtitle": "Уместный дизайн",
       "href": "./interviews/yulya-kondratyeva.html#photo-yulya-kondratyeva-0"
     },
     {
-      "src": "../images/interviews/yulya-kondratyeva/%D0%90%D0%B9%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%BA%D0%B0%D1%84%D0%B5%20%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%B8%D0%B5.jpg",
+      "src": "../images/interviews/yulya-kondratyeva/%D0%90%D0%B9%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%BA%D0%B0%D1%84%D0%B5%20%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%B8%D0%B5.webp",
       "author": "Юля Кондратьева",
       "project": "Великие",
       "subtitle": "Уместный дизайн",
@@ -724,126 +724,126 @@ window.deFindingsGalleryData = {
       "href": "./interviews/yan-zaretsky.html#photo-yan-zaretsky-5"
     },
     {
-      "src": "../images/interviews/sergey-breus/Wanna%3F%20Be%21.jpg",
+      "src": "../images/interviews/sergey-breus/Wanna%3F%20Be%21.webp",
       "author": "Сергей Бреус",
       "project": "Wanna? Be!",
       "subtitle": "Дизайн ради смысла",
       "href": "./interviews/sergey-breus.html#photo-sergey-breus-0"
     },
     {
-      "src": "../images/interviews/sergey-breus/Wanna%3F%20Be%21%202.jpg",
+      "src": "../images/interviews/sergey-breus/Wanna%3F%20Be%21%202.webp",
       "author": "Сергей Бреус",
       "project": "Wanna? Be!",
       "subtitle": "Дизайн ради смысла",
       "href": "./interviews/sergey-breus.html#photo-sergey-breus-1"
     },
     {
-      "src": "../images/interviews/sergey-breus/Smorodina.jpg",
+      "src": "../images/interviews/sergey-breus/Smorodina.webp",
       "author": "Сергей Бреус",
       "project": "Smorodina",
       "subtitle": "Дизайн ради смысла",
       "href": "./interviews/sergey-breus.html#photo-sergey-breus-2"
     },
     {
-      "src": "../images/interviews/sergey-breus/Smorodina%202.jpg",
+      "src": "../images/interviews/sergey-breus/Smorodina%202.webp",
       "author": "Сергей Бреус",
       "project": "Smorodina",
       "subtitle": "Дизайн ради смысла",
       "href": "./interviews/sergey-breus.html#photo-sergey-breus-3"
     },
     {
-      "src": "../images/interviews/sergey-breus/KMHN.jpg",
+      "src": "../images/interviews/sergey-breus/KMHN.webp",
       "author": "Сергей Бреус",
       "project": "KMHN",
       "subtitle": "Дизайн ради смысла",
       "href": "./interviews/sergey-breus.html#photo-sergey-breus-4"
     },
     {
-      "src": "../images/interviews/sergey-breus/%D0%91%D1%8D%D0%B9%D0%BA%D0%B8.jpg",
+      "src": "../images/interviews/sergey-breus/%D0%91%D1%8D%D0%B9%D0%BA%D0%B8.webp",
       "author": "Сергей Бреус",
       "project": "Бэйки",
       "subtitle": "Дизайн ради смысла",
       "href": "./interviews/sergey-breus.html#photo-sergey-breus-5"
     },
     {
-      "src": "../images/interviews/sergey-mekryukov/Dodo%201.jpg",
+      "src": "../images/interviews/sergey-mekryukov/Dodo%201.webp",
       "author": "Сергей Мекрюков",
       "project": "Dodo",
       "subtitle": "Полевые исследования, данные как основание и проверка вкуса результатом",
       "href": "./interviews/sergey-mekryukov.html#photo-sergey-mekryukov-0"
     },
     {
-      "src": "../images/interviews/sergey-mekryukov/Dodo%202.jpg",
+      "src": "../images/interviews/sergey-mekryukov/Dodo%202.webp",
       "author": "Сергей Мекрюков",
       "project": "Dodo",
       "subtitle": "Полевые исследования, данные как основание и проверка вкуса результатом",
       "href": "./interviews/sergey-mekryukov.html#photo-sergey-mekryukov-1"
     },
     {
-      "src": "../images/interviews/sergey-mekryukov/Dodo%203.jpg",
+      "src": "../images/interviews/sergey-mekryukov/Dodo%203.webp",
       "author": "Сергей Мекрюков",
       "project": "Dodo",
       "subtitle": "Полевые исследования, данные как основание и проверка вкуса результатом",
       "href": "./interviews/sergey-mekryukov.html#photo-sergey-mekryukov-2"
     },
     {
-      "src": "../images/interviews/sergey-mekryukov/Drinkit%201.jpg",
+      "src": "../images/interviews/sergey-mekryukov/Drinkit%201.webp",
       "author": "Сергей Мекрюков",
       "project": "Drinkit",
       "subtitle": "Полевые исследования, данные как основание и проверка вкуса результатом",
       "href": "./interviews/sergey-mekryukov.html#photo-sergey-mekryukov-3"
     },
     {
-      "src": "../images/interviews/sergey-mekryukov/Dodo%204.jpg",
+      "src": "../images/interviews/sergey-mekryukov/Dodo%204.webp",
       "author": "Сергей Мекрюков",
       "project": "Dodo",
       "subtitle": "Полевые исследования, данные как основание и проверка вкуса результатом",
       "href": "./interviews/sergey-mekryukov.html#photo-sergey-mekryukov-4"
     },
     {
-      "src": "../images/interviews/sergey-mekryukov/Dodo%205.jpg",
+      "src": "../images/interviews/sergey-mekryukov/Dodo%205.webp",
       "author": "Сергей Мекрюков",
       "project": "Dodo",
       "subtitle": "Полевые исследования, данные как основание и проверка вкуса результатом",
       "href": "./interviews/sergey-mekryukov.html#photo-sergey-mekryukov-5"
     },
     {
-      "src": "../images/interviews/sergey-mekryukov/Drinkit%202.jpg",
+      "src": "../images/interviews/sergey-mekryukov/Drinkit%202.webp",
       "author": "Сергей Мекрюков",
       "project": "Drinkit",
       "subtitle": "Полевые исследования, данные как основание и проверка вкуса результатом",
       "href": "./interviews/sergey-mekryukov.html#photo-sergey-mekryukov-6"
     },
     {
-      "src": "../images/interviews/sergey-mekryukov/Drinkit%203.jpg",
+      "src": "../images/interviews/sergey-mekryukov/Drinkit%203.webp",
       "author": "Сергей Мекрюков",
       "project": "Drinkit",
       "subtitle": "Полевые исследования, данные как основание и проверка вкуса результатом",
       "href": "./interviews/sergey-mekryukov.html#photo-sergey-mekryukov-7"
     },
     {
-      "src": "../images/interviews/sergey-mekryukov/Drinkit%204.jpg",
+      "src": "../images/interviews/sergey-mekryukov/Drinkit%204.webp",
       "author": "Сергей Мекрюков",
       "project": "Drinkit",
       "subtitle": "Полевые исследования, данные как основание и проверка вкуса результатом",
       "href": "./interviews/sergey-mekryukov.html#photo-sergey-mekryukov-8"
     },
     {
-      "src": "../images/interviews/sergey-mekryukov/Drinkit%205.jpg",
+      "src": "../images/interviews/sergey-mekryukov/Drinkit%205.webp",
       "author": "Сергей Мекрюков",
       "project": "Drinkit",
       "subtitle": "Полевые исследования, данные как основание и проверка вкуса результатом",
       "href": "./interviews/sergey-mekryukov.html#photo-sergey-mekryukov-9"
     },
     {
-      "src": "../images/interviews/sergey-mekryukov/Dodo%206.jpg",
+      "src": "../images/interviews/sergey-mekryukov/Dodo%206.webp",
       "author": "Сергей Мекрюков",
       "project": "Dodo",
       "subtitle": "Полевые исследования, данные как основание и проверка вкуса результатом",
       "href": "./interviews/sergey-mekryukov.html#photo-sergey-mekryukov-10"
     },
     {
-      "src": "../images/interviews/sergey-mekryukov/Drinkit%206.jpg",
+      "src": "../images/interviews/sergey-mekryukov/Drinkit%206.webp",
       "author": "Сергей Мекрюков",
       "project": "Drinkit",
       "subtitle": "Полевые исследования, данные как основание и проверка вкуса результатом",
@@ -1012,21 +1012,21 @@ window.deFindingsGalleryData = {
       "href": "./interviews/anya-golub.html#photo-anya-golub-17"
     },
     {
-      "src": "../images/interviews/sasha-barabonova/LALAL.AI.png",
+      "src": "../images/interviews/sasha-barabonova/LALAL.AI.webp",
       "author": "Саша Барабонова",
       "project": "LALAL.AI",
       "subtitle": "Эмпатичный дизайн",
       "href": "./interviews/sasha-barabonova.html#photo-sasha-barabonova-0"
     },
     {
-      "src": "../images/interviews/sasha-barabonova/LALAL.AI%202.jpg",
+      "src": "../images/interviews/sasha-barabonova/LALAL.AI%202.webp",
       "author": "Саша Барабонова",
       "project": "LALAL.AI",
       "subtitle": "Эмпатичный дизайн",
       "href": "./interviews/sasha-barabonova.html#photo-sasha-barabonova-1"
     },
     {
-      "src": "../images/interviews/sasha-barabonova/LALAL.AI%203.png",
+      "src": "../images/interviews/sasha-barabonova/LALAL.AI%203.webp",
       "author": "Саша Барабонова",
       "project": "LALAL.AI",
       "subtitle": "Эмпатичный дизайн",
@@ -1082,70 +1082,70 @@ window.deFindingsGalleryData = {
       "href": "./interviews/sasha-barabonova.html#photo-sasha-barabonova-9"
     },
     {
-      "src": "../images/interviews/sasha-barabonova/Mist%20app%201.png",
+      "src": "../images/interviews/sasha-barabonova/Mist%20app%201.webp",
       "author": "Саша Барабонова",
       "project": "Mist app",
       "subtitle": "Эмпатичный дизайн",
       "href": "./interviews/sasha-barabonova.html#photo-sasha-barabonova-10"
     },
     {
-      "src": "../images/interviews/sasha-barabonova/Mist%20app%202.png",
+      "src": "../images/interviews/sasha-barabonova/Mist%20app%202.webp",
       "author": "Саша Барабонова",
       "project": "Mist app",
       "subtitle": "Эмпатичный дизайн",
       "href": "./interviews/sasha-barabonova.html#photo-sasha-barabonova-11"
     },
     {
-      "src": "../images/interviews/sasha-barabonova/Mist%20app%203.png",
+      "src": "../images/interviews/sasha-barabonova/Mist%20app%203.webp",
       "author": "Саша Барабонова",
       "project": "Mist app",
       "subtitle": "Эмпатичный дизайн",
       "href": "./interviews/sasha-barabonova.html#photo-sasha-barabonova-12"
     },
     {
-      "src": "../images/interviews/sasha-barabonova/Mist%20app%204.png",
+      "src": "../images/interviews/sasha-barabonova/Mist%20app%204.webp",
       "author": "Саша Барабонова",
       "project": "Mist app",
       "subtitle": "Эмпатичный дизайн",
       "href": "./interviews/sasha-barabonova.html#photo-sasha-barabonova-13"
     },
     {
-      "src": "../images/interviews/gavril-perov/Arny%20Praht%20by%20Gavril.jpeg",
+      "src": "../images/interviews/gavril-perov/Arny%20Praht%20by%20Gavril.webp",
       "author": "Гаврил Перов",
       "project": "Arny Praht",
       "subtitle": "Архитектура, город и графический язык",
       "href": "./interviews/gavril-perov.html#photo-gavril-perov-0"
     },
     {
-      "src": "../images/interviews/gavril-perov/Arny%20Praht%20by%20Gavril%20%281%29.jpeg",
+      "src": "../images/interviews/gavril-perov/Arny%20Praht%20by%20Gavril%20%281%29.webp",
       "author": "Гаврил Перов",
       "project": "Arny Praht",
       "subtitle": "Архитектура, город и графический язык",
       "href": "./interviews/gavril-perov.html#photo-gavril-perov-1"
     },
     {
-      "src": "../images/interviews/gavril-perov/Doka%20Robots%20by%20Gavril.jpeg",
+      "src": "../images/interviews/gavril-perov/Doka%20Robots%20by%20Gavril.webp",
       "author": "Гаврил Перов",
       "project": "Doka Robots",
       "subtitle": "Архитектура, город и графический язык",
       "href": "./interviews/gavril-perov.html#photo-gavril-perov-2"
     },
     {
-      "src": "../images/interviews/gavril-perov/Doka%20Robots%20by%20Gavril%20%281%29.jpeg",
+      "src": "../images/interviews/gavril-perov/Doka%20Robots%20by%20Gavril%20%281%29.webp",
       "author": "Гаврил Перов",
       "project": "Doka Robots",
       "subtitle": "Архитектура, город и графический язык",
       "href": "./interviews/gavril-perov.html#photo-gavril-perov-3"
     },
     {
-      "src": "../images/interviews/gavril-perov/Drinkit%201.jpeg",
+      "src": "../images/interviews/gavril-perov/Drinkit%201.webp",
       "author": "Гаврил Перов",
       "project": "Drinkit",
       "subtitle": "Архитектура, город и графический язык",
       "href": "./interviews/gavril-perov.html#photo-gavril-perov-4"
     },
     {
-      "src": "../images/interviews/gavril-perov/Drinkit%202.jpeg",
+      "src": "../images/interviews/gavril-perov/Drinkit%202.webp",
       "author": "Гаврил Перов",
       "project": "Drinkit",
       "subtitle": "Архитектура, город и графический язык",
@@ -1173,14 +1173,14 @@ window.deFindingsGalleryData = {
       "href": "./interviews/gavril-perov.html#photo-gavril-perov-8"
     },
     {
-      "src": "../images/interviews/stefan-lashko/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%201.jpg",
+      "src": "../images/interviews/stefan-lashko/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%201.webp",
       "author": "Стефан Лашко",
       "project": "Современник",
       "subtitle": "Порядок из хаоса",
       "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-0"
     },
     {
-      "src": "../images/interviews/stefan-lashko/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%202.jpg",
+      "src": "../images/interviews/stefan-lashko/%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%202.webp",
       "author": "Стефан Лашко",
       "project": "Современник",
       "subtitle": "Порядок из хаоса",
@@ -1215,28 +1215,28 @@ window.deFindingsGalleryData = {
       "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-5"
     },
     {
-      "src": "../images/interviews/stefan-lashko/%D0%A0%D0%B8%D1%85%D1%82%D0%B5%D1%80.jpg",
+      "src": "../images/interviews/stefan-lashko/%D0%A0%D0%B8%D1%85%D1%82%D0%B5%D1%80.webp",
       "author": "Стефан Лашко",
       "project": "Рихтер",
       "subtitle": "Порядок из хаоса",
       "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-6"
     },
     {
-      "src": "../images/interviews/stefan-lashko/%D0%A0%D0%B8%D1%85%D1%82%D0%B5%D1%80%202.jpg",
+      "src": "../images/interviews/stefan-lashko/%D0%A0%D0%B8%D1%85%D1%82%D0%B5%D1%80%202.webp",
       "author": "Стефан Лашко",
       "project": "Рихтер",
       "subtitle": "Порядок из хаоса",
       "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-7"
     },
     {
-      "src": "../images/interviews/stefan-lashko/%D0%A0%D0%B8%D1%85%D1%82%D0%B5%D1%80%203.jpg",
+      "src": "../images/interviews/stefan-lashko/%D0%A0%D0%B8%D1%85%D1%82%D0%B5%D1%80%203.webp",
       "author": "Стефан Лашко",
       "project": "Рихтер",
       "subtitle": "Порядок из хаоса",
       "href": "./interviews/stefan-lashko.html#photo-stefan-lashko-8"
     },
     {
-      "src": "../images/interviews/stefan-lashko/%D0%A0%D0%B8%D1%85%D1%82%D0%B5%D1%80%204.jpg",
+      "src": "../images/interviews/stefan-lashko/%D0%A0%D0%B8%D1%85%D1%82%D0%B5%D1%80%204.webp",
       "author": "Стефан Лашко",
       "project": "Рихтер",
       "subtitle": "Порядок из хаоса",
@@ -1369,7 +1369,7 @@ window.deFindingsGalleryData = {
       "href": "./interviews/olya-bazanova.html#photo-olya-bazanova-3"
     },
     {
-      "src": "../images/interviews/olya-bazanova/Tamagotchi%20game%20in%20the%20Dodo%20Pizza%20app%20in%20support%20of%20the%20animal%20shelter.jpg",
+      "src": "../images/interviews/olya-bazanova/Tamagotchi%20game%20in%20the%20Dodo%20Pizza%20app%20in%20support%20of%20the%20animal%20shelter.webp",
       "author": "Оля Бажанова",
       "project": "Хвостики",
       "subtitle": "Душа в сувенирке",
@@ -1404,7 +1404,7 @@ window.deFindingsGalleryData = {
       "href": "./interviews/olya-bazanova.html#photo-olya-bazanova-8"
     },
     {
-      "src": "../images/interviews/olya-bazanova/Poster%20At%20the%20Very%20Least%2C%20I%20Am%20Part%20of%20the%20Earth.jpg",
+      "src": "../images/interviews/olya-bazanova/Poster%20At%20the%20Very%20Least%2C%20I%20Am%20Part%20of%20the%20Earth.webp",
       "author": "Оля Бажанова",
       "project": "TTOI",
       "subtitle": "Душа в сувенирке",
@@ -1432,7 +1432,7 @@ window.deFindingsGalleryData = {
       "href": "./interviews/olya-bazanova.html#photo-olya-bazanova-12"
     },
     {
-      "src": "../images/interviews/olya-bazanova/Mural%20for%20Dodo%20Pizza%20in%20Nigeria.jpg",
+      "src": "../images/interviews/olya-bazanova/Mural%20for%20Dodo%20Pizza%20in%20Nigeria.webp",
       "author": "Оля Бажанова",
       "project": "Dodo Pizza",
       "subtitle": "Душа в сувенирке",
@@ -1495,42 +1495,42 @@ window.deFindingsGalleryData = {
       "href": "./interviews/anastasia-sycheva.html#photo-anastasia-sycheva-8"
     },
     {
-      "src": "../images/anastasia-sycheva-basic-capital-02.png",
+      "src": "../images/anastasia-sycheva-basic-capital-02.webp",
       "author": "Анастасия Сычева",
       "project": "Basic Capital",
       "subtitle": "AI как краска",
       "href": "./interviews/anastasia-sycheva.html#photo-anastasia-sycheva-9"
     },
     {
-      "src": "../images/interviews/dariia-chertanova/%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5%20%D1%80%D0%B8%D1%81%D1%83%D0%BD%D0%BA%D0%B8%202.jpg",
+      "src": "../images/interviews/dariia-chertanova/%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5%20%D1%80%D0%B8%D1%81%D1%83%D0%BD%D0%BA%D0%B8%202.webp",
       "author": "Даша Чертанова",
       "project": "Детские рисунки",
       "subtitle": "Смыслы и контекст",
       "href": "./interviews/dariia-chertanova.html#photo-dariia-chertanova-1"
     },
     {
-      "src": "../images/interviews/dariia-chertanova/%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5%20%D1%80%D0%B8%D1%81%D1%83%D0%BD%D0%BA%D0%B8%203.jpg",
+      "src": "../images/interviews/dariia-chertanova/%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5%20%D1%80%D0%B8%D1%81%D1%83%D0%BD%D0%BA%D0%B8%203.webp",
       "author": "Даша Чертанова",
       "project": "Детские рисунки",
       "subtitle": "Смыслы и контекст",
       "href": "./interviews/dariia-chertanova.html#photo-dariia-chertanova-2"
     },
     {
-      "src": "../images/interviews/dariia-chertanova/%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5%20%D1%80%D0%B8%D1%81%D1%83%D0%BD%D0%BA%D0%B8.jpg",
+      "src": "../images/interviews/dariia-chertanova/%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5%20%D1%80%D0%B8%D1%81%D1%83%D0%BD%D0%BA%D0%B8.webp",
       "author": "Даша Чертанова",
       "project": "Детские рисунки",
       "subtitle": "Смыслы и контекст",
       "href": "./interviews/dariia-chertanova.html#photo-dariia-chertanova-3"
     },
     {
-      "src": "../images/interviews/dariia-chertanova/Time%20issue%205.jpg",
+      "src": "../images/interviews/dariia-chertanova/Time%20issue%205.webp",
       "author": "Даша Чертанова",
       "project": "Time Issue",
       "subtitle": "Смыслы и контекст",
       "href": "./interviews/dariia-chertanova.html#photo-dariia-chertanova-5"
     },
     {
-      "src": "../images/interviews/dariia-chertanova/Japan%20issue%202.jpg",
+      "src": "../images/interviews/dariia-chertanova/Japan%20issue%202.webp",
       "author": "Даша Чертанова",
       "project": "Japan Issue",
       "subtitle": "Смыслы и контекст",
@@ -1583,14 +1583,14 @@ window.deFindingsGalleryData = {
       "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-7"
     },
     {
-      "src": "../images/interviews/maxim-aksenov/DNA.jpg",
+      "src": "../images/interviews/maxim-aksenov/DNA.webp",
       "author": "Максим Аксенов",
       "project": "DNA",
       "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
       "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-0"
     },
     {
-      "src": "../images/interviews/maxim-aksenov/DNA%202.jpg",
+      "src": "../images/interviews/maxim-aksenov/DNA%202.webp",
       "author": "Максим Аксенов",
       "project": "DNA",
       "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
@@ -1618,105 +1618,105 @@ window.deFindingsGalleryData = {
       "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-10"
     },
     {
-      "src": "../images/interviews/maxim-aksenov/GE%20(2024).png",
+      "src": "../images/interviews/maxim-aksenov/GE%20(2024).webp",
       "author": "Максим Аксенов",
       "project": "ЛАШ 2024",
       "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
       "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-11"
     },
     {
-      "src": "../images/interviews/maxim-aksenov/GE%20(2025).png",
+      "src": "../images/interviews/maxim-aksenov/GE%20(2025).webp",
       "author": "Максим Аксенов",
       "project": "ЛАШ 2025",
       "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
       "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-12"
     },
     {
-      "src": "../images/interviews/maxim-aksenov/GE%20(2026).png",
+      "src": "../images/interviews/maxim-aksenov/GE%20(2026).webp",
       "author": "Максим Аксенов",
       "project": "ЛАШ 2026",
       "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
       "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-13"
     },
     {
-      "src": "../images/interviews/maxim-aksenov/L2024%20(1).jpg",
+      "src": "../images/interviews/maxim-aksenov/L2024%20(1).webp",
       "author": "Максим Аксенов",
       "project": "ЛАШ 2024",
       "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
       "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-14"
     },
     {
-      "src": "../images/interviews/maxim-aksenov/L2024%20(2).jpg",
+      "src": "../images/interviews/maxim-aksenov/L2024%20(2).webp",
       "author": "Максим Аксенов",
       "project": "ЛАШ 2024",
       "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
       "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-15"
     },
     {
-      "src": "../images/interviews/maxim-aksenov/L2024%20(3).jpg",
+      "src": "../images/interviews/maxim-aksenov/L2024%20(3).webp",
       "author": "Максим Аксенов",
       "project": "ЛАШ 2024",
       "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
       "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-16"
     },
     {
-      "src": "../images/interviews/maxim-aksenov/L2024%20(4).jpg",
+      "src": "../images/interviews/maxim-aksenov/L2024%20(4).webp",
       "author": "Максим Аксенов",
       "project": "ЛАШ 2024",
       "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
       "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-17"
     },
     {
-      "src": "../images/interviews/maxim-aksenov/L2025%20(1).png",
+      "src": "../images/interviews/maxim-aksenov/L2025%20(1).webp",
       "author": "Максим Аксенов",
       "project": "ЛАШ 2025",
       "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
       "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-18"
     },
     {
-      "src": "../images/interviews/maxim-aksenov/L2025%20(2).png",
+      "src": "../images/interviews/maxim-aksenov/L2025%20(2).webp",
       "author": "Максим Аксенов",
       "project": "ЛАШ 2025",
       "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
       "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-19"
     },
     {
-      "src": "../images/interviews/maxim-aksenov/L2025%20(3).png",
+      "src": "../images/interviews/maxim-aksenov/L2025%20(3).webp",
       "author": "Максим Аксенов",
       "project": "ЛАШ 2025",
       "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
       "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-20"
     },
     {
-      "src": "../images/interviews/maxim-aksenov/L2025%20(4).png",
+      "src": "../images/interviews/maxim-aksenov/L2025%20(4).webp",
       "author": "Максим Аксенов",
       "project": "ЛАШ 2025",
       "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
       "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-21"
     },
     {
-      "src": "../images/interviews/maxim-aksenov/L2026%20(1).jpg",
+      "src": "../images/interviews/maxim-aksenov/L2026%20(1).webp",
       "author": "Максим Аксенов",
       "project": "ЛАШ 2026",
       "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
       "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-22"
     },
     {
-      "src": "../images/interviews/maxim-aksenov/L2026%20(2).jpg",
+      "src": "../images/interviews/maxim-aksenov/L2026%20(2).webp",
       "author": "Максим Аксенов",
       "project": "ЛАШ 2026",
       "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
       "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-23"
     },
     {
-      "src": "../images/interviews/maxim-aksenov/L2026%20(3).jpg",
+      "src": "../images/interviews/maxim-aksenov/L2026%20(3).webp",
       "author": "Максим Аксенов",
       "project": "ЛАШ 2026",
       "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",
       "href": "./interviews/maxim-aksenov.html#photo-maxim-aksenov-24"
     },
     {
-      "src": "../images/interviews/maxim-aksenov/L2026%20(4).jpg",
+      "src": "../images/interviews/maxim-aksenov/L2026%20(4).webp",
       "author": "Максим Аксенов",
       "project": "ЛАШ 2026",
       "subtitle": "Архитектурный бэкграунд, дизайн как система и дисциплина мышления",

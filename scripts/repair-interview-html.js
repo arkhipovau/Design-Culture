@@ -154,25 +154,37 @@ const INSERTIONS = {
       `\n      \n          ${photos[0]}`,
     );
 
-    const expoSplitRe =
-      /(<p>Так мы сделали проект для Expo\.)( Это очень крупная[\s\S]*?Были совсем не такими, как все\.)( Это очень классно сработало и привлекло нужную нам аудиторию\.)(<\/p>)/;
-    if (!expoSplitRe.test(out)) throw new Error('masha-chern: Expo paragraph not found');
-    out = out.replace(expoSplitRe, (_match, _g1, middle, ending) =>
-      `<p>Так мы сделали проект для Expo.</p></div>
+    const mergeExpoRe =
+      /<p>Так мы сделали проект для Expo\. Это очень крупная([\s\S]*?)Были совсем не такими, как все\. Это очень классно сработало и привлекло нужную нам аудиторию\.<\/p>/;
+    if (!mergeExpoRe.test(out)) throw new Error('masha-chern: merged Expo paragraph not found');
+    out = out.replace(
+      mergeExpoRe,
+      '<p>Так мы сделали проект для Expo.</p><p>Это очень крупная$1Были совсем не такими, как все.</p><p>Это очень классно сработало и привлекло нужную нам аудиторию.</p>',
+    );
+
+    const expoRowRe =
+      /(<div class="m-qa-row">\s*<div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Маша Черн">МЧ<\/span><\/div>\s*<div class="m-qa-row__answer">)(<p>Главное, чему я там научилась[\s\S]*?<p>Так мы сделали проект для Expo\.<\/p>)(<p>Это очень крупная[\s\S]*?Были совсем не такими, как все\.<\/p>)(<p>Это очень классно сработало и привлекло нужную нам аудиторию\.<\/p>)(<\/div>\s*<div class="m-qa-row__spacer" aria-hidden="true"><\/div>\s*<\/div>)/;
+    if (!expoRowRe.test(out)) throw new Error('masha-chern: Expo qa-row not found');
+    out = out.replace(
+      expoRowRe,
+      (_match, open, intro, middle, ending, close) =>
+        `${open}${intro}</div>
                   <div class="m-qa-row__spacer" aria-hidden="true"></div>
                 </div>
       
 ${photos[1]}
       
-${speakerRow('Маша Черн', 'МЧ', `<p>${middle.trim()}</p>`)}
+${speakerRow('Маша Черн', 'МЧ', middle)}
       
 ${photos[2]}
       
-${speakerRow('Маша Черн', 'МЧ', `<p>${ending.trim()}</p>`)}
+${speakerRow('Маша Черн', 'МЧ', ending)}
       
 ${photos[3]}
       
-${photos[4]}`,
+${photos[4]}
+      
+${close}`,
     );
 
     out = insertAfterNeedle(
@@ -191,11 +203,21 @@ ${photos[4]}`,
       `\n      \n          ${photos[11]}`,
     );
 
-    const aiSplitRe =
-      /(<p>В ребрендинге Тона мы придумали, какой это мир, какая-то вселенная Тона, где всё выглядит каким-то образом\.)( И это всё равно будут промпты[\s\S]*?)(<\/p>)/;
-    if (!aiSplitRe.test(out)) throw new Error('masha-chern: AI paragraph not found');
-    out = out.replace(aiSplitRe, (_match, _g1, ending) =>
-      `<p>В ребрендинге Тона мы придумали, какой это мир, какая-то вселенная Тона, где всё выглядит каким-то образом.</p></div>
+    const mergeAiRe =
+      /<p>В ребрендинге Тона мы придумали, какой это мир, какая-то вселенная Тона, где всё выглядит каким-то образом\. И это всё равно будут промпты([\s\S]*?)а не за искусственным интеллектом\.<\/p>/;
+    if (!mergeAiRe.test(out)) throw new Error('masha-chern: merged AI paragraph not found');
+    out = out.replace(
+      mergeAiRe,
+      '<p>В ребрендинге Тона мы придумали, какой это мир, какая-то вселенная Тона, где всё выглядит каким-то образом.</p><p>И это всё равно будут промпты$1а не за искусственным интеллектом.</p>',
+    );
+
+    const aiRowRe =
+      /(<div class="m-qa-row">\s*<div class="m-qa-row__name"><span class="m-qa-row__name-label" title="Маша Черн">МЧ<\/span><\/div>\s*<div class="m-qa-row__answer">)([\s\S]*?<p>В ребрендинге Тона мы придумали, какой это мир, какая-то вселенная Тона, где всё выглядит каким-то образом\.<\/p>)(<p>И это всё равно будут промпты[\s\S]*?<\/p>)(<\/div>\s*<div class="m-qa-row__spacer" aria-hidden="true"><\/div>\s*<\/div>)/;
+    if (!aiRowRe.test(out)) throw new Error('masha-chern: AI qa-row not found');
+    out = out.replace(
+      aiRowRe,
+      (_match, open, intro, ending) =>
+        `${open}${intro}</div>
                   <div class="m-qa-row__spacer" aria-hidden="true"></div>
                 </div>
       
@@ -203,7 +225,7 @@ ${photos[12]}
       
 ${photos[13]}
       
-${speakerRow('Маша Черн', 'МЧ', `<p>${ending.trim()}</p>`)}`,
+${speakerRow('Маша Черн', 'МЧ', ending)}`,
     );
     out = insertAfterNeedle(
       out,
@@ -491,7 +513,9 @@ function validate(html, slug, expectedPhotoCount) {
 }
 
 function main() {
-  const only = process.argv.slice(2).filter((arg) => !arg.startsWith('--'));
+  const args = process.argv.slice(2);
+  const noSync = args.includes('--no-sync');
+  const only = args.filter((arg) => !arg.startsWith('--'));
   const slugs = only.length ? SLUGS.filter((slug) => only.includes(slug)) : SLUGS;
   if (!slugs.length) {
     console.error(`No matching slugs. Available: ${SLUGS.join(', ')}`);
@@ -515,16 +539,18 @@ function main() {
     console.log(`Repaired: ${slug}`);
   }
 
-  const sync = spawnSync(
-    'node',
-    ['scripts/sync-interview-body-from-md.js', ...slugs.map((slug) => `--only=${slug}`)],
-    {
-      cwd: ROOT,
-      encoding: 'utf8',
-      stdio: 'inherit',
-    },
-  );
-  if (sync.status !== 0) process.exit(sync.status || 1);
+  if (!noSync) {
+    const sync = spawnSync(
+      'node',
+      ['scripts/sync-interview-body-from-md.js', ...slugs.map((slug) => `--only=${slug}`)],
+      {
+        cwd: ROOT,
+        encoding: 'utf8',
+        stdio: 'inherit',
+      },
+    );
+    if (sync.status !== 0) process.exit(sync.status || 1);
+  }
 }
 
 main();
