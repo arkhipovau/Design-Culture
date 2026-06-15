@@ -214,6 +214,15 @@ function expandTurnsForHtml(turns, answerBlocks) {
   return expanded;
 }
 
+/** Pad with nulls so photo-split answer rows keep their existing HTML. */
+function padAlignedTurns(aligned, answerBlocks) {
+  const out = [...aligned];
+  while (out.length < answerBlocks.length) {
+    out.push(null);
+  }
+  return out;
+}
+
 const QUOTE_BLOCK_RE =
   /<blockquote class="m-quote-block">[\s\S]*?<\/blockquote>/g;
 
@@ -435,7 +444,7 @@ function relocateAndSyncQuotes(html, quotes) {
 
 function syncHtmlFromMd(html, turns, quotes) {
   const answerBlocks = extractAnswerBlocks(html);
-  const alignedTurns = expandTurnsForHtml(turns, answerBlocks);
+  const alignedTurns = padAlignedTurns(expandTurnsForHtml(turns, answerBlocks), answerBlocks);
 
   if (alignedTurns.length !== answerBlocks.length) {
     return {
@@ -448,6 +457,7 @@ function syncHtmlFromMd(html, turns, quotes) {
   let updated = html;
   for (let i = 0; i < answerBlocks.length; i++) {
     const block = answerBlocks[i];
+    if (alignedTurns[i] === null) continue;
     const newInner = paragraphsToHtml(alignedTurns[i]);
     const pos = updated.indexOf(block.full, offset);
     if (pos === -1) {
@@ -472,10 +482,16 @@ function extractHeroAndLede(html) {
 
 function main() {
   const dryRun = process.argv.includes('--dry-run');
-  const files = fs
+  const only = process.argv
+    .filter((arg) => arg.startsWith('--only='))
+    .map((arg) => arg.slice('--only='.length));
+  let files = fs
     .readdirSync(HTML_DIR)
     .filter((f) => f.endsWith('.html') && f !== 'interview.css')
     .sort();
+  if (only.length) {
+    files = files.filter((f) => only.includes(f.replace(/\.html$/, '')));
+  }
 
   const results = [];
 
