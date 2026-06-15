@@ -1,0 +1,35 @@
+html.is-preview-lock {
+  scroll-behavior: smooth;
+}
+
+.m-preview-lock-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.25rem;
+  padding: 0.4rem 1rem;
+  font-size: 0.8125rem;
+  line-height: 1.3;
+  text-align: center;
+  color: #1a1a1a;
+  background: #f6f2ea;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  pointer-events: none;
+}
+
+html.is-preview-lock .s-menu {
+  top: calc(2.25rem + 20px);
+}
+
+html.is-preview-lock a.is-preview-blocked {
+  cursor: not-allowed;
+}
+
+html.is-preview-lock a.is-preview-blocked:active {
+  opacity: 0.72;
+}
