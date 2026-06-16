@@ -117,6 +117,20 @@ function replacePhotoBlocks(cleanBody, photoBlocks) {
   }
   return out;
 }
+function insertAfterSectionClose(body, blockquoteSnippet, block) {
+  const idx = body.indexOf(blockquoteSnippet);
+  if (idx === -1) {
+    throw new Error(`Anchor not found: ${blockquoteSnippet.slice(0, 80)}…`);
+  }
+  const afterBlockquote = idx + blockquoteSnippet.length;
+  const sectionClose = body.indexOf('\n            </div>', afterBlockquote);
+  if (sectionClose === -1) {
+    throw new Error(`Section close not found after: ${blockquoteSnippet.slice(0, 80)}…`);
+  }
+  const pos = sectionClose + '\n            </div>'.length;
+  return `${body.slice(0, pos)}\n\n${block}\n${body.slice(pos)}`;
+}
+
 function insertAfterNeedle(body, needle, block) {
   const idx = body.indexOf(needle);
   if (idx === -1) {
@@ -167,7 +181,7 @@ const INSERTIONS = {
     if (!expoRowRe.test(out)) throw new Error('masha-chern: Expo qa-row not found');
     out = out.replace(
       expoRowRe,
-      (_match, open, intro, middle, ending, close) =>
+      (_match, open, intro, middle, ending) =>
         `${open}${intro}</div>
                   <div class="m-qa-row__spacer" aria-hidden="true"></div>
                 </div>
@@ -182,22 +196,15 @@ ${speakerRow('Маша Черн', 'МЧ', ending)}
       
 ${photos[3]}
       
-${photos[4]}
-      
-${close}`,
+${photos[4]}`,
     );
 
-    out = insertAfterNeedle(
-      out,
-      'Даже с нуля.</p></div>\n                  <div class="m-qa-row__spacer" aria-hidden="true"></div>\n                </div>',
-      `\n      \n          ${photos[5]}\n      \n          ${photos[6]}\n      \n          ${photos[7]}`,
-    );
-    out = insertAfterNeedle(
+    out = insertAfterSectionClose(
       out,
       '<p><strong>Был подход: не умеешь что-то делать, окей, садись и сделай всё равно.</strong></p>\n          <cite class="m-quote-block__cite">– Маша Черн</cite>\n        </blockquote>',
-      `\n      \n          ${photos[8]}\n      \n          ${photos[9]}\n      \n          ${photos[10]}`,
+      `\n      \n          ${photos[5]}\n      \n          ${photos[6]}\n      \n          ${photos[7]}\n      \n          ${photos[8]}\n      \n          ${photos[9]}\n      \n          ${photos[10]}`,
     );
-    out = insertAfterNeedle(
+    out = insertAfterSectionClose(
       out,
       '<p><strong>Нужно, чтобы было хобби, которое даёт сто процентов всего: счастья, эндорфинов, радости, спокойствия. И чтобы это было не диджитал-хобби.</strong></p>\n          <cite class="m-quote-block__cite">– Маша Черн</cite>\n        </blockquote>',
       `\n      \n          ${photos[11]}`,
