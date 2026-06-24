@@ -2,7 +2,7 @@ const fs = require('node:fs');
 const fsp = require('node:fs/promises');
 const path = require('node:path');
 
-const SECTION_PAGES = ['about', 'journal', 'gallery', 'newsletter', 'privacy', 'sphere', 'sphere-embed'];
+const SECTION_PAGES = ['about', 'journal', 'gallery', 'newsletter', 'privacy', 'sphere', 'sphere-embed', 'sphere-test'];
 
 const REDIRECT_STUB = (target) =>
   '<!doctype html>\n<html lang="ru">\n<head>\n<meta charset="UTF-8" />\n' +
@@ -96,6 +96,17 @@ async function restructureDocs(docsDir) {
     await fsp.mkdir(path.join(docsDir, 'gallery'), { recursive: true });
     await fsp.writeFile(path.join(docsDir, 'gallery', 'gallery-data.js'), content);
     await fsp.unlink(galleryDataLegacy);
+  }
+
+  const sphereRuntimeLegacy = path.join(docsDir, 'pages', 'sphere-runtime-v2.js');
+  if (fs.existsSync(sphereRuntimeLegacy)) {
+    const runtime = await fsp.readFile(sphereRuntimeLegacy, 'utf8');
+    for (const targetDir of ['sphere-embed', 'sphere']) {
+      const targetPath = path.join(docsDir, targetDir, 'sphere-runtime-v2.js');
+      if (fs.existsSync(path.join(docsDir, targetDir, 'index.html'))) {
+        await fsp.writeFile(targetPath, runtime);
+      }
+    }
   }
 }
 

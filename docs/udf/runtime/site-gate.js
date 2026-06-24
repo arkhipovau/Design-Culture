@@ -5,7 +5,7 @@
     enabled: true,
     password: '1977',
     storageKey: 'defindings-site-unlock-v2',
-    bypass: [/^\/sphere-embed\/?$/i]
+    bypass: [/^\/sphere-embed\/?$/i, /^\/sphere-test\/?$/i]
   };
 
   function isBypass() {

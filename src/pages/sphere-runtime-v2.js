@@ -58,15 +58,29 @@ function fallbackImageUrls() {
   return FALLBACK_IMAGE_FILES.map(resolveImageUrl);
 }
 
-function notifyParentReady() {
+function notifyParentReady(extra) {
   if (!isEmbedded || window.parent === window) return;
   try {
-    window.parent.postMessage({ type: 'sphere-ready' }, '*');
+    window.parent.postMessage({ type: 'sphere-ready', ...(extra || {}) }, '*');
+  } catch (_) {}
+}
+
+function notifyParentStats(payload) {
+  if (window.parent === window) return;
+  try {
+    window.parent.postMessage({ type: 'sphere-stats', ...(payload || {}) }, '*');
   } catch (_) {}
 }
 
 const searchParams = new URLSearchParams(window.location.search);
 const isEmbedded = searchParams.get('embed') === '1' || document.body.dataset.embed === '1';
+const isInteractive = searchParams.get('interactive') === '1' || (!isEmbedded && searchParams.get('interactive') !== '0');
+const showStats = searchParams.get('stats') === '1' || searchParams.get('debug') === '1';
+const requestedMaxTex = Number(searchParams.get('maxTex') || '0');
+const maxTextureEdge = Number.isFinite(requestedMaxTex) && requestedMaxTex > 0
+  ? Math.min(2048, Math.max(128, requestedMaxTex))
+  : 0;
+const manifestPath = searchParams.get('manifest') || '/images/manifest.json';
 const requestedSphereScale = Number(searchParams.get('sphereScale') || '1');
 const sphereScale = Number.isFinite(requestedSphereScale)
   ? Math.min(1.5, Math.max(0.4, requestedSphereScale))
@@ -104,7 +118,7 @@ async function loadImageUrls() {
   }
 
   try {
-    const res = await fetch('/images/manifest.json', { cache: 'no-store' });
+    const res = await fetch(manifestPath, { cache: manifestPath.includes('?') ? 'default' : 'no-store' });
     if (!res.ok) throw new Error(`manifest request failed: ${res.status}`);
     const files = await res.json();
     if (!Array.isArray(files)) throw new Error('manifest is not an array');
@@ -158,6 +172,53 @@ function makeRoundedRectAlpha(THREE, size = 512, radius = 22) {
   return tex;
 }
 
+function loadTileTexture(THREE, loader, url, onSuccess, onError) {
+  if (!maxTextureEdge) {
+    loader.load(url, onSuccess, undefined, onError);
+    return;
+  }
+
+  const img = new Image();
+  img.crossOrigin = 'anonymous';
+  img.decoding = 'async';
+  img.onload = function () {
+    let width = img.naturalWidth || img.width;
+    let height = img.naturalHeight || img.height;
+    const longest = Math.max(width, height);
+
+    if (longest > maxTextureEdge) {
+      const scale = maxTextureEdge / longest;
+      width = Math.max(1, Math.round(width * scale));
+      height = Math.max(1, Math.round(height * scale));
+    }
+
+    const canvas = document.createElement('canvas');
+    canvas.width = width;
+    canvas.height = height;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) {
+      loader.load(url, onSuccess, undefined, onError);
+      return;
+    }
+
+    ctx.drawImage(img, 0, 0, width, height);
+    const tex = new THREE.CanvasTexture(canvas);
+    tex.needsUpdate = true;
+    onSuccess(tex);
+  };
+  img.onerror = onError;
+  img.src = url;
+}
+
+function applyTextureSettings(THREE, renderer, tex) {
+  tex.colorSpace = THREE.SRGBColorSpace;
+  tex.minFilter = THREE.LinearMipmapLinearFilter;
+  tex.magFilter = THREE.LinearFilter;
+  tex.anisotropy = renderer.capabilities.getMaxAnisotropy();
+  tex.generateMipmaps = true;
+  return tex;
+}
+
 function fibonacciSphere(THREE, count, radius) {
   const points = [];
   const golden = Math.PI * (3 - Math.sqrt(5));
@@ -196,6 +257,7 @@ function showFileProtocolFallback() {
 
 async function init() {
   const THREE = window.THREE;
+  const initStartedAt = performance.now();
   if (!THREE) {
     if (window.__sphereShowError) {
       window.__sphereShowError('THREE is not loaded.');
@@ -251,17 +313,47 @@ async function init() {
   const RADIUS = 3.6 * visualScale;
   const TILE = 0.82 * visualScale; 
 
-  const alphaMask = makeRoundedRectAlpha(THREE, 1024, 38);
+  const alphaMask = makeRoundedRectAlpha(THREE, maxTextureEdge ? 512 : 1024, maxTextureEdge ? 22 : 38);
   const geometry = new THREE.PlaneGeometry(TILE, TILE);
   const points = fibonacciSphere(THREE, Math.max(imageUrls.length, 24), RADIUS);
 
   const loader = new THREE.TextureLoader();
-  const maxAniso = renderer.capabilities.getMaxAnisotropy();
   let loadedTextures = 0;
   let failedTextures = 0;
   let parentNotified = false;
   const expectedTextures = points.length;
   const notifyThreshold = Math.min(12, Math.max(4, Math.floor(expectedTextures * 0.15)));
+
+  function publishStats() {
+    const payload = {
+      readyMs: Math.round(performance.now() - initStartedAt),
+      loadedTextures,
+      failedTextures,
+      expectedTextures,
+      maxTex: maxTextureEdge || 'full',
+      interactive: isInteractive,
+      tileCount: expectedTextures,
+      sphereScale,
+    };
+    notifyParentStats(payload);
+    if (!showStats) return;
+    const hud = document.getElementById('sphere-stats-hud');
+    if (!hud) return;
+    hud.textContent =
+      `ready ${payload.readyMs}ms · tiles ${loadedTextures}/${expectedTextures}` +
+      (failedTextures ? ` · fail ${failedTextures}` : '') +
+      ` · maxTex ${payload.maxTex}` +
+      (isInteractive ? ' · interactive' : '');
+  }
+
+  if (showStats) {
+    const hud = document.createElement('div');
+    hud.id = 'sphere-stats-hud';
+    hud.style.cssText =
+      'position:fixed;left:8px;top:8px;z-index:9998;padding:6px 10px;border-radius:8px;background:rgba(17,17,17,.82);color:#fff;font:12px/1.35 ui-monospace,Menlo,monospace;pointer-events:none';
+    hud.textContent = 'loading…';
+    document.body.appendChild(hud);
+  }
 
   points.forEach((point, i) => {
     const mat = new THREE.MeshBasicMaterial({
@@ -284,27 +376,25 @@ async function init() {
     const url = imageUrls[i % Math.max(imageUrls.length, 1)];
     if (!url) return;
 
-    loader.load(
+    loadTileTexture(
+      THREE,
+      loader,
       url,
       (tex) => {
         loadedTextures += 1;
-        tex.colorSpace = THREE.SRGBColorSpace;
-        tex.minFilter = THREE.LinearMipmapLinearFilter;
-        tex.magFilter = THREE.LinearFilter;
-        tex.anisotropy = maxAniso;
-        tex.generateMipmaps = true;
+        applyTextureSettings(THREE, renderer, tex);
         mat.map = tex;
         mat.color.set(0xffffff);
         mat.needsUpdate = true;
+        publishStats();
         if (!parentNotified && loadedTextures >= notifyThreshold) {
           parentNotified = true;
-          notifyParentReady();
+          notifyParentReady({ readyMs: Math.round(performance.now() - initStartedAt) });
         }
       },
-      undefined,
       () => {
         failedTextures += 1;
-
+        publishStats();
       }
     );
   });
@@ -312,7 +402,7 @@ async function init() {
   window.setTimeout(() => {
     if (loadedTextures > 0 && !parentNotified) {
       parentNotified = true;
-      notifyParentReady();
+      notifyParentReady({ readyMs: Math.round(performance.now() - initStartedAt) });
     }
     if (loadedTextures === 0 && failedTextures > 0) {
       window.__sphereShowError(
@@ -361,9 +451,18 @@ async function init() {
     targetZoom = Math.max(4.5, Math.min(14, targetZoom));
   };
 
-  renderer.domElement.style.touchAction = isEmbedded ? 'pan-y' : 'none';
+  const onPointerDownInteractive = (e) => {
+    onPointerDown(e);
+  };
 
-  if (!isEmbedded) {
+  renderer.domElement.style.touchAction = isInteractive ? 'none' : isEmbedded ? 'pan-y' : 'none';
+
+  if (isInteractive) {
+    renderer.domElement.addEventListener('pointerdown', onPointerDownInteractive);
+    window.addEventListener('pointermove', onPointerMove);
+    window.addEventListener('pointerup', onPointerUp);
+    renderer.domElement.addEventListener('wheel', onWheel, { passive: false });
+  } else if (!isEmbedded) {
     renderer.domElement.addEventListener('pointerdown', onPointerDown);
     window.addEventListener('pointermove', onPointerMove);
     window.addEventListener('pointerup', onPointerUp);

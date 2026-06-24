@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/udf/runtime/site-gate.js?v=202606242"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="/udf/quarks/branding/favicon-light.png" />
+    <title>Sphere test – deFindings</title>
+    <link rel="stylesheet" href="/stylesheets/index.css" />
+    <link rel="stylesheet" href="/udf/bundles/shell.css" />
+    <link rel="stylesheet" href="/udf/bundles/home.css" />
+    <link rel="stylesheet" href="/stylesheets/sphere-test.css" />
+    <meta name="robots" content="noindex, nofollow" />
+  </head>
+  <body class="o-site-shell o-sphere-test">
+    <header class="s-menu s-menu--ready">
+      <a class="s-menu__logo" href="/" aria-label="deFindings">
+        <img class="s-menu__logo-mark" src="/udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
+        <span class="a-visually-hidden">deFindings</span>
+      </a>
+    </header>
+
+    <main class="o-sphere-test__main">
+      <section class="o-sphere-test__panel a-section">
+        <h1 class="o-sphere-test__title">Тест сферы hero</h1>
+        <p class="o-sphere-test__lead">
+          Сравнение скорости загрузки и интерактива без изменений на главной. Размер и вёрстка как на production
+          (<code>sphereScale=0.8</code>).
+        </p>
+
+        <div class="o-sphere-test__presets" role="group" aria-label="Пресеты">
+          <button type="button" class="a-button a-button--s a-button--black" data-preset="prod">Production</button>
+          <button type="button" class="a-button a-button--s a-button--white" data-preset="fast512">Fast 512px</button>
+          <button type="button" class="a-button a-button--s a-button--white" data-preset="fast-interactive">Fast + zoom</button>
+          <button type="button" class="a-button a-button--s a-button--white" data-preset="defer">Defer load</button>
+        </div>
+
+        <dl class="o-sphere-test__stats">
+          <div><dt>Пресет</dt><dd id="sphere-test-preset">—</dd></div>
+          <div><dt>Ready</dt><dd id="sphere-test-ready">—</dd></div>
+          <div><dt>Текстуры</dt><dd id="sphere-test-tiles">—</dd></div>
+          <div><dt>maxTex</dt><dd id="sphere-test-maxtex">—</dd></div>
+          <div><dt>Интерактив</dt><dd id="sphere-test-interactive">—</dd></div>
+        </dl>
+
+        <p class="o-sphere-test__hint" id="sphere-test-hint">
+          Production: как сейчас на главной. Fast 512px: даунскейл текстур до 512px (визуально почти то же). Fast + zoom: колёсико /
+          pinch-drag. Defer: iframe грузится после idle.
+        </p>
+      </section>
+
+      <section class="o-hero-sphere o-sphere-test__hero" aria-label="Превью сферы">
+        <iframe
+          class="o-hero-sphere__frame o-sphere-test__frame"
+          id="sphere-test-frame"
+          title="Тест интерактивной сферы"
+          loading="lazy"
+        ></iframe>
+      </section>
+    </main>
+
+    <script>
+      (function () {
+        var frame = document.getElementById('sphere-test-frame');
+        var presetEl = document.getElementById('sphere-test-preset');
+        var readyEl = document.getElementById('sphere-test-ready');
+        var tilesEl = document.getElementById('sphere-test-tiles');
+        var maxTexEl = document.getElementById('sphere-test-maxtex');
+        var interactiveEl = document.getElementById('sphere-test-interactive');
+        var hintEl = document.getElementById('sphere-test-hint');
+        var runtimeVersion = '202606252';
+
+        var PRESETS = {
+          prod: {
+            label: 'Production',
+            params: { embed: '1', sphereScale: '0.8', stats: '1' },
+            interactive: false,
+            hint: 'Текущее поведение главной: полные текстуры, без zoom, pointer-events выключены.',
+          },
+          fast512: {
+            label: 'Fast 512px',
+            params: { embed: '1', sphereScale: '0.8', stats: '1', maxTex: '512' },
+            interactive: false,
+            hint: 'Текстуры ужимаются до 512px перед GPU — обычно неотличимо от production, но грузится быстрее.',
+          },
+          'fast-interactive': {
+            label: 'Fast + zoom',
+            params: { embed: '1', sphereScale: '0.8', stats: '1', maxTex: '512', interactive: '1' },
+            interactive: true,
+            hint: 'Drag — вращение. Колёсико — приближение / отдаление (4.5–14). На touch — drag без скролла страницы.',
+          },
+          defer: {
+            label: 'Defer load',
+            params: { embed: '1', sphereScale: '0.8', stats: '1', maxTex: '512' },
+            interactive: false,
+            defer: true,
+            hint: 'Iframe стартует после requestIdleCallback — страница открывается быстрее, сфера появляется чуть позже.',
+          },
+        };
+
+        function buildSrc(params) {
+          var q = new URLSearchParams(params);
+          q.set('v', runtimeVersion);
+          return '/sphere-embed/?' + q.toString();
+        }
+
+        function resetStats() {
+          readyEl.textContent = '…';
+          tilesEl.textContent = '…';
+          maxTexEl.textContent = '…';
+          interactiveEl.textContent = '…';
+          frame.classList.remove('is-loaded');
+        }
+
+        function loadPreset(name) {
+          var preset = PRESETS[name];
+          if (!preset) return;
+
+          presetEl.textContent = preset.label;
+          hintEl.textContent = preset.hint;
+          maxTexEl.textContent = preset.params.maxTex || 'full';
+          interactiveEl.textContent = preset.interactive ? 'да' : 'нет';
+          frame.classList.toggle('o-sphere-test__frame--interactive', preset.interactive);
+          resetStats();
+
+          var src = buildSrc(preset.params);
+          var boot = function () {
+            frame.src = src;
+          };
+
+          frame.removeAttribute('src');
+          if (preset.defer && 'requestIdleCallback' in window) {
+            requestIdleCallback(boot, { timeout: 1800 });
+          } else if (preset.defer) {
+            setTimeout(boot, 800);
+          } else {
+            boot();
+          }
+        }
+
+        window.addEventListener('message', function (event) {
+          if (event.source !== frame.contentWindow || !event.data) return;
+          if (event.data.type === 'sphere-ready') {
+            frame.classList.add('is-loaded');
+            if (event.data.readyMs) readyEl.textContent = event.data.readyMs + ' ms';
+          }
+          if (event.data.type === 'sphere-stats') {
+            if (event.data.readyMs) readyEl.textContent = event.data.readyMs + ' ms';
+            tilesEl.textContent =
+              event.data.loadedTextures + ' / ' + event.data.expectedTextures +
+              (event.data.failedTextures ? ' (fail ' + event.data.failedTextures + ')' : '');
+            maxTexEl.textContent = String(event.data.maxTex);
+            interactiveEl.textContent = event.data.interactive ? 'да' : 'нет';
+          }
+        });
+
+        document.querySelectorAll('[data-preset]').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            loadPreset(btn.getAttribute('data-preset'));
+          });
+        });
+
+        loadPreset('prod');
+      })();
+    </script>
+  </body>
+</html>
