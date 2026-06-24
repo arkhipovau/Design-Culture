@@ -32,17 +32,11 @@
   }
 
   function privacyHref() {
-    const path = window.location.pathname || '';
-    if (path.includes('/interviews/')) return '../privacy.html';
-    if (path.includes('/pages/')) return './privacy.html';
-    return './pages/privacy.html';
+    return '/privacy/';
   }
 
   function analyticsSrc() {
-    const path = window.location.pathname || '';
-    if (path.includes('/interviews/')) return '../../udf/molecules/cookie-consent/analytics.js';
-    if (path.includes('/pages/')) return '../udf/molecules/cookie-consent/analytics.js';
-    return './udf/molecules/cookie-consent/analytics.js';
+    return '/udf/molecules/cookie-consent/analytics.js';
   }
 
   function loadAnalytics() {

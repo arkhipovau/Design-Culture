@@ -5,7 +5,7 @@
     enabled: true,
     password: '1977',
     storageKey: 'defindings-site-unlock-v1',
-    bypass: [/sphere-embed\.html/i, /sphere-runtime/i]
+    bypass: [/\/sphere-embed\/?$/i, /sphere-embed/i, /sphere-runtime/i]
   };
 
   function isBypass() {
@@ -26,17 +26,13 @@
 
   function isHomePage() {
     var path = window.location.pathname || '/';
-    if (path === '/' || /\/index\.html?$/.test(path)) return true;
-    if (path.endsWith('/') && path.indexOf('/pages/') === -1) return true;
+    if (path === '/' || path === '/index.html') return true;
     return false;
   }
 
   function getHomeUrl() {
     if (isHomePage()) return null;
-    var path = window.location.pathname || '';
-    if (path.indexOf('/pages/interviews/') !== -1) return '../../index.html';
-    if (path.indexOf('/pages/') !== -1) return '../index.html';
-    return './index.html';
+    return '/';
   }
 
   function addRobotsNoIndex() {

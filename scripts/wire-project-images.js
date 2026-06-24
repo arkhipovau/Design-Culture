@@ -179,7 +179,7 @@ function updateGalleryData() {
       "author": "Сергей Кудинов",
       "project": "${project}",
       "subtitle": "Культура или симулятор",
-      "href": "./interviews/sergey-kudinov.html#photo-sergey-kudinov-${i}"
+      "href": "/interviews/sergey-kudinov/#photo-sergey-kudinov-${i}"
     }`
     )
     .join(',\n');
@@ -206,7 +206,7 @@ function updateGalleryData() {
       "author": "Анастасия Сычева",
       "project": "${project}",
       "subtitle": "AI как краска",
-      "href": "./interviews/anastasia-sycheva.html#photo-anastasia-sycheva-${i}"
+      "href": "/interviews/anastasia-sycheva/#photo-anastasia-sycheva-${i}"
     }`
     )
     .join(',\n');
@@ -237,7 +237,7 @@ function updateGalleryData() {
       "author": "Ян Зарецкий",
       "project": "${project}",
       "subtitle": "Генотип и фенотип",
-      "href": "./interviews/yan-zaretsky.html#photo-yan-zaretsky-${i}"
+      "href": "/interviews/yan-zaretsky/#photo-yan-zaretsky-${i}"
     }`
     )
     .join(',\n');

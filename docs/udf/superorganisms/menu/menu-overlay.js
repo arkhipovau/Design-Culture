@@ -1,10 +1,6 @@
 (function () {
-  function getPrefix() {
-    var path = window.location.pathname;
-
-    if (/\/pages\/interviews\//.test(path)) return '../../';
-    if (/\/pages\//.test(path)) return '../';
-    return './';
+  function asset(path) {
+    return '/' + String(path || '').replace(/^\/+/, '');
   }
 
   var searchApi = window.DefindingsSearch || null;
@@ -21,18 +17,18 @@
       .trim();
   }
 
-  function buildSearchIndex(prefix) {
+  function buildSearchIndex() {
     var links = {
-      home: prefix + 'index.html#top',
-      journal: prefix + 'pages/journal.html',
-      gallery: prefix + 'pages/gallery.html',
-      newsletter: prefix + 'pages/newsletter.html',
-      about: prefix + 'pages/about.html',
-      issue: prefix + 'index.html#issue'
+      home: '/#top',
+      journal: '/journal/',
+      gallery: '/gallery/',
+      newsletter: '/newsletter/',
+      about: '/about/',
+      issue: '/#issue'
     };
 
     function interview(pageName) {
-      return prefix + 'pages/interviews/' + pageName + '.html';
+      return '/interviews/' + pageName + '/';
     }
 
     var items = [
@@ -85,7 +81,7 @@
         priority: 85
       },
 
-      // SEARCH_INTERVIEWS_START
+      / SEARCH_INTERVIEWS_START
       {
         title: 'Маша Черн',
         subtitle: 'От одиночной работы к коллаборациям и осторожность с генеративным визуалом',
@@ -326,7 +322,7 @@
         keywords: 'ai искусственный интеллект нейросеть история эссе куратор',
         priority: 70
       },
-      // SEARCH_INTERVIEWS_END
+      / SEARCH_INTERVIEWS_END
     ];
 
     return items.map(function (item, index) {
@@ -387,14 +383,14 @@
       });
   }
 
-  function buildMenuMarkup(prefix) {
+  function buildMenuMarkup() {
     var links = {
-      home: prefix + 'index.html#top',
-      journal: prefix + 'pages/journal.html',
-      gallery: prefix + 'pages/gallery.html',
-      newsletter: prefix + 'pages/newsletter.html',
-      about: prefix + 'pages/about.html',
-      issue: prefix + 'index.html#issue'
+      home: '/#top',
+      journal: '/journal/',
+      gallery: '/gallery/',
+      newsletter: '/newsletter/',
+      about: '/about/',
+      issue: '/#issue'
     };
 
     return (
@@ -406,8 +402,8 @@
       '">' +
       '        <span class="s-menu__card-thumb">' +
       '          <img src="' +
-      prefix +
-      'images/img_journal.png" alt="" loading="lazy" />' +
+      asset('/images/img_journal.png') +
+      '" alt="" loading="lazy" />' +
       '        </span>' +
       '        <span class="s-menu__card-title">Журнал</span>' +
       '      </a>' +
@@ -416,8 +412,8 @@
       '">' +
       '        <span class="s-menu__card-thumb">' +
       '          <img src="' +
-      prefix +
-      'images/img_gallery.png" alt="" loading="lazy" />' +
+      asset('/images/img_gallery.png') +
+      '" alt="" loading="lazy" />' +
       '        </span>' +
       '        <span class="s-menu__card-title">Галерея</span>' +
       '      </a>' +
@@ -426,8 +422,8 @@
       '">' +
       '        <span class="s-menu__card-thumb">' +
       '          <img src="' +
-      prefix +
-      'images/Q_MenuImage_about.png" alt="" loading="lazy" />' +
+      asset('/images/Q_MenuImage_about.png') +
+      '" alt="" loading="lazy" />' +
       '        </span>' +
       '        <span class="s-menu__card-title">О проекте</span>' +
       '      </a>' +
@@ -436,8 +432,8 @@
       '">' +
       '        <span class="s-menu__card-thumb">' +
       '          <img src="' +
-      prefix +
-      'images/Q_MenuImage_print.png" alt="" loading="lazy" />' +
+      asset('/images/Q_MenuImage_print.png') +
+      '" alt="" loading="lazy" />' +
       '        </span>' +
       '        <span class="s-menu__card-title">Печатный выпуск</span>' +
       '      </a>' +
@@ -455,15 +451,15 @@
     );
   }
 
-  function buildSearchMarkup(prefix) {
+  function buildSearchMarkup() {
     return (
       '<div class="s-menu__search-panel" role="dialog" aria-modal="true" aria-label="Поиск по сайту">' +
       '  <form class="s-menu__search-form" role="search" autocomplete="off">' +
       '    <input class="s-menu__search-input" type="search" name="q" placeholder="Поиск по сайту" aria-label="Поиск по сайту" />' +
       '    <button class="s-menu__search-close" type="button" aria-label="Закрыть поиск">' +
       '      <img class="s-menu__search-icon" src="' +
-      prefix +
-      'udf/quarks/icons/q-icon-close-16-black.svg" alt="" aria-hidden="true" />' +
+      asset('/udf/quarks/icons/q-icon-close-16-black.svg') +
+      '" alt="" aria-hidden="true" />' +
       '    </button>' +
       '  </form>' +
       '  <div class="s-menu__search-results" role="listbox" aria-label="Результаты поиска"></div>' +
@@ -491,10 +487,9 @@
     if (!menuHeader || menuHeader.dataset.menuReady === '1') return;
     menuHeader.classList.add('s-menu--ready');
 
-    var prefix = getPrefix();
-    var searchIcon = prefix + 'udf/quarks/icons/q-icon-magnifying-glass-16-black.svg';
-    var burgerIcon = prefix + 'udf/quarks/icons/q-icon-burger-16-black.svg';
-    var closeIcon = prefix + 'udf/quarks/icons/q-icon-close-16-black.svg';
+    var searchIcon = asset('/udf/quarks/icons/q-icon-magnifying-glass-16-black.svg');
+    var burgerIcon = asset('/udf/quarks/icons/q-icon-burger-16-black.svg');
+    var closeIcon = asset('/udf/quarks/icons/q-icon-close-16-black.svg');
 
     var menuSearch = menuHeader.querySelector('.s-menu__search');
     if (!menuSearch) {
@@ -520,20 +515,20 @@
     var layer = document.createElement('div');
     layer.className = 's-menu__layer';
     layer.setAttribute('aria-hidden', 'true');
-    layer.innerHTML = buildMenuMarkup(prefix);
+    layer.innerHTML = buildMenuMarkup();
     document.body.appendChild(layer);
 
     var searchLayer = document.createElement('div');
     searchLayer.className = 's-menu__search-layer';
     searchLayer.setAttribute('aria-hidden', 'true');
-    searchLayer.innerHTML = buildSearchMarkup(prefix);
+    searchLayer.innerHTML = buildSearchMarkup();
     document.body.appendChild(searchLayer);
 
     var searchForm = searchLayer.querySelector('.s-menu__search-form');
     var searchInput = searchLayer.querySelector('.s-menu__search-input');
     var searchClose = searchLayer.querySelector('.s-menu__search-close');
     var searchResults = searchLayer.querySelector('.s-menu__search-results');
-    var searchIndex = buildSearchIndex(prefix);
+    var searchIndex = buildSearchIndex();
     var latestResults = [];
 
     function renderSearchResults(query) {

@@ -48,10 +48,10 @@ const FALLBACK_IMAGE_FILES = [
   '62fdc8ec9235f6923ec7.webp',
 ];
 
-const IMAGES_BASE = new URL('../images/', window.location.href);
+const IMAGES_BASE = new URL('/images/', window.location.href);
 
 function resolveImageUrl(file) {
-  return new URL(String(file).replace(/^\//, ''), IMAGES_BASE).href;
+  return new URL(String(file).replace(/^\/, ''), IMAGES_BASE).href;
 }
 
 function fallbackImageUrls() {
@@ -104,7 +104,7 @@ async function loadImageUrls() {
   }
 
   try {
-    const res = await fetch('../images/manifest.json', { cache: 'no-store' });
+    const res = await fetch('/images/manifest.json', { cache: 'no-store' });
     if (!res.ok) throw new Error(`manifest request failed: ${res.status}`);
     const files = await res.json();
     if (!Array.isArray(files)) throw new Error('manifest is not an array');

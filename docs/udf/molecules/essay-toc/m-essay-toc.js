@@ -19,7 +19,7 @@
     const items = Array.from(toc.querySelectorAll('.m-essay-toc__item'));
     if (!items.length) return;
 
-    const sectionList = []; // ordered: { section, item }
+    const sectionList = []; / ordered: { section, item }
     const idMap = new Map();
 
     items.forEach((item) => {
@@ -47,13 +47,13 @@
     const updateFromScroll = () => {
       if (performance.now() < suspendUntil) return;
       const targetY = (window.innerHeight || 1) * 0.2;
-      let activeItem = sectionList[0].item; // fallback for top of page
+      let activeItem = sectionList[0].item; / fallback for top of page
       for (const { section, item } of sectionList) {
         const top = section.getBoundingClientRect().top;
         if (top - targetY <= 1) {
           activeItem = item;
         } else {
-          break; // sections are in DOM order — once we cross target, stop.
+          break; / sections are in DOM order — once we cross target, stop.
         }
       }
       setActive(activeItem);
@@ -68,8 +68,8 @@
       });
     };
 
-    // Click on a TOC link: immediate highlight, suspend scroll tracking
-    // long enough for smooth-scroll to settle.
+    / Click on a TOC link: immediate highlight, suspend scroll tracking
+    / long enough for smooth-scroll to settle.
     items.forEach((item) => {
       const link = item.querySelector('.m-essay-toc__link');
       if (!link) return;
@@ -79,7 +79,7 @@
       });
     });
 
-    // Browser-driven hash changes (back/forward, deep link).
+    / Browser-driven hash changes (back/forward, deep link).
     const onHash = () => {
       const id = (window.location.hash || '').replace('#', '');
       if (!id) return;
@@ -91,7 +91,7 @@
     };
     window.addEventListener('hashchange', onHash);
 
-    // Initial state.
+    / Initial state.
     if (window.location.hash) {
       onHash();
     } else {

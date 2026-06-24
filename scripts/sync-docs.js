@@ -2,6 +2,8 @@ const fs = require('node:fs');
 const fsp = require('node:fs/promises');
 const path = require('node:path');
 
+const { applyCleanUrls } = require('./clean-urls');
+
 const ROOT = path.resolve(__dirname, '..');
 const SRC = path.join(ROOT, 'src');
 const DOCS = path.join(ROOT, 'docs');
@@ -27,9 +29,10 @@ async function syncDocs() {
         return !srcPath.endsWith('.DS_Store');
       }
     });
+    await applyCleanUrls(DOCS);
     await fsp.writeFile(path.join(DOCS, '.nojekyll'), '');
     await fsp.writeFile(path.join(DOCS, 'CNAME'), 'defindings.com\n');
-    console.log('[sync-docs] Synced ' + SRC + ' -> ' + DOCS);
+    console.log('[sync-docs] Synced ' + SRC + ' -> ' + DOCS + ' (clean URLs)');
   } catch (error) {
     console.error('[sync-docs] Sync failed:', error);
     process.exitCode = 1;
