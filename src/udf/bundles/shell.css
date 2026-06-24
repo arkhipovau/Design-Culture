@@ -10,5 +10,6 @@
 @import '../atoms/arrow-buttons/a-arrow-buttons.css';
 @import '../atoms/button/a-button.css';
 @import '../molecules/cookie-consent/m-cookie-consent.css';
+@import '../runtime/site-gate.css';
 @import '../superorganisms/menu/s-menu.css';
 @import '../superorganisms/footer/s-footer.css';

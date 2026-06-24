@@ -1,0 +1,112 @@
+html.is-site-gated {
+  overflow: hidden;
+}
+
+html.is-site-gated .s-menu,
+html.is-site-gated .s-footer,
+html.is-site-gated .a-sticky-scroll-wrap,
+html.is-site-gated .q-findings-overlay,
+html.is-site-gated .m-cookie-consent,
+html.is-site-gated main > :not(.o-hero-sphere) {
+  display: none !important;
+}
+
+html.is-site-gated .o-hero-sphere {
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+html.is-site-gated .o-hero-sphere__frame {
+  pointer-events: auto;
+}
+
+.o-site-gate {
+  position: fixed;
+  inset: auto 0 0;
+  z-index: 1100;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 1.25rem calc(1.5rem + env(safe-area-inset-bottom, 0px));
+  pointer-events: none;
+}
+
+.o-site-gate__panel {
+  width: min(100%, 26rem);
+  padding: 1.25rem 1.35rem 1.1rem;
+  color: var(--color-black);
+  background: rgba(246, 242, 234, 0.94);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  pointer-events: auto;
+}
+
+.o-site-gate__title {
+  margin: 0 0 0.35rem;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.o-site-gate__text {
+  margin: 0 0 1rem;
+  font-size: 0.875rem;
+  line-height: 1.45;
+  color: rgba(0, 0, 0, 0.72);
+}
+
+.o-site-gate__form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.o-site-gate__input {
+  width: 100%;
+  min-height: 2.5rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  border-radius: 0;
+  background: #fff;
+  font: inherit;
+  font-size: 0.9375rem;
+}
+
+.o-site-gate__input:focus {
+  outline: 2px solid rgba(0, 0, 0, 0.18);
+  outline-offset: 1px;
+}
+
+.o-site-gate__submit {
+  min-height: 2.5rem;
+  padding: 0.55rem 1rem;
+  border: 0;
+  background: var(--color-black);
+  color: var(--color-white);
+  font: inherit;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.o-site-gate__submit:hover {
+  opacity: 0.88;
+}
+
+.o-site-gate__error {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 0.8125rem;
+  color: #8a1f1f;
+}
+
+.o-site-gate__error[hidden] {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .o-site-gate__form {
+    grid-template-columns: 1fr;
+  }
+}
