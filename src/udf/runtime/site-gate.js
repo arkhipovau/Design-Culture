@@ -71,7 +71,7 @@
       '<div class="o-site-gate__panel" role="dialog" aria-labelledby="site-gate-title" aria-describedby="site-gate-text">' +
       '<div class="o-site-gate__head">' +
       '<p class="o-site-gate__title" id="site-gate-title">Сайт строится</p>' +
-      '<p class="o-site-gate__text" id="site-gate-text">Мы готовим новую версию deFindings. Скоро вернёмся.</p>' +
+      '<p class="o-site-gate__text" id="site-gate-text">Мы готовим первую версию deFindings. Скоро вернёмся.</p>' +
       '</div>' +
       '<form class="o-site-gate__form" autocomplete="off">' +
       '<div class="o-site-gate__field">' +
