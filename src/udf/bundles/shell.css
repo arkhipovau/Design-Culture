@@ -4,6 +4,7 @@
 @import '../tokens/site.css';
 @import '../quarks/findings/q-findings.css';
 @import '../atoms/section/a-section.css';
+@import '../atoms/image-frame/a-image-frame.css';
 @import '../atoms/visually-hidden/a-visually-hidden.css';
 @import '../atoms/sticky-scroll/a-sticky-scroll.css';
 @import '../atoms/arrow-buttons/a-arrow-buttons.css';

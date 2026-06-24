@@ -211,9 +211,9 @@
 
   const CARD_SELECTOR = '.m-journal-card, .m-gallery-card';
   const IMAGE_SELECTOR =
-    '.a-image-journal-link img, .m-gallery-card__media img, .m-photo-slot__image img, .m-photo-slot__image video, .m-interview-portrait img';
+    '.a-image-journal-link img, .m-gallery-card__media img, .m-photo-slot__image img, .m-photo-slot__image video, .m-interview-portrait img, .a-image-frame img, .a-image-frame video, .o-about-process__image img';
   const PARENT_SELECTOR =
-    '.a-image-journal-link, .m-gallery-card__media, .m-photo-slot__image, .m-interview-portrait';
+    '.a-image-journal-link, .m-gallery-card__media, .m-photo-slot__image, .m-interview-portrait, .a-image-frame, .o-about-process__image';
 
   const getImageParent = (img) => {
     const parent = img.closest(PARENT_SELECTOR);
@@ -292,11 +292,6 @@
 
     if (!parent) {
       markCardLoaded(card);
-      return;
-    }
-
-    if (img.complete && img.naturalWidth > 0) {
-      markImageLoaded(card, parent);
       return;
     }
 

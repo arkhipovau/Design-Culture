@@ -30,8 +30,18 @@ const DEFAULT_DIRS = [
 ];
 const REWRITE_GLOBS = [
   path.join(ROOT, 'src/pages'),
+  path.join(ROOT, 'src/index.html'),
+  path.join(ROOT, 'src/404.html'),
+  path.join(ROOT, 'src/udf'),
   path.join(ROOT, 'content/interviews-meta.json'),
   path.join(ROOT, 'scripts'),
+];
+
+const SRC_PREFIXES = [
+  '../../images/',
+  '../images/',
+  '../../../images/',
+  './images/',
 ];
 
 const RASTER_EXT = new Set(['.png', '.jpg', '.jpeg']);
@@ -87,6 +97,11 @@ function parseArgs(argv) {
 
   if (opts.gifTarget === 'webm' && !opts.rewrite) {
     console.error('GIF→WebM changes <img> to <video>. Pass --rewrite to update HTML.');
+    process.exit(1);
+  }
+
+  if (opts.deleteSource && !opts.rewrite && !opts.rewriteOnly) {
+    console.error('--delete-source requires --rewrite (or run --rewrite-only first).');
     process.exit(1);
   }
 
@@ -286,20 +301,27 @@ function convertGifWebm(inputPath) {
   return outputPath;
 }
 
+function escapeRegExp(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function replaceRasterExtInUrl(url, toExt) {
+  return url.replace(/\.(png|jpe?g|gif)(\?[^"'")\s]*)?$/i, `.${toExt}$2`);
+}
+
 async function rewriteTextFile(filePath, replacements) {
   let text = await fsp.readFile(filePath, 'utf8');
   let changed = false;
-  const srcPrefixes = ['../../images/', '../images/'];
 
   for (const rep of replacements) {
-    for (const prefix of srcPrefixes) {
+    for (const prefix of SRC_PREFIXES) {
       for (const variant of pathVariants(rep.fromRel)) {
         for (const fromExt of ['png', 'jpg', 'jpeg', 'gif']) {
-          const from = `${prefix}${variant}`;
-          if (!from.toLowerCase().endsWith(`.${fromExt}`)) continue;
-          const to = from.replace(/\.(png|jpe?g|gif)$/i, `.${rep.toExt}`);
-          if (text.includes(from)) {
-            text = text.split(from).join(to);
+          const stem = `${prefix}${variant}`.replace(/\.(png|jpe?g|gif)$/i, '');
+          const re = new RegExp(`${escapeRegExp(stem)}\\.${fromExt}(\\?[^"'\\s<>)]*)?`, 'gi');
+          const next = text.replace(re, (_match, query = '') => `${stem}.${rep.toExt}${query}`);
+          if (next !== text) {
+            text = next;
             changed = true;
           }
         }
@@ -307,10 +329,10 @@ async function rewriteTextFile(filePath, replacements) {
     }
 
     if (rep.imgToVideo) {
-      for (const prefix of srcPrefixes) {
+      for (const prefix of SRC_PREFIXES) {
         for (const variant of pathVariants(rep.fromRel)) {
           const from = `${prefix}${variant}`;
-          const imgRe = new RegExp(`<img([^>]*?)src="${from.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}"([^>]*?)>`, 'g');
+          const imgRe = new RegExp(`<img([^>]*?)src="${escapeRegExp(from)}"([^>]*?)>`, 'g');
           const videoTag = `<video src="${prefix}${pathVariants(rep.toRel)[0]}" controls playsinline muted loop preload="metadata"></video>`;
           const next = text.replace(imgRe, videoTag);
           if (next !== text) {
@@ -334,7 +356,7 @@ function collectRewriteFiles(dir, files) {
       collectRewriteFiles(full, files);
       continue;
     }
-    if (name.endsWith('.html') || name.endsWith('.js') || name.endsWith('.json')) {
+    if (name.endsWith('.html') || name.endsWith('.js') || name.endsWith('.json') || name.endsWith('.css')) {
       files.push(full);
     }
   }
@@ -361,6 +383,9 @@ function buildRewriteOnlyReplacements(jobs) {
   for (const inputPath of jobs) {
     const webp = inputPath.replace(/\.(png|jpe?g|gif)$/i, '.webp');
     if (!fs.existsSync(webp)) continue;
+    const srcSize = fs.statSync(inputPath).size;
+    const webpSize = fs.statSync(webp).size;
+    if (webpSize >= srcSize) continue;
     const rel = relFromImages(inputPath);
     replacements.push({
       fromRel: rel,

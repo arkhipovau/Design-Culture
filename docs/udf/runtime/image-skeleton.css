@@ -11,7 +11,9 @@
 .a-image-journal-link.is-image-loading,
 .m-gallery-card__media.is-image-loading,
 .m-photo-slot__image.is-image-loading,
-.m-interview-portrait.is-image-loading {
+.m-interview-portrait.is-image-loading,
+.a-image-frame.is-image-loading,
+.o-about-process__image.is-image-loading {
   background: var(--color-coloring-grey);
   overflow: hidden;
 }
@@ -19,7 +21,9 @@
 .a-image-journal-link.is-image-loading::after,
 .m-gallery-card__media.is-image-loading::after,
 .m-photo-slot__image.is-image-loading::after,
-.m-interview-portrait.is-image-loading::after {
+.m-interview-portrait.is-image-loading::after,
+.a-image-frame.is-image-loading::after,
+.o-about-process__image.is-image-loading::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -38,7 +42,10 @@
 .m-gallery-card__media.is-image-loading img,
 .m-photo-slot__image.is-image-loading > img,
 .m-photo-slot__image.is-image-loading > video,
-.m-interview-portrait.is-image-loading img {
+.m-interview-portrait.is-image-loading img,
+.a-image-frame.is-image-loading > img,
+.a-image-frame.is-image-loading > video,
+.o-about-process__image.is-image-loading > img {
   opacity: 0;
 }
 
@@ -46,7 +53,10 @@
 .m-gallery-card__media.is-image-loaded img,
 .m-photo-slot__image.is-image-loaded > img,
 .m-photo-slot__image.is-image-loaded > video,
-.m-interview-portrait.is-image-loaded img {
+.m-interview-portrait.is-image-loaded img,
+.a-image-frame.is-image-loaded > img,
+.a-image-frame.is-image-loaded > video,
+.o-about-process__image.is-image-loaded > img {
   opacity: 1;
   transition: opacity 320ms cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -55,7 +65,9 @@
   .a-image-journal-link.is-image-loading::after,
   .m-gallery-card__media.is-image-loading::after,
   .m-photo-slot__image.is-image-loading::after,
-  .m-interview-portrait.is-image-loading::after {
+  .m-interview-portrait.is-image-loading::after,
+  .a-image-frame.is-image-loading::after,
+  .o-about-process__image.is-image-loading::after {
     animation: none;
     opacity: 0.35;
     transform: none;

@@ -1,0 +1,15 @@
+/* Generic image frame for shimmer loading (see image-skeleton.css). */
+.a-image-frame {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  contain: layout style paint;
+}
+
+.a-image-frame > img,
+.a-image-frame > video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

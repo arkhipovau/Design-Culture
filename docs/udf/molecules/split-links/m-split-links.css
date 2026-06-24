@@ -76,7 +76,7 @@
 }
 
 .m-split-card--journal {
-  background: url("../../../images/journal-split-card.png?v=20260612b") center / cover no-repeat;
+  background: url("../../../images/journal-split-card.jpg?v=20260612b") center / cover no-repeat;
   color: var(--color-black);
 }
 
@@ -96,6 +96,18 @@
 .m-split-card__image {
   width: 480px;
   max-width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+.m-split-card--issue .a-image-frame {
+  width: 480px;
+  max-width: 80%;
+  height: auto;
+}
+
+.m-split-card--issue .a-image-frame > img {
+  width: 100%;
   height: auto;
   object-fit: contain;
 }
