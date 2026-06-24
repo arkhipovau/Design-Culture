@@ -4,8 +4,8 @@
   var CONFIG = {
     enabled: true,
     password: '1977',
-    storageKey: 'defindings-site-unlock-v1',
-    bypass: [/\/sphere-embed\/?$/i, /sphere-embed/i, /sphere-runtime/i]
+    storageKey: 'defindings-site-unlock-v2',
+    bypass: [/^\/sphere-embed\/?$/i]
   };
 
   function isBypass() {
@@ -26,13 +26,7 @@
 
   function isHomePage() {
     var path = window.location.pathname || '/';
-    if (path === '/' || path === '/index.html') return true;
-    return false;
-  }
-
-  function getHomeUrl() {
-    if (isHomePage()) return null;
-    return '/';
+    return path === '/' || path === '/index.html';
   }
 
   function addRobotsNoIndex() {
@@ -41,6 +35,16 @@
     robots.name = 'robots';
     robots.content = 'noindex, nofollow';
     document.head.appendChild(robots);
+  }
+
+  function ensureLockStyle() {
+    if (document.getElementById('site-gate-lock-style')) return;
+    var style = document.createElement('style');
+    style.id = 'site-gate-lock-style';
+    style.textContent =
+      'html.is-site-gated body{visibility:hidden}' +
+      'html.is-site-gated.is-site-gate-home .o-hero-sphere,html.is-site-gated .o-site-gate{visibility:visible}';
+    document.head.appendChild(style);
   }
 
   function blockNavigation() {
@@ -99,7 +103,11 @@
   }
 
   function activateGate() {
+    ensureLockStyle();
     document.documentElement.classList.add('is-site-gated');
+    if (isHomePage()) {
+      document.documentElement.classList.add('is-site-gate-home');
+    }
     addRobotsNoIndex();
     blockNavigation();
 
@@ -113,11 +121,11 @@
 
   if (!CONFIG.enabled || isUnlocked() || isBypass()) return;
 
-  addRobotsNoIndex();
-
-  var homeUrl = getHomeUrl();
-  if (homeUrl) {
-    window.location.replace(homeUrl);
+  if (!isHomePage()) {
+    ensureLockStyle();
+    document.documentElement.classList.add('is-site-gated');
+    addRobotsNoIndex();
+    window.location.replace('/');
     return;
   }
 

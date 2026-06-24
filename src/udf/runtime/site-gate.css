@@ -11,7 +11,11 @@ html.is-site-gated main > :not(.o-hero-sphere) {
   display: none !important;
 }
 
-html.is-site-gated .o-hero-sphere {
+html.is-site-gated:not(.is-site-gate-home) main {
+  display: none !important;
+}
+
+html.is-site-gated.is-site-gate-home .o-hero-sphere {
   width: 100%;
   height: 100vh;
   min-height: 100vh;

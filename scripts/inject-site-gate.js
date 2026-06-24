@@ -4,6 +4,7 @@ const path = require('node:path');
 
 const ROOT = path.join(__dirname, '..', 'src');
 const MARKER = 'udf/runtime/site-gate.js';
+const GATE_SRC = '/udf/runtime/site-gate.js?v=202606242';
 const SKIP = new Set([path.join(ROOT, 'pages/sphere-embed.html')]);
 
 function walk(dir, files) {
@@ -14,16 +15,8 @@ function walk(dir, files) {
   }
 }
 
-function depthFromSrc(filePath) {
-  const rel = path.relative(ROOT, filePath);
-  const parts = rel.split(path.sep);
-  parts.pop();
-  return parts.length;
-}
-
-function gateTag(depth) {
-  const prefix = depth === 0 ? './' : '../'.repeat(depth);
-  return `    <script src="${prefix}udf/runtime/site-gate.js"></script>`;
+function gateTag() {
+  return `    <script src="${GATE_SRC}"></script>`;
 }
 
 function inject(filePath) {
@@ -31,7 +24,7 @@ function inject(filePath) {
   let html = fs.readFileSync(filePath, 'utf8');
   if (html.includes(MARKER)) return false;
 
-  const tag = gateTag(depthFromSrc(filePath));
+  const tag = gateTag();
   const viewportMatch = html.match(/<meta name="viewport"[^>]*>\s*/i);
   if (!viewportMatch) {
     console.warn('[inject-site-gate] skip (no viewport):', path.relative(ROOT, filePath));
