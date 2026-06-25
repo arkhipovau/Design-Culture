@@ -210,6 +210,48 @@ function loadTileTexture(THREE, loader, url, onSuccess, onError) {
   img.src = url;
 }
 
+const TEXTURE_LOAD_CONCURRENCY = 6;
+const textureLoadQueue = [];
+let textureLoadsActive = 0;
+
+function drainTextureLoadQueue() {
+  while (textureLoadsActive < TEXTURE_LOAD_CONCURRENCY && textureLoadQueue.length) {
+    const job = textureLoadQueue.shift();
+    textureLoadsActive += 1;
+
+    function finishSuccess(tex) {
+      textureLoadsActive -= 1;
+      job.onSuccess(tex);
+      drainTextureLoadQueue();
+    }
+
+    function finishError() {
+      if (job.retries < 1) {
+        job.retries += 1;
+        loadTileTexture(job.THREE, job.loader, job.url, finishSuccess, finishError);
+        return;
+      }
+      textureLoadsActive -= 1;
+      job.onError();
+      drainTextureLoadQueue();
+    }
+
+    loadTileTexture(job.THREE, job.loader, job.url, finishSuccess, finishError);
+  }
+}
+
+function enqueueTileTexture(THREE, loader, url, onSuccess, onError) {
+  textureLoadQueue.push({
+    THREE,
+    loader,
+    url,
+    onSuccess,
+    onError,
+    retries: 0,
+  });
+  drainTextureLoadQueue();
+}
+
 function applyTextureSettings(THREE, renderer, tex) {
   tex.colorSpace = THREE.SRGBColorSpace;
   tex.minFilter = THREE.LinearMipmapLinearFilter;
@@ -377,7 +419,7 @@ async function init() {
     const url = imageUrls[i % Math.max(imageUrls.length, 1)];
     if (!url) return;
 
-    loadTileTexture(
+    enqueueTileTexture(
       THREE,
       loader,
       url,
