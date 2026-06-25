@@ -81,7 +81,7 @@
         priority: 85
       },
 
-      / SEARCH_INTERVIEWS_START
+      // SEARCH_INTERVIEWS_START
       {
         title: 'Маша Черн',
         subtitle: 'От одиночной работы к коллаборациям и осторожность с генеративным визуалом',
@@ -322,7 +322,7 @@
         keywords: 'ai искусственный интеллект нейросеть история эссе куратор',
         priority: 70
       },
-      / SEARCH_INTERVIEWS_END
+      // SEARCH_INTERVIEWS_END
     ];
 
     return items.map(function (item, index) {

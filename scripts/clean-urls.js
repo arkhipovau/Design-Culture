@@ -11,8 +11,9 @@ const REDIRECT_STUB = (target) =>
   `<script>location.replace(${JSON.stringify(target)})</script>\n` +
   '</head>\n<body></body>\n</html>\n';
 
-function rewriteContent(text) {
+function rewriteContent(text, options) {
   let out = text;
+  const collapseSlashes = !options || options.collapseSlashes !== false;
 
   out = out.replace(/(?:\.\.\/|\.\/)?pages\/interviews\/([a-z0-9-]+)\.html/g, '/interviews/$1/');
   out = out.replace(/(?:\.\.\/|\.\/)interviews\/([a-z0-9-]+)\.html/g, '/interviews/$1/');
@@ -34,7 +35,9 @@ function rewriteContent(text) {
   out = out.replace(/href="udf\//g, 'href="/udf/');
   out = out.replace(/src="udf\//g, 'src="/udf/');
 
-  out = out.replace(/([^:])\/\/+/g, '$1/');
+  if (collapseSlashes) {
+    out = out.replace(/([^:])\/\/+/g, '$1/');
+  }
 
   return out;
 }
@@ -56,7 +59,8 @@ async function rewriteTree(rootDir, filter) {
   const files = await walkFiles(rootDir, filter);
   for (const filePath of files) {
     const original = await fsp.readFile(filePath, 'utf8');
-    const rewritten = rewriteContent(original);
+    const isHtml = /\.html$/i.test(filePath);
+    const rewritten = rewriteContent(original, { collapseSlashes: isHtml });
     if (rewritten !== original) {
       await fsp.writeFile(filePath, rewritten);
     }

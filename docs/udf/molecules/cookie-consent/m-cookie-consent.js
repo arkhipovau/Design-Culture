@@ -36,7 +36,7 @@
   }
 
   function analyticsSrc() {
-    return '/udf/molecules/cookie-consent/analytics.js';
+    return '//udf/molecules/cookie-consent/analytics.js';
   }
 
   function loadAnalytics() {

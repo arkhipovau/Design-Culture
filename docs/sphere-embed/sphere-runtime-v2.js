@@ -48,10 +48,10 @@ const FALLBACK_IMAGE_FILES = [
   '62fdc8ec9235f6923ec7.webp',
 ];
 
-const IMAGES_BASE = new URL('/images/', window.location.href);
+const IMAGES_BASE = new URL('//images/', window.location.href);
 
 function resolveImageUrl(file) {
-  return new URL(String(file).replace(/^\/, ''), IMAGES_BASE).href;
+  return new URL(String(file).replace(/^\//, ''), IMAGES_BASE).href;
 }
 
 function fallbackImageUrls() {
@@ -80,7 +80,7 @@ const requestedMaxTex = Number(searchParams.get('maxTex') || '0');
 const maxTextureEdge = Number.isFinite(requestedMaxTex) && requestedMaxTex > 0
   ? Math.min(2048, Math.max(128, requestedMaxTex))
   : 0;
-const manifestPath = searchParams.get('manifest') || '/images/manifest.json';
+const manifestPath = searchParams.get('manifest') || '//images/manifest.json';
 const requestedSphereScale = Number(searchParams.get('sphereScale') || '1');
 const sphereScale = Number.isFinite(requestedSphereScale)
   ? Math.min(1.5, Math.max(0.4, requestedSphereScale))
