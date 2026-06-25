@@ -262,6 +262,7 @@ async function init() {
     if (window.__sphereShowError) {
       window.__sphereShowError('THREE is not loaded.');
     }
+    notifyParentReady({ readyMs: 0, error: 'three-missing' });
     return;
   }
 
@@ -400,7 +401,7 @@ async function init() {
   });
 
   window.setTimeout(() => {
-    if (loadedTextures > 0 && !parentNotified) {
+    if (!parentNotified) {
       parentNotified = true;
       notifyParentReady({ readyMs: Math.round(performance.now() - initStartedAt) });
     }
