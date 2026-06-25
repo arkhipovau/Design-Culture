@@ -51,7 +51,7 @@ const FALLBACK_IMAGE_FILES = [
 const IMAGES_BASE = new URL('/images/', window.location.href);
 
 function resolveImageUrl(file) {
-  return new URL(String(file).replace(/^\/, ''), IMAGES_BASE).href;
+  return new URL(String(file).replace(/^\//, ''), IMAGES_BASE).href;
 }
 
 function fallbackImageUrls() {

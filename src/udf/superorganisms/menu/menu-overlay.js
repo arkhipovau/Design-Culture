@@ -484,7 +484,8 @@
 
   function initMenuOverlay() {
     var menuHeader = document.querySelector('header.s-menu');
-    if (!menuHeader || menuHeader.dataset.menuReady === '1') return;
+    if (!menuHeader) return;
+    if (menuHeader.dataset.menuReady === '1' && document.querySelector('.s-menu__layer')) return;
     menuHeader.classList.add('s-menu--ready');
 
     var searchIcon = asset('udf/quarks/icons/q-icon-magnifying-glass-16-black.svg');
@@ -692,5 +693,9 @@
     }
   }
 
-  document.addEventListener('DOMContentLoaded', initMenuOverlay);
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMenuOverlay);
+  } else {
+    initMenuOverlay();
+  }
 })();

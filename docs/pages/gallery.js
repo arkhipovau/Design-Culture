@@ -96,6 +96,25 @@
 
   var currentIndex = 0;
   var thumbButtons = [];
+  var thumbsBuilt = false;
+  var THUMB_EAGER_RADIUS = 3;
+
+  function ensureThumbSrc(idx) {
+    var btn = thumbButtons[idx];
+    if (!btn) return;
+    var img = btn.querySelector('img');
+    if (!img || img.dataset.srcLoaded === '1') return;
+    img.src = entries[idx].src;
+    img.dataset.srcLoaded = '1';
+  }
+
+  function syncThumbLoads() {
+    var start = Math.max(0, currentIndex - THUMB_EAGER_RADIUS);
+    var end = Math.min(entries.length - 1, currentIndex + THUMB_EAGER_RADIUS);
+    for (var i = start; i <= end; i += 1) {
+      ensureThumbSrc(i);
+    }
+  }
 
   function buildThumbs() {
     if (!lbThumbs) return;
@@ -108,10 +127,8 @@
       btn.setAttribute('aria-label', item.author || ('Изображение ' + (idx + 1)));
       var img = document.createElement('img');
       img.alt = '';
-
-      img.loading = 'eager';
+      img.loading = 'lazy';
       img.decoding = 'async';
-      img.src = item.src;
       btn.appendChild(img);
       btn.addEventListener('click', function () {
         goTo(idx);
@@ -119,6 +136,13 @@
       lbThumbs.appendChild(btn);
       return btn;
     });
+    syncThumbLoads();
+  }
+
+  function ensureThumbs() {
+    if (thumbsBuilt) return;
+    thumbsBuilt = true;
+    buildThumbs();
   }
 
   function syncThumbState() {
@@ -147,10 +171,12 @@
 
     if (lbImageLink) lbImageLink.setAttribute('href', href);
     syncThumbState();
+    syncThumbLoads();
   }
 
   function openLightbox(index) {
     if (!entries.length) return;
+    ensureThumbs();
     currentIndex = Math.max(0, Math.min(entries.length - 1, index));
     updateSlide();
     lightbox.classList.add('is-open');
@@ -180,8 +206,6 @@
     currentIndex = idx;
     updateSlide();
   }
-
-  buildThumbs();
 
   if (lbClose) lbClose.addEventListener('click', closeLightbox);
   if (lbBackdrop) lbBackdrop.addEventListener('click', closeLightbox);
