@@ -29,11 +29,13 @@ function rewriteContent(text, options) {
   out = out.replace(/href="index\.html/g, 'href="/');
   out = out.replace(/href='index\.html/g, "href='/");
 
-  out = out.replace(/(?:\.\.\/|\.\/)?udf\//g, '/udf/');
-  out = out.replace(/(?:\.\.\/|\.\/)?images\//g, '/images/');
-  out = out.replace(/(?:\.\.\/|\.\/)?stylesheets\//g, '/stylesheets/');
+  out = out.replace(/(?:\.\.\/|\.\/)udf\//g, '/udf/');
+  out = out.replace(/(?:\.\.\/|\.\/)images\//g, '/images/');
+  out = out.replace(/(?:\.\.\/|\.\/)stylesheets\//g, '/stylesheets/');
   out = out.replace(/href="udf\//g, 'href="/udf/');
   out = out.replace(/src="udf\//g, 'src="/udf/');
+
+  out = out.replace(/([^:])\/\/(images|udf|stylesheets)\//g, '$1/$2/');
 
   if (collapseSlashes) {
     out = out.replace(/([^:])\/\/+/g, '$1/');

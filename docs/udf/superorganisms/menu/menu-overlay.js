@@ -402,7 +402,7 @@
       '">' +
       '        <span class="s-menu__card-thumb">' +
       '          <img src="' +
-      asset('/images/img_journal.png') +
+      asset('images/img_journal.png') +
       '" alt="" loading="lazy" />' +
       '        </span>' +
       '        <span class="s-menu__card-title">Журнал</span>' +
@@ -412,7 +412,7 @@
       '">' +
       '        <span class="s-menu__card-thumb">' +
       '          <img src="' +
-      asset('/images/img_gallery.png') +
+      asset('images/img_gallery.png') +
       '" alt="" loading="lazy" />' +
       '        </span>' +
       '        <span class="s-menu__card-title">Галерея</span>' +
@@ -422,7 +422,7 @@
       '">' +
       '        <span class="s-menu__card-thumb">' +
       '          <img src="' +
-      asset('/images/Q_MenuImage_about.png') +
+      asset('images/Q_MenuImage_about.png') +
       '" alt="" loading="lazy" />' +
       '        </span>' +
       '        <span class="s-menu__card-title">О проекте</span>' +
@@ -432,7 +432,7 @@
       '">' +
       '        <span class="s-menu__card-thumb">' +
       '          <img src="' +
-      asset('/images/Q_MenuImage_print.png') +
+      asset('images/Q_MenuImage_print.png') +
       '" alt="" loading="lazy" />' +
       '        </span>' +
       '        <span class="s-menu__card-title">Печатный выпуск</span>' +
@@ -458,7 +458,7 @@
       '    <input class="s-menu__search-input" type="search" name="q" placeholder="Поиск по сайту" aria-label="Поиск по сайту" />' +
       '    <button class="s-menu__search-close" type="button" aria-label="Закрыть поиск">' +
       '      <img class="s-menu__search-icon" src="' +
-      asset('/udf/quarks/icons/q-icon-close-16-black.svg') +
+      asset('udf/quarks/icons/q-icon-close-16-black.svg') +
       '" alt="" aria-hidden="true" />' +
       '    </button>' +
       '  </form>' +
@@ -488,9 +488,9 @@
     if (menuHeader.dataset.menuReady === '1' && document.querySelector('.s-menu__layer')) return;
     menuHeader.classList.add('s-menu--ready');
 
-    var searchIcon = asset('/udf/quarks/icons/q-icon-magnifying-glass-16-black.svg');
-    var burgerIcon = asset('/udf/quarks/icons/q-icon-burger-16-black.svg');
-    var closeIcon = asset('/udf/quarks/icons/q-icon-close-16-black.svg');
+    var searchIcon = asset('udf/quarks/icons/q-icon-magnifying-glass-16-black.svg');
+    var burgerIcon = asset('udf/quarks/icons/q-icon-burger-16-black.svg');
+    var closeIcon = asset('udf/quarks/icons/q-icon-close-16-black.svg');
 
     var menuSearch = menuHeader.querySelector('.s-menu__search');
     if (!menuSearch) {
