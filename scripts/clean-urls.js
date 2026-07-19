@@ -104,6 +104,20 @@ async function restructureDocs(docsDir) {
     await fsp.unlink(galleryDataLegacy);
   }
 
+  const galleryJsLegacy = path.join(docsDir, 'pages', 'gallery.js');
+  if (fs.existsSync(galleryJsLegacy)) {
+    const content = await fsp.readFile(galleryJsLegacy, 'utf8');
+    await fsp.mkdir(path.join(docsDir, 'gallery'), { recursive: true });
+    await fsp.writeFile(path.join(docsDir, 'gallery', 'gallery.js'), content);
+  }
+
+  const journalFiltersLegacy = path.join(docsDir, 'pages', 'journal-filters.js');
+  if (fs.existsSync(journalFiltersLegacy)) {
+    const content = await fsp.readFile(journalFiltersLegacy, 'utf8');
+    await fsp.mkdir(path.join(docsDir, 'journal'), { recursive: true });
+    await fsp.writeFile(path.join(docsDir, 'journal', 'journal-filters.js'), content);
+  }
+
   const sphereRuntimeLegacy = path.join(docsDir, 'pages', 'sphere-runtime-v2.js');
   if (fs.existsSync(sphereRuntimeLegacy)) {
     const runtime = await fsp.readFile(sphereRuntimeLegacy, 'utf8');
