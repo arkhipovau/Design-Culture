@@ -91,6 +91,7 @@
   color: var(--color-white);
   min-height: 683px;
   justify-content: center;
+  align-items: center;
 }
 
 .m-split-card__image {
@@ -98,18 +99,29 @@
   max-width: 80%;
   height: auto;
   object-fit: contain;
+  display: block;
+  margin-inline: auto;
 }
 
 .m-split-card--issue .a-image-frame {
-  width: 480px;
-  max-width: 80%;
+  width: min(480px, 80%);
+  max-width: 100%;
   height: auto;
+  margin-inline: auto;
+  flex: none;
+  align-self: center;
+  contain: none;
 }
 
-.m-split-card--issue .a-image-frame > img {
+.m-split-card--issue .a-image-frame > img,
+.m-split-card--issue .a-image-frame > img.m-split-card__image {
   width: 100%;
+  max-width: none;
   height: auto;
   object-fit: contain;
+  object-position: center;
+  display: block;
+  margin-inline: auto;
 }
 
 @media (max-width: 767px) {
