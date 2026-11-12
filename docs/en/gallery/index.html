@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="/udf/runtime/site-gate.js?v=202606242"></script>
+<link rel="icon" type="image/png" sizes="32x32" href="/udf/quarks/branding/favicon-light.png" media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/udf/quarks/branding/favicon-dark.png" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/udf/quarks/branding/favicon-light.png" />
+    <title>Gallery – deFindings</title>
+    <link rel="alternate" hreflang="ru" href="https://defindings.com/gallery/" />
+    <link rel="alternate" hreflang="en" href="https://defindings.com/en/gallery/" />
+    <link rel="stylesheet" href="/stylesheets/index.css" />
+    <link rel="stylesheet" href="/udf/bundles/shell.css" />
+    <link rel="stylesheet" href="/udf/bundles/gallery.css?v=20260727m" />
+    <link rel="stylesheet" href="/udf/superorganisms/gallery-lightbox/s-gallery-lightbox.css?v=20260727m" />
+    <link rel="stylesheet" href="/udf/runtime/micro-animations.css" />
+    <script defer src="/udf/molecules/cookie-consent/m-cookie-consent.js"></script>
+  </head>
+  <body class="o-site-shell" data-reading-page="deFindings Gallery">
+    <div class="q-findings-overlay" aria-hidden="true"></div>
+    <header class="s-menu">
+      <button class="s-menu__search" type="button" aria-label="Search" aria-expanded="false">
+        <img class="s-menu__icon" src="/udf/quarks/icons/q-icon-magnifying-glass-16-black.svg" alt="" aria-hidden="true" />
+      </button>
+      <a class="s-menu__logo" href="/en/" aria-label="deFindings">
+        <img class="s-menu__logo-mark" src="/udf/quarks/branding/deFindings.svg" alt="" aria-hidden="true" />
+        <span class="a-visually-hidden">deFindings</span>
+      </a>
+    <button class="s-menu__toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <img class="s-menu__icon" src="/udf/quarks/icons/q-icon-burger-16-black.svg" alt="" aria-hidden="true" />
+      </button>
+    </header>
+
+    <main class="o-gallery-page">
+      <section class="m-page-hero m-page-hero--gallery a-section">
+        <h1 class="m-page-hero__title">Gallery</h1>
+        <div class="m-view-switch" role="tablist" aria-label="View mode">
+          <button id="tableBtn" class="m-view-switch__btn is-active" type="button" role="tab" aria-selected="true">
+            <img class="m-view-switch__icon" src="/udf/quarks/icons/q-icon-table-16-black.svg" alt="" aria-hidden="true" />
+            Table
+          </button>
+          <button id="sliderBtn" class="m-view-switch__btn" type="button" role="tab" aria-selected="false">
+            <img class="m-view-switch__icon" src="/udf/quarks/icons/q-icon-slider-16-black.svg" alt="" aria-hidden="true" />
+            Slider
+          </button>
+        </div>
+      </section>
+
+      <section class="o-gallery-listing a-section">
+        <div id="tableView" class="o-gallery-listing__grid"></div>
+      </section>
+
+      <section class="a-section m-split-links">
+        <a class="m-split-card m-split-card--journal" href="/en/journal/">
+          <h3>Journal</h3>
+          <p>In the Journal you can read conversations with designers.</p>
+          <span class="a-button a-button--m a-button--white" aria-hidden="true">Read</span>
+        </a>
+        <a class="m-split-card m-split-card--issue" href="https://www.calameo.com/read/008119339762d3db33f24?authid=pJV9q2gR5n3i">
+          <div class="a-image-frame">
+          <img class="m-split-card__image" src="/images/A_ImagesBook 1.webp" alt="deFindings Issue No. 1" loading="lazy" decoding="async" />
+          </div>
+          <h3>deFindings Issue No. 1.</h3>
+          <span class="a-button a-button--m a-button--white" aria-hidden="true">Browse</span>
+        </a>
+      </section>
+
+    </main>
+
+    <div class="s-gallery-lightbox" id="galleryLightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+      <div class="s-gallery-lightbox__backdrop"></div>
+      <div class="s-gallery-lightbox__grid" aria-hidden="true">
+        <div class="s-gallery-lightbox__grid-inner">
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+      <button class="s-gallery-lightbox__close" type="button" aria-label="Close">
+        <img src="/udf/quarks/icons/q-icon-close-16-black.svg" alt="" aria-hidden="true" />
+      </button>
+      <div class="s-gallery-lightbox__layout">
+        <div class="s-gallery-lightbox__thumbs" aria-label="Thumbnails by author"></div>
+        <div class="s-gallery-lightbox__names" aria-label="Authors"></div>
+        <div class="s-gallery-lightbox__viewport">
+          <figure class="s-gallery-lightbox__figure">
+            <a class="s-gallery-lightbox__image-link" href="#" aria-label="Open in article">
+              <img class="s-gallery-lightbox__image" src="" alt="" />
+            </a>
+            <figcaption class="s-gallery-lightbox__meta">
+              <span class="s-gallery-lightbox__caption"></span>
+              <span class="s-gallery-lightbox__author">
+                Read at <a class="s-gallery-lightbox__author-link" href="#"></a>
+              </span>
+              <span class="s-gallery-lightbox__subtitle"></span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="a-sticky-scroll-wrap">
+      <div class="a-sticky-scroll">
+        <span class="a-sticky-scroll__rec" aria-hidden="true"></span>
+        <span class="a-sticky-scroll__content">
+          <span class="a-sticky-scroll__dot" aria-hidden="true"></span>
+          <span class="a-sticky-scroll__text">
+            <span class="a-sticky-scroll__prefix">You are reading</span>
+            <span class="a-sticky-scroll__current">"deFindings Gallery"</span>
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <footer class="s-footer">
+      <div class="s-footer__grid">
+        <div>
+          <h4>Browse</h4>
+          <a href="/en/journal/">Journal</a>
+          <a href="/en/gallery/">Gallery</a>
+        </div>
+        <div>
+          <h4>Learn more</h4>
+          <a href="/en/about/">About</a>
+          <a href="/en/privacy/">Privacy Policy</a>
+        </div>
+        <div>
+          <h4>Subscribe</h4>
+          <a href="/en/newsletter/">Newsletter</a>
+        </div>
+        <div>
+          <h4>Other channels</h4>
+          <a href="https://t.me/defindings">Telegram</a>
+          <a href="https://www.linkedin.com/in/arkhipovau/">LinkedIn</a>
+        </div>
+        <div>
+          <h4>Made by</h4>
+          <a href="https://arkhipovau.xyz/">Julie Arkhipova</a>
+          <a href="https://t.me/dayglobal">Curator — Zakhar Den</a>
+        </div>
+        <div class="s-footer__up">
+          <button class="a-arrow-button a-arrow-button--up" type="button" aria-label="Back to top"></button>
+        </div>
+      </div>
+      <div class="s-footer__bottom">
+        <span>© 2025 – 2026 deFindings</span>
+        <span>HSE Art&amp;Design School</span>
+      </div>
+    </footer>
+
+    <script src="/gallery/gallery-data.js?v=20260726a"></script>
+    <script src="/gallery/gallery.js?v=20260726g"></script>
+    <script defer src="/udf/runtime/i18n.js"></script>
+    <script defer src="/udf/superorganisms/menu/search-matching.js"></script>
+    <script defer src="/udf/superorganisms/menu/menu-overlay.js"></script>
+    <script defer src="/udf/superorganisms/menu/s-menu.js"></script>
+    <script defer src="/udf/superorganisms/footer/s-footer.js"></script>
+    <script defer src="/udf/atoms/sticky-scroll/a-sticky-scroll.js"></script>
+    <script defer src="/udf/runtime/micro-animations.js"></script>
+    <script defer src="/udf/molecules/split-links/m-split-links.js"></script>
+  </body>
+</html>

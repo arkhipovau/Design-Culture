@@ -69,19 +69,19 @@ async function rewriteTree(rootDir, filter) {
   }
 }
 
-async function restructureDocs(docsDir) {
+async function restructurePages(baseDir, urlPrefix) {
   for (const page of SECTION_PAGES) {
-    const legacyPath = path.join(docsDir, 'pages', page + '.html');
+    const legacyPath = path.join(baseDir, 'pages', page + '.html');
     if (!fs.existsSync(legacyPath)) continue;
 
     const content = await fsp.readFile(legacyPath, 'utf8');
-    const newPath = path.join(docsDir, page, 'index.html');
+    const newPath = path.join(baseDir, page, 'index.html');
     await fsp.mkdir(path.dirname(newPath), { recursive: true });
     await fsp.writeFile(newPath, content);
-    await fsp.writeFile(legacyPath, REDIRECT_STUB('/' + page + '/'));
+    await fsp.writeFile(legacyPath, REDIRECT_STUB(urlPrefix + page + '/'));
   }
 
-  const interviewsLegacyDir = path.join(docsDir, 'pages', 'interviews');
+  const interviewsLegacyDir = path.join(baseDir, 'pages', 'interviews');
   if (fs.existsSync(interviewsLegacyDir)) {
     const files = await fsp.readdir(interviewsLegacyDir);
     for (const fileName of files) {
@@ -89,11 +89,20 @@ async function restructureDocs(docsDir) {
       const slug = fileName.replace(/\.html$/, '');
       const legacyPath = path.join(interviewsLegacyDir, fileName);
       const content = await fsp.readFile(legacyPath, 'utf8');
-      const newPath = path.join(docsDir, 'interviews', slug, 'index.html');
+      const newPath = path.join(baseDir, 'interviews', slug, 'index.html');
       await fsp.mkdir(path.dirname(newPath), { recursive: true });
       await fsp.writeFile(newPath, content);
-      await fsp.writeFile(legacyPath, REDIRECT_STUB('/interviews/' + slug + '/'));
+      await fsp.writeFile(legacyPath, REDIRECT_STUB(urlPrefix + 'interviews/' + slug + '/'));
     }
+  }
+}
+
+async function restructureDocs(docsDir) {
+  await restructurePages(docsDir, '/');
+
+  const enDir = path.join(docsDir, 'en');
+  if (fs.existsSync(enDir)) {
+    await restructurePages(enDir, '/en/');
   }
 
   const galleryDataLegacy = path.join(docsDir, 'pages', 'gallery-data.js');

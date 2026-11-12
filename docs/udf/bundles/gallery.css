@@ -5,4 +5,4 @@
 @import '../molecules/gallery-card/m-gallery-card.css';
 @import '../molecules/split-links/m-split-links.css';
 @import '../organisms/gallery-listing/o-gallery-listing.css';
-@import '../superorganisms/gallery-lightbox/s-gallery-lightbox.css';
+@import '../superorganisms/gallery-lightbox/s-gallery-lightbox.css?v=20260727m';

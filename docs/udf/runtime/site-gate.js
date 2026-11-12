@@ -24,9 +24,15 @@
     }
   }
 
+  function isEnglish() {
+    var path = window.location.pathname || '/';
+    return /^\/en(\/|$)/i.test(path);
+  }
+
   function isHomePage() {
     var path = window.location.pathname || '/';
-    return path === '/' || path === '/index.html';
+    return path === '/' || path === '/index.html' ||
+           path === '/en/' || path === '/en/index.html' || path === '/en';
   }
 
   function addRobotsNoIndex() {
@@ -64,21 +70,22 @@
   function mountGateUi() {
     if (document.getElementById('site-gate-root')) return;
 
+    var en = isEnglish();
     var root = document.createElement('div');
     root.className = 'o-site-gate';
     root.id = 'site-gate-root';
     root.innerHTML =
       '<div class="o-site-gate__panel" role="dialog" aria-labelledby="site-gate-title" aria-describedby="site-gate-text">' +
       '<div class="o-site-gate__head">' +
-      '<p class="o-site-gate__title" id="site-gate-title">Сайт строится</p>' +
-      '<p class="o-site-gate__text" id="site-gate-text">Мы готовим первую версию deFindings. Скоро вернёмся.</p>' +
+      '<p class="o-site-gate__title" id="site-gate-title">' + (en ? 'Site under construction' : 'Сайт строится') + '</p>' +
+      '<p class="o-site-gate__text" id="site-gate-text">' + (en ? 'We are preparing the first version of deFindings. Coming back soon.' : 'Мы готовим первую версию deFindings. Скоро вернёмся.') + '</p>' +
       '</div>' +
       '<form class="o-site-gate__form" autocomplete="off">' +
       '<div class="o-site-gate__field">' +
-      '<input class="o-site-gate__input" type="password" inputmode="numeric" autocomplete="current-password" aria-label="Пароль доступа" placeholder="Пароль" />' +
+      '<input class="o-site-gate__input" type="password" inputmode="numeric" autocomplete="current-password" aria-label="' + (en ? 'Access password' : 'Пароль доступа') + '" placeholder="' + (en ? 'Password' : 'Пароль') + '" />' +
       '</div>' +
-      '<button class="a-button a-button--s a-button--black o-site-gate__submit" type="submit">Войти</button>' +
-      '<p class="o-site-gate__error" hidden>Неверный пароль</p>' +
+      '<button class="a-button a-button--s a-button--black o-site-gate__submit" type="submit">' + (en ? 'Enter' : 'Войти') + '</button>' +
+      '<p class="o-site-gate__error" hidden>' + (en ? 'Wrong password' : 'Неверный пароль') + '</p>' +
       '</form>' +
       '</div>';
 
@@ -125,7 +132,7 @@
     ensureLockStyle();
     document.documentElement.classList.add('is-site-gated');
     addRobotsNoIndex();
-    window.location.replace('/');
+    window.location.replace(isEnglish() ? '/en/' : '/');
     return;
   }
 

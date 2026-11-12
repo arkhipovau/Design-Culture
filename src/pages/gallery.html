@@ -8,9 +8,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/udf/quarks/branding/favicon-dark.png" media="(prefers-color-scheme: dark)" />
     <link rel="icon" type="image/png" sizes="32x32" href="/udf/quarks/branding/favicon-light.png" />
     <title>Галерея – deFindings</title>
+    <link rel="alternate" hreflang="ru" href="https://defindings.com/gallery/" />
+    <link rel="alternate" hreflang="en" href="https://defindings.com/en/gallery/" />
     <link rel="stylesheet" href="/stylesheets/index.css" />
     <link rel="stylesheet" href="/udf/bundles/shell.css" />
-    <link rel="stylesheet" href="/udf/bundles/gallery.css?v=20260719a" />
+    <link rel="stylesheet" href="/udf/bundles/gallery.css?v=20260727m" />
+    <link rel="stylesheet" href="/udf/superorganisms/gallery-lightbox/s-gallery-lightbox.css?v=20260727m" />
     <link rel="stylesheet" href="/udf/runtime/micro-animations.css" />
     <script defer src="/udf/molecules/cookie-consent/m-cookie-consent.js"></script>
   </head>
@@ -67,23 +70,33 @@
 
     <div class="s-gallery-lightbox" id="galleryLightbox" role="dialog" aria-modal="true" aria-label="Просмотр изображения">
       <div class="s-gallery-lightbox__backdrop"></div>
+      <div class="s-gallery-lightbox__grid" aria-hidden="true">
+        <div class="s-gallery-lightbox__grid-inner">
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </div>
       <button class="s-gallery-lightbox__close" type="button" aria-label="Закрыть">
         <img src="/udf/quarks/icons/q-icon-close-16-black.svg" alt="" aria-hidden="true" />
       </button>
-      <div class="s-gallery-lightbox__thumbs" aria-label="Миниатюры изображений"></div>
-      <div class="s-gallery-lightbox__viewport">
-        <figure class="s-gallery-lightbox__figure">
-          <a class="s-gallery-lightbox__image-link" href="#" aria-label="Открыть в статье">
-            <img class="s-gallery-lightbox__image" src="" alt="" />
-          </a>
-          <figcaption class="s-gallery-lightbox__meta">
-            <span class="s-gallery-lightbox__caption"></span>
-            <span class="s-gallery-lightbox__author">
-              Прочитать у <a class="s-gallery-lightbox__author-link" href="#"></a>
-            </span>
-            <span class="s-gallery-lightbox__subtitle"></span>
-          </figcaption>
-        </figure>
+      <div class="s-gallery-lightbox__layout">
+        <div class="s-gallery-lightbox__thumbs" aria-label="Миниатюры по авторам"></div>
+        <div class="s-gallery-lightbox__names" aria-label="Авторы"></div>
+        <div class="s-gallery-lightbox__viewport">
+          <figure class="s-gallery-lightbox__figure">
+            <a class="s-gallery-lightbox__image-link" href="#" aria-label="Открыть в статье">
+              <img class="s-gallery-lightbox__image" src="" alt="" />
+            </a>
+            <figcaption class="s-gallery-lightbox__meta">
+              <span class="s-gallery-lightbox__caption"></span>
+              <span class="s-gallery-lightbox__author">
+                Прочитать у <a class="s-gallery-lightbox__author-link" href="#"></a>
+              </span>
+              <span class="s-gallery-lightbox__subtitle"></span>
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </div>
 
@@ -136,8 +149,9 @@
       </div>
     </footer>
 
-    <script src="/gallery/gallery-data.js?v=20260719b"></script>
-    <script src="/gallery/gallery.js?v=20260719b"></script>
+    <script src="/gallery/gallery-data.js?v=20260726a"></script>
+    <script src="/gallery/gallery.js?v=20260726g"></script>
+    <script defer src="/udf/runtime/i18n.js"></script>
     <script defer src="/udf/superorganisms/menu/search-matching.js"></script>
     <script defer src="/udf/superorganisms/menu/menu-overlay.js"></script>
     <script defer src="/udf/superorganisms/menu/s-menu.js"></script>

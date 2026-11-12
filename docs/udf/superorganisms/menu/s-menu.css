@@ -252,6 +252,29 @@ header.s-menu a:focus-visible,
   color: var(--color-black);
 }
 
+.s-menu__lang-row {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-light-grey, #e0e0e0);
+  margin-top: 8px;
+}
+
+.s-menu__lang-link {
+  font-size: var(--type-button-s);
+  line-height: var(--type-button-s-lh);
+  color: var(--color-dark-grey);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.s-menu__lang-link:hover,
+.s-menu__lang-link:focus-visible {
+  color: var(--color-black);
+}
+
 .s-menu__search-layer {
   position: fixed;
   inset: 0;

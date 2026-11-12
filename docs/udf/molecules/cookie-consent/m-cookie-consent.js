@@ -31,8 +31,12 @@
     }
   }
 
+  function isEnglish() {
+    return /^\/en(\/|$)/i.test(window.location.pathname || '/');
+  }
+
   function privacyHref() {
-    return '/privacy/';
+    return isEnglish() ? '/en/privacy/' : '/privacy/';
   }
 
   function analyticsSrc() {
@@ -72,23 +76,26 @@
 
     const banner = document.createElement('div');
     banner.className = 'm-cookie-consent';
+    var en = isEnglish();
     banner.setAttribute('role', 'dialog');
-    banner.setAttribute('aria-label', 'Согласие на cookie');
+    banner.setAttribute('aria-label', en ? 'Cookie consent' : 'Согласие на cookie');
     banner.setAttribute('aria-live', 'polite');
 
     banner.innerHTML =
       '<div class="m-cookie-consent__panel">' +
       '<span class="m-cookie-consent__dot" aria-hidden="true"></span>' +
       '<p class="m-cookie-consent__text">' +
-      'Мы используем cookie для аналитики посещений. Продолжая пользоваться сайтом, вы соглашаетесь с' +
-      NBSP +
-      '<a href="' +
-      privacyHref() +
-      '">политикой' +
-      NBSP +
-      'конфиденциальности</a>.' +
+      (en
+        ? 'We use cookies for visitor analytics. By continuing to use the site, you agree to' +
+          NBSP +
+          'the' + NBSP + '<a href="' + privacyHref() + '">privacy' + NBSP + 'policy</a>.'
+        : 'Мы используем cookie для аналитики посещений. Продолжая пользоваться сайтом, вы соглашаетесь с' +
+          NBSP +
+          '<a href="' + privacyHref() + '">политикой' + NBSP + 'конфиденциальности</a>.') +
       '</p>' +
-      '<button class="m-cookie-consent__accept a-button a-button--s a-button--black" type="button">Принять</button>' +
+      '<button class="m-cookie-consent__accept a-button a-button--s a-button--black" type="button">' +
+      (en ? 'Accept' : 'Принять') +
+      '</button>' +
       '</div>';
 
     document.body.appendChild(banner);
